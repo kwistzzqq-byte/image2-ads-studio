@@ -1,0 +1,26 @@
+name: Template request
+description: Request a new advertising task, industry, or visual recipe.
+title: "[Template]: "
+labels: ["template", "enhancement"]
+body:
+  - type: input
+    id: industry
+    attributes:
+      label: Industry
+      placeholder: restaurant, ecommerce, dental clinic, signage, etc.
+    validations:
+      required: true
+  - type: input
+    id: task
+    attributes:
+      label: Task type
+      placeholder: storefront, poster, roll-up banner, product ad, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: brief
+    attributes:
+      label: Example brief
+      description: Provide a realistic user request and copywriting.
+    validations:
+      required: true

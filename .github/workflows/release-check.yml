@@ -1,0 +1,27 @@
+name: Release Check
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.24.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm --filter ad-image-agent-core test
+      - run: pnpm --filter ad-image-agent-core build
+      - run: pnpm --filter ad-image-agent typecheck
+      - run: pnpm --filter ad-image-agent build
+      - run: node scripts/count-assets.mjs .
+      - run: node scripts/validate-community.mjs .

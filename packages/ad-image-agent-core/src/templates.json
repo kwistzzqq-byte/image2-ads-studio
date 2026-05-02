@@ -1,0 +1,10111 @@
+[
+  {
+    "id": "adimg_template_0001",
+    "name": "发光字门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "餐饮",
+      "奶茶",
+      "零售",
+      "生活服务",
+      "门店"
+    ],
+    "styleTags": [
+      "outdoor_signage",
+      "commercial_ad",
+      "photorealistic",
+      "night_lighting"
+    ],
+    "layoutPattern": "真实街景透视，门头位于画面上方三分之一，入口和橱窗关系清晰，发光字安装在可制作基层上。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成商业门头效果图，重点表现发光字招牌、真实安装位置、可制作材质和夜间识别度。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "招牌文字",
+        "required": true
+      },
+      {
+        "name": "brandColor",
+        "label": "品牌色",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "发光字门头",
+      "餐饮",
+      "奶茶",
+      "零售",
+      "生活服务",
+      "门店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成商业门头效果图",
+      "重点表现发光字招牌",
+      "真实安装位置",
+      "可制作材质和夜间识别度"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "真实街景透视",
+      "门头位于画面上方三分之一",
+      "入口和橱窗关系清晰",
+      "发光字安装在可制作基层上"
+    ]
+  },
+  {
+    "id": "adimg_template_0002",
+    "name": "灯箱门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "便利店",
+      "药店",
+      "快餐",
+      "社区门店",
+      "零售"
+    ],
+    "styleTags": [
+      "lightbox",
+      "clean_layout",
+      "local_store",
+      "high_contrast"
+    ],
+    "layoutPattern": "横向灯箱招牌居中展示主文案，两侧可保留图标或副文案，适合街边远距离识别。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成灯箱门头效果图，强调均匀发光、清晰字面、干净边框和街边商业氛围。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "灯箱主文案",
+        "required": true
+      },
+      {
+        "name": "subText",
+        "label": "副文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "灯箱门头",
+      "便利店",
+      "药店",
+      "快餐",
+      "社区门店",
+      "零售"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成灯箱门头效果图",
+      "强调均匀发光",
+      "清晰字面",
+      "干净边框和街边商业氛围"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "横向灯箱招牌居中展示主文案",
+      "两侧可保留图标或副文案",
+      "适合街边远距离识别"
+    ]
+  },
+  {
+    "id": "adimg_template_0003",
+    "name": "餐饮门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "餐饮",
+      "小吃",
+      "火锅",
+      "咖啡",
+      "奶茶"
+    ],
+    "styleTags": [
+      "warm_lifestyle",
+      "local_store",
+      "commercial_ad",
+      "photorealistic"
+    ],
+    "layoutPattern": "餐饮门头带入口、菜单灯箱、橱窗和暖色照明，招牌与店内氛围一致。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成餐饮店门头提案图，突出品类识别、食欲感、品牌名和开业可用的商业气质。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "restaurantType",
+        "label": "餐饮品类",
+        "required": true
+      },
+      {
+        "name": "signText",
+        "label": "门头文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "餐饮门头",
+      "餐饮",
+      "小吃",
+      "火锅",
+      "咖啡",
+      "奶茶"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成餐饮店门头提案图",
+      "突出品类识别",
+      "食欲感",
+      "品牌名和开业可用的商业气质"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "餐饮门头带入口",
+      "菜单灯箱",
+      "橱窗和暖色照明",
+      "招牌与店内氛围一致"
+    ]
+  },
+  {
+    "id": "adimg_template_0004",
+    "name": "零售门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "服装",
+      "美妆",
+      "数码",
+      "母婴",
+      "零售"
+    ],
+    "styleTags": [
+      "premium",
+      "clean_layout",
+      "commercial_ad",
+      "storefront"
+    ],
+    "layoutPattern": "整洁零售门头，橱窗陈列可见，招牌与店铺立面统一，适合商场或街边店。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成零售店铺门头效果图，强调品牌识别、橱窗陈列、干净材质和高级商业感。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "storeCategory",
+        "label": "零售类型",
+        "required": true
+      },
+      {
+        "name": "signText",
+        "label": "品牌文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "零售门头",
+      "服装",
+      "美妆",
+      "数码",
+      "母婴",
+      "零售"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成零售店铺门头效果图",
+      "强调品牌识别",
+      "橱窗陈列",
+      "干净材质和高级商业感"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "整洁零售门头",
+      "橱窗陈列可见",
+      "招牌与店铺立面统一",
+      "适合商场或街边店"
+    ]
+  },
+  {
+    "id": "adimg_template_0005",
+    "name": "现场图改门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "storefront",
+      "production_ready",
+      "photorealistic"
+    ],
+    "layoutPattern": "基于上传现场图保留建筑、透视、入口、墙面和周边环境，只替换或增强门头区域。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "对上传门店照片进行门头改造，保持现场结构真实，仅在招牌、灯光和门头材质上做设计替换。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "editArea",
+        "label": "修改区域",
+        "required": false,
+        "defaultValue": "门头招牌区域"
+      },
+      {
+        "name": "signText",
+        "label": "招牌文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "现场图改门头",
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "对上传门店照片进行门头改造",
+      "保持现场结构真实",
+      "仅在招牌",
+      "灯光和门头材质上做设计替换"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "基于上传现场图保留建筑",
+      "透视",
+      "入口",
+      "墙面和周边环境",
+      "只替换或增强门头区域"
+    ]
+  },
+  {
+    "id": "adimg_template_0006",
+    "name": "新中式门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "茶饮",
+      "餐饮",
+      "文化空间",
+      "中式糕点",
+      "养生"
+    ],
+    "styleTags": [
+      "new_chinese_style",
+      "premium",
+      "warm_lifestyle",
+      "outdoor_signage"
+    ],
+    "layoutPattern": "木色、石材、格栅或宣纸质感的中式门头，主招牌简洁居中，灯光克制有层次。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成新中式商业门头，兼顾传统气质、现代识别度和可制作材质。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "门头文字",
+        "required": true
+      },
+      {
+        "name": "material",
+        "label": "主要材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "新中式门头",
+      "茶饮",
+      "餐饮",
+      "文化空间",
+      "中式糕点",
+      "养生"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成新中式商业门头",
+      "兼顾传统气质",
+      "现代识别度和可制作材质"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "木色",
+      "石材",
+      "格栅或宣纸质感的中式门头",
+      "主招牌简洁居中",
+      "灯光克制有层次"
+    ]
+  },
+  {
+    "id": "adimg_template_0007",
+    "name": "夜景高识别门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "酒馆",
+      "餐饮",
+      "便利店",
+      "奶茶",
+      "夜间门店"
+    ],
+    "styleTags": [
+      "night_lighting",
+      "high_contrast",
+      "photorealistic",
+      "commercial_ad"
+    ],
+    "layoutPattern": "夜间街景，招牌发光层级明确，远近都有识别度，避免过曝和字面糊成一片。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成夜晚可识别的门头效果图，突出发光字、灯带、橱窗光和真实街边氛围。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "夜间招牌文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "夜景高识别门头",
+      "酒馆",
+      "餐饮",
+      "便利店",
+      "奶茶",
+      "夜间门店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成夜晚可识别的门头效果图",
+      "突出发光字",
+      "灯带",
+      "橱窗光和真实街边氛围"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "夜间街景",
+      "招牌发光层级明确",
+      "远近都有识别度",
+      "避免过曝和字面糊成一片"
+    ]
+  },
+  {
+    "id": "adimg_template_0008",
+    "name": "社区服务门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "生活服务",
+      "维修",
+      "家政",
+      "宠物",
+      "干洗",
+      "药店"
+    ],
+    "styleTags": [
+      "local_store",
+      "clean_layout",
+      "trustworthy",
+      "storefront"
+    ],
+    "layoutPattern": "社区街边小店立面，门头信息清楚，服务品类一眼可读，整体干净可信。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成社区生活服务类门头，强调品类识别、可信赖感和低成本可制作。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "serviceType",
+        "label": "服务品类",
+        "required": true
+      },
+      {
+        "name": "signText",
+        "label": "门头文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "社区服务门头",
+      "生活服务",
+      "维修",
+      "家政",
+      "宠物",
+      "干洗",
+      "药店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成社区生活服务类门头",
+      "强调品类识别",
+      "可信赖感和低成本可制作"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "社区街边小店立面",
+      "门头信息清楚",
+      "服务品类一眼可读",
+      "整体干净可信"
+    ]
+  },
+  {
+    "id": "adimg_template_0009",
+    "name": "商场店铺门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "商场",
+      "零售",
+      "美妆",
+      "服装",
+      "数码"
+    ],
+    "styleTags": [
+      "premium",
+      "shopping_mall",
+      "clean_layout",
+      "commercial_ad"
+    ],
+    "layoutPattern": "室内商场通道视角，店铺门楣、橱窗、柜台和天花灯光统一，强调高端品牌识别。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成商场店铺门头效果图，突出精致材料、室内灯光和品牌门楣。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "品牌文字",
+        "required": true
+      },
+      {
+        "name": "storeCategory",
+        "label": "店铺类型",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "商场店铺门头",
+      "商场",
+      "零售",
+      "美妆",
+      "服装",
+      "数码"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成商场店铺门头效果图",
+      "突出精致材料",
+      "室内灯光和品牌门楣"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "室内商场通道视角",
+      "店铺门楣",
+      "橱窗",
+      "柜台和天花灯光统一",
+      "强调高端品牌识别"
+    ]
+  },
+  {
+    "id": "adimg_template_0010",
+    "name": "连锁品牌标准门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "连锁餐饮",
+      "连锁零售",
+      "社区门店",
+      "服务业"
+    ],
+    "styleTags": [
+      "brand_system",
+      "clean_layout",
+      "production_ready",
+      "storefront"
+    ],
+    "layoutPattern": "标准化门头系统，主招牌、品牌色、侧招、门贴和橱窗信息形成统一规范。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成连锁门店标准门头方案，强调品牌一致性、复制性和施工可落地。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "品牌文字",
+        "required": true
+      },
+      {
+        "name": "brandColor",
+        "label": "品牌标准色",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "连锁品牌标准门头",
+      "连锁餐饮",
+      "连锁零售",
+      "社区门店",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成连锁门店标准门头方案",
+      "强调品牌一致性",
+      "复制性和施工可落地"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "标准化门头系统",
+      "主招牌",
+      "品牌色",
+      "侧招",
+      "门贴和橱窗信息形成统一规范"
+    ]
+  },
+  {
+    "id": "adimg_template_0011",
+    "name": "小面积窄门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "小吃",
+      "社区店",
+      "档口",
+      "维修",
+      "便利店"
+    ],
+    "styleTags": [
+      "compact_layout",
+      "local_store",
+      "high_contrast",
+      "production_ready"
+    ],
+    "layoutPattern": "窄门面、小招牌、高信息密度但不拥挤，重点保证主文案远距离可读。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成小面积窄门头效果图，优化有限空间里的招牌比例、字距和灯光。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "主招牌文字",
+        "required": true
+      },
+      {
+        "name": "subText",
+        "label": "小副文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "小面积窄门头",
+      "小吃",
+      "社区店",
+      "档口",
+      "维修",
+      "便利店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成小面积窄门头效果图",
+      "优化有限空间里的招牌比例",
+      "字距和灯光"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "窄门面",
+      "小招牌",
+      "高信息密度但不拥挤",
+      "重点保证主文案远距离可读"
+    ]
+  },
+  {
+    "id": "adimg_template_0012",
+    "name": "门头局部换字换色",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "local_edit",
+      "preserve_structure"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "local_edit",
+      "storefront",
+      "production_ready"
+    ],
+    "layoutPattern": "只在上传图的招牌区域替换文字、颜色或发光方式，其他建筑、门窗、路面和邻店保持不变。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "对现场门头图做局部换字换色，保留原图结构和透视，只增强招牌视觉。",
+    "negativeConstraints": [
+      "不要生成无法施工的悬浮结构",
+      "不要加入无关品牌文字",
+      "不要让招牌文字不可读"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "替换后的招牌文字",
+        "required": true
+      },
+      {
+        "name": "brandColor",
+        "label": "替换颜色",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "门头局部换字换色",
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "对现场门头图做局部换字换色",
+      "保留原图结构和透视",
+      "只增强招牌视觉"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "只在上传图的招牌区域替换文字",
+      "颜色或发光方式",
+      "其他建筑",
+      "门窗",
+      "路面和邻店保持不变"
+    ]
+  },
+  {
+    "id": "adimg_template_0081",
+    "name": "汽车维修门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "scene_mockup",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "汽修",
+      "汽车",
+      "维修"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "storefront_signboard"
+    ],
+    "layoutPattern": "门头横向招牌居中，工位卷帘门和玻璃接待区保持真实比例，发光字与灯带形成夜间识别。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成汽车维修门头效果图，突出店名、服务项目和夜间可识别招牌。",
+    "negativeConstraints": [
+      "不要改变现场门窗结构和建筑透视",
+      "不要编造电话、地址、价格或资质",
+      "招牌材质、尺寸和安装方式必须真实可制作"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "店名",
+        "required": true
+      },
+      {
+        "name": "signMaterial",
+        "label": "招牌材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "汽车维修门头",
+      "汽修",
+      "汽车",
+      "维修"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成汽车维修门头效果图",
+      "突出店名",
+      "服务项目和夜间可识别招牌"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "门头横向招牌居中",
+      "工位卷帘门和玻璃接待区保持真实比例",
+      "发光字与灯带形成夜间识别"
+    ]
+  },
+  {
+    "id": "adimg_template_0082",
+    "name": "宠物医院门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "scene_mockup",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "宠物",
+      "医院",
+      "诊所"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "storefront_signboard"
+    ],
+    "layoutPattern": "招牌与玻璃门头结合，入口两侧可放营业信息区，色彩清洁，医疗属性明确。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成宠物医院门头效果图，突出清洁、可信、入口清晰和品牌识别。",
+    "negativeConstraints": [
+      "不要改变现场门窗结构和建筑透视",
+      "不要编造电话、地址、价格或资质",
+      "招牌材质、尺寸和安装方式必须真实可制作"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "店名",
+        "required": true
+      },
+      {
+        "name": "signMaterial",
+        "label": "招牌材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "宠物医院门头",
+      "宠物",
+      "医院",
+      "诊所"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成宠物医院门头效果图",
+      "突出清洁",
+      "可信",
+      "入口清晰和品牌识别"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "招牌与玻璃门头结合",
+      "入口两侧可放营业信息区",
+      "色彩清洁",
+      "医疗属性明确"
+    ]
+  },
+  {
+    "id": "adimg_template_0083",
+    "name": "儿童培训机构门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "scene_mockup",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "教育",
+      "培训",
+      "儿童"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "storefront_signboard"
+    ],
+    "layoutPattern": "门头色块明快，入口、橱窗和课程信息分区清楚，避免过度卡通化。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成儿童培训机构门头效果图，突出校区识别、课程属性和亲和入口。",
+    "negativeConstraints": [
+      "不要改变现场门窗结构和建筑透视",
+      "不要编造电话、地址、价格或资质",
+      "招牌材质、尺寸和安装方式必须真实可制作"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "店名",
+        "required": true
+      },
+      {
+        "name": "signMaterial",
+        "label": "招牌材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "儿童培训机构门头",
+      "教育",
+      "培训",
+      "儿童"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成儿童培训机构门头效果图",
+      "突出校区识别",
+      "课程属性和亲和入口"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "门头色块明快",
+      "入口",
+      "橱窗和课程信息分区清楚",
+      "避免过度卡通化"
+    ]
+  },
+  {
+    "id": "adimg_template_0084",
+    "name": "美容美甲门头",
+    "taskType": "storefront_signboard",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "scene_mockup",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "美业",
+      "美容",
+      "美甲"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "storefront_signboard"
+    ],
+    "layoutPattern": "窄门面招牌结合橱窗灯光，品牌名居中，材质用亚克力、金属字和柔和灯带。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成美容美甲门头效果图，突出精致门脸、清晰店名和可落地材质。",
+    "negativeConstraints": [
+      "不要改变现场门窗结构和建筑透视",
+      "不要编造电话、地址、价格或资质",
+      "招牌材质、尺寸和安装方式必须真实可制作"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "店名",
+        "required": true
+      },
+      {
+        "name": "signMaterial",
+        "label": "招牌材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "美容美甲门头",
+      "美业",
+      "美容",
+      "美甲"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "生成美容美甲门头效果图",
+      "突出精致门脸",
+      "清晰店名和可落地材质"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "窄门面招牌结合橱窗灯光",
+      "品牌名居中",
+      "材质用亚克力",
+      "金属字和柔和灯带"
+    ]
+  },
+  {
+    "id": "adimg_template_0013",
+    "name": "促销海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "零售",
+      "餐饮",
+      "本地门店",
+      "电商",
+      "服务业"
+    ],
+    "styleTags": [
+      "festival_promotion",
+      "high_contrast",
+      "commercial_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "强标题、强价格/权益、主视觉居中或偏右，底部放活动信息和行动引导。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成商业促销海报，突出活动利益点、中文标题层级、主视觉和清晰行动引导。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "优惠信息",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "促销海报",
+      "零售",
+      "餐饮",
+      "本地门店",
+      "电商",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成商业促销海报",
+      "突出活动利益点",
+      "中文标题层级",
+      "主视觉和清晰行动引导"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "强标题",
+      "强价格",
+      "权益",
+      "主视觉居中或偏右",
+      "底部放活动信息和行动引导"
+    ]
+  },
+  {
+    "id": "adimg_template_0014",
+    "name": "活动海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "活动",
+      "展会",
+      "培训",
+      "会议",
+      "开业"
+    ],
+    "styleTags": [
+      "event",
+      "clean_layout",
+      "premium",
+      "print_ready"
+    ],
+    "layoutPattern": "活动主题标题居上，主视觉占中部，时间地点和主办信息在下方模块化呈现。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成活动宣传海报，结构清晰、信息层级明确、主题视觉统一，适合线下物料和社媒发布。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "eventInfo",
+        "label": "时间地点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "活动海报",
+      "展会",
+      "培训",
+      "会议",
+      "开业"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成活动宣传海报",
+      "结构清晰",
+      "信息层级明确",
+      "主题视觉统一",
+      "适合线下物料和社媒发布"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "活动主题标题居上",
+      "主视觉占中部",
+      "时间地点和主办信息在下方模块化呈现"
+    ]
+  },
+  {
+    "id": "adimg_template_0015",
+    "name": "产品海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "电商",
+      "美妆",
+      "食品",
+      "饮品",
+      "数码",
+      "家居"
+    ],
+    "styleTags": [
+      "studio_product",
+      "premium",
+      "commercial_photography",
+      "clean_layout"
+    ],
+    "layoutPattern": "产品主体占视觉中心，卖点分布在两侧或底部，背景与产品材质、行业调性一致。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成产品广告海报，突出产品质感、核心卖点、品牌气质和可直接投放的商业完成度。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "产品海报",
+      "电商",
+      "美妆",
+      "食品",
+      "饮品",
+      "数码",
+      "家居"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成产品广告海报",
+      "突出产品质感",
+      "核心卖点",
+      "品牌气质和可直接投放的商业完成度"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "产品主体占视觉中心",
+      "卖点分布在两侧或底部",
+      "背景与产品材质",
+      "行业调性一致"
+    ]
+  },
+  {
+    "id": "adimg_template_0016",
+    "name": "中文信息层级海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "餐饮",
+      "服务业",
+      "活动",
+      "品牌"
+    ],
+    "styleTags": [
+      "typography",
+      "clean_layout",
+      "infographic",
+      "print_ready"
+    ],
+    "layoutPattern": "中文标题、说明、步骤、图标和模块卡片形成明确阅读路径，留白充足。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成中文信息层级海报，强调清晰排版、模块化信息、可读标题和专业商业设计。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "信息模块",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "中文信息层级海报",
+      "教育",
+      "餐饮",
+      "服务业",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成中文信息层级海报",
+      "强调清晰排版",
+      "模块化信息",
+      "可读标题和专业商业设计"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "中文标题",
+      "说明",
+      "步骤",
+      "图标和模块卡片形成明确阅读路径",
+      "留白充足"
+    ]
+  },
+  {
+    "id": "adimg_template_0017",
+    "name": "上传图改海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "本地门店",
+      "电商",
+      "活动",
+      "品牌",
+      "餐饮"
+    ],
+    "styleTags": [
+      "image_editing",
+      "poster",
+      "commercial_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "保留上传图主体，将背景、标题区、卖点区和装饰元素重构成商业海报。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于上传图片生成商业海报，保留主体识别，增强背景、排版、标题和促销信息。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "保留主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "海报主标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "上传图改海报",
+      "本地门店",
+      "电商",
+      "品牌",
+      "餐饮"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "基于上传图片生成商业海报",
+      "保留主体识别",
+      "增强背景",
+      "排版",
+      "标题和促销信息"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "保留上传图主体",
+      "将背景",
+      "标题区",
+      "卖点区和装饰元素重构成商业海报"
+    ]
+  },
+  {
+    "id": "adimg_template_0018",
+    "name": "节日促销海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "零售",
+      "餐饮",
+      "电商",
+      "本地门店"
+    ],
+    "styleTags": [
+      "festival_promotion",
+      "high_contrast",
+      "commercial_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "节日主题元素作为氛围，主标题和优惠信息优先，活动日期和门店信息置于底部。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成节日促销海报，既有节日氛围又保持商业信息清晰。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "festival",
+        "label": "节日节点",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "节日促销海报",
+      "零售",
+      "餐饮",
+      "电商",
+      "本地门店"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成节日促销海报",
+      "既有节日氛围又保持商业信息清晰"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "节日主题元素作为氛围",
+      "主标题和优惠信息优先",
+      "活动日期和门店信息置于底部"
+    ]
+  },
+  {
+    "id": "adimg_template_0019",
+    "name": "开业海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "开业",
+      "餐饮",
+      "零售",
+      "生活服务",
+      "本地门店"
+    ],
+    "styleTags": [
+      "opening",
+      "high_contrast",
+      "local_store",
+      "commercial_ad"
+    ],
+    "layoutPattern": "主标题强调开业，品牌/门店名居中，优惠和地址电话区域清晰分组。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成门店开业海报，突出开业信息、福利点和到店行动引导。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "storeName",
+        "label": "门店名称",
+        "required": true
+      },
+      {
+        "name": "openingOffer",
+        "label": "开业福利",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "开业海报",
+      "开业",
+      "餐饮",
+      "零售",
+      "生活服务",
+      "本地门店"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成门店开业海报",
+      "突出开业信息",
+      "福利点和到店行动引导"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "主标题强调开业",
+      "品牌",
+      "门店名居中",
+      "优惠和地址电话区域清晰分组"
+    ]
+  },
+  {
+    "id": "adimg_template_0020",
+    "name": "招生课程海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "培训",
+      "课程",
+      "机构"
+    ],
+    "styleTags": [
+      "education",
+      "clean_layout",
+      "typography",
+      "print_ready"
+    ],
+    "layoutPattern": "课程标题明显，适合人群、课程亮点、时间地点和报名方式分区呈现。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成招生课程海报，信息层级清晰，适合朋友圈、社群和线下张贴。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "courseName",
+        "label": "课程名称",
+        "required": true
+      },
+      {
+        "name": "audience",
+        "label": "适合人群",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "招生课程海报",
+      "教育",
+      "培训",
+      "课程",
+      "机构"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成招生课程海报",
+      "信息层级清晰",
+      "适合朋友圈",
+      "社群和线下张贴"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "课程标题明显",
+      "适合人群",
+      "课程亮点",
+      "时间地点和报名方式分区呈现"
+    ]
+  },
+  {
+    "id": "adimg_template_0021",
+    "name": "餐饮菜单海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "餐饮",
+      "小吃",
+      "咖啡",
+      "奶茶",
+      "快餐"
+    ],
+    "styleTags": [
+      "menu",
+      "warm_lifestyle",
+      "clean_layout",
+      "commercial_ad"
+    ],
+    "layoutPattern": "菜品主视觉与菜单价格区分开，标题、推荐菜、套餐和小字说明有明确层级。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成餐饮菜单或新品推荐海报，强调食欲感和中文菜单可读性。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "菜单标题",
+        "required": true
+      },
+      {
+        "name": "menuItems",
+        "label": "菜品或套餐",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "餐饮菜单海报",
+      "餐饮",
+      "小吃",
+      "咖啡",
+      "奶茶",
+      "快餐"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成餐饮菜单或新品推荐海报",
+      "强调食欲感和中文菜单可读性"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "菜品主视觉与菜单价格区分开",
+      "标题",
+      "推荐菜",
+      "套餐和小字说明有明确层级"
+    ]
+  },
+  {
+    "id": "adimg_template_0022",
+    "name": "会员福利海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "零售",
+      "餐饮",
+      "美业",
+      "健身",
+      "服务业"
+    ],
+    "styleTags": [
+      "membership",
+      "clean_layout",
+      "commercial_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "会员权益以模块卡片呈现，主视觉简洁，二维码或行动引导预留明确区域。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成会员福利海报，突出权益层级、会员身份感和行动引导。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "会员标题",
+        "required": true
+      },
+      {
+        "name": "benefits",
+        "label": "会员权益",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "会员福利海报",
+      "零售",
+      "餐饮",
+      "美业",
+      "健身",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成会员福利海报",
+      "突出权益层级",
+      "会员身份感和行动引导"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "会员权益以模块卡片呈现",
+      "主视觉简洁",
+      "二维码或行动引导预留明确区域"
+    ]
+  },
+  {
+    "id": "adimg_template_0023",
+    "name": "品牌形象海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "品牌",
+      "企业",
+      "产品",
+      "服务业"
+    ],
+    "styleTags": [
+      "premium",
+      "brand_system",
+      "minimal",
+      "commercial_ad"
+    ],
+    "layoutPattern": "少量核心文案配合强主视觉，品牌色、logo区域和留白形成高级形象展示。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成品牌形象海报，强调品牌气质、视觉记忆点和商业完成度。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": true
+      },
+      {
+        "name": "slogan",
+        "label": "品牌标语",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "品牌形象海报",
+      "品牌",
+      "企业",
+      "产品",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成品牌形象海报",
+      "强调品牌气质",
+      "视觉记忆点和商业完成度"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "少量核心文案配合强主视觉",
+      "品牌色",
+      "logo区域和留白形成高级形象展示"
+    ]
+  },
+  {
+    "id": "adimg_template_0024",
+    "name": "社媒方图海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "电商",
+      "本地生活",
+      "品牌",
+      "活动"
+    ],
+    "styleTags": [
+      "social_media",
+      "clean_layout",
+      "high_contrast",
+      "commercial_ad"
+    ],
+    "layoutPattern": "1:1社媒构图，主标题大、主体近、信息少而强，适合朋友圈和平台信息流。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成社交媒体方图广告海报，突出第一眼吸引力和可读标题。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "社媒方图海报",
+      "电商",
+      "本地生活",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成社交媒体方图广告海报",
+      "突出第一眼吸引力和可读标题"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "1社媒构图",
+      "主标题大",
+      "主体近",
+      "信息少而强",
+      "适合朋友圈和平台信息流"
+    ]
+  },
+  {
+    "id": "adimg_template_0025",
+    "name": "长图宣传海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "服务业",
+      "电商",
+      "活动",
+      "品牌"
+    ],
+    "styleTags": [
+      "long_form",
+      "infographic",
+      "clean_layout",
+      "print_ready"
+    ],
+    "layoutPattern": "竖向长图分段组织：开头主视觉，中段卖点或流程，底部行动引导。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成竖版长图宣传海报，适合服务介绍、课程介绍和活动说明。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "段落模块",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "长图宣传海报",
+      "教育",
+      "服务业",
+      "电商",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成竖版长图宣传海报",
+      "适合服务介绍",
+      "课程介绍和活动说明"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "竖向长图分段组织",
+      "开头主视觉",
+      "中段卖点或流程",
+      "底部行动引导"
+    ]
+  },
+  {
+    "id": "adimg_template_0026",
+    "name": "高端极简海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "美妆",
+      "家居",
+      "咖啡",
+      "品牌",
+      "展览"
+    ],
+    "styleTags": [
+      "minimal",
+      "premium",
+      "clean_layout",
+      "commercial_ad"
+    ],
+    "layoutPattern": "大面积留白，产品或主题居中，少量中文标题和辅助文字，材质与光影细腻。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成高端极简商业海报，控制信息密度，强调质感、留白和高级品牌感。",
+    "negativeConstraints": [
+      "不要编造用户未提供的价格、日期、电话或地址",
+      "不要让中文标题和小字混乱",
+      "不要使用廉价杂乱排版"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "高端极简海报",
+      "美妆",
+      "家居",
+      "咖啡",
+      "品牌",
+      "展览"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成高端极简商业海报",
+      "控制信息密度",
+      "强调质感",
+      "留白和高级品牌感"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "大面积留白",
+      "产品或主题居中",
+      "少量中文标题和辅助文字",
+      "材质与光影细腻"
+    ]
+  },
+  {
+    "id": "adimg_template_0093",
+    "name": "招聘海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "招聘",
+      "人才",
+      "企业"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "poster_design"
+    ],
+    "layoutPattern": "主标题上方突出岗位，薪资福利和联系方式分区，人物或办公场景不压字。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成招聘海报，突出岗位信息、福利卖点和行动引导。",
+    "negativeConstraints": [
+      "不要编造价格、日期、电话、地址或活动权益",
+      "中文标题和卖点必须清晰可读",
+      "不要让装饰元素压住核心文案"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "招聘海报",
+      "人才",
+      "企业"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成招聘海报",
+      "突出岗位信息",
+      "福利卖点和行动引导"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "主标题上方突出岗位",
+      "薪资福利和联系方式分区",
+      "人物或办公场景不压字"
+    ]
+  },
+  {
+    "id": "adimg_template_0094",
+    "name": "课程招生海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "课程",
+      "招生"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "poster_design"
+    ],
+    "layoutPattern": "课程名为主标题，适合人群、时间、地点和报名入口分层清楚。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成课程招生海报，突出课程价值、报名信息和中文层级。",
+    "negativeConstraints": [
+      "不要编造价格、日期、电话、地址或活动权益",
+      "中文标题和卖点必须清晰可读",
+      "不要让装饰元素压住核心文案"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "课程招生海报",
+      "教育",
+      "课程"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成课程招生海报",
+      "突出课程价值",
+      "报名信息和中文层级"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "课程名为主标题",
+      "适合人群",
+      "时间",
+      "地点和报名入口分层清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0095",
+    "name": "会员日海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "会员",
+      "零售",
+      "门店"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "poster_design"
+    ],
+    "layoutPattern": "主标题与会员权益并列，价格或折扣只使用用户给定内容，底部留行动区。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成会员日促销海报，突出会员权益、门店转化和清楚文案。",
+    "negativeConstraints": [
+      "不要编造价格、日期、电话、地址或活动权益",
+      "中文标题和卖点必须清晰可读",
+      "不要让装饰元素压住核心文案"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "会员日海报",
+      "会员",
+      "零售",
+      "门店"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成会员日促销海报",
+      "突出会员权益",
+      "门店转化和清楚文案"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "主标题与会员权益并列",
+      "价格或折扣只使用用户给定内容",
+      "底部留行动区"
+    ]
+  },
+  {
+    "id": "adimg_template_0096",
+    "name": "社群团购海报",
+    "taskType": "poster_design",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "团购",
+      "社区",
+      "生鲜"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "poster_design"
+    ],
+    "layoutPattern": "商品组图与价格权益分离，主标题强，底部有群码或行动区预留。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成社群团购海报，突出商品、利益点和下单引导。",
+    "negativeConstraints": [
+      "不要编造价格、日期、电话、地址或活动权益",
+      "中文标题和卖点必须清晰可读",
+      "不要让装饰元素压住核心文案"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "主标题",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "社群团购海报",
+      "团购",
+      "社区",
+      "生鲜"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "生成社群团购海报",
+      "突出商品",
+      "利益点和下单引导"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "商品组图与价格权益分离",
+      "主标题强",
+      "底部有群码或行动区预留"
+    ]
+  },
+  {
+    "id": "adimg_template_0027",
+    "name": "企业服务展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "企业服务",
+      "招商",
+      "咨询",
+      "SaaS",
+      "服务业"
+    ],
+    "styleTags": [
+      "rollup_banner",
+      "clean_layout",
+      "corporate",
+      "print_ready"
+    ],
+    "layoutPattern": "竖版展架，上方品牌和主标题，中部服务卖点，下方联系方式或二维码。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成企业服务类易拉宝展架，信息清楚、版式稳重、适合展会或门店摆放。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架主标题",
+        "required": true
+      },
+      {
+        "name": "services",
+        "label": "服务卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "企业服务展架",
+      "企业服务",
+      "招商",
+      "咨询",
+      "SaaS",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成企业服务类易拉宝展架",
+      "信息清楚",
+      "版式稳重",
+      "适合展会或门店摆放"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "竖版展架",
+      "上方品牌和主标题",
+      "中部服务卖点",
+      "下方联系方式或二维码"
+    ]
+  },
+  {
+    "id": "adimg_template_0028",
+    "name": "餐饮开业展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "餐饮",
+      "奶茶",
+      "小吃",
+      "咖啡"
+    ],
+    "styleTags": [
+      "opening",
+      "local_store",
+      "high_contrast",
+      "print_ready"
+    ],
+    "layoutPattern": "竖版门口展架，开业主题醒目，主推产品图片大，福利信息和地址靠下。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成餐饮开业易拉宝，突出新品、开业福利和到店吸引力。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "storeName",
+        "label": "门店名称",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "开业福利",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "餐饮开业展架",
+      "餐饮",
+      "奶茶",
+      "小吃",
+      "咖啡"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成餐饮开业易拉宝",
+      "突出新品",
+      "开业福利和到店吸引力"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "竖版门口展架",
+      "开业主题醒目",
+      "主推产品图片大",
+      "福利信息和地址靠下"
+    ]
+  },
+  {
+    "id": "adimg_template_0029",
+    "name": "产品卖点展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "产品",
+      "电商",
+      "家居",
+      "数码",
+      "美妆"
+    ],
+    "styleTags": [
+      "product_visual",
+      "clean_layout",
+      "commercial_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "产品主体位于中上部，三到五个卖点纵向排列，底部保留购买或咨询入口。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成产品卖点展架，强调产品质感、核心功能和清晰卖点层级。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "产品卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "产品卖点展架",
+      "产品",
+      "电商",
+      "家居",
+      "数码",
+      "美妆"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成产品卖点展架",
+      "强调产品质感",
+      "核心功能和清晰卖点层级"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "产品主体位于中上部",
+      "三到五个卖点纵向排列",
+      "底部保留购买或咨询入口"
+    ]
+  },
+  {
+    "id": "adimg_template_0030",
+    "name": "招生课程展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "培训",
+      "机构",
+      "课程"
+    ],
+    "styleTags": [
+      "education",
+      "typography",
+      "clean_layout",
+      "print_ready"
+    ],
+    "layoutPattern": "课程标题在上，适合人群、课程收益、时间地点和报名入口纵向分区。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成招生课程展架，适合机构大厅、校区门口和活动现场。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "courseName",
+        "label": "课程名称",
+        "required": true
+      },
+      {
+        "name": "courseInfo",
+        "label": "课程信息",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "招生课程展架",
+      "教育",
+      "培训",
+      "机构",
+      "课程"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成招生课程展架",
+      "适合机构大厅",
+      "校区门口和活动现场"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "课程标题在上",
+      "适合人群",
+      "课程收益",
+      "时间地点和报名入口纵向分区"
+    ]
+  },
+  {
+    "id": "adimg_template_0031",
+    "name": "医美服务展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "医美",
+      "美容",
+      "养生",
+      "口腔",
+      "服务业"
+    ],
+    "styleTags": [
+      "premium",
+      "clean_layout",
+      "service_ad",
+      "print_ready"
+    ],
+    "layoutPattern": "高端服务主视觉，上方项目名，中部项目亮点，底部预约入口，避免夸大承诺。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成医美或服务类展架，强调专业、干净、可信赖和预约转化。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "serviceName",
+        "label": "服务项目",
+        "required": true
+      },
+      {
+        "name": "benefits",
+        "label": "服务亮点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "医美服务展架",
+      "医美",
+      "美容",
+      "养生",
+      "口腔",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成医美或服务类展架",
+      "强调专业",
+      "干净",
+      "可信赖和预约转化"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "高端服务主视觉",
+      "上方项目名",
+      "中部项目亮点",
+      "底部预约入口",
+      "避免夸大承诺"
+    ]
+  },
+  {
+    "id": "adimg_template_0032",
+    "name": "展会招商展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "招商",
+      "展会",
+      "加盟",
+      "企业"
+    ],
+    "styleTags": [
+      "event",
+      "corporate",
+      "high_contrast",
+      "print_ready"
+    ],
+    "layoutPattern": "招商主题大标题，品牌实力、合作优势、联系方式分块展示，适合展位通道。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成展会招商展架，突出合作价值、品牌实力和联系入口。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "招商标题",
+        "required": true
+      },
+      {
+        "name": "advantages",
+        "label": "合作优势",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "展会招商展架",
+      "招商",
+      "加盟",
+      "企业"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成展会招商展架",
+      "突出合作价值",
+      "品牌实力和联系入口"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "招商主题大标题",
+      "品牌实力",
+      "合作优势",
+      "联系方式分块展示",
+      "适合展位通道"
+    ]
+  },
+  {
+    "id": "adimg_template_0033",
+    "name": "上传图改展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "活动",
+      "门店",
+      "品牌",
+      "企业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "rollup_banner",
+      "print_ready",
+      "clean_layout"
+    ],
+    "layoutPattern": "保留上传主体或品牌视觉，重构为竖版展架版式，标题、卖点和底部联系区清晰。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于上传图生成易拉宝展架，保留核心主体并增强竖版广告信息层级。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架标题",
+        "required": true
+      },
+      {
+        "name": "subject",
+        "label": "保留主体",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "上传图改展架",
+      "活动",
+      "门店",
+      "品牌",
+      "企业"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "基于上传图生成易拉宝展架",
+      "保留核心主体并增强竖版广告信息层级"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "保留上传主体或品牌视觉",
+      "重构为竖版展架版式",
+      "标题",
+      "卖点和底部联系区清晰"
+    ]
+  },
+  {
+    "id": "adimg_template_0034",
+    "name": "门型展架场景图",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "门店",
+      "活动",
+      "展会",
+      "招商"
+    ],
+    "styleTags": [
+      "scene_mockup",
+      "print_ready",
+      "commercial_ad",
+      "photorealistic"
+    ],
+    "layoutPattern": "展示门型展架实际摆放效果，展架画面竖直清晰，周围环境不喧宾夺主。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成门型展架现场效果图，强调物料真实尺寸、摆放关系和画面可读性。",
+    "negativeConstraints": [
+      "不要把信息堆得过密",
+      "不要让联系方式和二维码区域模糊",
+      "不要改变用户提供的品牌或课程名称"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架主标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "门型展架场景图",
+      "门店",
+      "活动",
+      "招商"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成门型展架现场效果图",
+      "强调物料真实尺寸",
+      "摆放关系和画面可读性"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "展示门型展架实际摆放效果",
+      "展架画面竖直清晰",
+      "周围环境不喧宾夺主"
+    ]
+  },
+  {
+    "id": "adimg_template_0107",
+    "name": "企业服务展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "企业服务",
+      "B2B",
+      "咨询"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "rollup_banner"
+    ],
+    "layoutPattern": "顶部品牌和主张，中段服务模块，底部联系方式或二维码预留，竖版安全边距明确。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成企业服务展架，突出服务模块、信任信息和咨询入口。",
+    "negativeConstraints": [
+      "竖版信息不能拥挤",
+      "不要编造联系方式或二维码",
+      "底部行动区必须留出安全边距"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架标题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "内容分区",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "企业服务展架",
+      "企业服务",
+      "B2B",
+      "咨询"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成企业服务展架",
+      "突出服务模块",
+      "信任信息和咨询入口"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "顶部品牌和主张",
+      "中段服务模块",
+      "底部联系方式或二维码预留",
+      "竖版安全边距明确"
+    ]
+  },
+  {
+    "id": "adimg_template_0108",
+    "name": "医疗门诊展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "医疗",
+      "门诊",
+      "健康"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "rollup_banner"
+    ],
+    "layoutPattern": "项目名称、适用人群、预约方式和注意事项分层，色彩清洁可信。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成医疗门诊展架，突出项目说明、预约路径和合规文字。",
+    "negativeConstraints": [
+      "竖版信息不能拥挤",
+      "不要编造联系方式或二维码",
+      "底部行动区必须留出安全边距"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架标题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "内容分区",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "医疗门诊展架",
+      "医疗",
+      "门诊",
+      "健康"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成医疗门诊展架",
+      "突出项目说明",
+      "预约路径和合规文字"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "项目名称",
+      "适用人群",
+      "预约方式和注意事项分层",
+      "色彩清洁可信"
+    ]
+  },
+  {
+    "id": "adimg_template_0109",
+    "name": "教育课程展架",
+    "taskType": "rollup_banner",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "preserve_subject",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "教育",
+      "课程",
+      "培训"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "rollup_banner"
+    ],
+    "layoutPattern": "课程体系、师资亮点和报名入口纵向排布，标题在远处可读。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成教育课程展架，突出课程体系、报名信息和远距识别。",
+    "negativeConstraints": [
+      "竖版信息不能拥挤",
+      "不要编造联系方式或二维码",
+      "底部行动区必须留出安全边距"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "展架标题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "内容分区",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "教育课程展架",
+      "教育",
+      "课程",
+      "培训"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "生成教育课程展架",
+      "突出课程体系",
+      "报名信息和远距识别"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "课程体系",
+      "师资亮点和报名入口纵向排布",
+      "标题在远处可读"
+    ]
+  },
+  {
+    "id": "adimg_template_0035",
+    "name": "会议背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "会议",
+      "企业",
+      "论坛",
+      "培训"
+    ],
+    "styleTags": [
+      "event",
+      "corporate",
+      "clean_layout",
+      "scene_render"
+    ],
+    "layoutPattern": "横版会议背景，主标题居中偏上，副标题、时间、地点和主办方分层，适合舞台屏幕或喷绘。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成会议背景板视觉，稳重、清晰、适合线下会议拍照和直播。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "会议名称",
+        "required": true
+      },
+      {
+        "name": "eventInfo",
+        "label": "时间地点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "会议背景板",
+      "企业",
+      "论坛",
+      "培训"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成会议背景板视觉",
+      "稳重",
+      "清晰",
+      "适合线下会议拍照和直播"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "横版会议背景",
+      "主标题居中偏上",
+      "副标题",
+      "时间",
+      "地点和主办方分层",
+      "适合舞台屏幕或喷绘"
+    ]
+  },
+  {
+    "id": "adimg_template_0036",
+    "name": "开业活动背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "开业",
+      "门店",
+      "餐饮",
+      "零售"
+    ],
+    "styleTags": [
+      "opening",
+      "festival_promotion",
+      "high_contrast",
+      "scene_render"
+    ],
+    "layoutPattern": "开业主题强，品牌名和活动主标题大，背景喜庆但不廉价，适合拍照打卡。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成开业活动背景板，突出开业氛围、品牌识别和现场拍照效果。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "storeName",
+        "label": "门店名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "活动标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "开业活动背景板",
+      "开业",
+      "门店",
+      "餐饮",
+      "零售"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成开业活动背景板",
+      "突出开业氛围",
+      "品牌识别和现场拍照效果"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "开业主题强",
+      "品牌名和活动主标题大",
+      "背景喜庆但不廉价",
+      "适合拍照打卡"
+    ]
+  },
+  {
+    "id": "adimg_template_0037",
+    "name": "展会展位背景",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "展会",
+      "招商",
+      "企业",
+      "产品"
+    ],
+    "styleTags": [
+      "exhibition",
+      "corporate",
+      "commercial_ad",
+      "scene_render"
+    ],
+    "layoutPattern": "展位背板与展台空间协调，品牌主视觉清晰，卖点或产品图不过度拥挤。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成展会展位背景板，强调远距离识别、品牌专业感和展台落地效果。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "展会主题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "展会展位背景",
+      "展会",
+      "招商",
+      "企业",
+      "产品"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成展会展位背景板",
+      "强调远距离识别",
+      "品牌专业感和展台落地效果"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "展位背板与展台空间协调",
+      "品牌主视觉清晰",
+      "卖点或产品图不过度拥挤"
+    ]
+  },
+  {
+    "id": "adimg_template_0038",
+    "name": "签到墙",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "活动",
+      "婚礼",
+      "发布会",
+      "年会",
+      "展会"
+    ],
+    "styleTags": [
+      "photo_wall",
+      "event",
+      "premium",
+      "scene_render"
+    ],
+    "layoutPattern": "横向签到拍照墙，logo或活动名重复规律分布，中心区域适合人物合影。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成活动签到墙，兼顾品牌露出、拍照背景和现场氛围。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "活动",
+      "婚礼",
+      "年会",
+      "展会"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成活动签到墙",
+      "兼顾品牌露出",
+      "拍照背景和现场氛围"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "横向签到拍照墙",
+      "logo或活动名重复规律分布",
+      "中心区域适合人物合影"
+    ]
+  },
+  {
+    "id": "adimg_template_0039",
+    "name": "舞台主视觉",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "演出",
+      "年会",
+      "发布会",
+      "活动"
+    ],
+    "styleTags": [
+      "stage_visual",
+      "high_contrast",
+      "event",
+      "scene_render"
+    ],
+    "layoutPattern": "舞台大屏主视觉，中心标题清晰，两侧装饰延展，适合灯光和现场大屏观看。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成舞台主视觉背景，强调视觉冲击、标题可读和现场灯光适配。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "舞台主标题",
+        "required": true
+      },
+      {
+        "name": "theme",
+        "label": "活动主题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "舞台主视觉",
+      "演出",
+      "年会",
+      "活动"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成舞台主视觉背景",
+      "强调视觉冲击",
+      "标题可读和现场灯光适配"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "舞台大屏主视觉",
+      "中心标题清晰",
+      "两侧装饰延展",
+      "适合灯光和现场大屏观看"
+    ]
+  },
+  {
+    "id": "adimg_template_0040",
+    "name": "年会背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "年会",
+      "企业",
+      "活动",
+      "晚宴"
+    ],
+    "styleTags": [
+      "event",
+      "premium",
+      "celebration",
+      "scene_render"
+    ],
+    "layoutPattern": "年会主题、企业名、年份信息分层，背景有庆典感但不杂乱。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成年会活动背景板，适合舞台拍照、颁奖和企业氛围展示。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "companyName",
+        "label": "企业名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "年会主题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "年会背景板",
+      "年会",
+      "企业",
+      "活动",
+      "晚宴"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成年会活动背景板",
+      "适合舞台拍照",
+      "颁奖和企业氛围展示"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "年会主题",
+      "企业名",
+      "年份信息分层",
+      "背景有庆典感但不杂乱"
+    ]
+  },
+  {
+    "id": "adimg_template_0041",
+    "name": "发布会背景",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "style_reference_only",
+      "background_replace",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "发布会",
+      "新品",
+      "品牌",
+      "产品"
+    ],
+    "styleTags": [
+      "launch_event",
+      "premium",
+      "technology",
+      "scene_render"
+    ],
+    "layoutPattern": "新品或发布会主题居中，产品轮廓或抽象科技元素做背景，留出主持人站位。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成新品发布会背景板，突出主题、产品感和高级品牌调性。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "发布会名称",
+        "required": true
+      },
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "发布会背景",
+      "新品",
+      "品牌",
+      "产品"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成新品发布会背景板",
+      "突出主题",
+      "产品感和高级品牌调性"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "新品或发布会主题居中",
+      "产品轮廓或抽象科技元素做背景",
+      "留出主持人站位"
+    ]
+  },
+  {
+    "id": "adimg_template_0042",
+    "name": "上传现场图改背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "活动",
+      "会议",
+      "展会",
+      "企业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "scene_mockup",
+      "event",
+      "production_ready"
+    ],
+    "layoutPattern": "基于上传现场空间保留舞台、墙面、灯光和透视，只替换背景板画面。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "把上传现场图改成活动背景板效果图，保留空间结构并让背景画面真实贴合。",
+    "negativeConstraints": [
+      "不要让主标题被人物或装饰遮挡",
+      "不要生成不可落地的大面积复杂细节",
+      "不要遗漏用户提供的活动名称"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "editArea",
+        "label": "背景板区域",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "上传现场图改背景板",
+      "活动",
+      "展会",
+      "企业"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "把上传现场图改成活动背景板效果图",
+      "保留空间结构并让背景画面真实贴合"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "基于上传现场空间保留舞台",
+      "墙面",
+      "灯光和透视",
+      "只替换背景板画面"
+    ]
+  },
+  {
+    "id": "adimg_template_0113",
+    "name": "发布会主视觉背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "发布会",
+      "品牌",
+      "新品"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "event_backdrop"
+    ],
+    "layoutPattern": "大标题居中，产品或品牌符号在侧，背景大面积干净，适合拍照和直播。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成发布会主视觉背景板，突出发布主题、品牌识别和现场拍照效果。",
+    "negativeConstraints": [
+      "背景板主标题不能被人物或舞台设备遮挡",
+      "不要使用过多小字",
+      "喷绘、桁架或屏幕比例必须合理"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "venue",
+        "label": "场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "发布会主视觉背景板",
+      "品牌",
+      "新品"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成发布会主视觉背景板",
+      "突出发布主题",
+      "品牌识别和现场拍照效果"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "大标题居中",
+      "产品或品牌符号在侧",
+      "背景大面积干净",
+      "适合拍照和直播"
+    ]
+  },
+  {
+    "id": "adimg_template_0114",
+    "name": "论坛峰会背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "论坛",
+      "峰会",
+      "会议"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "event_backdrop"
+    ],
+    "layoutPattern": "会议名、时间地点和主办方区域清楚，横向大屏比例，背景纹理克制。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成论坛峰会背景板，突出会议主题、信息层级和远距阅读。",
+    "negativeConstraints": [
+      "背景板主标题不能被人物或舞台设备遮挡",
+      "不要使用过多小字",
+      "喷绘、桁架或屏幕比例必须合理"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "venue",
+        "label": "场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "论坛峰会背景板",
+      "论坛",
+      "峰会"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成论坛峰会背景板",
+      "突出会议主题",
+      "信息层级和远距阅读"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "会议名",
+      "时间地点和主办方区域清楚",
+      "横向大屏比例",
+      "背景纹理克制"
+    ]
+  },
+  {
+    "id": "adimg_template_0115",
+    "name": "年会舞台背景板",
+    "taskType": "event_backdrop",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "年会",
+      "企业",
+      "晚会"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "event_backdrop"
+    ],
+    "layoutPattern": "主标题和年度主题居中，企业标识区清楚，舞台灯光区不压字。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成企业年会舞台背景板，突出年度主题、企业识别和舞台完成度。",
+    "negativeConstraints": [
+      "背景板主标题不能被人物或舞台设备遮挡",
+      "不要使用过多小字",
+      "喷绘、桁架或屏幕比例必须合理"
+    ],
+    "variables": [
+      {
+        "name": "eventName",
+        "label": "活动名称",
+        "required": true
+      },
+      {
+        "name": "venue",
+        "label": "场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "年会舞台背景板",
+      "年会",
+      "企业",
+      "晚会"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "生成企业年会舞台背景板",
+      "突出年度主题",
+      "企业识别和舞台完成度"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "主标题和年度主题居中",
+      "企业标识区清楚",
+      "舞台灯光区不压字"
+    ]
+  },
+  {
+    "id": "adimg_template_0043",
+    "name": "商场导视牌",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "商场",
+      "零售",
+      "商业空间",
+      "综合体"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "commercial_space",
+      "clean_layout",
+      "production_ready"
+    ],
+    "layoutPattern": "商场空间内立式或墙面导视牌，箭头、楼层、店铺分类信息清楚，材质与空间匹配。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成商场导视牌效果图，强调方向信息可读、材质真实和空间适配。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "signContent",
+        "label": "导视内容",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "商场导视牌",
+      "商场",
+      "零售",
+      "商业空间",
+      "综合体"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成商场导视牌效果图",
+      "强调方向信息可读",
+      "材质真实和空间适配"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "商场空间内立式或墙面导视牌",
+      "箭头",
+      "楼层",
+      "店铺分类信息清楚",
+      "材质与空间匹配"
+    ]
+  },
+  {
+    "id": "adimg_template_0044",
+    "name": "楼层索引牌",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "办公楼",
+      "商场",
+      "医院",
+      "学校"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "typography",
+      "clean_layout",
+      "production_ready"
+    ],
+    "layoutPattern": "楼层信息纵向排列，楼层号大，单位或科室名称清楚，适合电梯厅或入口。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成楼层索引标识牌，突出楼层信息层级、中文可读性和安装质感。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "floorInfo",
+        "label": "楼层信息",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "楼层索引牌",
+      "办公楼",
+      "商场",
+      "医院",
+      "学校"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成楼层索引标识牌",
+      "突出楼层信息层级",
+      "中文可读性和安装质感"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "楼层信息纵向排列",
+      "楼层号大",
+      "单位或科室名称清楚",
+      "适合电梯厅或入口"
+    ]
+  },
+  {
+    "id": "adimg_template_0045",
+    "name": "科室门牌",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "医院",
+      "学校",
+      "办公",
+      "机构"
+    ],
+    "styleTags": [
+      "signage",
+      "minimal",
+      "production_ready",
+      "clean_layout"
+    ],
+    "layoutPattern": "门牌尺寸小而清楚，科室名称、编号和方向符号简洁，安装在门侧或墙面。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成科室或办公室门牌效果图，强调可制作、清晰、规范。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "roomName",
+        "label": "门牌名称",
+        "required": true
+      },
+      {
+        "name": "roomNumber",
+        "label": "编号",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "科室门牌",
+      "医院",
+      "学校",
+      "办公",
+      "机构"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成科室或办公室门牌效果图",
+      "强调可制作",
+      "清晰",
+      "规范"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "门牌尺寸小而清楚",
+      "科室名称",
+      "编号和方向符号简洁",
+      "安装在门侧或墙面"
+    ]
+  },
+  {
+    "id": "adimg_template_0046",
+    "name": "户外立式标识",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "园区",
+      "景区",
+      "企业",
+      "商业街"
+    ],
+    "styleTags": [
+      "outdoor_signage",
+      "wayfinding",
+      "photorealistic",
+      "production_ready"
+    ],
+    "layoutPattern": "户外精神堡垒或立式标识，主体稳固，文字和箭头清晰，周边环境真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成户外立式标识牌效果图，突出材质、结构稳定和远距离识别。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "signContent",
+        "label": "标识内容",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "户外立式标识",
+      "园区",
+      "景区",
+      "企业",
+      "商业街"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成户外立式标识牌效果图",
+      "突出材质",
+      "结构稳定和远距离识别"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "户外精神堡垒或立式标识",
+      "主体稳固",
+      "文字和箭头清晰",
+      "周边环境真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0047",
+    "name": "景区园区导视",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "景区",
+      "园区",
+      "公园",
+      "文旅"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "outdoor_signage",
+      "natural",
+      "production_ready"
+    ],
+    "layoutPattern": "导视牌与户外环境协调，路线、图标、地名信息清楚，材质耐候。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成景区或园区导视系统效果图，兼顾环境融合和信息可读。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "destinationInfo",
+        "label": "目的地信息",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "景区园区导视",
+      "景区",
+      "园区",
+      "公园",
+      "文旅"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成景区或园区导视系统效果图",
+      "兼顾环境融合和信息可读"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "导视牌与户外环境协调",
+      "路线",
+      "图标",
+      "地名信息清楚",
+      "材质耐候"
+    ]
+  },
+  {
+    "id": "adimg_template_0048",
+    "name": "店内功能标识",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "餐饮",
+      "零售",
+      "酒店",
+      "服务业"
+    ],
+    "styleTags": [
+      "indoor_signage",
+      "clean_layout",
+      "production_ready",
+      "local_store"
+    ],
+    "layoutPattern": "店内墙面或吊牌标识，功能区名称清晰，视觉调性与门店空间统一。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成店内功能标识效果图，突出卫生间、收银、取餐、等候等功能信息。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "functionName",
+        "label": "功能名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "店内功能标识",
+      "餐饮",
+      "零售",
+      "酒店",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成店内功能标识效果图",
+      "突出卫生间",
+      "收银",
+      "取餐",
+      "等候等功能信息"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "店内墙面或吊牌标识",
+      "功能区名称清晰",
+      "视觉调性与门店空间统一"
+    ]
+  },
+  {
+    "id": "adimg_template_0049",
+    "name": "上传图加导视牌",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "商场",
+      "办公",
+      "医院",
+      "园区",
+      "门店"
+    ],
+    "styleTags": [
+      "image_editing",
+      "scene_mockup",
+      "wayfinding",
+      "production_ready"
+    ],
+    "layoutPattern": "保留上传空间结构和透视，在指定墙面或地面位置加入导视牌并贴合环境光。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于上传现场图添加导视标识，确保位置、比例、透视和材质真实。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "signContent",
+        "label": "导视内容",
+        "required": true
+      },
+      {
+        "name": "installArea",
+        "label": "安装位置",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "上传图加导视牌",
+      "商场",
+      "办公",
+      "医院",
+      "园区",
+      "门店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "基于上传现场图添加导视标识",
+      "确保位置",
+      "比例",
+      "透视和材质真实"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "保留上传空间结构和透视",
+      "在指定墙面或地面位置加入导视牌并贴合环境光"
+    ]
+  },
+  {
+    "id": "adimg_template_0050",
+    "name": "发光标识牌",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "企业",
+      "门店",
+      "商场",
+      "酒店"
+    ],
+    "styleTags": [
+      "lightbox",
+      "signage",
+      "night_lighting",
+      "production_ready"
+    ],
+    "layoutPattern": "发光标识安装在墙面或立面上，亮度均匀，文字清楚，避免过曝。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成发光标识牌效果图，强调夜间识别、制作材质和安装合理性。",
+    "negativeConstraints": [
+      "不要生成方向错误或不可读箭头",
+      "不要使用无法制作的复杂异形结构",
+      "不要让标识与空间透视脱节"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "标识文字",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "发光标识牌",
+      "企业",
+      "门店",
+      "商场",
+      "酒店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成发光标识牌效果图",
+      "强调夜间识别",
+      "制作材质和安装合理性"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "发光标识安装在墙面或立面上",
+      "亮度均匀",
+      "文字清楚",
+      "避免过曝"
+    ]
+  },
+  {
+    "id": "adimg_template_0119",
+    "name": "园区楼栋导视",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "园区",
+      "楼栋",
+      "导视"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "signage_wayfinding"
+    ],
+    "layoutPattern": "楼栋名称、方向箭头和距离信息分级，立柱或墙面安装比例真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成园区楼栋导视效果图，突出方向、楼栋识别和户外安装逻辑。",
+    "negativeConstraints": [
+      "箭头方向和区域名称必须清楚",
+      "不要编造楼层或区域编号",
+      "安装位置、比例和视距必须真实"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "导视文字",
+        "required": true
+      },
+      {
+        "name": "location",
+        "label": "安装场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "园区楼栋导视",
+      "园区",
+      "楼栋"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成园区楼栋导视效果图",
+      "突出方向",
+      "楼栋识别和户外安装逻辑"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "楼栋名称",
+      "方向箭头和距离信息分级",
+      "立柱或墙面安装比例真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0120",
+    "name": "医院科室导视",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "医院",
+      "科室",
+      "医疗"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "signage_wayfinding"
+    ],
+    "layoutPattern": "科室名称、楼层和箭头清楚，白底深字，高频路径信息优先。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成医院科室导视效果图，突出清晰路径、科室信息和可信环境。",
+    "negativeConstraints": [
+      "箭头方向和区域名称必须清楚",
+      "不要编造楼层或区域编号",
+      "安装位置、比例和视距必须真实"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "导视文字",
+        "required": true
+      },
+      {
+        "name": "location",
+        "label": "安装场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "医院科室导视",
+      "医院",
+      "科室",
+      "医疗"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成医院科室导视效果图",
+      "突出清晰路径",
+      "科室信息和可信环境"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "科室名称",
+      "楼层和箭头清楚",
+      "白底深字",
+      "高频路径信息优先"
+    ]
+  },
+  {
+    "id": "adimg_template_0121",
+    "name": "餐饮档口标识",
+    "taskType": "signage_wayfinding",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "scene_render",
+    "industries": [
+      "餐饮",
+      "档口",
+      "美食城"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "signage_wayfinding"
+    ],
+    "layoutPattern": "档口名、品类和取餐方向清楚，吊牌或灯箱与空间统一。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成餐饮档口标识效果图，突出品类识别、取餐方向和现场安装。",
+    "negativeConstraints": [
+      "箭头方向和区域名称必须清楚",
+      "不要编造楼层或区域编号",
+      "安装位置、比例和视距必须真实"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "导视文字",
+        "required": true
+      },
+      {
+        "name": "location",
+        "label": "安装场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "餐饮档口标识",
+      "餐饮",
+      "档口",
+      "美食城"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "生成餐饮档口标识效果图",
+      "突出品类识别",
+      "取餐方向和现场安装"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "档口名",
+      "品类和取餐方向清楚",
+      "吊牌或灯箱与空间统一"
+    ]
+  },
+  {
+    "id": "adimg_template_0051",
+    "name": "公司前台形象墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "办公室",
+      "科技",
+      "服务业"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "premium",
+      "clean_layout",
+      "scene_mockup"
+    ],
+    "layoutPattern": "前台接待区墙面，logo和企业名称居中或偏左，接待台、灯光和墙面材质统一。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成公司前台形象墙效果图，突出品牌专业感、材质真实和空间落地。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌或公司名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "公司前台形象墙",
+      "企业",
+      "办公室",
+      "科技",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成公司前台形象墙效果图",
+      "突出品牌专业感",
+      "材质真实和空间落地"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "前台接待区墙面",
+      "logo和企业名称居中或偏左",
+      "接待台",
+      "灯光和墙面材质统一"
+    ]
+  },
+  {
+    "id": "adimg_template_0052",
+    "name": "企业文化墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "机构",
+      "学校",
+      "园区"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "typography",
+      "infographic",
+      "production_ready"
+    ],
+    "layoutPattern": "文化理念、发展历程或价值观模块化排版，图文结合，墙面留白清楚。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成企业文化墙设计效果图，强调信息组织、品牌色和墙面可制作。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "文化墙主题",
+        "required": true
+      },
+      {
+        "name": "sections",
+        "label": "内容模块",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "企业文化墙",
+      "企业",
+      "机构",
+      "学校",
+      "园区"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成企业文化墙设计效果图",
+      "强调信息组织",
+      "品牌色和墙面可制作"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "文化理念",
+      "发展历程或价值观模块化排版",
+      "图文结合",
+      "墙面留白清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0053",
+    "name": "荣誉墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "学校",
+      "机构",
+      "医院"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "premium",
+      "gallery",
+      "production_ready"
+    ],
+    "layoutPattern": "奖牌、证书、照片或时间线整齐陈列，主标题清楚，整体稳重有序。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成荣誉墙效果图，突出权威感、展示秩序和可维护的版面结构。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "荣誉墙标题",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "荣誉墙",
+      "企业",
+      "学校",
+      "机构",
+      "医院"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成荣誉墙效果图",
+      "突出权威感",
+      "展示秩序和可维护的版面结构"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "奖牌",
+      "证书",
+      "照片或时间线整齐陈列",
+      "主标题清楚",
+      "整体稳重有序"
+    ]
+  },
+  {
+    "id": "adimg_template_0054",
+    "name": "店铺品牌墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "餐饮",
+      "零售",
+      "咖啡",
+      "奶茶",
+      "美业"
+    ],
+    "styleTags": [
+      "local_store",
+      "brand_wall",
+      "warm_lifestyle",
+      "scene_mockup"
+    ],
+    "layoutPattern": "店内打卡墙或品牌墙，品牌名、口号和装饰元素贴合门店视觉调性。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成店铺品牌墙效果图，适合顾客拍照、品牌露出和空间氛围营造。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": true
+      },
+      {
+        "name": "slogan",
+        "label": "品牌口号",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "店铺品牌墙",
+      "餐饮",
+      "零售",
+      "咖啡",
+      "奶茶",
+      "美业"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成店铺品牌墙效果图",
+      "适合顾客拍照",
+      "品牌露出和空间氛围营造"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "店内打卡墙或品牌墙",
+      "品牌名",
+      "口号和装饰元素贴合门店视觉调性"
+    ]
+  },
+  {
+    "id": "adimg_template_0055",
+    "name": "办公室 Logo 上墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "办公室",
+      "科技",
+      "服务业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "scene_mockup",
+      "minimal",
+      "production_ready"
+    ],
+    "layoutPattern": "在办公室墙面上安装logo字，保留墙面透视、地面、天花和光影，logo材质真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于办公室空间做 logo 上墙效果图，强调尺寸比例、安装位置和材质光影。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "logo文字",
+        "required": true
+      },
+      {
+        "name": "material",
+        "label": "logo材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "办公室 Logo 上墙",
+      "企业",
+      "办公室",
+      "科技",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "基于办公室空间做",
+      "logo",
+      "上墙效果图",
+      "强调尺寸比例",
+      "安装位置和材质光影"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "在办公室墙面上安装logo字",
+      "保留墙面透视",
+      "地面",
+      "天花和光影",
+      "logo材质真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0056",
+    "name": "校园机构形象墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "学校",
+      "培训",
+      "机构",
+      "文化空间"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "education",
+      "clean_layout",
+      "production_ready"
+    ],
+    "layoutPattern": "校园或机构入口墙面，校名、理念、图标或照片墙有序展示，气质亲和专业。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成校园或机构形象墙效果图，强调教育属性、亲和感和清晰信息层级。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "institutionName",
+        "label": "机构名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "校园机构形象墙",
+      "学校",
+      "培训",
+      "机构",
+      "文化空间"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成校园或机构形象墙效果图",
+      "强调教育属性",
+      "亲和感和清晰信息层级"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "校园或机构入口墙面",
+      "校名",
+      "理念",
+      "图标或照片墙有序展示",
+      "气质亲和专业"
+    ]
+  },
+  {
+    "id": "adimg_template_0057",
+    "name": "上传墙面做形象墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "门店",
+      "机构",
+      "办公室"
+    ],
+    "styleTags": [
+      "image_editing",
+      "scene_mockup",
+      "brand_wall",
+      "production_ready"
+    ],
+    "layoutPattern": "保留上传墙面、地面、门窗和透视，只在墙面区域加入品牌墙设计。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "把上传墙面照片改成形象墙效果图，保持现场真实结构并增强品牌展示。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": true
+      },
+      {
+        "name": "wallArea",
+        "label": "墙面区域",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "上传墙面做形象墙",
+      "企业",
+      "门店",
+      "机构",
+      "办公室"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "把上传墙面照片改成形象墙效果图",
+      "保持现场真实结构并增强品牌展示"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "保留上传墙面",
+      "地面",
+      "门窗和透视",
+      "只在墙面区域加入品牌墙设计"
+    ]
+  },
+  {
+    "id": "adimg_template_0058",
+    "name": "轻奢接待区墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "企业",
+      "会所",
+      "美业",
+      "医美",
+      "酒店"
+    ],
+    "styleTags": [
+      "premium",
+      "brand_wall",
+      "warm_lighting",
+      "scene_mockup"
+    ],
+    "layoutPattern": "轻奢接待区墙面，石材、金属、灯带和logo组合，整体克制高级。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成轻奢品牌接待区形象墙，突出材质、灯光和高级空间感。",
+    "negativeConstraints": [
+      "不要改变上传空间的透视和墙面边界",
+      "不要让 logo 或品牌字变形",
+      "不要生成无法安装的悬浮结构"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "轻奢接待区墙",
+      "企业",
+      "会所",
+      "美业",
+      "医美",
+      "酒店"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成轻奢品牌接待区形象墙",
+      "突出材质",
+      "灯光和高级空间感"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "轻奢接待区墙面",
+      "石材",
+      "金属",
+      "灯带和logo组合",
+      "整体克制高级"
+    ]
+  },
+  {
+    "id": "adimg_template_0125",
+    "name": "科技公司前台墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "科技",
+      "企业",
+      "办公室"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "brand_wall"
+    ],
+    "layoutPattern": "logo居中偏上，墙面用微水泥、金属字和线性灯带，前台台面比例真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成科技公司前台形象墙，突出品牌名、材质层次和办公室空间。",
+    "negativeConstraints": [
+      "不要改变墙体边界、插座、门洞和现场透视",
+      "logo 和品牌文字必须清楚",
+      "材质、灯带和安装厚度必须合理"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名",
+        "required": true
+      },
+      {
+        "name": "wallMaterial",
+        "label": "墙面材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "科技公司前台墙",
+      "科技",
+      "企业",
+      "办公室"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成科技公司前台形象墙",
+      "突出品牌名",
+      "材质层次和办公室空间"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "logo居中偏上",
+      "墙面用微水泥",
+      "金属字和线性灯带",
+      "前台台面比例真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0126",
+    "name": "律所接待形象墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "律所",
+      "法律",
+      "咨询"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "brand_wall"
+    ],
+    "layoutPattern": "深色木饰面或石材墙，金属字清晰，接待区稳重，灯光不刺眼。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成律所接待形象墙，突出专业可信、品牌文字和墙面材质。",
+    "negativeConstraints": [
+      "不要改变墙体边界、插座、门洞和现场透视",
+      "logo 和品牌文字必须清楚",
+      "材质、灯带和安装厚度必须合理"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名",
+        "required": true
+      },
+      {
+        "name": "wallMaterial",
+        "label": "墙面材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "律所接待形象墙",
+      "律所",
+      "法律",
+      "咨询"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成律所接待形象墙",
+      "突出专业可信",
+      "品牌文字和墙面材质"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "深色木饰面或石材墙",
+      "金属字清晰",
+      "接待区稳重",
+      "灯光不刺眼"
+    ]
+  },
+  {
+    "id": "adimg_template_0127",
+    "name": "诊所品牌墙",
+    "taskType": "brand_wall",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_structure",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "诊所",
+      "医疗",
+      "口腔"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "brand_wall"
+    ],
+    "layoutPattern": "白色或浅灰墙面，logo和科室名称清楚，灯带柔和，医疗清洁感明确。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成诊所品牌墙效果图，突出清洁、可信和前台识别。",
+    "negativeConstraints": [
+      "不要改变墙体边界、插座、门洞和现场透视",
+      "logo 和品牌文字必须清楚",
+      "材质、灯带和安装厚度必须合理"
+    ],
+    "variables": [
+      {
+        "name": "brandName",
+        "label": "品牌名",
+        "required": true
+      },
+      {
+        "name": "wallMaterial",
+        "label": "墙面材质",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "诊所品牌墙",
+      "诊所",
+      "医疗",
+      "口腔"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "生成诊所品牌墙效果图",
+      "突出清洁",
+      "可信和前台识别"
+    ],
+    "visualKeywords": [
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "白色或浅灰墙面",
+      "logo和科室名称清楚",
+      "灯带柔和",
+      "医疗清洁感明确"
+    ]
+  },
+  {
+    "id": "adimg_template_0059",
+    "name": "门店开业促销图",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "本地门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "styleTags": [
+      "opening",
+      "local_store",
+      "high_contrast",
+      "commercial_ad"
+    ],
+    "layoutPattern": "门店名、开业主题、主推福利和到店引导组成清晰促销画面。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成本地门店开业促销图，适合朋友圈、门口海报和社群传播。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "storeName",
+        "label": "门店名称",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "促销福利",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门店开业促销图",
+      "本地门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成本地门店开业促销图",
+      "适合朋友圈",
+      "门口海报和社群传播"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "门店名",
+      "开业主题",
+      "主推福利和到店引导组成清晰促销画面"
+    ]
+  },
+  {
+    "id": "adimg_template_0060",
+    "name": "到店团购海报",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "餐饮",
+      "美业",
+      "健身",
+      "亲子",
+      "服务业"
+    ],
+    "styleTags": [
+      "local_store",
+      "commercial_ad",
+      "high_contrast",
+      "social_media"
+    ],
+    "layoutPattern": "团购套餐或到店权益为核心，产品/服务图大，价格和预约入口清楚但不编造。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成到店团购宣传海报，突出套餐价值、门店信任感和行动引导。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "团购标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "团购内容",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "到店团购海报",
+      "餐饮",
+      "美业",
+      "健身",
+      "亲子",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成到店团购宣传海报",
+      "突出套餐价值",
+      "门店信任感和行动引导"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "团购套餐或到店权益为核心",
+      "产品",
+      "服务图大",
+      "价格和预约入口清楚但不编造"
+    ]
+  },
+  {
+    "id": "adimg_template_0061",
+    "name": "门口水牌促销",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "none",
+      "style_reference_only"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "餐饮",
+      "咖啡",
+      "奶茶",
+      "零售"
+    ],
+    "styleTags": [
+      "sidewalk_sign",
+      "local_store",
+      "print_ready",
+      "commercial_ad"
+    ],
+    "layoutPattern": "竖向水牌或A字牌，主推单品/活动醒目，门口摆放效果真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成门口水牌促销画面，适合小店外摆、活动告知和新品推荐。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "水牌标题",
+        "required": true
+      },
+      {
+        "name": "productName",
+        "label": "主推产品",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门口水牌促销",
+      "餐饮",
+      "咖啡",
+      "奶茶",
+      "零售"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成门口水牌促销画面",
+      "适合小店外摆",
+      "活动告知和新品推荐"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "竖向水牌或A字牌",
+      "主推单品",
+      "活动醒目",
+      "门口摆放效果真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0062",
+    "name": "店内 POP 物料",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "scene_mockup",
+      "preserve_subject",
+      "none"
+    ],
+    "outputType": "mockup",
+    "industries": [
+      "零售",
+      "餐饮",
+      "商超",
+      "美妆"
+    ],
+    "styleTags": [
+      "pop_display",
+      "commercial_ad",
+      "print_ready",
+      "local_store"
+    ],
+    "layoutPattern": "货架、收银台或桌面附近的POP物料，尺寸真实，信息少而清楚。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成店内POP促销物料效果图，强调物料摆放、商品关联和可读促销信息。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "POP标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "促销信息",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "店内 POP 物料",
+      "零售",
+      "餐饮",
+      "商超",
+      "美妆"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成店内POP促销物料效果图",
+      "强调物料摆放",
+      "商品关联和可读促销信息"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "货架",
+      "收银台或桌面附近的POP物料",
+      "尺寸真实",
+      "信息少而清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0063",
+    "name": "社区服务促销",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "家政",
+      "维修",
+      "宠物",
+      "干洗",
+      "生活服务"
+    ],
+    "styleTags": [
+      "local_store",
+      "trustworthy",
+      "clean_layout",
+      "commercial_ad"
+    ],
+    "layoutPattern": "服务项目、服务范围、优势和预约入口清楚排列，整体可信不过度营销。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成社区生活服务促销图，适合门店张贴和社区群传播。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "serviceName",
+        "label": "服务名称",
+        "required": true
+      },
+      {
+        "name": "benefits",
+        "label": "服务优势",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "社区服务促销",
+      "家政",
+      "维修",
+      "宠物",
+      "干洗",
+      "生活服务"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成社区生活服务促销图",
+      "适合门店张贴和社区群传播"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "服务项目",
+      "服务范围",
+      "优势和预约入口清楚排列",
+      "整体可信不过度营销"
+    ]
+  },
+  {
+    "id": "adimg_template_0064",
+    "name": "上传门店照片加促销氛围",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "本地门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "styleTags": [
+      "image_editing",
+      "local_store",
+      "commercial_ad",
+      "scene_mockup"
+    ],
+    "layoutPattern": "保留上传门店结构和招牌，在橱窗、门口或空白区域加入促销海报、水牌、气球或灯光氛围。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于门店照片增强促销氛围，保留现场真实结构并加入可落地宣传物料。",
+    "negativeConstraints": [
+      "不要编造价格和活动日期",
+      "不要遮挡门店主体和入口",
+      "不要让促销信息杂乱不可读"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "促销标题",
+        "required": true
+      },
+      {
+        "name": "installArea",
+        "label": "物料位置",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "上传门店照片加促销氛围",
+      "本地门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "基于门店照片增强促销氛围",
+      "保留现场真实结构并加入可落地宣传物料"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "保留上传门店结构和招牌",
+      "在橱窗",
+      "门口或空白区域加入促销海报",
+      "水牌",
+      "气球或灯光氛围"
+    ]
+  },
+  {
+    "id": "adimg_template_0131",
+    "name": "开业水牌促销",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "开业",
+      "水牌",
+      "门店"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "local_store_promotion"
+    ],
+    "layoutPattern": "水牌竖版，主标题、开业权益和门店引导分层，适合店门口摆放。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成开业水牌促销图，突出主标题、权益文案和门口转化。",
+    "negativeConstraints": [
+      "不要编造价格、日期、门店地址或优惠条件",
+      "促销利益点必须醒目",
+      "产品、门店或服务主体不能被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "促销标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "优惠内容",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "开业水牌促销",
+      "开业",
+      "门店"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成开业水牌促销图",
+      "突出主标题",
+      "权益文案和门口转化"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "水牌竖版",
+      "主标题",
+      "开业权益和门店引导分层",
+      "适合店门口摆放"
+    ]
+  },
+  {
+    "id": "adimg_template_0132",
+    "name": "外卖平台促销图",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "外卖",
+      "餐饮",
+      "平台"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "local_store_promotion"
+    ],
+    "layoutPattern": "菜品主体大，平台活动文案和下单引导清楚，避免虚构满减。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成外卖平台促销图，突出菜品、优惠文案和下单行动。",
+    "negativeConstraints": [
+      "不要编造价格、日期、门店地址或优惠条件",
+      "促销利益点必须醒目",
+      "产品、门店或服务主体不能被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "促销标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "优惠内容",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "外卖平台促销图",
+      "外卖",
+      "餐饮",
+      "平台"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成外卖平台促销图",
+      "突出菜品",
+      "优惠文案和下单行动"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "菜品主体大",
+      "平台活动文案和下单引导清楚",
+      "避免虚构满减"
+    ]
+  },
+  {
+    "id": "adimg_template_0133",
+    "name": "到店套餐促销",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "到店",
+      "套餐",
+      "服务"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "local_store_promotion"
+    ],
+    "layoutPattern": "套餐名、服务内容、价格区和预约入口分区，主标题强。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成到店套餐促销图，突出套餐内容、价格信息和预约转化。",
+    "negativeConstraints": [
+      "不要编造价格、日期、门店地址或优惠条件",
+      "促销利益点必须醒目",
+      "产品、门店或服务主体不能被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "促销标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "优惠内容",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "到店套餐促销",
+      "到店",
+      "套餐",
+      "服务"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成到店套餐促销图",
+      "突出套餐内容",
+      "价格信息和预约转化"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "套餐名",
+      "服务内容",
+      "价格区和预约入口分区",
+      "主标题强"
+    ]
+  },
+  {
+    "id": "adimg_template_0134",
+    "name": "社区团购商品图",
+    "taskType": "local_store_promotion",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "poster",
+    "industries": [
+      "社区",
+      "团购",
+      "生鲜"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "local_store_promotion"
+    ],
+    "layoutPattern": "商品组图、规格、到货时间和下单入口清楚，只使用用户提供信息。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成社区团购商品图，突出商品、规格和下单引导。",
+    "negativeConstraints": [
+      "不要编造价格、日期、门店地址或优惠条件",
+      "促销利益点必须醒目",
+      "产品、门店或服务主体不能被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "促销标题",
+        "required": true
+      },
+      {
+        "name": "offer",
+        "label": "优惠内容",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "社区团购商品图",
+      "社区",
+      "生鲜"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "生成社区团购商品图",
+      "突出商品",
+      "规格和下单引导"
+    ],
+    "visualKeywords": [
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "商品组图",
+      "规格",
+      "到货时间和下单入口清楚",
+      "只使用用户提供信息"
+    ]
+  },
+  {
+    "id": "adimg_template_0065",
+    "name": "白底产品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "电商",
+      "日用品",
+      "数码",
+      "美妆",
+      "食品"
+    ],
+    "styleTags": [
+      "ecommerce",
+      "clean_layout",
+      "studio_product",
+      "product_visual"
+    ],
+    "layoutPattern": "白底或浅色背景，产品居中，占比充足，阴影自然，适合平台主图。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成电商白底产品主图，突出产品轮廓、干净质感和平台合规感。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "白底产品主图",
+      "电商",
+      "日用品",
+      "数码",
+      "美妆",
+      "食品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成电商白底产品主图",
+      "突出产品轮廓",
+      "干净质感和平台合规感"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "白底或浅色背景",
+      "产品居中",
+      "占比充足",
+      "阴影自然",
+      "适合平台主图"
+    ]
+  },
+  {
+    "id": "adimg_template_0066",
+    "name": "场景产品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "电商",
+      "家居",
+      "食品",
+      "饮品",
+      "数码"
+    ],
+    "styleTags": [
+      "ecommerce",
+      "lifestyle",
+      "studio_product",
+      "commercial_ad"
+    ],
+    "layoutPattern": "产品置于生活方式场景中，主体清楚，环境辅助说明使用场景但不抢主体。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成电商场景主图，兼顾真实使用场景、产品质感和购买吸引力。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "使用场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "场景产品主图",
+      "电商",
+      "家居",
+      "食品",
+      "饮品",
+      "数码"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成电商场景主图",
+      "兼顾真实使用场景",
+      "产品质感和购买吸引力"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品置于生活方式场景中",
+      "主体清楚",
+      "环境辅助说明使用场景但不抢主体"
+    ]
+  },
+  {
+    "id": "adimg_template_0067",
+    "name": "大促主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "电商",
+      "零售",
+      "食品",
+      "美妆",
+      "家居"
+    ],
+    "styleTags": [
+      "ecommerce",
+      "festival_promotion",
+      "high_contrast",
+      "commercial_ad"
+    ],
+    "layoutPattern": "产品主体大，促销角标、利益点和平台大促氛围清楚，不编造具体价格。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成电商大促主图，突出商品、促销氛围和主标题可读性。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "活动标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "大促主图",
+      "电商",
+      "零售",
+      "食品",
+      "美妆",
+      "家居"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成电商大促主图",
+      "突出商品",
+      "促销氛围和主标题可读性"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品主体大",
+      "促销角标",
+      "利益点和平台大促氛围清楚",
+      "不编造具体价格"
+    ]
+  },
+  {
+    "id": "adimg_template_0068",
+    "name": "食品饮品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "食品",
+      "饮品",
+      "餐饮",
+      "电商"
+    ],
+    "styleTags": [
+      "food_photography",
+      "warm_lifestyle",
+      "commercial_ad",
+      "ecommerce"
+    ],
+    "layoutPattern": "食品或饮品主体新鲜诱人，包装、口味、配料和场景氛围辅助表达。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成食品饮品电商主图，强调食欲感、产品包装和商业可投放完成度。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "食品饮品主图",
+      "食品",
+      "饮品",
+      "餐饮",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成食品饮品电商主图",
+      "强调食欲感",
+      "产品包装和商业可投放完成度"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "食品或饮品主体新鲜诱人",
+      "包装",
+      "口味",
+      "配料和场景氛围辅助表达"
+    ]
+  },
+  {
+    "id": "adimg_template_0069",
+    "name": "美妆主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "美妆",
+      "护肤",
+      "个护",
+      "电商"
+    ],
+    "styleTags": [
+      "beauty",
+      "premium",
+      "studio_product",
+      "ecommerce"
+    ],
+    "layoutPattern": "美妆产品居中，材质、液体、水滴或成分视觉围绕产品，背景干净高级。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成美妆护肤电商主图，突出高级质感、清洁背景和产品识别。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "美妆主图",
+      "美妆",
+      "护肤",
+      "个护",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成美妆护肤电商主图",
+      "突出高级质感",
+      "清洁背景和产品识别"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "美妆产品居中",
+      "材质",
+      "液体",
+      "水滴或成分视觉围绕产品",
+      "背景干净高级"
+    ]
+  },
+  {
+    "id": "adimg_template_0070",
+    "name": "数码家电主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "数码",
+      "家电",
+      "电子产品",
+      "电商"
+    ],
+    "styleTags": [
+      "technology",
+      "studio_product",
+      "clean_layout",
+      "ecommerce"
+    ],
+    "layoutPattern": "产品轮廓锐利，科技感背景简洁，功能点可用图标或短句分布。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成数码家电电商主图，强调科技质感、功能识别和平台销售感。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "数码家电主图",
+      "数码",
+      "家电",
+      "电子产品",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成数码家电电商主图",
+      "强调科技质感",
+      "功能识别和平台销售感"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品轮廓锐利",
+      "科技感背景简洁",
+      "功能点可用图标或短句分布"
+    ]
+  },
+  {
+    "id": "adimg_template_0071",
+    "name": "家居用品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "家居",
+      "家具",
+      "日用品",
+      "电商"
+    ],
+    "styleTags": [
+      "home_lifestyle",
+      "warm_lifestyle",
+      "ecommerce",
+      "commercial_ad"
+    ],
+    "layoutPattern": "产品在家居场景中自然摆放，空间干净，尺寸比例真实，主体突出。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成家居用品电商主图，强调生活方式、真实比例和购买联想。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "家居用品主图",
+      "家居",
+      "家具",
+      "日用品",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成家居用品电商主图",
+      "强调生活方式",
+      "真实比例和购买联想"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品在家居场景中自然摆放",
+      "空间干净",
+      "尺寸比例真实",
+      "主体突出"
+    ]
+  },
+  {
+    "id": "adimg_template_0072",
+    "name": "上传产品图优化主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "local_edit"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "电商",
+      "产品",
+      "美妆",
+      "食品",
+      "数码",
+      "家居"
+    ],
+    "styleTags": [
+      "image_editing",
+      "ecommerce",
+      "background_replace",
+      "studio_product"
+    ],
+    "layoutPattern": "保留上传产品外观、包装和标签，重构背景、光影和构图，形成平台主图。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于上传产品图优化电商主图，保留商品主体并提升商业摄影质感。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效或认证",
+      "不要让商品主体被装饰遮挡"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "backgroundStyle",
+        "label": "背景视觉调性",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "上传产品图优化主图",
+      "电商",
+      "产品",
+      "美妆",
+      "食品",
+      "数码",
+      "家居"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "基于上传产品图优化电商主图",
+      "保留商品主体并提升商业摄影质感"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "保留上传产品外观",
+      "包装和标签",
+      "重构背景",
+      "光影和构图",
+      "形成平台主图"
+    ]
+  },
+  {
+    "id": "adimg_template_0137",
+    "name": "服装平铺主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "服装",
+      "电商",
+      "女装"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "ecommerce_main_image"
+    ],
+    "layoutPattern": "服装平铺或半身模特展示，背景干净，尺码或卖点区不抢主体。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成服装电商主图，突出版型、面料纹理和商品识别。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效、认证或价格",
+      "商品主体必须清晰且占比足够"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "服装平铺主图",
+      "服装",
+      "电商",
+      "女装"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成服装电商主图",
+      "突出版型",
+      "面料纹理和商品识别"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "服装平铺或半身模特展示",
+      "背景干净",
+      "尺码或卖点区不抢主体"
+    ]
+  },
+  {
+    "id": "adimg_template_0138",
+    "name": "鞋包质感主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "鞋包",
+      "箱包",
+      "电商"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "ecommerce_main_image"
+    ],
+    "layoutPattern": "产品45度角展示，皮革、缝线和五金清楚，背景简洁。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成鞋包电商主图，突出材质、轮廓和平台销售感。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效、认证或价格",
+      "商品主体必须清晰且占比足够"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "鞋包质感主图",
+      "鞋包",
+      "箱包",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成鞋包电商主图",
+      "突出材质",
+      "轮廓和平台销售感"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品45度角展示",
+      "皮革",
+      "缝线和五金清楚",
+      "背景简洁"
+    ]
+  },
+  {
+    "id": "adimg_template_0139",
+    "name": "母婴用品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "母婴",
+      "婴童",
+      "电商"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "ecommerce_main_image"
+    ],
+    "layoutPattern": "产品主体清洁安全，浅色背景，卖点区克制，避免编造认证。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成母婴用品电商主图，突出安全感、产品清楚和卖点分区。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效、认证或价格",
+      "商品主体必须清晰且占比足够"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "母婴用品主图",
+      "母婴",
+      "婴童",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成母婴用品电商主图",
+      "突出安全感",
+      "产品清楚和卖点分区"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "产品主体清洁安全",
+      "浅色背景",
+      "卖点区克制",
+      "避免编造认证"
+    ]
+  },
+  {
+    "id": "adimg_template_0140",
+    "name": "营养食品主图",
+    "taskType": "ecommerce_main_image",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "食品",
+      "营养",
+      "电商"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "ecommerce_main_image"
+    ],
+    "layoutPattern": "包装和食材原料围绕主体，标签清楚，避免功效夸大。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成营养食品电商主图，突出包装、原料和真实食欲。",
+    "negativeConstraints": [
+      "不要改变产品核心外观、包装形状和标签",
+      "不要编造功效、认证或价格",
+      "商品主体必须清晰且占比足够"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "营养食品主图",
+      "食品",
+      "营养",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "生成营养食品电商主图",
+      "突出包装",
+      "原料和真实食欲"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "包装和食材原料围绕主体",
+      "标签清楚",
+      "避免功效夸大"
+    ]
+  },
+  {
+    "id": "adimg_template_0073",
+    "name": "产品质感广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "产品",
+      "美妆",
+      "数码",
+      "食品",
+      "家居"
+    ],
+    "styleTags": [
+      "product_ad",
+      "premium",
+      "commercial_photography",
+      "studio_product"
+    ],
+    "layoutPattern": "产品hero居中或偏侧，背景用材质、光线和色块衬托，卖点少而精。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成高质感产品广告图，突出产品材质、品牌气质和核心卖点。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "核心卖点",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "产品质感广告",
+      "产品",
+      "美妆",
+      "数码",
+      "食品",
+      "家居"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成高质感产品广告图",
+      "突出产品材质",
+      "品牌气质和核心卖点"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品hero居中或偏侧",
+      "背景用材质",
+      "光线和色块衬托",
+      "卖点少而精"
+    ]
+  },
+  {
+    "id": "adimg_template_0074",
+    "name": "新品上市广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "新品",
+      "电商",
+      "品牌",
+      "产品"
+    ],
+    "styleTags": [
+      "launch",
+      "commercial_ad",
+      "premium",
+      "high_contrast"
+    ],
+    "layoutPattern": "新品主视觉强，标题、上市信息和产品主体组成清晰广告版式。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成新品上市产品广告，强调新鲜感、品牌露出和投放完成度。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "新品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "上市标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "新品上市广告",
+      "新品",
+      "电商",
+      "品牌",
+      "产品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成新品上市产品广告",
+      "强调新鲜感",
+      "品牌露出和投放完成度"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "新品主视觉强",
+      "标题",
+      "上市信息和产品主体组成清晰广告版式"
+    ]
+  },
+  {
+    "id": "adimg_template_0075",
+    "name": "产品卖点分层图",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "产品",
+      "电商",
+      "数码",
+      "家居",
+      "服务"
+    ],
+    "styleTags": [
+      "infographic",
+      "product_ad",
+      "clean_layout",
+      "typography"
+    ],
+    "layoutPattern": "产品主体居中，卖点以线条、图标或卡片连接说明，信息清楚不拥挤。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成产品卖点分层广告图，突出结构说明、功能卖点和中文可读性。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "sellingPoints",
+        "label": "卖点列表",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "产品卖点分层图",
+      "产品",
+      "电商",
+      "数码",
+      "家居",
+      "服务"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成产品卖点分层广告图",
+      "突出结构说明",
+      "功能卖点和中文可读性"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品主体居中",
+      "卖点以线条",
+      "图标或卡片连接说明",
+      "信息清楚不拥挤"
+    ]
+  },
+  {
+    "id": "adimg_template_0076",
+    "name": "饮品产品广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "饮品",
+      "奶茶",
+      "咖啡",
+      "食品"
+    ],
+    "styleTags": [
+      "food_photography",
+      "warm_lifestyle",
+      "product_ad",
+      "commercial_ad"
+    ],
+    "layoutPattern": "饮品杯体或瓶身清楚，冰块、水珠、配料和背景色营造清爽感。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成饮品产品广告图，突出清爽口感、包装识别和商业投放感。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "饮品名称",
+        "required": true
+      },
+      {
+        "name": "flavor",
+        "label": "口味",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "饮品产品广告",
+      "饮品",
+      "奶茶",
+      "咖啡",
+      "食品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成饮品产品广告图",
+      "突出清爽口感",
+      "包装识别和商业投放感"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "饮品杯体或瓶身清楚",
+      "冰块",
+      "水珠",
+      "配料和背景色营造清爽感"
+    ]
+  },
+  {
+    "id": "adimg_template_0077",
+    "name": "包装展示广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "包装",
+      "食品",
+      "礼盒",
+      "美妆",
+      "文创"
+    ],
+    "styleTags": [
+      "packaging",
+      "premium",
+      "studio_product",
+      "commercial_ad"
+    ],
+    "layoutPattern": "包装正面、侧面和开箱元素组合展示，背景与包装材质统一。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成包装展示广告图，突出包装设计、礼盒质感和产品系列感。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "包装产品名称",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "包装展示广告",
+      "包装",
+      "食品",
+      "礼盒",
+      "美妆",
+      "文创"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成包装展示广告图",
+      "突出包装设计",
+      "礼盒质感和产品系列感"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "包装正面",
+      "侧面和开箱元素组合展示",
+      "背景与包装材质统一"
+    ]
+  },
+  {
+    "id": "adimg_template_0078",
+    "name": "上传产品图广告海报",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "local_edit"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "产品",
+      "电商",
+      "品牌",
+      "美妆",
+      "食品"
+    ],
+    "styleTags": [
+      "image_editing",
+      "product_ad",
+      "background_replace",
+      "commercial_ad"
+    ],
+    "layoutPattern": "保留上传产品主体和包装，添加广告背景、标题区和卖点区，形成产品广告图。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "基于上传产品图生成广告海报，保留主体识别并增强品牌视觉表达。",
+    "negativeConstraints": [
+      "不要编造产品功效、价格或资质",
+      "不要改变产品包装和主体识别",
+      "不要让卖点文字混乱"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "上传产品图广告海报",
+      "产品",
+      "电商",
+      "品牌",
+      "美妆",
+      "食品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "基于上传产品图生成广告海报",
+      "保留主体识别并增强品牌视觉表达"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "保留上传产品主体和包装",
+      "添加广告背景",
+      "标题区和卖点区",
+      "形成产品广告图"
+    ]
+  },
+  {
+    "id": "adimg_template_0145",
+    "name": "手机数码广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "手机",
+      "数码",
+      "科技"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "产品大主体配功能卖点线条，屏幕或外观真实，背景干净有层次。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成手机数码产品广告，突出产品外观、功能卖点和商业质感。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "手机数码广告",
+      "手机",
+      "数码",
+      "科技"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成手机数码产品广告",
+      "突出产品外观",
+      "功能卖点和商业质感"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品大主体配功能卖点线条",
+      "屏幕或外观真实",
+      "背景干净有层次"
+    ]
+  },
+  {
+    "id": "adimg_template_0146",
+    "name": "家电卖点广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "家电",
+      "产品",
+      "电器"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "产品置于生活空间或棚拍场景，卖点围绕主体，尺寸比例真实。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成家电产品广告，突出功能卖点、真实场景和产品可靠性。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "家电卖点广告",
+      "家电",
+      "产品",
+      "电器"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成家电产品广告",
+      "突出功能卖点",
+      "真实场景和产品可靠性"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品置于生活空间或棚拍场景",
+      "卖点围绕主体",
+      "尺寸比例真实"
+    ]
+  },
+  {
+    "id": "adimg_template_0147",
+    "name": "家居家纺广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "家居",
+      "家纺",
+      "生活"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "产品在真实卧室或客厅中展示，织物纹理和柔和光影清楚。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成家居家纺产品广告，突出舒适材质、生活场景和购买联想。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "家居家纺广告",
+      "家居",
+      "家纺",
+      "生活"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成家居家纺产品广告",
+      "突出舒适材质",
+      "生活场景和购买联想"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品在真实卧室或客厅中展示",
+      "织物纹理和柔和光影清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0148",
+    "name": "食品零食广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "食品",
+      "零食",
+      "休闲"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "包装与实物食材组合，前景有咬口或散落元素，食欲明确。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成食品零食产品广告，突出包装、口感和零食场景。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "食品零食广告",
+      "食品",
+      "零食",
+      "休闲"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成食品零食产品广告",
+      "突出包装",
+      "口感和零食场景"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "包装与实物食材组合",
+      "前景有咬口或散落元素",
+      "食欲明确"
+    ]
+  },
+  {
+    "id": "adimg_template_0149",
+    "name": "酒水包装广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "酒水",
+      "饮品",
+      "礼盒"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "瓶身或礼盒居中，玻璃、液体和标签清楚，背景材质衬托。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成酒水包装广告，突出瓶身质感、礼赠属性和商业摄影。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "酒水包装广告",
+      "酒水",
+      "饮品",
+      "礼盒"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成酒水包装广告",
+      "突出瓶身质感",
+      "礼赠属性和商业摄影"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "瓶身或礼盒居中",
+      "玻璃",
+      "液体和标签清楚",
+      "背景材质衬托"
+    ]
+  },
+  {
+    "id": "adimg_template_0150",
+    "name": "宠物用品广告",
+    "taskType": "product_ad",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "background_replace",
+      "style_reference_only",
+      "local_edit",
+      "none"
+    ],
+    "outputType": "product_visual",
+    "industries": [
+      "宠物",
+      "用品",
+      "电商"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "product_ad"
+    ],
+    "layoutPattern": "产品和宠物使用场景结合，主体不被宠物遮挡，卖点清楚。",
+    "textPolicy": "exact_user_text_required",
+    "promptSkeleton": "生成宠物用品广告，突出产品用途、宠物亲和力和卖点分区。",
+    "negativeConstraints": [
+      "不要编造产品功效、资质、价格或认证信息",
+      "不要改变产品包装和主体识别",
+      "卖点文字必须准确可读"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "广告标题",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "宠物用品广告",
+      "宠物",
+      "用品",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "生成宠物用品广告",
+      "突出产品用途",
+      "宠物亲和力和卖点分区"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品和宠物使用场景结合",
+      "主体不被宠物遮挡",
+      "卖点清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0079",
+    "name": "棚拍静物商业摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "产品",
+      "美妆",
+      "家居",
+      "食品",
+      "文创"
+    ],
+    "styleTags": [
+      "commercial_photography",
+      "studio_product",
+      "premium",
+      "photorealistic"
+    ],
+    "layoutPattern": "棚拍静物构图，产品在可控光源下呈现真实材质，背景简洁，阴影自然。",
+    "textPolicy": "no_text",
+    "promptSkeleton": "生成棚拍静物商业摄影图，强调真实材质、光影层次和广告级质感。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让产品比例失真",
+      "不要过度滤镜化或假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "棚拍静物商业摄影",
+      "产品",
+      "美妆",
+      "家居",
+      "食品",
+      "文创"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成棚拍静物商业摄影图",
+      "强调真实材质",
+      "光影层次和广告级质感"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "棚拍静物构图",
+      "产品在可控光源下呈现真实材质",
+      "背景简洁",
+      "阴影自然"
+    ]
+  },
+  {
+    "id": "adimg_template_0080",
+    "name": "生活方式商业摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "产品",
+      "家居",
+      "食品",
+      "饮品",
+      "服饰"
+    ],
+    "styleTags": [
+      "commercial_photography",
+      "warm_lifestyle",
+      "photorealistic",
+      "commercial_ad"
+    ],
+    "layoutPattern": "产品出现在真实生活场景中，人物可弱化，环境服务于产品使用氛围。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成生活方式商业摄影图，突出真实使用场景、自然光和产品吸引力。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让产品比例失真",
+      "不要过度滤镜化或假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "生活场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "生活方式商业摄影",
+      "产品",
+      "家居",
+      "食品",
+      "饮品",
+      "服饰"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成生活方式商业摄影图",
+      "突出真实使用场景",
+      "自然光和产品吸引力"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "产品出现在真实生活场景中",
+      "人物可弱化",
+      "环境服务于产品使用氛围"
+    ]
+  },
+  {
+    "id": "adimg_template_0155",
+    "name": "菜品商业摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "餐饮",
+      "菜品",
+      "摄影"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "菜品主体占比大，热气、油光和食材纹理真实，背景餐桌简洁。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成菜品商业摄影图，突出食欲、食材纹理和真实餐桌光影。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "菜品商业摄影",
+      "餐饮",
+      "菜品",
+      "摄影"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成菜品商业摄影图",
+      "突出食欲",
+      "食材纹理和真实餐桌光影"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "菜品主体占比大",
+      "热气",
+      "油光和食材纹理真实",
+      "背景餐桌简洁"
+    ]
+  },
+  {
+    "id": "adimg_template_0156",
+    "name": "饮品商业摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "饮品",
+      "咖啡",
+      "奶茶"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "杯体或瓶身清楚，冰块、水珠和液体层次真实，背景不抢主体。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成饮品商业摄影图，突出冰爽质感、液体层次和真实光影。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "饮品商业摄影",
+      "饮品",
+      "咖啡",
+      "奶茶"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成饮品商业摄影图",
+      "突出冰爽质感",
+      "液体层次和真实光影"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "杯体或瓶身清楚",
+      "冰块",
+      "水珠和液体层次真实",
+      "背景不抢主体"
+    ]
+  },
+  {
+    "id": "adimg_template_0157",
+    "name": "门店空间摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "门店",
+      "空间",
+      "商业"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "空间保持真实透视，入口、柜台和灯光层次清楚，人物可弱化。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成门店空间商业摄影图，突出空间动线、灯光和真实陈设。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "门店空间摄影",
+      "门店",
+      "空间",
+      "商业"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成门店空间商业摄影图",
+      "突出空间动线",
+      "灯光和真实陈设"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "空间保持真实透视",
+      "入口",
+      "柜台和灯光层次清楚",
+      "人物可弱化"
+    ]
+  },
+  {
+    "id": "adimg_template_0158",
+    "name": "产品组合棚拍",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "产品",
+      "组合",
+      "棚拍"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "多个产品按高低错落排列，反射和阴影统一，背景纯净。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成产品组合棚拍图，突出系列感、材质和统一光源。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "产品组合棚拍",
+      "产品",
+      "组合"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成产品组合棚拍图",
+      "突出系列感",
+      "材质和统一光源"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "多个产品按高低错落排列",
+      "反射和阴影统一",
+      "背景纯净"
+    ]
+  },
+  {
+    "id": "adimg_template_0159",
+    "name": "服饰平铺摄影",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "服饰",
+      "鞋包",
+      "摄影"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "服饰平铺整齐，道具少，面料纹理和版型清楚。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成服饰平铺商业摄影图，突出面料、版型和清洁构图。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "服饰平铺摄影",
+      "服饰",
+      "鞋包",
+      "摄影"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成服饰平铺商业摄影图",
+      "突出面料",
+      "版型和清洁构图"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "服饰平铺整齐",
+      "道具少",
+      "面料纹理和版型清楚"
+    ]
+  },
+  {
+    "id": "adimg_template_0160",
+    "name": "活动现场摄影优化",
+    "taskType": "commercial_photography",
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "none"
+    ],
+    "outputType": "pure_image",
+    "industries": [
+      "活动",
+      "现场",
+      "摄影"
+    ],
+    "styleTags": [
+      "commercial_ad",
+      "clear_layout",
+      "commercial_photography"
+    ],
+    "layoutPattern": "舞台、背景板和观众区清楚，光线平衡，保留真实现场结构。",
+    "textPolicy": "avoid_unrequested_text",
+    "promptSkeleton": "生成活动现场摄影优化图，突出背景板、舞台灯光和现场秩序。",
+    "negativeConstraints": [
+      "不要加入无关品牌文字",
+      "不要让主体比例失真",
+      "不要过度滤镜化或生成假材质"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "拍摄主体",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "拍摄场景",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "活动现场摄影优化",
+      "活动",
+      "现场",
+      "摄影"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "生成活动现场摄影优化图",
+      "突出背景板",
+      "舞台灯光和现场秩序"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "舞台",
+      "背景板和观众区清楚",
+      "光线平衡",
+      "保留真实现场结构"
+    ]
+  }
+]

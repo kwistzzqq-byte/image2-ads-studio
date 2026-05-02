@@ -1,0 +1,22 @@
+{
+  "name": "advertising-image-prompt-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm --filter ad-image-agent-core test",
+    "typecheck": "pnpm --filter ad-image-agent-core typecheck && pnpm --filter ad-image-agent typecheck",
+    "dev": "pnpm --filter ad-image-agent dev",
+    "serve:llm": "pnpm --filter ad-image-agent-core build && pnpm --filter ad-image-agent build && pnpm --filter ad-image-agent serve:llm",
+    "community:validate": "node scripts/validate-community.mjs .",
+    "community:count": "node scripts/count-assets.mjs ."
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "vitest": "^3.2.4"
+  }
+}

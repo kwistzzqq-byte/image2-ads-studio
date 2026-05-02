@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Advertising Image Prompt Agent workflow">
+  <rect width="1280" height="640" fill="#f6f8fa"/>
+  <text x="64" y="78" fill="#24292f" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Advertising Image Prompt Agent</text>
+  <g fill="#fff" stroke="#d0d7de" stroke-width="2">
+    <rect x="64" y="150" width="128" height="86" rx="12"/>
+    <rect x="220" y="150" width="144" height="86" rx="12"/>
+    <rect x="392" y="150" width="160" height="86" rx="12"/>
+    <rect x="580" y="150" width="178" height="86" rx="12"/>
+    <rect x="786" y="150" width="158" height="86" rx="12"/>
+    <rect x="972" y="150" width="164" height="86" rx="12"/>
+    <rect x="972" y="330" width="164" height="86" rx="12"/>
+    <rect x="766" y="330" width="166" height="86" rx="12"/>
+  </g>
+  <g fill="#0969da" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">
+    <text x="94" y="199">User Brief</text>
+    <text x="250" y="199">Intent Parser</text>
+    <text x="421" y="191">Template</text>
+    <text x="421" y="210">Retriever</text>
+    <text x="613" y="191">Visual Recipe</text>
+    <text x="613" y="210">Retriever</text>
+    <text x="819" y="191">LLM Prompt</text>
+    <text x="819" y="210">Brain</text>
+    <text x="1003" y="191">Optimized</text>
+    <text x="1003" y="210">Prompt</text>
+    <text x="1008" y="371">Image2 Test</text>
+    <text x="804" y="371">Case Library</text>
+  </g>
+  <g stroke="#0969da" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M192 193h28"/>
+    <path d="M364 193h28"/>
+    <path d="M552 193h28"/>
+    <path d="M758 193h28"/>
+    <path d="M944 193h28"/>
+    <path d="M1054 236v94"/>
+    <path d="M972 373h-40"/>
+    <path d="M766 373H130q-38 0-38-38v-99"/>
+  </g>
+  <g fill="#0969da">
+    <path d="M220 193l-12-8v16z"/>
+    <path d="M392 193l-12-8v16z"/>
+    <path d="M580 193l-12-8v16z"/>
+    <path d="M786 193l-12-8v16z"/>
+    <path d="M972 193l-12-8v16z"/>
+    <path d="M1054 330l-8-12h16z"/>
+    <path d="M932 373l12-8v16z"/>
+    <path d="M92 236l-8 12h16z"/>
+  </g>
+  <rect x="312" y="462" width="252" height="42" rx="21" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="342" y="489" fill="#0969da" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Template / Recipe Update</text>
+  <circle cx="1054" cy="373" r="14" fill="#1a7f37"/>
+  <path d="M1047 373l5 5 10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

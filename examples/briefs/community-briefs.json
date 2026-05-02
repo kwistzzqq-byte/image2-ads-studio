@@ -1,0 +1,182 @@
+[
+  {
+    "id": "brief-001",
+    "title": "Milk tea storefront signboard",
+    "formInput": {
+      "taskType": "storefront_signboard",
+      "inputMode": "text_to_image",
+      "industry": "milk tea",
+      "userRequest": "Create a storefront signboard concept for a milk tea shop.",
+      "copywriting": "TEE ISLAND",
+      "aspectRatio": "16:9",
+      "styleDirection": "clear commercial storefront, realistic materials, readable sign text",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-002",
+    "title": "Dental appointment poster",
+    "formInput": {
+      "taskType": "poster_design",
+      "inputMode": "text_to_image",
+      "industry": "dental clinic",
+      "userRequest": "Create a clean appointment poster for dental cleaning.",
+      "copywriting": "Dental Cleaning Appointment",
+      "aspectRatio": "3:4",
+      "styleDirection": "clean medical layout, clear hierarchy, soft lighting",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-003",
+    "title": "SaaS roll-up banner",
+    "formInput": {
+      "taskType": "rollup_banner",
+      "inputMode": "text_to_image",
+      "industry": "software",
+      "userRequest": "Create a roll-up banner for a SaaS product booth.",
+      "copywriting": "Automate Your Workflow",
+      "aspectRatio": "9:16",
+      "styleDirection": "developer documentation layout, modular blocks, readable title",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-004",
+    "title": "Launch event backdrop",
+    "formInput": {
+      "taskType": "event_backdrop",
+      "inputMode": "text_to_image",
+      "industry": "consumer electronics",
+      "userRequest": "Create a launch event backdrop suitable for stage photos.",
+      "copywriting": "New Product Launch",
+      "aspectRatio": "16:9",
+      "styleDirection": "large readable title, clean stage backdrop, realistic print surface",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-005",
+    "title": "Mall wayfinding sign",
+    "formInput": {
+      "taskType": "signage_wayfinding",
+      "inputMode": "text_to_image",
+      "industry": "shopping mall",
+      "userRequest": "Create a mall wayfinding sign with clear arrows and floor information.",
+      "copywriting": "Food Court / Parking / Restrooms",
+      "aspectRatio": "4:3",
+      "styleDirection": "clear arrows, realistic installation, high contrast typography",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-006",
+    "title": "Company reception brand wall",
+    "formInput": {
+      "taskType": "brand_wall",
+      "inputMode": "text_to_image",
+      "industry": "enterprise service",
+      "userRequest": "Create a reception brand wall concept for a technology company.",
+      "copywriting": "ACME SYSTEMS",
+      "aspectRatio": "16:9",
+      "styleDirection": "real wall installation, clean logo area, material contrast",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-007",
+    "title": "Local coffee promotion",
+    "formInput": {
+      "taskType": "local_store_promotion",
+      "inputMode": "text_to_image",
+      "industry": "coffee shop",
+      "userRequest": "Create a local store promotion graphic for a coffee shop.",
+      "copywriting": "Morning Coffee Set",
+      "aspectRatio": "1:1",
+      "styleDirection": "readable promotion title, product focus, clean store visual",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-008",
+    "title": "Beverage ecommerce main image",
+    "formInput": {
+      "taskType": "ecommerce_main_image",
+      "inputMode": "text_to_image",
+      "industry": "beverage",
+      "userRequest": "Create an ecommerce main image for a tropical bottled drink.",
+      "copywriting": "Coconut Lime Drink",
+      "aspectRatio": "1:1",
+      "styleDirection": "product centered, condensation, readable package, clean background",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-009",
+    "title": "Wireless charger product ad",
+    "formInput": {
+      "taskType": "product_ad",
+      "inputMode": "text_to_image",
+      "industry": "consumer electronics",
+      "userRequest": "Create a product ad for a wireless magnetic charger.",
+      "copywriting": "Magnetic Fast Charge 30W",
+      "aspectRatio": "4:5",
+      "styleDirection": "minimal product hero, white background, soft shadow, clear material",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-010",
+    "title": "Jewelry commercial photography",
+    "formInput": {
+      "taskType": "commercial_photography",
+      "inputMode": "text_to_image",
+      "industry": "jewelry",
+      "userRequest": "Create a commercial photography concept for a gemstone ring.",
+      "copywriting": "",
+      "aspectRatio": "1:1",
+      "styleDirection": "macro product photography, metal highlights, gemstone reflections",
+      "referenceImageRole": "none",
+      "hardConstraints": []
+    }
+  },
+  {
+    "id": "brief-011",
+    "title": "Storefront image edit",
+    "formInput": {
+      "taskType": "storefront_signboard",
+      "inputMode": "image_edit",
+      "industry": "restaurant",
+      "userRequest": "Edit an uploaded storefront photo and replace the signboard with red illuminated letters.",
+      "copywriting": "Old Street Noodles",
+      "aspectRatio": "16:9",
+      "styleDirection": "preserve storefront structure, realistic sign installation",
+      "referenceImageRole": "preserve_structure",
+      "hardConstraints": ["Keep windows, door position, wall boundary, and perspective."]
+    }
+  },
+  {
+    "id": "brief-012",
+    "title": "Wall mockup image edit",
+    "formInput": {
+      "taskType": "brand_wall",
+      "inputMode": "image_edit",
+      "industry": "education",
+      "userRequest": "Use an uploaded wall photo to create a brand wall mockup.",
+      "copywriting": "Bright Future Academy",
+      "aspectRatio": "16:9",
+      "styleDirection": "preserve wall perspective, realistic installation, readable logo text",
+      "referenceImageRole": "scene_mockup",
+      "hardConstraints": ["Do not change the room layout or wall boundary."]
+    }
+  }
+]

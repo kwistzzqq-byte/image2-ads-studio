@@ -1,0 +1,74 @@
+[
+  {
+    "id": "record-001",
+    "briefId": "brief-001",
+    "taskType": "storefront_signboard",
+    "optimizedPromptSummary": "16:9 realistic milk tea storefront signboard with readable TEE ISLAND text, clear entrance, manufacturable illuminated letters, and no invented contact details."
+  },
+  {
+    "id": "record-002",
+    "briefId": "brief-002",
+    "taskType": "poster_design",
+    "optimizedPromptSummary": "3:4 dental cleaning poster with clear appointment title, medical white and blue palette, title hierarchy, and no invented price or date."
+  },
+  {
+    "id": "record-003",
+    "briefId": "brief-003",
+    "taskType": "rollup_banner",
+    "optimizedPromptSummary": "9:16 SaaS roll-up banner with top headline, middle feature modules, bottom CTA area, and booth-readable typography."
+  },
+  {
+    "id": "record-004",
+    "briefId": "brief-004",
+    "taskType": "event_backdrop",
+    "optimizedPromptSummary": "16:9 product launch backdrop with large stage-readable title, clean print surface, and photo-safe subject spacing."
+  },
+  {
+    "id": "record-005",
+    "briefId": "brief-005",
+    "taskType": "signage_wayfinding",
+    "optimizedPromptSummary": "4:3 mall wayfinding sign with high-contrast arrows, floor information, realistic signboard material, and clear mounting logic."
+  },
+  {
+    "id": "record-006",
+    "briefId": "brief-006",
+    "taskType": "brand_wall",
+    "optimizedPromptSummary": "16:9 reception brand wall with ACME SYSTEMS text, realistic wall installation, clean logo area, and material contrast."
+  },
+  {
+    "id": "record-007",
+    "briefId": "brief-007",
+    "taskType": "local_store_promotion",
+    "optimizedPromptSummary": "1:1 coffee promotion graphic with readable Morning Coffee Set title, product focus, and local-store conversion layout."
+  },
+  {
+    "id": "record-008",
+    "briefId": "brief-008",
+    "taskType": "ecommerce_main_image",
+    "optimizedPromptSummary": "1:1 tropical drink ecommerce main image with centered bottle, condensation, fruit cues, readable package, and platform-ready composition."
+  },
+  {
+    "id": "record-009",
+    "briefId": "brief-009",
+    "taskType": "product_ad",
+    "optimizedPromptSummary": "4:5 wireless charger product ad with minimal hero composition, soft shadow, clear material, and exact Magnetic Fast Charge 30W copy."
+  },
+  {
+    "id": "record-010",
+    "briefId": "brief-010",
+    "taskType": "commercial_photography",
+    "optimizedPromptSummary": "1:1 gemstone ring commercial photography with macro detail, metal highlights, gemstone reflections, and no extra text."
+  },
+  {
+    "id": "record-011",
+    "briefId": "brief-011",
+    "taskType": "storefront_signboard",
+    "optimizedPromptSummary": "Image-edit prompt preserving storefront windows, door position, wall boundary, and perspective while replacing the signboard with red illuminated letters."
+  },
+  {
+    "id": "record-012",
+    "briefId": "brief-012",
+    "taskType": "brand_wall",
+    "optimizedPromptSummary": "Image-edit brand wall mockup prompt preserving uploaded wall perspective, room layout, and installation boundary."
+  }
+]
