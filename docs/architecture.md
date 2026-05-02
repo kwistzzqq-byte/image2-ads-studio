@@ -1,6 +1,6 @@
 # Architecture
 
-Advertising Image Prompt Agent is a prompt-planning system for advertising image generation.
+Image2 Ads Studio is a prompt-planning system for advertising image generation.
 
 ```mermaid
 flowchart LR

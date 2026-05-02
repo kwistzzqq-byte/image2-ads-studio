@@ -1,6 +1,6 @@
-# Advertising Image Prompt Agent
+# Image2 Ads Studio
 
-面向广告制作行业的开源作图 Prompt Agent：把业务白话需求和参考图，转成适合图像生成工具测试的优化提示词。
+面向 Image2 广告作图的开源 Prompt Studio：把业务白话需求和参考图，转成适合商业广告出图测试的优化提示词。
 
 这是 **Community Edition**。它开源 Prompt Agent 框架、本地 Web 工作台、120 条业务模板和 75 条视觉配方；商业版保留完整模板库、ERP 集成、真实生图链路和生产案例库。
 
@@ -10,7 +10,7 @@
 
 广告制作需求通常不是一句 prompt 能稳定解决的。比如“做一个奶茶店门头效果图”，真正可执行的作图指令需要包含作图类型、行业、文案、画幅、材质、灯光、参考图保留策略和负面约束。
 
-这个 Agent 的目标是把前期需求整理成结构化作图方案，并输出 LLM 优化后的 final prompt，供 Image2 或其他图像生成工具手动测试。
+Image2 Ads Studio 的目标是把前期需求整理成结构化作图方案，并输出 LLM 优化后的 final prompt，供 Image2 或其他图像生成工具手动测试。
 
 ## 功能亮点
 

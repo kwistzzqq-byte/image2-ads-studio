@@ -1,8 +1,8 @@
-# Advertising Image Prompt Agent
+# Image2 Ads Studio
 
-Open-source advertising image prompt agent for turning business briefs and reference images into optimized image-generation prompts.
+An open-source prompt studio for generating high-quality advertising visuals with Image2.
 
-This repository is the **Community Edition** of an advertising vertical prompt agent. It focuses on the prompt planning layer before image generation: intent parsing, advertising templates, visual recipes, deterministic prompt checks, reference image policy, and a local Web workbench.
+This repository is the **Community Edition** of an advertising vertical prompt studio. It focuses on the prompt planning layer before image generation: intent parsing, advertising templates, visual recipes, deterministic prompt checks, reference image policy, and a local Web workbench.
 
 ![Workflow](docs/assets/github-workflow.svg)
 
@@ -10,7 +10,7 @@ This repository is the **Community Edition** of an advertising vertical prompt a
 
 General image-generation prompts are unstable for advertising production. A local shop owner may say "make a milk tea storefront signboard", but production-ready output needs structure: task type, industry, copywriting, aspect ratio, material constraints, reference image policy, and clear composition.
 
-This agent turns that loose brief into an optimized prompt that can be manually tested in Image2 or another image-generation tool.
+Image2 Ads Studio turns that loose brief into an optimized prompt that can be manually tested in Image2 or another image-generation tool.
 
 ## Core Features
 
