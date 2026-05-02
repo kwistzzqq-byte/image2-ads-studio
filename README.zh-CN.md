@@ -6,6 +6,18 @@
 
 ![Workflow](docs/assets/github-workflow.svg)
 
+## 案例预览
+
+| 自有生图案例 | 自有生图案例 |
+| --- | --- |
+| <img src="docs/assets/gallery/generated-beverage-ad-concept.jpg" alt="Generated beverage advertising concept" width="420"> | <img src="docs/assets/gallery/generated-product-ad-concept.jpg" alt="Generated product advertising concept" width="420"> |
+
+| 开放许可海报参考 | 开放许可海报参考 | 开放许可海报参考 |
+| --- | --- | --- |
+| <img src="docs/assets/gallery/open-poster-market-wpa.jpg" alt="Public-domain market poster reference" width="260"> | <img src="docs/assets/gallery/open-poster-mucha-job.jpg" alt="Public-domain poster reference by Alphonse Mucha" width="260"> | <img src="docs/assets/gallery/open-poster-aetna-dynamite.jpg" alt="Public-domain advertising poster reference" width="260"> |
+
+自有生图用于展示出图方向；开放许可海报用于视觉配方灵感参考。来源与使用说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。
+
 ## 价值
 
 广告制作需求通常不是一句 prompt 能稳定解决的。比如“做一个奶茶店门头效果图”，真正可执行的作图指令需要包含作图类型、行业、文案、画幅、材质、灯光、参考图保留策略和负面约束。

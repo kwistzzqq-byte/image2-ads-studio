@@ -6,6 +6,18 @@ This repository is the **Community Edition** of an advertising vertical prompt s
 
 ![Workflow](docs/assets/github-workflow.svg)
 
+## Gallery Preview
+
+| Generated beverage ad concept | Generated product ad concept |
+| --- | --- |
+| <img src="docs/assets/gallery/generated-beverage-ad-concept.jpg" alt="Generated beverage advertising concept" width="420"> | <img src="docs/assets/gallery/generated-product-ad-concept.jpg" alt="Generated product advertising concept" width="420"> |
+
+| Open poster reference | Open poster reference | Open poster reference |
+| --- | --- | --- |
+| <img src="docs/assets/gallery/open-poster-market-wpa.jpg" alt="Public-domain market poster reference" width="260"> | <img src="docs/assets/gallery/open-poster-mucha-job.jpg" alt="Public-domain poster reference by Alphonse Mucha" width="260"> | <img src="docs/assets/gallery/open-poster-aetna-dynamite.jpg" alt="Public-domain advertising poster reference" width="260"> |
+
+The generated concept previews are included to show output direction. Open poster references are used as visual-recipe inspiration samples; see [gallery attribution](examples/gallery/ATTRIBUTION.md).
+
 ## Why It Exists
 
 General image-generation prompts are unstable for advertising production. A local shop owner may say "make a milk tea storefront signboard", but production-ready output needs structure: task type, industry, copywriting, aspect ratio, material constraints, reference image policy, and clear composition.
