@@ -8,7 +8,7 @@
 
 ## Prompt Gallery
 
-公开 gallery 第一版包含 30 个“一张图 + 一份 optimized prompt”的案例：2 张项目自有生图概念图，28 张上游广告素材库参考图。每个案例都包含预览图、Image2 可用提示词和具体来源标注。
+公开 gallery 目前包含 50 个“一张图 + 一份 optimized prompt”的案例：2 张项目自有生图概念图、28 张第一批上游广告参考图，以及 20 张新增多源参考图，覆盖品牌系统、导视图、商业摄影、电商详情页、产品海报和灯箱 mockup。每个案例都包含预览图、Image2 可用提示词和具体来源标注。
 
 查看完整案例：[examples/gallery/cases.md](examples/gallery/cases.md)
 
@@ -18,6 +18,9 @@
 | <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium appliance product ad concept" width="260"> | **Premium Appliance Product Ad Concept**<br><br>`Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device...` |
 | <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="Luxury amber perfume ad prompt case" width="260"> | **Luxury Amber Perfume Ad**<br><br>`Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object...` |
 | <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="Tropical citrus soda ad prompt case" width="260"> | **Tropical Citrus Soda Ad Poster**<br><br>`Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object...` |
+| <img src="docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg" alt="Brand identity showcase prompt case" width="260"> | **Moss Radio Brand Identity Showcase Board**<br><br>`Create a square 1:1 brand-identity showcase board for a fictional audio, retail, or culture-focused business. Build a dense editorial presentation...` |
+| <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Wayfinding map prompt case" width="260"> | **Zoo Visitor Wayfinding Map**<br><br>`Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic...` |
+| <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="Ecommerce product detail prompt case" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout...` |
 
 来源与许可证说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。上游 prompt 和图片只作为结构参考；公开 prompt 已由本项目流程重新生成、去品牌化并改写为可复用版本。
 

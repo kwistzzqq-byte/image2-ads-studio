@@ -8,7 +8,7 @@ This repository is the **Community Edition** of an advertising vertical prompt s
 
 ## Prompt Gallery
 
-The public gallery contains 30 image-to-prompt cases: 2 project-generated concepts and 28 upstream-inspired advertising references. Each case includes one preview image, one Image2-ready optimized prompt, and source attribution.
+The public gallery contains 50 image-to-prompt cases: 2 project-generated concepts, 28 advertising references from the first upstream set, and 20 additional multi-source references across brand systems, wayfinding, commercial photography, ecommerce layouts, product posters, and lightbox mockups. Each case includes one preview image, one Image2-ready optimized prompt, and source attribution.
 
 View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
 
@@ -18,6 +18,9 @@ View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
 | <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium appliance product ad concept" width="260"> | **Premium Appliance Product Ad Concept**<br><br>`Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device...` |
 | <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="Luxury amber perfume ad prompt case" width="260"> | **Luxury Amber Perfume Ad**<br><br>`Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object...` |
 | <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="Tropical citrus soda ad prompt case" width="260"> | **Tropical Citrus Soda Ad Poster**<br><br>`Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object...` |
+| <img src="docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg" alt="Brand identity showcase prompt case" width="260"> | **Moss Radio Brand Identity Showcase Board**<br><br>`Create a square 1:1 brand-identity showcase board for a fictional audio, retail, or culture-focused business. Build a dense editorial presentation...` |
+| <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Wayfinding map prompt case" width="260"> | **Zoo Visitor Wayfinding Map**<br><br>`Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic...` |
+| <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="Ecommerce product detail prompt case" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout...` |
 
 Source and license notes are tracked in [gallery attribution](examples/gallery/ATTRIBUTION.md). Upstream prompts/images are used as structure references; public prompts are regenerated, debranded, and reusable.
 

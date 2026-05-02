@@ -17,175 +17,387 @@ Images are lightweight preview assets. They are included to document prompt beha
 
 ## Upstream-Inspired Rewritten Cases
 
-Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
-Repository URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts
-License note: Apache-2.0, per upstream repository LICENSE
-
 - docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg
   - Gallery case: E-commerce Main Image - Luxury Amber Perfume Ad
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 113
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-04-e-commerce-main-image-skincare-product-studio-shot.jpg
   - Gallery case: E-commerce Main Image - Skincare Product Studio Shot
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 114
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg
   - Gallery case: E-commerce Main Image - Tropical Citrus Soda Ad Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 115
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-06-e-commerce-main-image-luxury-fur-lined-loafer-lifestyle-photo.jpg
   - Gallery case: E-commerce Main Image - Luxury Fur-Lined Loafer Lifestyle Photo
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 117
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-07-e-commerce-main-image-luxury-perfume-ad-on-marble-vanity.jpg
   - Gallery case: E-commerce Main Image - Luxury Perfume Ad on Marble Vanity
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 118
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-08-e-commerce-main-image-miniature-diorama-skincare-advertisement.jpg
   - Gallery case: E-commerce Main Image - Miniature Diorama Skincare Advertisement
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 151
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-09-e-commerce-main-image-premium-gaming-motherboard-studio-shot.jpg
   - Gallery case: E-commerce Main Image - Premium Gaming Motherboard Studio Shot
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 153
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-10-e-commerce-main-image-premium-grain-powder-ad-board.jpg
   - Gallery case: E-commerce Main Image - Premium Grain Powder Ad Board
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 154
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-11-e-commerce-main-image-earbuds-e-commerce-infographic.jpg
   - Gallery case: E-commerce Main Image - Earbuds E-commerce Infographic
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 155
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-12-e-commerce-main-image-elegant-cosmetic-poster-prompt.jpg
   - Gallery case: E-commerce Main Image - Elegant Cosmetic Poster Prompt
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 157
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-13-e-commerce-main-image-minimalist-product-ad-pure-crunch.jpg
   - Gallery case: E-commerce Main Image - Minimalist Product Ad: PURE CRUNCH
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 158
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-14-burger-hero-image-plus-9-cell-ad-storyboard.jpg
   - Gallery case: Burger hero image plus 9-cell ad storyboard
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 163
   - Upstream file: cases/ecommerce.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-15-luxury-chronograph-watch-ad.jpg
   - Gallery case: Luxury Chronograph Watch Ad
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 144
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-16-neon-nike-lumina-ad-poster.jpg
   - Gallery case: Neon Nike Lumina Ad Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 145
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-17-streetwear-sneaker-poster-ad.jpg
   - Gallery case: Streetwear Sneaker Poster Ad
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 146
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-18-editorial-osaka-six-sweatshirt-ad.jpg
   - Gallery case: Editorial Osaka Six Sweatshirt Ad
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 147
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-19-editorial-perfume-shot-on-moss.jpg
   - Gallery case: Editorial Perfume Shot on Moss
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 148
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-20-editorial-perfume-bottle-in-golden-fur.jpg
   - Gallery case: Editorial Perfume Bottle in Golden Fur
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 149
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-21-luxury-miniature-dubai-city-model.jpg
   - Gallery case: Luxury Miniature Dubai City Model
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 150
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-22-parody-luxury-product-advertisement.jpg
   - Gallery case: Parody Luxury Product Advertisement
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 131
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-23-japanese-chinese-food-delivery-flyer.jpg
   - Gallery case: Japanese Chinese Food Delivery Flyer
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 166
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-24-luxury-chocolate-campaign-system.jpg
   - Gallery case: Luxury chocolate campaign system
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 169
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-25-urban-fruit-juice-ad-poster.jpg
   - Gallery case: Urban fruit juice ad poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 170
   - Upstream file: cases/ad-creative.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-26-luxury-sportswear-basketball-athlete-campaign-poster.jpg
   - Gallery case: Luxury Sportswear Basketball Athlete Campaign Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 70
   - Upstream file: cases/poster.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-27-streetwear-fashion-campaign-asian-apparel-poster.jpg
   - Gallery case: Streetwear Fashion Campaign Asian Apparel Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 71
   - Upstream file: cases/poster.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-28-surrealist-liquor-brand-high-fashion-poster.jpg
   - Gallery case: Surrealist Liquor Brand High Fashion Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 75
   - Upstream file: cases/poster.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-29-surrealist-rolex-luxury-watch-fashion-poster.jpg
   - Gallery case: Surrealist Rolex Luxury Watch Fashion Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 78
   - Upstream file: cases/poster.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - License note: Apache-2.0, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
 - docs/assets/gallery/cases/gallery-30-splash-fashion-brand-hyper-realistic-campaign-poster.jpg
   - Gallery case: SPLASH Fashion Brand Hyper-Realistic Campaign Poster
+  - Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
   - Upstream case: Case 80
   - Upstream file: cases/poster.md
   - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - License note: Apache-2.0, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-31-aurora-oolong-cold-brew-commercial-poster.jpg
+  - Gallery case: Aurora Oolong Cold Brew Commercial Poster
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/product-food/aurora-oolong-poster.png
+  - Upstream file: docs/product-food/aurora-oolong-poster.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/aurora-oolong-poster.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg
+  - Gallery case: Moss Radio Brand Identity Showcase Board
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/brand-systems-identity/brand-identity-moss-radio.png
+  - Upstream file: docs/brand-systems-identity/brand-identity-moss-radio.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/brand-identity-moss-radio.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-33-playful-mochi-metro-brand-kit-board.jpg
+  - Gallery case: Playful Mochi Metro Brand Kit Board
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/brand-systems-identity/playful-brand-kit-mochi-metro.png
+  - Upstream file: docs/brand-systems-identity/playful-brand-kit-mochi-metro.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/playful-brand-kit-mochi-metro.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-34-quiet-luxury-skincare-morning-tray.jpg
+  - Gallery case: Quiet-Luxury Skincare Morning Tray
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/beauty-lifestyle/skincare-morning-routine-tray.png
+  - Upstream file: docs/beauty-lifestyle/skincare-morning-routine-tray.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/skincare-morning-routine-tray.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-35-fragrance-evening-ritual-vanity.jpg
+  - Gallery case: Fragrance Evening Ritual Vanity
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png
+  - Upstream file: docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg
+  - Gallery case: Zoo Visitor Wayfinding Map
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/events-experience/zoo-visitor-wayfinding-map.png
+  - Upstream file: docs/events-experience/zoo-visitor-wayfinding-map.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/zoo-visitor-wayfinding-map.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-37-scenic-area-chinese-wayfinding-map.jpg
+  - Gallery case: Scenic Area Chinese Wayfinding Map
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/events-experience/huashan-5a-scenic-wayfinding-map.png
+  - Upstream file: docs/events-experience/huashan-5a-scenic-wayfinding-map.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/huashan-5a-scenic-wayfinding-map.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-38-tea-launch-poster-metro-lightbox-mockup.jpg
+  - Gallery case: Tea Launch Poster Metro Lightbox Mockup
+  - Source repository: wuyoscar/gpt_image_2_skill
+  - Upstream case: docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png
+  - Upstream file: docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png
+  - Upstream URL: https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-39-freestyle-150.jpg
+  - Gallery case: 品牌徽标设计图
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 150
+  - Upstream file: docs/gallery-part-1.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-150
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-40-freestyle-151.jpg
+  - Gallery case: 界面交互设计图
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 151
+  - Upstream file: docs/gallery-part-1.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-151
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-41-freestyle-153.jpg
+  - Gallery case: 主题海报版式设计
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 153
+  - Upstream file: docs/gallery-part-1.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-153
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-42-freestyle-154.jpg
+  - Gallery case: 写实摄影风格创作
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 154
+  - Upstream file: docs/gallery-part-1.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-154
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-43-freestyle-310.jpg
+  - Gallery case: 零食品牌技术分解图
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 310
+  - Upstream file: docs/gallery-part-2.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-310
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-44-noir-campaign.jpg
+  - Gallery case: NOIR 街头服饰 Campaign
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 344
+  - Upstream file: docs/gallery-part-2.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-344
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-45-freestyle-353.jpg
+  - Gallery case: 品牌口红推荐报告信息图
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 353
+  - Upstream file: docs/gallery-part-2.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-353
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-46-freestyle-362.jpg
+  - Gallery case: 抹茶品牌触点系统视觉板
+  - Source repository: freestylefly/awesome-gpt-image-2
+  - Upstream case: Case 362
+  - Upstream file: docs/gallery-part-2.md
+  - Upstream URL: https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-362
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg
+  - Gallery case: E-Commerce Product Detail Page Layout
+  - Source repository: ZeroLu/awesome-gpt-image
+  - Upstream case: assets/opennana/terminator-taobao-page.jpeg
+  - Upstream file: assets/opennana/terminator-taobao-page.jpeg
+  - Upstream URL: https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/terminator-taobao-page.jpeg
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-48-blue-white-porcelain-product-infographic.jpg
+  - Gallery case: Blue-White Porcelain Product Infographic
+  - Source repository: ZeroLu/awesome-gpt-image
+  - Upstream case: assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg
+  - Upstream file: assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg
+  - Upstream URL: https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-49-fresh-lemon-juice-product-poster.jpg
+  - Gallery case: Fresh Lemon Juice Product Poster
+  - Source repository: TanShilongMario/PromptFill
+  - Upstream case: public/images/LemonJuice.png
+  - Upstream file: public/images/LemonJuice.png
+  - Upstream URL: https://github.com/TanShilongMario/PromptFill/blob/main/public/images/LemonJuice.png
+  - License note: MIT License, per upstream repository LICENSE
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-50-minimal-table-lamp-product-advertisement.jpg
+  - Gallery case: Minimal Table Lamp Product Advertisement
+  - Source repository: TanShilongMario/PromptFill
+  - Upstream case: public/images/lamp.png
+  - Upstream file: public/images/lamp.png
+  - Upstream URL: https://github.com/TanShilongMario/PromptFill/blob/main/public/images/lamp.png
+  - License note: MIT License, per upstream repository LICENSE
   - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
