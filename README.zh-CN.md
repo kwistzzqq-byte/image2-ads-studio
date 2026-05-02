@@ -1,10 +1,28 @@
 # Image2 Ads Studio
 
-面向 Image2 广告作图的开源 Prompt Studio：把业务白话需求和参考图，转成适合商业广告出图测试的优化提示词。
+面向 Image2 广告作图的开源 Prompt Agent：把客户白话需求、文案、行业和参考图，转成去品牌化、可执行、适合商业广告出图测试的优化提示词。
 
-这是 **Community Edition**。它开源 Prompt Agent 框架、本地 Web 工作台、120 条业务模板和 75 条视觉配方；商业版保留完整模板库、ERP 集成、真实生图链路和生产案例库。
+这不是一个“提示词搬运合集”。提示词库适合看案例、找灵感；Image2 Ads Studio 解决的是广告业务里更靠前的问题：客户只说一句需求时，系统如何解析意图、匹配广告模板、提取视觉配方、通过 LLM 重构 prompt，并输出可测试、可记录、可继续集成的作图方案。
+
+这是 **Community Edition**。它开源 Prompt Agent 框架、本地 Web 工作台、120 条业务模板、75 条视觉配方、LLM Prompt Brain 接口、确定性 prompt 校验、参考图策略和公开案例库；商业版保留完整模板库、ERP 集成、真实生图链路和生产案例库。
 
 ![Workflow](docs/assets/github-workflow.svg)
+
+## 我们和提示词仓库的区别
+
+大多数 Image2 prompt 仓库回答的是：“有什么 prompt 可以复制？”
+
+Image2 Ads Studio 回答的是：“给定客户需求、行业、文案、画幅和参考图，Agent 应该如何生成一条可执行的广告作图 prompt？”
+
+| 提示词仓库 | Image2 Ads Studio |
+| --- | --- |
+| 用于浏览案例和找灵感 | 可本地运行的广告作图 Prompt Agent |
+| 从已有 prompt 出发 | 从客户 brief、文案、行业和参考图出发 |
+| 覆盖泛创意场景 | 聚焦广告垂类：门头、海报、电商、产品广告、导视、形象墙、商业摄影 |
+| prompt 文本本身是主要内容 | Parser、Retriever、Compiler、LLM 重构、确定性校验和生成记录才是核心产品 |
+| 通常依赖人工复制粘贴 | 输出 parsed intent、命中模板、视觉配方、设计方案、optimized prompt 和来源策略 |
+| 参考案例可能贴近原始素材 | 公开案例 prompt 经过重构、去品牌化、归因标注，并改写为可复用版本 |
+| 难以接入业务系统 | 架构上预留 ERP 字段、模板治理、Adapter 和生产工作流 |
 
 ## Prompt Gallery
 
@@ -22,13 +40,13 @@
 | <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Wayfinding map prompt case" width="260"> | **Zoo Visitor Wayfinding Map**<br><br>`Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic...` |
 | <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="Ecommerce product detail prompt case" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout...` |
 
-来源与许可证说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。上游 prompt 和图片只作为结构参考；公开 prompt 已由本项目流程重新生成、去品牌化并改写为可复用版本。
+来源与许可证说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。Gallery 不是复制来的 prompt 合集：上游 prompt 和图片只作为结构参考，最终公开 prompt 由本项目 Agent 流程重新生成、去品牌化、标准化，并改写为可复用版本。
 
 ## 价值
 
 广告制作需求通常不是一句 prompt 能稳定解决的。比如“做一个奶茶店门头效果图”，真正可执行的作图指令需要包含作图类型、行业、文案、画幅、材质、灯光、参考图保留策略和负面约束。
 
-Image2 Ads Studio 的目标是把前期需求整理成结构化作图方案，并输出 LLM 优化后的 final prompt，供 Image2 或其他图像生成工具手动测试。
+Image2 Ads Studio 的目标是把前期需求整理成结构化广告作图方案，并输出 LLM 优化后的 final prompt，供 Image2 或其他图像生成工具手动测试。
 
 ## 功能亮点
 

@@ -1,10 +1,28 @@
 # Image2 Ads Studio
 
-An open-source prompt studio for generating high-quality advertising visuals with Image2.
+Advertising prompt agent for Image2: turn business briefs and reference images into debranded, production-ready image prompts.
 
-This repository is the **Community Edition** of an advertising vertical prompt studio. It focuses on the prompt planning layer before image generation: intent parsing, advertising templates, visual recipes, deterministic prompt checks, reference image policy, and a local Web workbench.
+This is not another prompt dump. Prompt libraries are useful for browsing examples; Image2 Ads Studio is a working prompt pipeline for advertising production. It parses a customer brief, retrieves advertising templates and visual recipes, rewrites references through an LLM prompt brain, validates deterministic execution details, and returns an optimized prompt that can be manually tested in Image2.
+
+This repository is the **Community Edition**. It opens the agent framework, local Web workbench, 120 business templates, 75 visual recipes, LLM prompt brain interface, deterministic prompt checks, reference image policy, and a public case gallery.
 
 ![Workflow](docs/assets/github-workflow.svg)
+
+## Why This Is Different
+
+Most Image2 prompt repositories answer: "What prompt can I copy?"
+
+Image2 Ads Studio answers: "Given this business brief, copywriting, industry, aspect ratio, and reference image, what prompt should the agent produce?"
+
+| Prompt libraries | Image2 Ads Studio |
+| --- | --- |
+| Curated examples for inspiration | Runnable advertising prompt agent |
+| Start from existing prompts | Start from customer brief and reference images |
+| General creative coverage | Advertising vertical: storefronts, posters, ecommerce, product ads, signage, brand walls, commercial photography |
+| Prompt text is the product | Parser, retriever, compiler, LLM rewrite, deterministic checks, and JSON records are the product |
+| Usually copy/paste driven | Produces parsed intent, matched templates, visual recipes, design plan, optimized prompt, and source policy |
+| References may stay close to source | Public gallery prompts are regenerated, debranded, attributed, and made reusable |
+| Hard to connect to business systems | Designed for later ERP fields, template governance, adapters, and production workflows |
 
 ## Prompt Gallery
 
@@ -22,13 +40,13 @@ View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
 | <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Wayfinding map prompt case" width="260"> | **Zoo Visitor Wayfinding Map**<br><br>`Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic...` |
 | <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="Ecommerce product detail prompt case" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout...` |
 
-Source and license notes are tracked in [gallery attribution](examples/gallery/ATTRIBUTION.md). Upstream prompts/images are used as structure references; public prompts are regenerated, debranded, and reusable.
+Source and license notes are tracked in [gallery attribution](examples/gallery/ATTRIBUTION.md). The gallery is not a copied prompt collection: upstream prompts/images are used as structure references, then this project regenerates, debrands, and normalizes the final prompt through the same agent flow used by the Web workbench.
 
 ## Why It Exists
 
 General image-generation prompts are unstable for advertising production. A local shop owner may say "make a milk tea storefront signboard", but production-ready output needs structure: task type, industry, copywriting, aspect ratio, material constraints, reference image policy, and clear composition.
 
-Image2 Ads Studio turns that loose brief into an optimized prompt that can be manually tested in Image2 or another image-generation tool.
+Image2 Ads Studio turns that loose brief into a structured advertising plan and an optimized prompt that can be manually tested in Image2 or another image-generation tool.
 
 ## Core Features
 
