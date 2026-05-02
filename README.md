@@ -6,17 +6,20 @@ This repository is the **Community Edition** of an advertising vertical prompt s
 
 ![Workflow](docs/assets/github-workflow.svg)
 
-## Gallery Preview
+## Prompt Gallery
 
-| Generated beverage ad concept | Generated product ad concept |
+The public gallery contains 30 image-to-prompt cases: 2 project-generated concepts and 28 upstream-inspired advertising references. Each case includes one preview image, one Image2-ready optimized prompt, and source attribution.
+
+View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
+
+| Preview | Optimized Prompt Excerpt |
 | --- | --- |
-| <img src="docs/assets/gallery/generated-beverage-ad-concept.jpg" alt="Generated beverage advertising concept" width="420"> | <img src="docs/assets/gallery/generated-product-ad-concept.jpg" alt="Generated product advertising concept" width="420"> |
+| <img src="docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="Beverage product ad concept" width="260"> | **Beverage Product Ad Concept**<br><br>`Create a commercially usable 16:9 beverage advertising hero image for a new debranded sparkling drink. Composition: place a tall matte-gloss red can slightly right of center...` |
+| <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium appliance product ad concept" width="260"> | **Premium Appliance Product Ad Concept**<br><br>`Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device...` |
+| <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="Luxury amber perfume ad prompt case" width="260"> | **Luxury Amber Perfume Ad**<br><br>`Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object...` |
+| <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="Tropical citrus soda ad prompt case" width="260"> | **Tropical Citrus Soda Ad Poster**<br><br>`Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object...` |
 
-| Open poster reference | Open poster reference | Open poster reference |
-| --- | --- | --- |
-| <img src="docs/assets/gallery/open-poster-market-wpa.jpg" alt="Public-domain market poster reference" width="260"> | <img src="docs/assets/gallery/open-poster-mucha-job.jpg" alt="Public-domain poster reference by Alphonse Mucha" width="260"> | <img src="docs/assets/gallery/open-poster-aetna-dynamite.jpg" alt="Public-domain advertising poster reference" width="260"> |
-
-The generated concept previews are included to show output direction. Open poster references are used as visual-recipe inspiration samples; see [gallery attribution](examples/gallery/ATTRIBUTION.md).
+Source and license notes are tracked in [gallery attribution](examples/gallery/ATTRIBUTION.md). Upstream prompts/images are used as structure references; public prompts are regenerated, debranded, and reusable.
 
 ## Why It Exists
 

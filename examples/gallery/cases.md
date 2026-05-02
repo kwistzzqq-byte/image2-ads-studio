@@ -1,0 +1,1081 @@
+# Gallery Cases
+
+Each case pairs one preview image with one optimized prompt produced by the Image2 Ads Studio structured brief -> template retrieval -> visual recipe retrieval -> LLM prompt brain flow.
+
+Upstream images and prompts are used only as visual and structural references. Public prompts below are rewritten, debranded, and made reusable for new advertising work.
+
+## 1. Beverage Product Ad Concept
+
+<img src="../../docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="Beverage Product Ad Concept" width="420">
+
+- Task: `product_ad`
+- Industry: beverage
+- Source: Project owner generated concept preview; Project-owned AI-generated preview; visible third-party marks are not reusable assets.
+
+**Brief**
+
+Create a debranded beverage product advertising hero image based on the visual structure of the provided concept preview. Keep the red-can hero composition, cold surface, ice, splash energy, dramatic red rim light, and negative space for campaign copy; do not copy any visible third-party brand text or logo.
+
+**Optimized Prompt**
+
+```text
+Create a commercially usable 16:9 beverage advertising hero image for a new debranded sparkling drink. Composition: place a tall matte-gloss red can slightly right of center as the primary hero object, upright and sharply in focus, with generous negative space on the left for campaign copy. Include an anonymous fashion model in the background-right or midground holding or framing the can, but keep the product as the clear focal point; do not make the person resemble any specific real individual. Scene: black reflective wet tabletop, scattered clear ice cubes across the foreground, energetic water splash arcs around the base of the can, faint atmospheric mist, and a dark charcoal-to-black background with two vertical red light bars behind the subject for depth. Materials: realistic aluminum can with smooth red finish, fine condensation droplets, crisp rim highlights, clean pull-tab detail, and no logos, no protected text, no recognizable brand graphics. Lighting: high-contrast studio setup with a soft key light from front-left, strong red rim light from rear-right, controlled specular highlights on the can and ice, deep shadows, cinematic contrast, and splash droplets frozen with high-speed flash clarity. Color palette: dominant black, deep crimson, bright red, silver highlights, and cool transparent ice reflections. Typography area: reserve the left 35 to 40 percent of the frame as clean negative space; add the headline text exactly as 'Refresh the Night' in large modern sans-serif type, bright white or pale silver, with small secondary placeholder lines beneath it for future campaign details, aligned cleanly and fully readable. Advertising finish: premium studio product photography, production-ready composition, clean hierarchy, realistic reflections, sharp packaging silhouette, polished post-production, no clutter. Reference-image policy: use the provided concept preview only as inspiration for overall layout, cold-surface mood, splash energy, red rim lighting, and copy-space balance; do not reproduce any visible logos, brand wording, exact face, can artwork, or distinctive proprietary details from the reference. Negative constraints: no trademarked names, no cursive cola-style script, no copied label design, no pricing, no extra claims, no watermarks, no social handles, no distorted hands, no malformed ice, no unreadable headline, no busy background.
+```
+
+**Prompt Controls**
+
+- Controls a right-weighted hero composition with left-side copy space and a red can as the dominant focal point.
+- Specifies exact studio lighting, wet reflective materials, ice, splash behavior, and a premium black-red color system.
+- Defines safe typography and strict debranding rules so the result stays commercially reusable.
+
+**Source Use:** The reference image is used only for visual structure and mood cues such as can placement, reflective cold surface, ice splash energy, dramatic red rim light, and negative-space balance.
+
+**Risk Note:** Do not copy any visible logo, script lettering, can label artwork, facial identity, or other distinctive protected elements from the upstream concept preview.
+
+## 2. Premium Appliance Product Ad Concept
+
+<img src="../../docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium Appliance Product Ad Concept" width="420">
+
+- Task: `product_ad`
+- Industry: consumer electronics
+- Source: Project owner generated concept preview; Project-owned AI-generated preview; visible third-party marks are not reusable assets.
+
+**Brief**
+
+Create a debranded premium appliance product advertising hero image based on the visual structure of the provided concept preview. Keep the black-and-gold cylindrical product silhouette, warm low-key lighting, polished floor reflection, smoke trails, and left-side logo/text zone; do not copy any visible third-party brand text or logo.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device with a sleek vertical handle and metallic intake ring, shown as a single hero object standing on a glossy dark reflective floor. Place the product on the right third of the frame, slightly angled in three-quarter view, leaving a clean negative-space branding zone on the left for a simple text lockup. Background: deep black to warm brown gradient studio environment with subtle haze. Add elegant golden smoke or airflow light trails sweeping low across the floor and curving behind the product to suggest motion and controlled power.
+
+Lighting: low-key cinematic studio lighting with one warm spotlight from the upper left, soft rim light on the product edges, controlled metallic highlights on the gold surfaces, and gentle falloff into the background. Materials must read clearly: satin black anodized body, brushed champagne-gold metal accents, fine perforated metal texture near the base, polished reflective floor with realistic mirrored reflection and faint surface imperfections. Keep the scene crisp, premium, and physically plausible.
+
+Typography and layout: on the left side, place the headline exactly as "Engineered Airflow" in clean modern sans-serif lettering, high legibility, white or soft warm-white text, medium-large size, with generous spacing and minimal supporting graphic treatment. Do not include any other words, numbers, badges, prices, or labels. No logos, no brand marks, no watermarks, no UI elements.
+
+Color palette: black, charcoal, champagne gold, bronze glow, warm amber highlights. Maintain a luxury commercial-ad finish with strong contrast, restrained saturation, precise product silhouette, and ample negative space for ad use.
+
+Reference-image policy: use the provided concept preview only as off-model inspiration for overall composition, mood, lighting direction, product category silhouette, floor reflection, smoke-trail energy, and left-side text zone. Do not reproduce any visible logo, brand styling, exact product geometry, proprietary detailing, or distinctive text from the reference. Generate an original debranded advertising image suitable for commercial concept presentation.
+```
+
+**Prompt Controls**
+
+- Controls premium right-weighted hero composition with a left-side headline zone.
+- Defines exact lighting, materials, floor reflection, haze, and airflow trail behavior.
+- Blocks logos, extra copy, brand imitation, and direct replication of reference-specific details.
+
+**Source Use:** The reference image is used only as visual inspiration for composition, mood, lighting, reflective floor, smoke-trail motion, and text-zone placement, not as a direct asset or copy target.
+
+**Risk Note:** Do not copy any upstream logo, brand wordmark, exact product detailing, or other distinctive protected visual/text elements from the reference.
+
+## 3. E-commerce Main Image - Luxury Amber Perfume Ad
+
+<img src="../../docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="E-commerce Main Image - Luxury Amber Perfume Ad" width="420">
+
+- Task: `product_ad`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 113](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Luxury Amber Perfume Ad". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object, placed upright slightly right of center on a polished black marble surface with fine white veining and a clean mirror reflection below. Use a faceted transparent stopper, thick clear glass walls, and a warm amber liquid that appears luminous from within. Cover the bottle lightly with realistic condensation droplets for texture. Build a dark studio background with soft atmospheric smoke curling on both sides, leaving the center clean for product focus. Light the scene with a strong warm key light from the upper left, a subtle rim light along the bottle edges, and a soft golden bloom in the far background; keep contrast high, shadows deep, and glass highlights crisp. Color palette: black, amber gold, warm bronze, and soft ivory highlights. Typography layout: place the headline "Signature Scent" in a clean premium sans-serif at the upper center or upper left; keep the bottle label generic with minimal non-branded placeholder text only, no logos, no known brand wording, no creator marks, no prices, no badges. Preserve a commercially usable visual hierarchy: headline first, bottle second, atmosphere third. Product photography finish must be photorealistic, sharply focused on the bottle, with shallow depth of field in the background, realistic reflections, premium material rendering, and advertising-grade retouching. Negative constraints: do not include any real brand names, monograms, watermark-like corner marks, celebrity associations, social handles, pricing, exaggerated claims, or copied label text; do not reproduce the original reference exactly; do not add extra objects unless they are subtle atmospheric accents.
+```
+
+**Prompt Controls**
+
+- Controls exact hero composition, bottle placement, and text hierarchy.
+- Defines executable lighting, materials, reflections, smoke, and color palette.
+- Sets strict debranding and reference-image limits for commercial reuse.
+
+**Source Use:** The upstream case and reference image were used only to extract general composition, warm cinematic lighting, luxury materials, and ad layout logic, not to copy protected branding or exact artwork.
+
+**Risk Note:** Do not replicate the original bottle label, corner mark, brand wording, or any other distinctive protected visual text from the source material.
+
+## 4. E-commerce Main Image - Skincare Product Studio Shot
+
+<img src="../../docs/assets/gallery/cases/gallery-04-e-commerce-main-image-skincare-product-studio-shot.jpg" alt="E-commerce Main Image - Skincare Product Studio Shot" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 114](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Skincare Product Studio Shot". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 e-commerce main image for a beauty cleansing product. Show one debranded skincare bottle centered slightly low in the frame on a round matte pedestal, with the bottle as the dominant subject occupying most of the image height. Surround it with soft white foam, a few small white-and-yellow botanical flowers, and a small number of translucent bubbles placed in the foreground and background to create depth without blocking the product. Use a pale butter-yellow to warm cream gradient background with a clean studio sweep and a premium commercial finish.
+
+Product and materials: the bottle should feel smooth, soft-touch plastic or coated glass with a clean pump dispenser, subtle edge highlights, realistic reflections, and legible but minimal packaging design. Keep the label generic and reusable. The only visible headline text on the packaging or poster area should be "Clean Glow" in clear modern sans-serif typography. Add 1 to 2 short secondary text lines only as generic placeholder layout, not as branded claims, certifications, or copied wording. No logos, no seals copied from reference material, no pricing, no social handles, no medical or regulatory badges.
+
+Composition and hierarchy: keep the bottle perfectly readable from the front, centered, upright, and unobstructed. Reserve the upper area for clean headline breathing room and the lower area for product stability and pedestal visibility. Flowers and foam should frame the base and sides, not cover the label. Maintain a strong vertical silhouette with balanced negative space for marketplace-ready readability.
+
+Lighting: use soft diffused studio lighting from upper left with a gentle front fill, bright but controlled highlights along the bottle edges, soft shadows under the pedestal, and a luminous, hygienic beauty-ad look. Keep contrast moderate, whites creamy rather than stark blue, and the overall finish polished and production-ready.
+
+Color and typography: palette should stay within warm cream, soft yellow, white, and a small touch of natural green from stems if needed. Typography must be crisp, minimal, and commercially usable, with "Clean Glow" as the main readable copy. Do not invent extra promotional text, prices, dates, or efficacy claims.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition, lighting direction, material treatment, flower-and-foam staging, and premium beauty-ad atmosphere. Do not replicate any exact label text, brand identifiers, logo shapes, badge designs, or unique arrangement details from the reference. The reference image is style guidance only and is not directly inserted unless explicitly provided to the image model.
+
+Negative constraints: no people, no hands, no copied branding, no proprietary text, no cluttered props, no dark background, no exaggerated surreal effects, no blocked label, no distorted bottle geometry, no fake certifications, no watermarks, no collage layout.
+```
+
+**Prompt Controls**
+
+- Controls a centered beauty-product composition with pedestal, foam, flowers, and clean negative space.
+- Specifies warm studio lighting, material realism, and a marketplace-ready premium finish.
+- Defines exact typography use for "Clean Glow" plus strict debranding and reference-image limits.
+
+**Source Use:** The upstream case and reference image were used only to extract reusable structure such as centered product hierarchy, soft studio lighting, foam-and-botanical staging, and polished e-commerce presentation.
+
+**Risk Note:** Do not copy any exact brand text, logo, badge, label wording, or distinctive floral/product arrangement from the upstream or reference image.
+
+## 5. E-commerce Main Image - Tropical Citrus Soda Ad Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="E-commerce Main Image - Tropical Citrus Soda Ad Poster" width="420">
+
+- Task: `product_ad`
+- Industry: food and beverage
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 115](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Tropical Citrus Soda Ad Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object, placed slightly right of center and leaning a few degrees left, with a bright yellow cap, crisp molded bottle shape, realistic condensation droplets, and sparkling golden-orange liquid inside. Design the label as a generic citrus-themed package with abstract orange, lime, and grapefruit slice graphics and clean debranded typography; do not use any real brand names, logos, or copied label text. Build strong foreground depth with splashing water, scattered clear ice cubes, and several fresh citrus cuts at the bottom edge, while keeping the bottle fully dominant and sharply in focus.
+
+Use a bright tropical background with saturated blue sky, turquoise water, soft white clouds, and blurred palm leaves entering from the upper right. Light the scene like a polished retail ad: strong sun flare from the upper left, hard glossy highlights on the bottle, controlled specular reflections on droplets and ice, luminous translucency in the drink, and high micro-contrast without blowing out the label. Keep materials physically believable: wet plastic, transparent ice, juicy citrus pulp, and energetic water motion frozen at high shutter speed.
+
+Reserve the left third for typography and selling points. Place a large headline area in bold, rounded sans-serif lettering, with the exact copy "Fresh Energy" as the main text. Add one smaller accent line below it in a contrasting handwritten or brush-script style, but keep it generic and editable. Include a compact mid-left badge shape for a short slogan placeholder, a lower-left vertical features list with simple circular icons, and a small bottom-left banner area for size or flavor information. Add a round seal or stamp at the lower right as a generic promotional element. Use a palette of citrus yellow, orange, lime green, aqua, and sky blue, with clean separation between product, text, and background.
+
+Execution rules: production-ready advertising finish, sharp packaging detail, readable text zones, uncluttered hierarchy, no people, no store shelf, no price tags, no QR codes, no social handles, no copied slogans, no exact upstream wording, no proprietary logos, and no distinctive brand identity. Reference-image policy: use the reference only to inform overall composition, energy, lighting direction, foreground layering, and tropical refreshment mood; do not replicate exact branding, exact text, or uniquely traceable layout details.
+```
+
+**Prompt Controls**
+
+- Controls hero placement, foreground depth, and left-side ad layout.
+- Specifies lighting, materials, color palette, and commercial finish for a tropical soda poster.
+- Defines editable typography zones and strict debranding/reference-use constraints.
+
+**Source Use:** The upstream case and reference image were used only as structural inspiration for composition, visual hierarchy, lighting, and product-ad staging.
+
+**Risk Note:** Do not copy the original bottle branding, French promotional text, label artwork, or any other distinctive traceable packaging details.
+
+## 6. E-commerce Main Image - Luxury Fur-Lined Loafer Lifestyle Photo
+
+<img src="../../docs/assets/gallery/cases/gallery-06-e-commerce-main-image-luxury-fur-lined-loafer-lifestyle-photo.jpg" alt="E-commerce Main Image - Luxury Fur-Lined Loafer Lifestyle Photo" width="420">
+
+- Task: `commercial_photography`
+- Industry: luxury goods
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 117](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Luxury Fur-Lined Loafer Lifestyle Photo". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 commercial advertising photograph for a luxury slip-on loafer campaign. Show a close, low-angle lifestyle scene focused on the lower legs and feet only, with one backless black leather loafer worn on the right foot and the matching loafer placed in the lower-left foreground on a textured cream rug. The left foot is bare and slightly lifted, suggesting the act of trying on the product. Keep the product as the visual hero, positioned slightly right of center, with the secondary shoe anchoring the front-left corner and negative space reserved in the upper-left or upper-right area for clean ad copy.
+
+Materials and product details: smooth black leather upper, rounded almond toe, open mule-style heel, soft warm-toned faux-fur lining visible around the opening, refined small metallic horsebit-style hardware without logos, realistic stitching, natural creases, premium surface finish. Wardrobe should be cropped medium-blue denim with a raw hem, visible only from mid-calf down. No face, no full body, no jewelry, no branded clothing.
+
+Environment and composition: cozy minimalist interior with a cream shag rug, subtle irregular dark linear accents in the rug pattern, neutral plaster or painted wall, and a leaning rectangular mirror with a medium wood frame softly out of focus in the background. Preserve a candid editorial product-demo feeling, but keep the framing precise and commercially usable. Use shallow depth of field so the worn loafer is the sharpest point, the foreground shoe remains clear, and the mirror/background fall into soft blur.
+
+Lighting and color: soft natural window light from camera left, diffused and warm, with gentle shadow falloff, realistic skin texture, believable leather highlights, and visible fur texture. Use a muted palette of black, cream, beige, tan, wood brown, and medium denim blue. Add very subtle film-like grain, but keep the final image crisp, premium, and catalog-ready.
+
+Typography direction: place the exact text "Launch Campaign" once in a clean, elegant serif or modern high-contrast typeface in the reserved negative space, medium size, warm off-white or deep charcoal depending on local contrast. Keep typography flat and minimal, no extra slogans, no prices, no badges, no logos, no watermarks.
+
+Commercial finish: photorealistic, high detail, true-to-material rendering, natural proportions, premium fashion advertising quality, realistic contact shadows, no exaggerated styling, no surreal elements.
+
+Reference-image policy: use the reference only for overall composition logic, cozy interior mood, low close-up angle, and product-in-use storytelling; do not replicate the exact person, exact room, exact rug pattern, exact mirror placement, or any protected source-specific details.
+```
+
+**Prompt Controls**
+
+- Controls a low-angle luxury lifestyle composition with the product as the hero and built-in copy space.
+- Specifies executable lighting, materials, palette, texture realism, and background styling for a production-ready ad image.
+- Defines strict debranding and reference-use boundaries so the result stays reusable and commercially safe.
+
+**Source Use:** The upstream case and attached reference were used only to extract composition structure, visual hierarchy, lighting approach, material cues, and ad-ready typography placement.
+
+**Risk Note:** Do not copy any exact brand cues, person identity, distinctive room arrangement, unique rug pattern, protected text, or source-specific styling fingerprints from the inspiration materials.
+
+## 7. E-commerce Main Image - Luxury Perfume Ad on Marble Vanity
+
+<img src="../../docs/assets/gallery/cases/gallery-07-e-commerce-main-image-luxury-perfume-ad-on-marble-vanity.jpg" alt="E-commerce Main Image - Luxury Perfume Ad on Marble Vanity" width="420">
+
+- Task: `product_ad`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 118](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Luxury Perfume Ad on Marble Vanity". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 luxury beauty product advertisement for a single perfume bottle hero shot. Use a polished gray-and-white marble vanity as the base surface with realistic reflection, contact shadow, and subtle veining. Place one sculpted glass perfume bottle slightly right of center, upright and dominant, with a tall elegant silhouette, smoky translucent glass that deepens toward the base, a reflective brushed-gold cap, a slim metallic collar, and a simple abstract gold monogram or geometric emblem on the front with no real brand text. Keep the bottle sharply focused and physically plausible, with accurate glass refraction, clean edge highlights, and premium material rendering.
+
+Build the scene with restrained luxury props only: one partially cropped cut-crystal bowl with a gold rim in the lower-left foreground, one dark stone or lacquered presentation box behind the bottle, one brushed metallic cylindrical vase with soft white flowers in the back-right background, and one champagne-toned satin fabric fold in the lower-right foreground. Keep props secondary, sparse, and softly blurred so the bottle remains the clear focal point. Reserve about 25% negative space on the left for typography.
+
+Lighting: warm key light from upper left, soft fill from front, narrow rim light to define glass contours and metal edges, deep but readable shadows, cinematic golden highlights, shallow depth of field, gentle background bokeh, dark brown-black studio backdrop with a vertical shadow panel on the left to support text legibility. Color palette: charcoal, espresso brown, warm beige, brushed gold, marble gray, ivory white. Finish should look like a production-ready high-end e-commerce campaign image.
+
+Typography layout: place the headline "Signature Scent" in the upper-left quadrant in large elegant serif lettering, warm beige color, high contrast against the dark background. Add one short supporting line below in smaller serif text or leave it blank if not provided. Add a thin short gold horizontal rule beneath the text block. Do not place any logo, watermark, price, social handle, or extra promotional badge. All visible text must be limited to the provided headline or neutral placeholder copy only.
+
+Reference-image policy: use the reference only as inspiration for composition balance, luxury material mix, lighting direction, prop hierarchy, and text placement; do not reproduce any exact bottle design, engraved wording, logo, monogram, or proprietary arrangement from the source image. Keep the result debranded, commercially reusable, and distinct from any existing fragrance brand.
+
+Negative constraints: no people, no extra products, no copied logos, no brand names, no watermark, no fake claims, no price tags, no clutter, no distorted glass, no unreadable typography, no surreal props, no low-detail textures, no direct replication of the reference bottle or its markings.
+```
+
+**Prompt Controls**
+
+- Controls a premium 1:1 beauty-ad composition with the bottle slightly right of center and text space on the left.
+- Specifies exact materials, prop roles, lighting direction, color palette, and commercial product-photo finish.
+- Includes explicit debranding and reference-use rules to keep the output reusable and non-infringing.
+
+**Source Use:** The upstream case and attached image were used only to extract composition structure, luxury staging, lighting behavior, material palette, and typography placement.
+
+**Risk Note:** Do not copy any exact bottle silhouette, monogram, engraved text, logo placement, watermark, or other distinctive brand-identifying details from the source material.
+
+## 8. E-commerce Main Image - Miniature Diorama Skincare Advertisement
+
+<img src="../../docs/assets/gallery/cases/gallery-08-e-commerce-main-image-miniature-diorama-skincare-advertisement.jpg" alt="E-commerce Main Image - Miniature Diorama Skincare Advertisement" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 151](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Miniature Diorama Skincare Advertisement". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a vertically framed 9:16 e-commerce beauty key visual featuring one oversized, debranded skincare pump bottle centered on a clean circular studio platform. Build the scene as a miniature construction diorama: tiny anonymous workers in solid-color safety clothing, modular scaffolding, a compact crane, small utility truck, ladders, barrels, cones, and industrial tanks arranged around the bottle to suggest careful product craftsmanship. Keep the bottle front-facing, symmetrical, and dominant in the frame, occupying most of the vertical space, with the miniature props concentrated at the lower half and along one side to preserve a clear product silhouette.
+
+Packaging and typography: use a premium matte cream bottle with a brushed warm-metal pump, subtle realistic seams, and soft edge highlights. Replace all brand-specific text with generic editable packaging design. The only readable headline text should be "Clean Glow" placed cleanly on the bottle or as a simple poster-style title area above the product, using elegant high-contrast serif or refined modern uppercase typography with generous spacing. Do not generate prices, claims, certifications, social handles, or dense paragraphs of copy. Keep secondary text minimal, generic, and non-proprietary.
+
+Lighting and materials: use soft diffused studio lighting from upper left with controlled fill from front right, very soft contact shadows, low glare, and crisp material separation. Render premium cosmetic materials with realistic matte plastic, satin metal, lightly worn steel scaffolding, and clean painted miniature props. Maintain a warm neutral palette of beige, ivory, sand, champagne gold, muted steel, and restrained safety-accent yellow. Background should be seamless and uncluttered, with a smooth tonal gradient and no environmental horizon line.
+
+Composition and finish: emphasize commercial clarity, product readability, and polished advertising realism. Use a shallow tilt-shift depth effect so the miniature scene feels handcrafted while the bottle label area stays sharp. Keep the image high-resolution, photoreal, and production-ready for an online storefront hero image. Avoid surreal distortion, exaggerated clutter, cartoon styling, or cinematic darkness.
+
+Reference-image policy: use the provided reference only as off-platform inspiration for layout logic, scale contrast, prop density, warm neutral art direction, and miniature-build metaphor. Do not reproduce any exact logo, wording, label layout, proprietary product identity, or distinctive protected details from the reference or upstream case.
+```
+
+**Prompt Controls**
+
+- Controls a centered product-first 9:16 composition with a miniature construction narrative around the bottle.
+- Specifies exact lighting, material finish, palette, typography treatment, and commercial product-photo clarity.
+- Defines strict debranding and reference-use rules so the result stays reusable for new campaigns.
+
+**Source Use:** The upstream case and attached image were used only to extract reusable structure such as oversized product hierarchy, miniature worker metaphor, warm studio palette, and clean commercial staging.
+
+**Risk Note:** Do not copy any exact bottle branding, label text, logo, slogan, or uniquely recognizable arrangement from the source image or upstream prompt.
+
+## 9. E-commerce Main Image - Premium Gaming Motherboard Studio Shot
+
+<img src="../../docs/assets/gallery/cases/gallery-09-e-commerce-main-image-premium-gaming-motherboard-studio-shot.jpg" alt="E-commerce Main Image - Premium Gaming Motherboard Studio Shot" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: consumer electronics
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 153](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Premium Gaming Motherboard Studio Shot". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 e-commerce hero image for a premium gaming motherboard in a dark studio environment. Show one debranded ATX motherboard in a three-quarter top-down view, angled from lower left to upper right, filling most of the frame with strong product clarity and sharp edge definition. Keep the board centered slightly right of frame, with open negative space on the left or upper-left for headline placement. The motherboard should feature matte black and gunmetal surfaces, angular heat-dissipation covers, brushed metal accents, exposed CPU socket area, four memory slots, layered heatsinks, reinforced expansion slots, visible capacitors, headers, power connectors, and small diagnostic hardware details. Do not include any logos, brand marks, model names, or protected slogans on the product.
+
+Lighting: use controlled low-key studio lighting with a soft overhead key light, subtle rim lights from the rear and right edge, and restrained colored edge glow in cyan, violet, and magenta to emphasize contours without turning the image into a sci-fi scene. Keep reflections realistic and premium, with crisp metal highlights and deep neutral shadows. Background: seamless charcoal-to-black gradient backdrop with a faint floor reflection and no extra props, cables, components, or packaging.
+
+Typography: add the exact copy "Built for Performance" as the only visible headline. Set it in a clean bold sans-serif, uppercase or title case, large but secondary to the product, placed in the left or upper-left negative space. Use white or very light gray text with tight tracking and clean alignment. No prices, badges, fake certifications, extra claims, or random filler text.
+
+Color and finish: dominant palette of black, graphite, steel gray, cyan, violet, and magenta accents. Prioritize commercial realism, catalog-ready sharpness, accurate proportions, and a premium consumer-electronics advertising finish. Output should feel like a production-ready marketplace main image: clear, polished, minimal, high contrast, and focused on product desirability.
+
+Reference-image policy: use the provided reference only as inspiration for camera angle, visual hierarchy, material contrast, and lighting mood; do not replicate any specific logo shapes, text placement, proprietary markings, or uniquely identifying design details from the reference or source material.
+
+Negative constraints: no brand names, no logos, no protected text, no watermarks, no creator handles, no people, no hands, no RGB overload, no fantasy circuitry, no extra accessories, no distorted slots, no warped perspective, no cluttered background, no duplicated parts, no packaging, no price tags.
+```
+
+**Prompt Controls**
+
+- Controls a premium three-quarter product composition with clear text-safe negative space.
+- Defines exact studio lighting, material finish, and restrained accent color treatment.
+- Sets explicit debranding, typography, and reference-use constraints for commercial reuse.
+
+**Source Use:** The upstream case and reference image were used only to extract composition, lighting hierarchy, material treatment, and e-commerce product-shot structure.
+
+**Risk Note:** Do not copy any distinctive logo forms, model labels, proprietary slogans, or uniquely recognizable layout details from the source image or upstream prompt.
+
+## 10. E-commerce Main Image - Premium Grain Powder Ad Board
+
+<img src="../../docs/assets/gallery/cases/gallery-10-e-commerce-main-image-premium-grain-powder-ad-board.jpg" alt="E-commerce Main Image - Premium Grain Powder Ad Board" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: advertising
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 154](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Premium Grain Powder Ad Board". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical e-commerce advertising board for a premium instant grain powder drink, designed as a debranded gallery case for a future product launch. Build a polished commercial layout with a strong visual hierarchy and a luxury food-ad finish. Use a dark, premium palette: matte black, espresso brown, warm bronze-gold, walnut brown, soft beige, and muted oat tones. The product is a generic matte dark retail box with elegant metallic lettering areas left blank or replaced by neutral placeholder text, paired with a rich gray-brown grain beverage in a clear glass cup. The beverage surface should have a smooth spiral swirl, thick texture, and appetizing sheen.
+
+Composition: divide the board into multiple clear panels with thin metallic divider lines. Top-left: hero section with the product box as the dominant object, front-facing on a dark tabletop, with the drink cup beside it and subtle supporting ingredients around it. Top-right: ingredient detail section showing five round ingredient bowls in a clean row, such as black sesame seeds, dark beans, dark grains, walnut halves, and pale grain powder. Mid-right: texture-and-benefit section with a close-up of the prepared drink, spoon interaction, and short editable callout areas. Mid-left lower: a simple 3-step preparation guide using clean instructional mini-panels with pouring powder, adding hot water or milk, and stirring. Lower-left: lifestyle use-case strip with small framed scenes or icons suggesting breakfast, office break, post-workout, and evening comfort. Lower-right: portability section showing an opened box with several individual sachets arranged in perspective. Bottom: a full-width storyboard-style strip or structured information table that feels like a campaign planning board, but uses generic placeholders and no proprietary copy.
+
+Lighting: dramatic studio lighting from upper left with controlled glossy highlights on packaging edges, warm rim light on the cup, soft reflections on glass, and crisp shadow separation. Keep the background dark and atmospheric with subtle grain stalks or soft ingredient silhouettes, but avoid clutter. Materials must read clearly: matte paper box, lightly reflective foil accents, transparent glass, ceramic or metal bowls, natural walnut texture, powder granularity, and glossy seeds/beans.
+
+Typography and text handling: include one large headline area with the exact copy "Launch Campaign" in refined uppercase sans serif or elegant modern display type. Add smaller secondary text blocks as editable placeholders only, using short neutral descriptors rather than real brand language. Place typography in clearly reserved zones with strong alignment, generous margins, and high contrast for readability. Use gold or warm beige text on dark surfaces. No invented pricing, no seller badges, no social handles, no people names, no logos, no copied packaging text.
+
+Reference-image policy: use the reference only as off-image inspiration for layout rhythm, premium food-lighting logic, panel structure, and commercial finish. Do not replicate the original packaging design, exact text, brand identifiers, icon set, ingredient arrangement, or distinctive decorative details. Keep the result reusable for a new product, poster, or campaign with original packaging geometry, original text blocks, and fresh composition decisions.
+
+Negative constraints: no copied brand names, no Chinese product title from the source, no exact logo placement, no identical box artwork, no celebrity or person portrait, no watermark, no QR code, no fake certifications, no fabricated health claims, no overcrowded composition, no distorted packaging, no unreadable text, no direct imitation of the source image.
+```
+
+**Prompt Controls**
+
+- Controls a premium multi-panel 9:16 ad-board composition with clear product, ingredient, usage, and sachet sections.
+- Specifies executable lighting, materials, color palette, typography zones, and commercial food styling.
+- Includes explicit debranding and reference-use rules so the output stays reusable and non-derivative.
+
+**Source Use:** The upstream case and attached reference were used only to extract structural composition, visual hierarchy, luxury food-lighting cues, and ad-board presentation logic.
+
+**Risk Note:** Do not copy the original brand wording, packaging artwork, exact ingredient panel layout, distinctive icons, or any protected text/details from the source image or prompt.
+
+## 11. E-commerce Main Image - Earbuds E-commerce Infographic
+
+<img src="../../docs/assets/gallery/cases/gallery-11-e-commerce-main-image-earbuds-e-commerce-infographic.jpg" alt="E-commerce Main Image - Earbuds E-commerce Infographic" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: consumer electronics
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 155](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Earbuds E-commerce Infographic". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 e-commerce hero infographic for premium wireless earbuds, debranded and commercially reusable. Composition: place an open glossy white charging case in the extreme foreground, held toward the camera by a hand, with the case occupying the lower-left to center area and appearing largest in frame. Show two sleek white earbuds inside the case, with subtle black acoustic accents and a tiny soft green status light on the case front. Use shallow macro depth of field so the hand and case stay sharp while the background falls slightly out of focus. In the mid-ground, place a confident female model on the right half of the frame, facing camera, wearing a plain saturated yellow athletic top with no logos, one earbud in one ear, neutral studio-ready grooming, calm confident expression. Add 2 to 3 softly blurred floating earbuds around the scene for depth and motion, keeping them secondary.
+
+Background and lighting: use a dark charcoal-to-warm gray gradient studio backdrop with controlled golden light streaks and soft particulate glow for energy, not chaos. Light the product with clean commercial softboxes from front-left and top-front to create glossy highlights on the plastic surfaces, plus a subtle rim light on the model’s hair and shoulders. Keep skin natural, product edges crisp, reflections controlled, and contrast high enough for marketplace readability.
+
+Typography and layout: build a bold retail poster hierarchy with oversized white sans-serif headline text behind the model across the upper background, but do not use any real brand wording. Use a generic product line headline such as “WIRELESS EARBUDS” or another non-branded equivalent. In the top-right, add a smaller stacked product descriptor area for a fictional model name. On the left-middle, place a short feature block with the exact copy: “Built for Performance”. On the right side, place two large numeric callout zones with smaller supporting text beneath each, using placeholder numbers and generic benefit copy only, such as battery duration and warranty placeholders, without prices, certifications, or regulated claims. Keep all text crisp, aligned, and clearly separated from the product silhouette and the model’s face.
+
+Materials and finish: emphasize polished white plastic, smooth skin texture, soft fabric on the shirt, and premium retail-photography realism. Keep the palette focused on white product surfaces, warm yellow apparel, bright white typography, dark neutral background, and restrained gold light accents. Final image should feel like a production-ready consumer electronics campaign visual with clean hierarchy, premium finish, and ad-ready spacing.
+
+Reference-image policy: use the reference only as inspiration for framing logic, foreground product scale, model placement, dark studio mood, and infographic text hierarchy. Do not reproduce any exact brand names, logos, person identity, proprietary wording, or distinctive layout text from the reference. Negative constraints: no real brand marks, no celebrity likeness, no copied slogan, no price tags, no store badges, no certification icons, no watermarks, no social handles, no packaging redesign tied to a known brand.
+```
+
+**Prompt Controls**
+
+- Controls foreground product dominance, right-side model placement, and layered infographic composition.
+- Specifies executable studio lighting, glossy materials, depth of field, and color palette.
+- Defines safe debranded typography structure with exact allowed copy and explicit no-copy rules.
+
+**Source Use:** The upstream case and reference image were used only to extract composition structure, lighting mood, product-material treatment, and commercial text hierarchy for a new debranded prompt.
+
+**Risk Note:** Do not copy real brand wording, the reference person’s identity or likeness, exact headline text, or any distinctive protected ad layout details.
+
+## 12. E-commerce Main Image - Elegant Cosmetic Poster Prompt
+
+<img src="../../docs/assets/gallery/cases/gallery-12-e-commerce-main-image-elegant-cosmetic-poster-prompt.jpg" alt="E-commerce Main Image - Elegant Cosmetic Poster Prompt" width="420">
+
+- Task: `product_ad`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 157](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Elegant Cosmetic Poster Prompt". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 beauty advertising poster for a new skincare product called "Clean Glow". Build a refined commercial composition with one elegant cosmetic bottle as the hero object placed slightly right of center in the lower-right quadrant, scaled large enough to feel premium but leaving generous negative space for copy on the left. Add a softly smiling female model in close-up occupying the upper-right to center area, framed from shoulders up, with natural skin texture, minimal makeup, and wind-touched hair; she should support the mood of freshness and luminosity without resembling any identifiable real person. Use a light blue to pearl-white palette with subtle silver accents, airy gradients, translucent mist, and a few suspended water droplets or soft bubbles to suggest hydration.
+
+Lighting: use diffused studio lighting from the upper left, with soft wraparound facial light, clean catchlights in the eyes, gentle specular highlights on the bottle edges, and a faint glow through translucent liquid or frosted packaging. Materials: emphasize clear glass or glossy acrylic, brushed metal cap details, clean liquid reflections, soft fabric or sheer sleeve textures near the model’s hand, and crisp high-end retouching suitable for e-commerce display.
+
+Typography and layout: place the main headline "Clean Glow" in large elegant serif or high-contrast editorial lettering on the left side, stacked vertically or in two balanced lines with wide spacing. Above it, reserve a small rectangular text box for a short supporting line in a clean sans-serif. Below the headline, place 3 circular feature callouts aligned horizontally or in a gentle arc, each with a short placeholder benefit label only, no invented claims, certifications, prices, or numbers. Keep all text areas clean, readable, and intentionally spaced, with clear hierarchy: headline first, support line second, feature icons third. Include a small "NEW" marker near the product if needed, but keep it generic.
+
+Background and finish: use a luminous pale backdrop with a soft watery atmosphere, feathered gradients, and subtle light bloom, avoiding clutter. The overall result should feel premium, calm, fresh, and production-ready for a beauty campaign main image. Keep the image debranded and reusable: no logos, no proprietary slogans, no exact packaging text, no celebrity likeness, no copied layout text from any source image. Reference-image policy: use the reference only as inspiration for composition balance, lighting softness, watery materials, and ad hierarchy; do not reproduce any exact face, bottle design, wording, logo, or distinctive arrangement.
+```
+
+**Prompt Controls**
+
+- Controls a premium beauty-poster layout with clear hero product, model placement, and left-side copy hierarchy.
+- Defines executable lighting, materials, palette, and atmospheric effects for a polished commercial finish.
+- Sets strict reuse rules: generic typography zones, no invented claims, and no copying protected brand or identity details.
+
+**Source Use:** The upstream case and reference image were used only to extract general poster structure, visual hierarchy, soft studio lighting, watery material cues, and commercial beauty-ad polish.
+
+**Risk Note:** Do not copy any exact brand identifiers, protected text, bottle design, model identity, or distinctive source composition details; keep the result debranded and newly composed.
+
+## 13. E-commerce Main Image - Minimalist Product Ad: PURE CRUNCH
+
+<img src="../../docs/assets/gallery/cases/gallery-13-e-commerce-main-image-minimalist-product-ad-pure-crunch.jpg" alt="E-commerce Main Image - Minimalist Product Ad: PURE CRUNCH" width="420">
+
+- Task: `product_ad`
+- Industry: advertising
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 158](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "E-commerce Main Image - Minimalist Product Ad: PURE CRUNCH". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a commercially usable 9:16 minimalist product advertisement poster for a new food or packaged product campaign. Composition: one hero product centered on a matte white cylindrical podium in the lower half of the frame, with generous negative space above, clean vertical alignment, and a strong top-to-bottom visual hierarchy. Keep the product large, fully visible, and sharply defined, with natural contact shadows and accurate proportions. Background: seamless studio backdrop with a soft cream-to-white gradient, no environment details, no clutter, no decorative props unless they are extremely minimal and directly support the product. Lighting: soft diffused studio key light from upper front, gentle fill to reduce harsh contrast, subtle rim separation on product edges, clean shadow falloff, premium catalog finish, realistic texture detail, crisp material rendering. Materials: smooth paperboard podium, refined packaging surfaces, believable food or product texture, no distortion, no melted edges, no extra objects.
+
+Typography layout: place a bold uppercase headline in the upper center occupying roughly the top third of the frame; use a modern condensed sans serif with strong weight contrast, black or charcoal for the first line and muted warm ochre or sand for the second line if a two-line hierarchy is used. Add the exact campaign copy "Launch Campaign" as a smaller secondary line below the headline area, centered, clean, and fully legible. If a product label or container mark is shown, use generic original branding only: simple icon, abstract emblem, or invented neutral wordmark, with no real logos, no copied slogans, and no protected brand text. Color palette: warm white, cream, soft beige, charcoal, and restrained golden-brown accents, with the product as the main saturated element. Keep the overall look calm, premium, minimal, editorial, and production-ready.
+
+Reference-image policy: use the reference only as inspiration for composition, whitespace, central podium staging, soft gradient background, restrained color blocking, and typographic hierarchy. Do not replicate the original wording, logo, mascot, package branding, or exact food arrangement. Make the final design feel like a fresh debranded campaign template adaptable to different products. Negative constraints: no real brand names, no copied taglines, no prices, no social handles, no people, no busy backgrounds, no extra packaging variants, no legal seals, no fake claims, no unreadable text, no warped container geometry, no crowded layout.
+```
+
+**Prompt Controls**
+
+- Controls a centered podium-based hero composition with strong whitespace and premium studio lighting.
+- Defines exact typography zones, including the required copy "Launch Campaign" and a reusable headline system.
+- Locks the image to a debranded commercial finish with explicit reference-use and non-copying constraints.
+
+**Source Use:** The upstream case and reference image were used only to extract structural cues such as centered product staging, minimal podium composition, soft studio lighting, and clean text hierarchy.
+
+**Risk Note:** Do not copy the original headline wording, slogan, logo style, mascot, packaging identity, or any other distinctive branded text or arrangement from the source material.
+
+## 14. Burger hero image plus 9-cell ad storyboard
+
+<img src="../../docs/assets/gallery/cases/gallery-14-burger-hero-image-plus-9-cell-ad-storyboard.jpg" alt="Burger hero image plus 9-cell ad storyboard" width="420">
+
+- Task: `ecommerce_main_image`
+- Industry: food and beverage
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 163](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Burger hero image plus 9-cell ad storyboard". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 debranded advertising gallery case board for a food-and-beverage campaign. Main concept: a premium burger hero image combined with a clean 9-cell commercial storyboard that explains the build-up from ingredients to final plated shot.
+
+Composition and layout: horizontal 16:9 canvas, divided into two zones. Left 60%: one large hero shot of a gourmet burger on a dark matte stone surface, centered slightly low, filling most of the frame, with visible glossy brioche bun, melted cheese, grilled patty, crisp lettuce, tomato, sauce detail, and subtle steam. Right 40%: a tidy 3x3 storyboard grid showing sequential close-ups and assembly moments such as empty surface, bun placement, patty landing, cheese melt, fresh toppings, sauce application, final stack, macro detail, and end-frame product beauty shot. Keep the storyboard cells visually consistent, with thin separators, small caption bars, and restrained diagram-like motion cues. No people, no character costumes, no brand mascots.
+
+Lighting and camera: premium studio food photography with warm key light from upper left, soft rim light from rear right, controlled specular highlights on bun and sauce, gentle falloff into shadow, shallow depth of field on the hero panel, slightly deeper focus in storyboard cells for readability. Use realistic steam, crumbs, sauce gloss, and appetizing surface texture. Camera angle for hero: three-quarter front angle at table height. Storyboard cells: mix of overhead, close crop, and macro detail shots.
+
+Materials and finish: realistic food textures, toasted bun sheen, moist grilled meat surface, creamy melted cheese, crisp vegetable edges, dark stone tabletop, minimal reflections, polished commercial retouching, high micro-contrast, print-ready cleanliness.
+
+Typography and text placement: add a narrow title band across the top with a generic campaign heading area, and reserve one clear text block in the lower left or lower center for the exact copy: "Taste the Moment". Use bold condensed sans-serif uppercase for headings, smaller neutral sans-serif for cell labels, white or warm light text on deep charcoal panels, excellent legibility, no invented prices, no fake certifications, no logos, no watermarks.
+
+Color palette: charcoal black, deep brown, warm amber highlights, burger gold, lettuce green, tomato red, creamy ivory, with restrained accent red only for storyboard emphasis lines.
+
+Reference-image policy: use the reference only for structural inspiration such as multi-panel instructional layout, strong top header, cinematic sequencing, and disciplined visual hierarchy. Do not reproduce any people, suits, helmets, Japanese text, logos, exact panel captions, or sci-fi setting from the reference. Keep this image fully food-focused and commercially reusable for a new campaign.
+
+Negative constraints: no copyrighted logos, no brand names, no creator handles, no prices, no celebrity likenesses, no exact upstream wording, no cluttered background, no exaggerated cartoon food styling, no deformed ingredients, no unreadable text, no watermark, no duplicated burger inconsistencies across panels.
+```
+
+**Prompt Controls**
+
+- Controls a split layout with one dominant burger hero image and a structured 3x3 storyboard.
+- Defines executable lighting, camera angles, materials, typography zones, and color palette for production-ready ad output.
+- Locks debranding rules and limits the reference to layout inspiration only, avoiding any protected characters, text, or branding.
+
+**Source Use:** The upstream case and reference image were used only to extract the idea of a premium hero shot paired with a disciplined multi-panel storyboard, header band, and commercial sequencing.
+
+**Risk Note:** Do not copy any exact branding, proprietary wording, distinctive panel text, character design, or the sci-fi visual identity from the reference or upstream source.
+
+## 15. Luxury Chronograph Watch Ad
+
+<img src="../../docs/assets/gallery/cases/gallery-15-luxury-chronograph-watch-ad.jpg" alt="Luxury Chronograph Watch Ad" width="420">
+
+- Task: `product_ad`
+- Industry: luxury goods
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 144](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Luxury Chronograph Watch Ad". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 luxury product advertisement for a motorsport-inspired chronograph watch in a dark studio, designed as a reusable gallery case for premium goods. Composition: place one hero watch in the center-left foreground, standing upright at a three-quarter angle with the dial facing slightly toward camera; position one matte black presentation box behind and to the right, partially overlapping but clearly secondary; keep the overall frame balanced with strong negative space above and a clean text zone at the bottom. Product details: use a brushed stainless steel case, black dial, two contrasting red-accent subdials, slim metallic hour markers, tachymeter-style bezel, visible crown and pushers, and a black leather strap with red edge stitching; render crisp machining, realistic glass reflections, and premium leather texture. Environment: deep black studio backdrop with a glossy wet floor that produces controlled mirror reflections beneath the watch and box; add subtle horizontal red and white motion light streaks behind the products to suggest speed without distracting from the hero object. Lighting: use high-contrast commercial lighting with a focused key light from upper front-left for metallic specular highlights, a narrow rim light from rear-right to separate the silhouette, and a soft low fill to preserve shadow detail on the packaging; maintain moody shadows and premium contrast. Typography: place a large blurred uppercase headline across the background reading "PRECISION IN MOTION" in soft charcoal gray, spanning most of the width; add a small abstract silver emblem plus a generic fictional brand wordmark at the top center, avoiding any real or recognizable brand identifiers; place a bottom-centered line of clean white spaced capitals for a series title, flanked by thin red horizontal rules, with a smaller red subtitle underneath. Color palette: black, charcoal, gunmetal, polished silver, vivid racing red, and restrained white. Finish: sharp product focus, realistic materials, polished advertising retouching, elegant reflections, clean typography hierarchy, commercially usable poster quality. Negative constraints: no real brand names, no creator handles, no prices, no dates, no celebrity likenesses, no copied logos, no distinctive protected phrases, no extra props, no clutter, no exaggerated fantasy effects, no unreadable text. Reference-image policy: use the reference only as structural inspiration for composition, lighting hierarchy, materials, and premium automotive energy; do not reproduce any exact logo, wording, packaging graphics, or proprietary visual identifiers.
+```
+
+**Prompt Controls**
+
+- Controls hero placement, supporting packaging position, and text hierarchy for a square luxury ad layout.
+- Defines executable lighting, material rendering, reflections, and speed-line background treatment.
+- Includes explicit debranding and reference-use constraints so the result stays commercially reusable.
+
+**Source Use:** The upstream case and reference image were used only to extract ad structure, visual hierarchy, lighting logic, material cues, and premium studio mood.
+
+**Risk Note:** Do not copy the original brand wording, emblem shape, packaging text, or any distinctive logo-like graphic from the source material.
+
+## 16. Neon Nike Lumina Ad Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-16-neon-nike-lumina-ad-poster.jpg" alt="Neon Nike Lumina Ad Poster" width="420">
+
+- Task: `product_ad`
+- Industry: advertising
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 145](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Neon Nike Lumina Ad Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical advertising poster for a new launch campaign, debranded and commercially reusable. Show one athletic adult model or one hero product centered in the frame, captured in a powerful airborne or action pose, with the body forming a strong diagonal silhouette and enough negative space around the edges for clean layout. Build the composition with a dominant oversized serif headline spanning the upper background, partially hidden behind the subject, and a second wide display word across the mid-background with subtle horizontal scanline and glitch distortion. Place the exact copy "Launch Campaign" in a small but crisp text block near the lower margin, with a second small supporting line on the opposite side using generic collection or campaign wording only. Do not include any real brand names, logos, signatures, prices, handles, or identity-specific text.
+
+Wardrobe or product materials should feel premium and futuristic: iridescent white shell fabric, holographic metallic surfaces, glossy technical textiles, reflective trim, and clean white accessories or footwear. Keep material rendering sharp and tactile, with visible folds, stitching, specular highlights, and polished retouching. Add circular light trails wrapping around the lower body or around the product to suggest speed and energy, but keep the subject readable and not buried by effects.
+
+Lighting: use a neon studio setup with strong rear rim lights, frontal beauty fill, bright bloom on highlights, controlled lens flares, mild chromatic aberration near bright edges, and high contrast separation between subject and background. Color palette: saturated magenta, violet, cyan, and electric blue with luminous gradients and glossy reflections. Background should feel like a futuristic studio wall, not a real location.
+
+Typography and layout: top 35% reserved for the giant background headline, center 40% dominated by the subject, bottom 15% reserved for legal-safe campaign copy and small UI-like footer text. Use elegant high-contrast serif letterforms for the large headline and a bold condensed sans serif for the secondary glowing word. Keep all text generic, legible, and production-ready. No copied slogans. No exact protected wording from any existing campaign.
+
+Reference-image policy: use the reference only as inspiration for composition, motion, lighting hierarchy, material finish, and ad polish. Do not replicate the exact person, pose geometry, garment branding, headline wording, logo placement, or any distinctive proprietary design element. Generate an original campaign visual with similar energy but new creative details.
+```
+
+**Prompt Controls**
+
+- Controls vertical poster composition, text zones, and visual hierarchy for a launch ad.
+- Specifies lighting, palette, motion trails, and reflective materials for a premium futuristic finish.
+- Defines strict debranding and reference-use rules so the result stays original and commercially safer.
+
+**Source Use:** The upstream case and reference image were used only to extract structure, motion-driven composition, neon lighting, material treatment, and typography placement.
+
+**Risk Note:** Do not copy any exact brand identifiers, logo shapes, headline text, model identity, signature pose, or other distinctive protected visual elements from the source.
+
+## 17. Streetwear Sneaker Poster Ad
+
+<img src="../../docs/assets/gallery/cases/gallery-17-streetwear-sneaker-poster-ad.jpg" alt="Streetwear Sneaker Poster Ad" width="420">
+
+- Task: `poster_design`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 146](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Streetwear Sneaker Poster Ad". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Design a commercially usable 9:16 fashion poster advertisement for a new streetwear sneaker campaign. Build the image as a low-angle studio fashion composition with one young adult model seated casually on the ground, one knee raised and one leg extended toward the camera so the front sneaker becomes the dominant oversized foreground product. Keep the model anonymous and generic with no recognizable identity cues; the product is the hero. Wardrobe: oversized dark leather jacket, plain black inner layer, loose light-wash denim, white socks, and chunky multi-panel sneakers in black, white, gray, and one controlled accent color. Do not place any real brand logos, creator handles, or recognizable trademarks on clothing or shoes.
+
+Background and materials: use an off-white textured paper backdrop with visible grain, distressed edges, subtle fold wear, torn-paper collage scraps, barcode-style label shapes without real numbers, ink splatter, rough marker scribbles, and hand-painted graphic doodles. Place a large diagonal paint stroke behind the model as the main color anchor. Add 3 to 5 expressive graphic marks around the frame such as a bold brush X, an upward arrow, a loose circular scribble, and a crown-like sketch, but make them original and asymmetrical rather than copied from any reference. The overall finish should feel like a premium printed street poster layered with editorial product photography.
+
+Lighting: use crisp commercial studio lighting with the key light from upper front-left, soft fill from camera-right, and a controlled rim light to separate the model from the background. The foreground sneaker must be tack sharp with visible leather grain, rubber texture, stitching, lace tension, and sole sculpting. Keep the background flatter and more graphic, with enough contrast to preserve readability of typography overlays.
+
+Typography and layout: reserve a clear brand lockup zone in the upper left for a fictional symbol and generic campaign label, but do not render any existing brand name. Place the headline "Move Beyond" in bold expressive lettering with strong readability, positioned as the primary copy block on the left or right mid-section. Add one secondary handwritten-style slogan block and one torn-paper caption patch in separate zones, but use only generic placeholder microcopy or abstract design text, never real social handles or upstream phrases. Add a clean footer strip across the bottom with three minimal icon placeholders and short neutral labels instead of platform-specific handles. Typography should combine a sharp geometric sans for the brand area, energetic brush lettering for the campaign line, and small condensed utility text for sticker-style details.
+
+Color palette: off-white paper, carbon black, weathered charcoal, light denim blue, dark brown, and one aggressive accent color such as signal red. Use the accent color mainly in the central brushstroke, small underline marks, and selected sticker details. Preserve strong contrast, premium print texture, and clear commercial polish.
+
+Composition rules: keep the dominant sneaker occupying the lower foreground, the seated figure centered slightly above mid-frame, large negative space for text blocks, and layered graphic elements framing but not obscuring the product. The poster must feel energetic, youthful, tactile, and production-ready for a fashion campaign.
+
+Reference-image policy: use the reference only as inspiration for pose energy, low-angle product emphasis, collage density, and street-poster material language. Do not reproduce any exact logo, wording, face, accessory pattern, shoe design marking, doodle arrangement, or layout signature from the reference or upstream case.
+```
+
+**Prompt Controls**
+
+- Controls a low-angle hero-product composition with oversized foreground sneaker emphasis.
+- Defines exact material treatment, studio lighting, collage textures, and color hierarchy for a production-ready poster.
+- Sets safe typography zones and reference-use rules so the output stays debranded and reusable.
+
+**Source Use:** The upstream case and reference image were used only to extract composition, visual hierarchy, lighting approach, collage materials, and poster-ad structure for a new debranded campaign prompt.
+
+**Risk Note:** Do not copy any exact logo, slogan, social handle, face, shoe marking, graphic arrangement, or other distinctive protected text or identity detail from the source materials.
+
+## 18. Editorial Osaka Six Sweatshirt Ad
+
+<img src="../../docs/assets/gallery/cases/gallery-18-editorial-osaka-six-sweatshirt-ad.jpg" alt="Editorial Osaka Six Sweatshirt Ad" width="420">
+
+- Task: `poster_design`
+- Industry: advertising
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 147](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Editorial Osaka Six Sweatshirt Ad". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a vertical 9:16 advertising poster for a contemporary apparel launch. Use a pale powder-blue seamless studio backdrop with a glossy reflective floor. Build the layout with strong editorial hierarchy: the upper half is dominated by massive white condensed sans-serif background typography split across two or three stacked lines, using generic campaign wording rather than any existing slogan. Keep the type oversized, tightly tracked, and partially obscured by the subject so it feels integrated into the composition instead of floating on top.
+
+Place one oversized crewneck sweatshirt in the lower center as the hero object, standing upright like a sculptural product display. The garment should feel heavy, premium, and soft, with thick cotton fleece, dropped shoulders, relaxed volume, and sleeves slightly pooling onto the floor. Add a bold abstract collage-style chest graphic made from layered torn-paper textures in beige, charcoal, off-white, muted rust, and a small accent of saturated red; avoid any recognizable logo, label, mascot, or copyrighted artwork. Lean a fashion model against the right side of the oversized garment to create surreal scale contrast. The model wears a coordinated sweatshirt-and-wide-leg-pants set in a matching deep evergreen tone with clean white low-top sneakers. Pose the figure in side profile with a calm editorial posture, one hand in pocket, body reclining diagonally against the hero garment, legs extended forward. Keep the person anonymous and non-identifiable, with no resemblance to a known individual.
+
+Lighting should be crisp studio daylight from high front-left with soft fill from the opposite side, producing smooth shadows, subtle floor reflections, clean edge separation, and sharp product visibility. Materials must read clearly: brushed cotton fleece, matte fabric surface, layered paper collage texture, and polished floor reflection. Color palette: powder blue background, bright white typography, deep evergreen apparel, neutral collage fragments, restrained red accent. The overall finish should feel premium, minimal, polished, and commercially usable.
+
+Typography and text treatment: reserve a small text block near the bottom center for the exact copy 'Launch Campaign'. Add one short supporting line beneath it in a smaller clean sans-serif, but keep it generic and original. Add a tiny top-corner micro-label if needed, using neutral non-brand text only. Do not include prices, social handles, creator credits, product codes, or proprietary slogans.
+
+Reference-image policy: use the provided reference only as inspiration for composition, scale contrast, studio lighting, reflective floor, and editorial type hierarchy. Do not reproduce any exact words, names, garment graphics, brand identifiers, or distinctive protected details from the source image. Negative constraints: no logos, no trademarked phrases, no celebrity likeness, no copied label text, no watermarks, no extra products, no cluttered props, no discount stickers, no fake contact info, no busy background, no illegible typography.
+```
+
+**Prompt Controls**
+
+- Controls editorial composition with oversized background typography, giant product centerpiece, and anonymous leaning model.
+- Specifies exact studio lighting, materials, reflective-floor finish, and a restrained commercial color palette.
+- Defines debranding rules, required text placement for 'Launch Campaign', and strict reference-image usage boundaries.
+
+**Source Use:** The upstream case and attached reference were used only to extract reusable structure such as vertical poster composition, typography scale, lighting direction, material clarity, and premium advertising finish.
+
+**Risk Note:** Do not copy any exact headline wording, brand-like labels, creator credit, garment artwork, or other distinctive text and identifiers from the reference or upstream prompt.
+
+## 19. Editorial Perfume Shot on Moss
+
+<img src="../../docs/assets/gallery/cases/gallery-19-editorial-perfume-shot-on-moss.jpg" alt="Editorial Perfume Shot on Moss" width="420">
+
+- Task: `product_ad`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 148](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Editorial Perfume Shot on Moss". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a vertical 9:16 beauty product advertisement for a fictional fragrance called "Signature Scent". Show one debranded perfume bottle as the hero object, centered slightly below the midpoint, upright on a single curved piece of pale weathered wood, with a dense carpet of natural green moss filling the lower foreground. Use a clean rectangular glass bottle filled with warm amber liquid, a smooth rounded dark cap, and a minimal front label with abstract placeholder typography only; do not use any real brand names, logos, or protected wording. Keep the composition minimal and premium, with generous negative space in the upper half for headline placement.
+
+Background and lighting: use a seamless studio backdrop with a warm brown-to-amber gradient, brighter toward the upper right and darker toward the left and lower edges. Light the scene with one strong directional warm key light from the upper right to create a glowing hotspot on the background, a crisp specular highlight on the cap, soft reflections along the bottle edges, and gentle realistic shadows across the wood and moss. Preserve a polished commercial finish with controlled contrast, sharp product detail, and natural material texture.
+
+Materials and surface detail: emphasize clear glass, transparent liquid, glossy cap reflections, dry wood grain, and soft organic moss texture. Keep the product label simple and readable but generic. The image should feel earthy, refined, cinematic, and production-ready for a fragrance campaign.
+
+Typography layout: place the headline "Signature Scent" in the upper third, centered or slightly above center, in elegant modern sans-serif typography with clean spacing. Leave room for a small secondary line of generic campaign copy beneath it if needed, but do not invent claims, prices, dates, certifications, or contact details. Keep all text areas clearly separated from the bottle silhouette.
+
+Color palette: amber, warm brown, moss green, soft cream, and black accents. Avoid extra props, people, flowers, jewelry, splash effects, or crowded information cards. Keep the layout reusable for a new product campaign.
+
+Reference-image policy: use the reference only as inspiration for composition, lighting direction, earthy materials, negative space, and luxury ad hierarchy. Do not reproduce any exact bottle design, label text, logo, brand identity, or distinctive protected visual details from the source image.
+```
+
+**Prompt Controls**
+
+- Controls premium vertical composition with centered-below product placement and large headline space.
+- Defines exact lighting, background gradient, and material rendering for glass, wood, moss, and amber liquid.
+- Locks debranded typography and commercial safety constraints so the result stays reusable for new campaigns.
+
+**Source Use:** The upstream case and reference image were used only to extract reusable ad structure such as hero placement, earthy still-life materials, warm directional lighting, and clean editorial hierarchy.
+
+**Risk Note:** Do not copy the original brand wording, bottle identity, label layout, logo treatment, or any other distinctive source-specific product details.
+
+## 20. Editorial Perfume Bottle in Golden Fur
+
+<img src="../../docs/assets/gallery/cases/gallery-20-editorial-perfume-bottle-in-golden-fur.jpg" alt="Editorial Perfume Bottle in Golden Fur" width="420">
+
+- Task: `product_ad`
+- Industry: beauty
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 149](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Editorial Perfume Bottle in Golden Fur". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical beauty product advertisement as a premium editorial still life. Show one generic perfume bottle as the hero object, centered slightly below the midpoint and partially nestled into dense faux fur so the texture frames the bottle from all sides. Use a clear rounded or oval glass bottle filled with warm amber liquid, a smooth dark cap, and a clean rectangular label with minimal fictional branding. Place the headline text "Signature Scent" at the upper portion of the layout in sharp, elegant sans-serif typography, with ample negative space and balanced alignment. Keep any secondary text minimal, generic, and fully debranded.
+
+Build the scene around tactile material contrast: glossy glass, reflective cap, soft plush fur, and subtle liquid glow inside the bottle. Use a warm palette of honey gold, caramel, amber, and soft brown, with controlled tonal variation so the product remains distinct from the background. Light the set with soft studio key light from upper left, gentle fill from front, and narrow specular highlights along the bottle edges and cap. Add soft shadows inside the fur folds to create depth, while keeping the label plane crisp and readable. Use shallow depth of field so the bottle and headline area are in strongest focus and the surrounding fur falls slightly softer.
+
+The composition must feel commercially usable and production-ready: minimal layout, strong product hierarchy, clean text zone, high detail, realistic materials, premium retouching, no clutter, no extra props unless they are abstract and non-distracting. Do not imitate any real brand identity, logo, label wording, or protected packaging details. Reference-image policy: use the reference only as inspiration for composition, warm fur texture, lighting mood, and premium beauty-ad structure; do not reproduce exact bottle design, label text, or brand markers from any source image. Output as a polished advertising poster with legible typography, refined contrast, and luxury beauty-campaign finish.
+```
+
+**Prompt Controls**
+
+- Controls hero composition, product placement, and text hierarchy for a vertical ad poster.
+- Defines executable lighting, materials, color palette, focus depth, and commercial retouching finish.
+- Sets strict debranding and reference-image rules to avoid copying source-specific identities or text.
+
+**Source Use:** The upstream prompt and reference image were used only to extract reusable structure such as centered bottle composition, plush warm-texture framing, soft studio lighting, and editorial beauty-poster hierarchy.
+
+**Risk Note:** Do not copy any exact brand name, bottle silhouette, label wording, logo treatment, or other distinctive protected visual/text elements from the source material.
+
+## 21. Luxury Miniature Dubai City Model
+
+<img src="../../docs/assets/gallery/cases/gallery-21-luxury-miniature-dubai-city-model.jpg" alt="Luxury Miniature Dubai City Model" width="420">
+
+- Task: `product_ad`
+- Industry: luxury goods
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 150](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Luxury Miniature Dubai City Model". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 16:9 luxury advertising key visual set in a black studio void, using a photoreal miniature metropolis on a square architectural display board as the scene structure. Build one dominant ultra-tall metallic spire at the exact center, surrounded by dense clusters of refined modern towers, illuminated roads, bridges, looping interchanges, and curved blue water basins that wrap around the core district. Keep the composition symmetrical and clean from a high three-quarter isometric angle, with the city model occupying the lower two-thirds of the frame and generous negative space above for campaign presence.
+
+Place the actual product hero as the commercial focus in the center-left foreground or integrated as a premium centerpiece within the miniature city, depending on the campaign adaptation, but keep it clearly larger, sharper, and more visually prioritized than the surrounding model. Add one supporting object such as a box, pedestal, or secondary accessory in the right-rear zone to balance the layout. Materials must feel expensive and physically believable: brushed silver metal, smoked glass, polished lacquer, satin black surfaces, glossy turquoise water, and warm pinpoint practical lights across the city grid. Use crisp micro-detail, precise reflections, premium scale-model craftsmanship, and flawless edge definition.
+
+Light the scene like a high-end product campaign: a focused soft key light from upper front-left, narrow rim lights from both sides to define silhouettes, warm golden accent lights embedded in roads and building edges, cool cyan reflections in the water, and subtle mirror reflections on the base plane. Keep the background fully black with no environmental clutter. Color palette: black, champagne gold, silver, gunmetal, and controlled turquoise highlights. The mood must feel luxurious, engineered, collectible, and commercially polished.
+
+Typography layout: place the headline "Launch Campaign" in large clean uppercase lettering in the upper right or upper center negative space, using elegant sans-serif typography with wide tracking and high contrast against black. Reserve a smaller subtitle zone beneath it for future campaign copy, but do not generate extra fictional claims, prices, dates, addresses, or certifications. Keep text minimal, readable, and aligned to a premium ad grid. Leave enough clean space for downstream brand adaptation without adding any logos or protected marks.
+
+Reference-image policy: use the reference only for overall composition logic, isometric viewpoint, central-spire hierarchy, lighting contrast, miniature-luxury material treatment, and board-based presentation. Do not reproduce any exact landmark identity, brand, logo, proprietary text, or one-to-one city layout. Keep the image debranded, reusable, and suitable as a gallery case for luxury goods advertising.
+```
+
+**Prompt Controls**
+
+- Controls a premium isometric miniature-city composition with clear hero-product hierarchy.
+- Defines exact lighting, materials, palette, and typography placement for a production-ready ad look.
+- Builds in debranding and reference-use limits so the result stays reusable and commercially safer.
+
+**Source Use:** The upstream case and reference image were used only as structural inspiration for viewpoint, visual hierarchy, lighting, materials, and ad-finish direction.
+
+**Risk Note:** Do not copy any exact landmark identity, upstream wording, logos, layout-specific signatures, or other distinctive protected details from the source material.
+
+## 22. Parody Luxury Product Advertisement
+
+<img src="../../docs/assets/gallery/cases/gallery-22-parody-luxury-product-advertisement.jpg" alt="Parody Luxury Product Advertisement" width="420">
+
+- Task: `product_ad`
+- Industry: luxury goods
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 131](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Parody Luxury Product Advertisement". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 premium parody product advertisement for a fictional luxury-or-chaos beverage or lifestyle product, designed as a commercially usable gallery case. Composition: place one oversized hero product in the extreme foreground, slightly left of center, pushed close to the lens so it dominates the frame; the product should be held or presented toward camera by a rough, weathered hand with realistic skin texture, dirt, creases, and shallow depth-of-field falloff on the fingers while the product label area remains readable. In the mid-ground, place a charismatic but disheveled adult model seated casually in a gritty urban alley, posed with the confidence of a high-end campaign subject; wardrobe should be layered, worn, and textural, but fully generic and debranded. Background: cinematic alley with wet pavement, reflective puddles, scattered cans or packaging silhouettes, soft graffiti-like texture, dumpsters or industrial shapes blurred into bokeh, and a few floating out-of-focus product-shaped objects to exaggerate the ad concept. Lighting: combine polished studio lighting with street-night atmosphere; use a strong key light from upper front-left on the hero product, a softer fill on the model’s face, rim lighting on shoulders and can edges, subtle rainbow prism flares, controlled lens bloom, and glossy specular reflections on metal and wet ground. Materials: emphasize cold aluminum or coated packaging, condensation droplets, peeling fabric fibers, muddy leather, damp concrete, chrome-like highlights, and realistic grime contrast against premium lighting. Typography layout: add a massive bold sans-serif headline in the upper background behind the model using generic fictional brand wording only; add a small handwritten or italic accent slogan in the upper right; add one short feature callout on the left, one large numeric claim block on the right, one bold bottom-right statement, and a bright sticker-style burst near the lower area containing the exact text "Launch Campaign". Typography should be white with neon accent lines in acid yellow or hot pink, with clear hierarchy, strong kerning, thick weights, and clean poster spacing. Color palette: dirty jewel tones with electric magenta, cyan, acid yellow, off-white, deep charcoal, wet asphalt black, and metallic silver; keep the product the most saturated object in frame. Camera and finish: low-angle commercial product photography, 35mm look, shallow depth of field, crisp hero focus, high dynamic range, premium retouching, realistic skin and fabric detail, advertisement-grade compositing, vertical poster layout. Negative constraints: no real brand names, no real logos, no celebrity likenesses, no copied slogans, no exact numbers or claims from any source image, no protected label design, no social handles, no prices, no watermarks, no extra legal text, no unreadable typography, no generic stock-photo flatness. Reference-image policy: use the reference only as inspiration for visual hierarchy, foreground-product dominance, gritty-versus-luxury contrast, wet-night lighting, and layered ad typography; do not replicate the original packaging, wording, character identity, or composition exactly.
+```
+
+**Prompt Controls**
+
+- Controls a foreground-dominant ad composition with a gritty mid-ground character and premium commercial finish.
+- Specifies executable lighting, materials, palette, and typography placement for a reusable 9:16 campaign visual.
+- Includes strict debranding and reference-use rules so the output stays original and commercially adaptable.
+
+**Source Use:** The upstream case and reference image were used only to extract structural ideas such as product-forward composition, luxury-versus-grime contrast, and layered ad typography hierarchy.
+
+**Risk Note:** Do not copy any exact package design, headline wording, numeric claims, character likeness, logo, or distinctive protected text from the source material.
+
+## 23. Japanese Chinese Food Delivery Flyer
+
+<img src="../../docs/assets/gallery/cases/gallery-23-japanese-chinese-food-delivery-flyer.jpg" alt="Japanese Chinese Food Delivery Flyer" width="420">
+
+- Task: `local_store_promotion`
+- Industry: food and beverage
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 166](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Japanese Chinese Food Delivery Flyer". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a vertically oriented 9:16 advertising poster for a local food-and-beverage promotion, designed as a commercially usable, production-ready print-and-digital key visual. Use the visual grammar of a busy East Asian neighborhood takeout flyer without replicating any existing brand, mascot, wording, prices, phone numbers, or map details. Build a strong three-zone hierarchy: top zone for a dominant campaign headline and store name area, middle zone for the food showcase, bottom zone for offer, call-to-action, and service-information blocks. The required copy is exactly: “Taste the Moment”.
+
+Composition: center the layout on a bold hero food image or plated signature dish, shot slightly above eye level with appetizing depth and visible steam or gloss. Surround it with a clean modular grid of smaller supporting dishes or category tiles, using evenly spaced rounded rectangles and thin divider lines so the page feels dense but organized. Add one friendly illustrated or stylized hospitality figure only if needed for warmth, placed off-center at the left or lower-right edge, clearly secondary to the food and generic in identity. Include a coupon or promotional badge area, a delivery or visit-now callout, and a simplified information panel, but leave all factual fields generic and editable. Keep safe margins for print trimming and mobile cropping.
+
+Lighting and materials: use bright commercial key light from upper front-left, soft fill from the opposite side, crisp specular highlights on sauces, noodles, fried surfaces, and ceramic bowls, with gentle contact shadows so every dish feels dimensional and edible. Simulate inexpensive glossy flyer stock with subtle paper grain, light ink spread, faint fold creases, mild halftone texture, and realistic print contrast. The finish should feel like a mass-market promotional handout photographed cleanly, not like a luxury editorial spread.
+
+Color system: use a high-energy palette built from lacquer red, warm golden yellow, off-white, and small accents of dark brown or black for contrast. Background should use layered red tones, soft radial glow, subtle ornamental framing, and restrained festive patterning to support the headline without reducing legibility. Food colors should remain natural and appetizing, with warm browns, amber highlights, vegetable greens, and chili reds separated clearly from the background.
+
+Typography and text handling: use bold condensed headline typography with thick strokes, high contrast outlines, and shallow drop shadows for the main title area. Secondary labels should use clear sans-serif or gothic-style display text with strong alignment and consistent sizing. Reserve the largest type for the campaign headline, medium type for category names or short benefits, and smaller type for service details and coupon text. Show text blocks as clean, editable promotional copy areas in English or neutral placeholder layout, but render the required phrase “Taste the Moment” exactly and legibly as the primary campaign line. Do not invent prices, dates, addresses, phone numbers, certifications, or discount percentages.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition density, print texture, hierarchy, and warm promotional mood. Do not reproduce any exact character design, logo, restaurant name, menu wording, coupon wording, business hours, map layout, or identifiable graphic asset from the reference. Generate a new debranded advertising concept suitable for adaptation to another restaurant, product poster, or local campaign.
+
+Negative constraints: no copied logos, no trademarked names, no anime character match, no exact menu replication, no readable fake prices, no real phone numbers, no addresses, no protected slogans, no clutter that blocks the hero dish, no luxury-minimal styling, no empty background, no photobash artifacts, no warped typography, no low-resolution print texture, no misshapen bowls or food.
+```
+
+**Prompt Controls**
+
+- Controls a dense but readable 9:16 local-promo flyer layout with clear top, middle, and bottom zones.
+- Specifies commercial food lighting, cheap glossy print materials, and a red-gold high-energy palette.
+- Defines editable typography structure and strict debranding rules for safe reuse.
+
+**Source Use:** The upstream case and reference image were used only to extract flyer composition, visual hierarchy, print texture, and promotional mood, then rewritten into a generic reusable ad prompt.
+
+**Risk Note:** Do not copy any exact brand name, character appearance, logo, menu text, price, phone number, coupon wording, map, or other distinctive protected element from the source material.
+
+## 24. Luxury chocolate campaign system
+
+<img src="../../docs/assets/gallery/cases/gallery-24-luxury-chocolate-campaign-system.jpg" alt="Luxury chocolate campaign system" width="420">
+
+- Task: `product_ad`
+- Industry: food and beverage
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 169](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Luxury chocolate campaign system". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a square 1:1 premium food-and-beverage product advertisement for a fictional dark chocolate collection. Build the layout as a polished gallery case with three coordinated flavor variants shown as a triptych in one frame: left panel warm citrus mood, center panel nut-and-sea-salt mood, right panel berry mood. In each panel, place one chocolate bar package as the hero object, standing upright and slightly tilted forward, with the top of the wrapper opened to reveal segmented chocolate pieces. Keep the product dominant and centered within each panel, with supporting ingredients arranged around the base and background to reinforce flavor cues without clutter.
+
+Use a luxury packaging system: matte black paper wrapper, subtle metallic foil accents in soft gold, embossed crest-like monogram that is original and non-branded, refined serif typography, realistic printed label hierarchy, crisp edges, premium carton structure, and highly believable chocolate texture. Show flavor distinction through environment and garnish only: dried citrus slices and dark cocoa fragments on the left, pistachios and coarse sea salt in the center, raspberries and glossy chocolate sauce on the right. Maintain shallow depth of field, sharp focus on the package front and chocolate surface, and gentle falloff into the background.
+
+Lighting must be cinematic and product-photography precise: controlled studio setup, strong key light from upper left, narrow rim light to define package edges, soft fill to preserve label legibility, localized specular highlights on foil and chocolate, subtle reflections on a dark or stone-textured surface, and rich shadow depth without losing detail. Color palette should be deep black, warm amber, muted pistachio green, and dark raspberry red, with each panel carrying its own tonal atmosphere while still feeling like one campaign system.
+
+Typography placement: reserve clean text zones in the lower third of each panel. Add one primary campaign line exactly as: "Taste the Moment". Support it with short generic descriptive copy in smaller elegant serif or clean small caps, but do not include prices, dates, social handles, or brand-specific claims. Keep text readable, evenly spaced, and integrated into the poster composition with high contrast against the background. The final result should look commercially finished, suitable for a luxury launch poster, social ad, or packaging campaign case study.
+
+Reference-image policy: use the unseen reference only as inspiration for composition rhythm, premium product staging, dark editorial mood, and multi-variant campaign structure. Do not reproduce any existing logo, brand name, exact flavor names, proprietary wording, or distinctive package graphics. Avoid copied slogans, copied icon marks, watermarks, celebrity likenesses, retail pricing, or protected text. Output as a clean, original, production-ready advertising visual.
+```
+
+**Prompt Controls**
+
+- Controls a three-panel campaign composition with clear hero placement and flavor-coded environments.
+- Defines exact packaging materials, studio lighting behavior, surface reflections, and premium food styling.
+- Specifies readable ad typography with the required line "Taste the Moment" plus strict debranding and non-copying rules.
+
+**Source Use:** The upstream case and reference image were used only to extract structural ideas such as triptych layout, luxury food-photo hierarchy, dark cinematic lighting, and premium packaging presentation.
+
+**Risk Note:** Do not copy any real brand identifiers, exact flavor names, logo shapes, slogans, or other distinctive packaging text from the source inspiration.
+
+## 25. Urban fruit juice ad poster
+
+<img src="../../docs/assets/gallery/cases/gallery-25-urban-fruit-juice-ad-poster.jpg" alt="Urban fruit juice ad poster" width="420">
+
+- Task: `product_ad`
+- Industry: advertising
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 170](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Urban fruit juice ad poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Design a commercially usable vertical 9:16 advertising gallery case for a bottled fruit beverage campaign. Build one tall poster composed as a clean 2x2 banner grid inside the frame, with shared margins, consistent corner radius, and one unified visual system across all four panels. Each panel should present a different campaign moment while keeping the same product family, color logic, and typography system. Use a debranded fictional beverage package with a simple generic wordmark, no recognizable real brand cues, and no copied label text. The hero panel should use strong forced perspective: an oversized chilled bottle pushed close to camera in the foreground, angled slightly upward, with visible condensation, glossy highlights, clear liquid color, and realistic label wrap. A confident fashion-forward adult model may appear in one panel as a generic campaign figure, crouched in an urban indoor corridor, but the face, styling, and identity must be original and non-specific. Secondary panels can feature smaller bottle variants, fruit ingredients, cropped packaging details, or clean product-only layouts. Keep the composition energetic but readable, with clear separation between product hero, feature badges, and headline zones.
+
+Lighting: combine bright daylight from the corridor with controlled studio fill. Use soft frontal fill on the product, subtle rim light on bottle edges, realistic contact shadows, glossy floor reflections, and shallow depth of field only where it helps hierarchy. Materials must feel premium and physical: transparent glass or high-clarity PET bottle, matte coated paper label, moisture droplets, brushed cap texture, polished floor, painted wall surface, and fresh-cut fruit with believable moisture and fiber detail.
+
+Typography and layout: reserve the top 25 percent for a bold headline system. Set the exact phrase "Fresh Energy" as the main headline in large uppercase sans serif with heavy weight, wide tracking control, and clean kerning. Add a second expressive brush or paint-stroke accent line beneath or overlapping it, but use generic supporting words only if needed and avoid copied slogans. Place four minimal circular feature icons with short placeholder benefit labels in a centered row below the headline. Keep all text areas editable, production-ready, and clearly separated from the subject. Add a bottom-right product lineup area with three smaller bottle variants aligned on the floor plane. Add a bottom information strip for generic website or campaign placeholders without real handles, prices, dates, or addresses.
+
+Color palette: fresh citrus orange, leaf green, off-white, charcoal, and small accents of aqua mint. Balance warm fruit tones against a bright architectural background. One side of the environment may include abstract mural color blocks for urban energy, while the opposite side stays minimal and clean to preserve contrast.
+
+Reference-image policy: use the unseen reference only as inspiration for visual hierarchy, forced-perspective product staging, urban corridor depth, glossy commercial finish, and ad-poster layering. Do not reproduce any exact logo, wording, bottle label design, person likeness, icon set, or unique arrangement from any source image. Keep the result reusable for a new beverage, wellness, skincare, or packaged-goods campaign.
+
+Negative constraints: no real brand names, no copied slogans, no social handles, no price tags, no certification claims, no health claims, no celebrity likeness, no trademarked logo shapes, no unreadable typography, no cluttered badge area, no distorted bottle geometry, no extra hands, no duplicated limbs, no broken reflections, no warped packaging text, no low-resolution textures.
+```
+
+**Prompt Controls**
+
+- Controls a 9:16 four-panel ad layout with a strong hero bottle, supporting variants, and editable copy zones.
+- Specifies executable lighting, material rendering, typography placement, and color hierarchy for production-ready commercial output.
+- Locks in debranding rules and makes the reference image inspiration-only, not a source to replicate.
+
+**Source Use:** The upstream case and attached reference were used only to abstract composition, perspective, lighting polish, and poster hierarchy into a reusable debranded advertising prompt.
+
+**Risk Note:** Do not copy any exact brand wording, logo, bottle label design, person likeness, feature text, or distinctive arrangement from the upstream or reference image.
+
+## 26. Luxury Sportswear Basketball Athlete Campaign Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-26-luxury-sportswear-basketball-athlete-campaign-poster.jpg" alt="Luxury Sportswear Basketball Athlete Campaign Poster" width="420">
+
+- Task: `poster_design`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 70](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Luxury Sportswear Basketball Athlete Campaign Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Design a square 1:1 premium sportswear campaign poster for a debranded fashion advertisement. Show one confident female basketball athlete in a full-body hero pose, centered and slightly forward, standing on a glossy indoor studio floor with subtle painted court lines and soft reflections. She holds a matte black basketball low at one side, with two or three additional basketballs placed near the foreground and background edges to create depth. Her stance should feel grounded, powerful, and editorial, with chin slightly raised and direct eye contact.
+
+Wardrobe and materials: cropped varsity-style jacket with clean trim and no visible brand marks, fitted performance top, tailored biker shorts, white crew socks, and modern high-top sneakers with generic paneling only. Fabrics should read as premium performance knit, satin-backed jacket sleeves, ribbed sock texture, and lightly pebbled rubber basketball surfaces. Skin should appear realistic and polished, with natural athletic definition and controlled sheen.
+
+Composition and typography: place the athlete in front of oversized condensed black letterforms spanning nearly the full height of the background wall. Use the phrase "MOVE BEYOND" as the only headline text, set in bold ultra-condensed sans serif capitals, stretched vertically across the backdrop as a graphic framing device rather than a foreground caption. Keep the letters large enough to create a strong black-and-light-gray contrast wall, with the athlete overlapping the typography at center. Preserve clear negative space around the figure silhouette and keep all other text minimal or absent.
+
+Lighting and color: use a high-end studio setup with a bright frontal key light slightly above eye level, soft fill from camera left and right, and a restrained rim highlight to separate the athlete from the dark typography. Maintain crisp highlights on skin and fabrics, soft controlled shadows on the floor, and a polished commercial contrast range. Palette should stay monochrome and neutral: light gray wall, black typography, black apparel, white socks, subtle charcoal floor reflections, and restrained skin tones.
+
+Camera and finish: eye-level or slightly low camera angle, medium-wide framing, sharp focus across the subject, realistic lens rendering, high micro-contrast in fabric and skin texture, clean retouching, premium print-ready poster finish, no clutter, no extra props beyond basketballs and court markings.
+
+Reference-image policy: use the provided reference only as off-model inspiration for pose confidence, visual hierarchy, studio sport-fashion mood, monochrome palette, oversized background typography, and reflective court-floor treatment. Do not replicate the same person, hairstyle, facial features, outfit details, footwear design, logos, initials, or exact text layout. Create a new original campaign image with similar structural intent but distinct identity.
+
+Negative constraints: no brand logos, no monograms, no signature shoe marks, no celebrity likeness, no copied slogan other than the supplied "MOVE BEYOND", no extra pricing, no social handles, no watermarks, no busy background elements, no distorted anatomy, no unreadable typography, no duplicate limbs, no low-detail textures.
+```
+
+**Prompt Controls**
+
+- Centered full-body athlete with reflective studio court and depth props.
+- Oversized condensed "MOVE BEYOND" typography integrated into the background wall.
+- Monochrome luxury sportswear lighting with explicit debranding and originality rules.
+
+**Source Use:** The upstream case and reference image were used only to extract composition logic, lighting setup, material treatment, typography scale, and commercial poster hierarchy.
+
+**Risk Note:** Do not copy any exact person likeness, logo, shoe design, initials, protected wording, or the precise arrangement of the original reference poster.
+
+## 27. Streetwear Fashion Campaign Asian Apparel Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-27-streetwear-fashion-campaign-asian-apparel-poster.jpg" alt="Streetwear Fashion Campaign Asian Apparel Poster" width="420">
+
+- Task: `poster_design`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 71](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Streetwear Fashion Campaign Asian Apparel Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Design a commercially usable 9:16 fashion campaign poster for a new streetwear collection. Create a full-body portrait of one young adult male model with softly textured, medium-length wavy hair, a calm upward side glance, relaxed confidence, legs crossed at the ankles, and both hands inside the jacket pockets. Place the model centered slightly left of frame so the body overlaps large background typography. Wardrobe: matte dark olive padded hooded jacket worn open, clean white crewneck sweatshirt with no visible branding, relaxed black utility trousers, and minimal white low-top sneakers. Keep the silhouette contemporary, clean, and editorial.
+
+Background and composition: use a seamless electric-blue studio backdrop with a soft radial gradient, subtle glow streaks near the floor, and a glossy reflective surface under the feet. Build strong vertical hierarchy with giant stretched condensed sans-serif letterforms running behind the model from top to bottom in pale warm gray or off-white. The large background text must be generic and non-brand-specific, for example abstract campaign lettering or repeated neutral words, and should function as graphic structure rather than identifiable branding. Reserve the lower-right quadrant for the exact copy line: "Launch Campaign" in bold clean sans-serif, with a smaller supporting line beneath it using generic collection text only. Add small microtext blocks near the bottom corners as decorative layout elements, but keep them fictional, minimal, and unreadable at distance rather than branded.
+
+Lighting and materials: use soft commercial studio lighting from front-left with controlled fill on the opposite side, gentle shadows, crisp edge separation around the jacket and hair, realistic skin texture, and visible fabric detail in the puffed nylon, cotton sweatshirt, cargo fabric, and rubber sole. Maintain polished advertising finish, high sharpness on the outfit, smooth tonal transitions in the background, and a restrained floor reflection. Color palette: electric blue, dark olive, white, black, and light warm gray. Typography style: extra-condensed sans serif, tall vertical scaling, wide tracking for secondary text, clean alignment, and clear negative space around the headline area.
+
+Keep the image debranded and reusable for a new campaign. Do not include logos, real brand names, creator handles, prices, product codes, watermarks, or recognizable proprietary slogans. Do not imitate any exact person from a reference. Reference-image policy: use the provided reference only as off-model inspiration for pose, lighting balance, background energy, visual hierarchy, and premium retail-poster finish; do not replicate exact text, identity, logo placement, or distinctive protected design elements.
+```
+
+**Prompt Controls**
+
+- Controls full-body fashion poster composition, pose, and 9:16 layout hierarchy.
+- Specifies studio lighting, material realism, blue palette, reflective floor, and premium ad finish.
+- Defines debranded typography placement with exact use of "Launch Campaign" and explicit non-copy rules.
+
+**Source Use:** The upstream case and reference image were used only to extract poster structure, subject staging, lighting, typography layering, and commercial finish, then rewritten into a generic debranded prompt.
+
+**Risk Note:** Do not copy any exact brand wording, logos, model identity, microtext, or distinctive vertical background lettering from the source material.
+
+## 28. Surrealist Liquor Brand High Fashion Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-28-surrealist-liquor-brand-high-fashion-poster.jpg" alt="Surrealist Liquor Brand High Fashion Poster" width="420">
+
+- Task: `poster_design`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 75](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Surrealist Liquor Brand High Fashion Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical fashion advertising poster for a debranded liquor or luxury beverage campaign. Build a single, high-impact composition with an oversized bottle-like product as the dominant sculptural element, set diagonally so it acts as both product display and visual backdrop. Place one fashion-forward adult model in the foreground at lower center to center-left, leaning or striding with calm confidence; wardrobe should be premium and minimal, with a dark leather outer layer, fluid black fabric, and sharp footwear. The mood should merge surreal product scale with editorial street energy, while remaining clearly studio-crafted and commercially usable.
+
+Environment and composition: use a clean monochrome set in warm apricot, pale amber, or muted orange-beige, with a smooth semi-reflective floor and generous negative space around the hero subjects. Keep the camera at eye to slightly low angle for authority. The product occupies roughly 45 to 55 percent of the frame height and overlaps with the model to create depth. Maintain a clear reading path: hero product first, model second, campaign text third. Avoid clutter, secondary props, or busy scenery.
+
+Lighting and materials: use soft, even studio lighting with a cool-neutral key light from upper front-left, subtle fill from the right, and gentle shadow falloff. Add controlled specular highlights on glass, lacquer, leather, and polished floor reflections. Surfaces should feel premium: translucent bottle glass, satin label area without logos, smooth matte background, crisp leather texture, and soft fabric motion. Keep reflections subtle and believable, not mirror-like.
+
+Typography and graphic system: integrate one oversized background headline in bold condensed sans serif, all caps, spanning the upper to mid background and partially obscured by the product and model for layered depth. Do not use any real brand names or source text. Add a smaller bottom-center campaign line using clean modern sans serif. The only explicit copy should be: "Launch Campaign". Keep all other text as abstract layout blocks or non-legible placeholder shapes. Typography must look intentional, aligned, and print-ready.
+
+Color palette: warm pale orange or amber background, off-white typography, deep espresso brown, black, and smoked glass accents. Preserve a restrained luxury palette with high tonal cohesion and moderate contrast.
+
+Reference-image policy: use the attached reference image only as inspiration for attitude, walking energy, leather texture, urban editorial confidence, and natural body movement. Do not reproduce the exact face, hairstyle, outfit, street location, taxi, buildings, signage, crosswalk pattern, or any distinctive real-world detail. Use the upstream case only for structural ideas such as surreal scale contrast, layered typography, minimal set design, and premium poster finish. Generate a wholly new, debranded campaign image with no logos, no social handles, no protected slogans, no prices, and no identifiable person replication.
+```
+
+**Prompt Controls**
+
+- Controls surreal hero composition with oversized product, foreground model placement, and a clear commercial reading path.
+- Specifies studio lighting, premium material rendering, restrained color palette, and realistic reflective surfaces.
+- Defines typography hierarchy, exact allowed copy, and strict source-reference limits to keep the result debranded and reusable.
+
+**Source Use:** The upstream case was used only for poster structure and visual hierarchy, while the attached reference image informed motion, attitude, and luxury styling without being copied or sent by default.
+
+**Risk Note:** Do not replicate any real brand wording, creator credits, person identity, outfit-specific likeness, or distinctive street elements from the source materials.
+
+## 29. Surrealist Rolex Luxury Watch Fashion Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-29-surrealist-rolex-luxury-watch-fashion-poster.jpg" alt="Surrealist Rolex Luxury Watch Fashion Poster" width="420">
+
+- Task: `product_ad`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 78](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "Surrealist Rolex Luxury Watch Fashion Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Create a 9:16 vertical fashion product advertisement poster for a debranded luxury wristwatch campaign. Build the composition around one monumental hero watch standing upright in the center, filling most of the frame like a sculptural object. Place a sharply dressed adult male model in a tailored dark forest-green suit leaning casually against the lower-left edge of the watch case, scaled smaller than the product so the watch remains dominant. Use a polished reflective floor with a soft mirror reflection beneath both subjects. Keep the background minimal and architectural, with deep emerald-to-black gradient tones and a faint misty studio atmosphere.
+
+Visual hierarchy: the watch is the primary focal point, the model is secondary, and typography is tertiary. Add oversized elegant serif headline letters spanning the background behind the watch, reading only a generic luxury title such as "TIME" or abstract letterforms, never any real brand name. Reserve the bottom center for the exact tagline: "Precision in Motion" in refined, small, high-contrast serif typography. Leave the upper-right corner clean for optional campaign metadata, but use only placeholder text if needed.
+
+Materials and product rendering: emphasize brushed metal links, polished bezel edges, crisp glass reflections, realistic dial depth, subtle metallic chamfers, and premium craftsmanship. The watch should feel expensive but unbranded: no logos, no crown emblems, no trademark dial text, no distinctive model codes. The dial may use simple baton markers, clean hands, and a minimal date window with non-specific numerals. The suit fabric should show a matte wool texture with controlled shadow detail. Shoes and accessories should remain understated and generic.
+
+Lighting: use controlled studio lighting with a soft frontal key light, a narrow top rim light to define the watch silhouette, and warm specular highlights across the bracelet and bezel. Add gentle side fill on the model’s face and suit so he remains readable without overpowering the product. Preserve deep shadows, high contrast, glossy reflections on the floor, and precise highlight rolloff on the metal. Keep the scene cinematic but commercially clean, with no chaotic flares.
+
+Color palette: deep emerald green, blackened green, antique gold, champagne metal, and subtle warm ivory typography. Maintain restrained saturation and premium contrast. The overall finish should feel like a high-end fashion editorial merged with a product campaign, but executable as a commercial ad layout.
+
+Typography and layout rules: typography must be sparse, luxurious, and legible. Use one large background word or abstract letter system, plus the exact tagline "Precision in Motion" near the bottom. Do not add prices, discounts, dates, phone numbers, addresses, certifications, social handles, or extra claims. Keep text integrated into the composition with generous negative space.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition, scale contrast, reflective staging, dark green palette, and premium ad finish. Do not reproduce any exact branding, logo shapes, dial text, signature typography, person identity, or distinctive watch design details from the reference. Generate a new, reusable luxury campaign image with original commercial styling.
+```
+
+**Prompt Controls**
+
+- Controls monumental center composition with a smaller fashion model for scale and status.
+- Specifies premium materials, emerald-black palette, reflective floor, and precise studio lighting.
+- Defines restrained typography placement and a strict debranding policy for commercial reuse.
+
+**Source Use:** The upstream case and reference image were used only to extract poster structure, visual hierarchy, lighting mood, material cues, and typography placement for a new debranded ad prompt.
+
+**Risk Note:** Do not copy any real watch brand identifiers, logos, dial text, signature case details, creator marks, or the specific identity of the person shown in the reference.
+
+## 30. SPLASH Fashion Brand Hyper-Realistic Campaign Poster
+
+<img src="../../docs/assets/gallery/cases/gallery-30-splash-fashion-brand-hyper-realistic-campaign-poster.jpg" alt="SPLASH Fashion Brand Hyper-Realistic Campaign Poster" width="420">
+
+- Task: `poster_design`
+- Industry: fashion
+- Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 80](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
+
+**Brief**
+
+Create a debranded advertising gallery case inspired by the provided reference image and upstream case title "SPLASH Fashion Brand Hyper-Realistic Campaign Poster". Use the upstream prompt only as structural input: extract composition, visual hierarchy, lighting, materials, typography placement, and commercial finish. Do not copy exact brand names, social handles, prices, people identities, proprietary text, or unique protected details from the upstream image or prompt. Generate a reusable Image2 prompt that a designer can adapt to a new product, poster, or campaign.
+
+**Optimized Prompt**
+
+```text
+Design a 9:16 hyper-realistic fashion campaign poster for a debranded launch concept. Create a confident female model seated on a large transparent liquid-glass word sculpture placed across the lower third of the frame; the sculpture should feel like molded clear resin or water-solid lettering with crisp reflections, internal refraction, and splash energy around its base. Pose direction: one leg relaxed downward, one leg bent, one hand resting on the knee, one hand braced beside the body, upright posture, direct eye contact, calm editorial confidence. Wardrobe: black tailored blazer, fitted black top, black wide-leg trousers, monochrome high-top sneakers, minimal jewelry, clean contemporary styling. Do not replicate any exact face, identity, footwear branding, or logo from any source; generate a new generic campaign model.
+
+Background composition: fill most of the upper background with one oversized bold sans-serif display word in matte light gray or off-white, spanning nearly edge to edge and sitting partially behind the model to create depth. Keep the word generic and non-branded, or render it as abstract placeholder typography. Add a small clean tagline area on the right side at mid-height using the exact copy "Launch Campaign" in crisp modern sans-serif text. Preserve strong vertical hierarchy: giant background type, centered seated model, sculptural foreground lettering, minimal secondary copy.
+
+Lighting and materials: studio setup with a large soft key light from front-left, subtle rim light from rear-right, controlled specular highlights on the transparent sculpture, soft falloff on the backdrop, gentle shadow definition on the suit, realistic skin texture, premium cosmetic-grade retouching, glossy floor reflections, suspended splash droplets frozen sharply near the sculpture. Background should be a smoky charcoal-to-silver gradient with a clean premium finish, no clutter, no props beyond water-splash effects.
+
+Color palette: charcoal black, graphite, silver gray, off-white, clear glass, subtle cool highlights. Camera direction: full-body vertical framing, eye-level to slightly low angle, 85mm portrait look, shallow depth of field but text remains legible, sharp focus on the model and front edges of the sculpture. Output should feel like a production-ready commercial fashion poster with deliberate negative space and polished typography placement.
+
+Reference-image policy: use the reference only as inspiration for layout rhythm, seated pose attitude, oversized background typography, liquid-material foreground treatment, and premium studio mood. Do not copy exact text, person identity, facial features, brand cues, shoe marks, or distinctive composition line-for-line. Avoid copyrighted logos, avoid named fashion retailers, avoid creator handles, avoid prices, and avoid any protected slogan other than the user-provided copy "Launch Campaign".
+```
+
+**Prompt Controls**
+
+- Controls a vertical fashion-poster layout with oversized background typography, centered model, and liquid-glass foreground sculpture.
+- Defines studio lighting, reflective materials, color palette, camera framing, and premium commercial retouching for a production-ready result.
+- Sets explicit debranding rules, including generic typography, no logo replication, no identity matching, and reference-image inspiration only.
+
+**Source Use:** The upstream case and reference image were used only to extract reusable structure: editorial seated pose, giant background type, transparent splash-like 3D lettering, and polished studio advertising finish.
+
+**Risk Note:** Do not copy any exact brand word, person likeness, logo, shoe design marking, tagline, or other distinctive protected visual/text element from the source material.

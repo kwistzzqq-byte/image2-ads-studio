@@ -1,27 +1,191 @@
 # Gallery Attribution
 
-This gallery mixes project-generated concept previews with open poster references. Images are included as lightweight promotional previews and visual-recipe references, not as reusable customer assets.
+The gallery shows Image2 Ads Studio prompt cases. Each public prompt is generated through this project's structured brief, template retrieval, visual recipe retrieval, and LLM prompt brain flow.
 
-## Project-Generated Concept Previews
+Images are lightweight preview assets. They are included to document prompt behavior and should not be treated as reusable customer or brand assets.
 
-- `docs/assets/gallery/generated-beverage-ad-concept.jpg`
-  - Source: AI-generated concept image provided by the project owner, 2026-05-02.
-  - Usage note: Included as a prompt-output preview only. Visible third-party marks are not reusable project assets and do not imply brand affiliation, endorsement, or sponsorship.
-- `docs/assets/gallery/generated-product-ad-concept.jpg`
-  - Source: AI-generated concept image provided by the project owner, 2026-05-02.
-  - Usage note: Included as a prompt-output preview only. Visible third-party marks are not reusable project assets and do not imply brand affiliation, endorsement, or sponsorship.
+## Project-Generated Preview Images
 
-## Open Poster References
+- docs/assets/gallery/cases/owner-beverage-ad-concept.jpg
+  - Case: Beverage Product Ad Concept
+  - Source: Project owner generated concept preview
+  - Usage note: Project-owned AI-generated preview; visible third-party marks are not reusable assets
+- docs/assets/gallery/cases/owner-product-ad-concept.jpg
+  - Case: Premium Appliance Product Ad Concept
+  - Source: Project owner generated concept preview
+  - Usage note: Project-owned AI-generated preview; visible third-party marks are not reusable assets
 
-- `docs/assets/gallery/open-poster-market-wpa.jpg`
-  - Title: "This is the market", WPA poster, 1937.
-  - Source: Wikimedia Commons, https://commons.wikimedia.org/wiki/File:This_is_the_market,_WPA_poster,_1937.jpg
-  - License/status: Public domain.
-- `docs/assets/gallery/open-poster-mucha-job.jpg`
-  - Title: "JOB, cigarette paper advertisement" by Alphonse Mucha, 1898.
-  - Source: Wikimedia Commons, https://commons.wikimedia.org/wiki/File:JOB,_cigarette_paper_advertisement_by_Alfons_Mucha,_1898.jpg
-  - License/status: Public domain.
-- `docs/assets/gallery/open-poster-aetna-dynamite.jpg`
-  - Title: "Aetna dynamite" advertising poster.
-  - Source: Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Aetna_dynamite.jpg
-  - License/status: Public domain.
+## Upstream-Inspired Rewritten Cases
+
+Source repository: EvoLinkAI/awesome-gpt-image-2-prompts
+Repository URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts
+License note: Apache-2.0, per upstream repository LICENSE
+
+- docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg
+  - Gallery case: E-commerce Main Image - Luxury Amber Perfume Ad
+  - Upstream case: Case 113
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-04-e-commerce-main-image-skincare-product-studio-shot.jpg
+  - Gallery case: E-commerce Main Image - Skincare Product Studio Shot
+  - Upstream case: Case 114
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg
+  - Gallery case: E-commerce Main Image - Tropical Citrus Soda Ad Poster
+  - Upstream case: Case 115
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-06-e-commerce-main-image-luxury-fur-lined-loafer-lifestyle-photo.jpg
+  - Gallery case: E-commerce Main Image - Luxury Fur-Lined Loafer Lifestyle Photo
+  - Upstream case: Case 117
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-07-e-commerce-main-image-luxury-perfume-ad-on-marble-vanity.jpg
+  - Gallery case: E-commerce Main Image - Luxury Perfume Ad on Marble Vanity
+  - Upstream case: Case 118
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-08-e-commerce-main-image-miniature-diorama-skincare-advertisement.jpg
+  - Gallery case: E-commerce Main Image - Miniature Diorama Skincare Advertisement
+  - Upstream case: Case 151
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-09-e-commerce-main-image-premium-gaming-motherboard-studio-shot.jpg
+  - Gallery case: E-commerce Main Image - Premium Gaming Motherboard Studio Shot
+  - Upstream case: Case 153
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-10-e-commerce-main-image-premium-grain-powder-ad-board.jpg
+  - Gallery case: E-commerce Main Image - Premium Grain Powder Ad Board
+  - Upstream case: Case 154
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-11-e-commerce-main-image-earbuds-e-commerce-infographic.jpg
+  - Gallery case: E-commerce Main Image - Earbuds E-commerce Infographic
+  - Upstream case: Case 155
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-12-e-commerce-main-image-elegant-cosmetic-poster-prompt.jpg
+  - Gallery case: E-commerce Main Image - Elegant Cosmetic Poster Prompt
+  - Upstream case: Case 157
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-13-e-commerce-main-image-minimalist-product-ad-pure-crunch.jpg
+  - Gallery case: E-commerce Main Image - Minimalist Product Ad: PURE CRUNCH
+  - Upstream case: Case 158
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-14-burger-hero-image-plus-9-cell-ad-storyboard.jpg
+  - Gallery case: Burger hero image plus 9-cell ad storyboard
+  - Upstream case: Case 163
+  - Upstream file: cases/ecommerce.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-15-luxury-chronograph-watch-ad.jpg
+  - Gallery case: Luxury Chronograph Watch Ad
+  - Upstream case: Case 144
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-16-neon-nike-lumina-ad-poster.jpg
+  - Gallery case: Neon Nike Lumina Ad Poster
+  - Upstream case: Case 145
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-17-streetwear-sneaker-poster-ad.jpg
+  - Gallery case: Streetwear Sneaker Poster Ad
+  - Upstream case: Case 146
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-18-editorial-osaka-six-sweatshirt-ad.jpg
+  - Gallery case: Editorial Osaka Six Sweatshirt Ad
+  - Upstream case: Case 147
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-19-editorial-perfume-shot-on-moss.jpg
+  - Gallery case: Editorial Perfume Shot on Moss
+  - Upstream case: Case 148
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-20-editorial-perfume-bottle-in-golden-fur.jpg
+  - Gallery case: Editorial Perfume Bottle in Golden Fur
+  - Upstream case: Case 149
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-21-luxury-miniature-dubai-city-model.jpg
+  - Gallery case: Luxury Miniature Dubai City Model
+  - Upstream case: Case 150
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-22-parody-luxury-product-advertisement.jpg
+  - Gallery case: Parody Luxury Product Advertisement
+  - Upstream case: Case 131
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-23-japanese-chinese-food-delivery-flyer.jpg
+  - Gallery case: Japanese Chinese Food Delivery Flyer
+  - Upstream case: Case 166
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-24-luxury-chocolate-campaign-system.jpg
+  - Gallery case: Luxury chocolate campaign system
+  - Upstream case: Case 169
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-25-urban-fruit-juice-ad-poster.jpg
+  - Gallery case: Urban fruit juice ad poster
+  - Upstream case: Case 170
+  - Upstream file: cases/ad-creative.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-26-luxury-sportswear-basketball-athlete-campaign-poster.jpg
+  - Gallery case: Luxury Sportswear Basketball Athlete Campaign Poster
+  - Upstream case: Case 70
+  - Upstream file: cases/poster.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-27-streetwear-fashion-campaign-asian-apparel-poster.jpg
+  - Gallery case: Streetwear Fashion Campaign Asian Apparel Poster
+  - Upstream case: Case 71
+  - Upstream file: cases/poster.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-28-surrealist-liquor-brand-high-fashion-poster.jpg
+  - Gallery case: Surrealist Liquor Brand High Fashion Poster
+  - Upstream case: Case 75
+  - Upstream file: cases/poster.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-29-surrealist-rolex-luxury-watch-fashion-poster.jpg
+  - Gallery case: Surrealist Rolex Luxury Watch Fashion Poster
+  - Upstream case: Case 78
+  - Upstream file: cases/poster.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.
+- docs/assets/gallery/cases/gallery-30-splash-fashion-brand-hyper-realistic-campaign-poster.jpg
+  - Gallery case: SPLASH Fashion Brand Hyper-Realistic Campaign Poster
+  - Upstream case: Case 80
+  - Upstream file: cases/poster.md
+  - Upstream URL: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md
+  - Transformation: source prompt and image were used as structure reference only; the public optimized prompt was regenerated and debranded by Image2 Ads Studio.

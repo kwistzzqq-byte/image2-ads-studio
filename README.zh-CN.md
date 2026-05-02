@@ -6,17 +6,20 @@
 
 ![Workflow](docs/assets/github-workflow.svg)
 
-## 案例预览
+## Prompt Gallery
 
-| 自有生图案例 | 自有生图案例 |
+公开 gallery 第一版包含 30 个“一张图 + 一份 optimized prompt”的案例：2 张项目自有生图概念图，28 张上游广告素材库参考图。每个案例都包含预览图、Image2 可用提示词和具体来源标注。
+
+查看完整案例：[examples/gallery/cases.md](examples/gallery/cases.md)
+
+| Preview | Optimized Prompt Excerpt |
 | --- | --- |
-| <img src="docs/assets/gallery/generated-beverage-ad-concept.jpg" alt="Generated beverage advertising concept" width="420"> | <img src="docs/assets/gallery/generated-product-ad-concept.jpg" alt="Generated product advertising concept" width="420"> |
+| <img src="docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="Beverage product ad concept" width="260"> | **Beverage Product Ad Concept**<br><br>`Create a commercially usable 16:9 beverage advertising hero image for a new debranded sparkling drink. Composition: place a tall matte-gloss red can slightly right of center...` |
+| <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium appliance product ad concept" width="260"> | **Premium Appliance Product Ad Concept**<br><br>`Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device...` |
+| <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="Luxury amber perfume ad prompt case" width="260"> | **Luxury Amber Perfume Ad**<br><br>`Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object...` |
+| <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="Tropical citrus soda ad prompt case" width="260"> | **Tropical Citrus Soda Ad Poster**<br><br>`Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object...` |
 
-| 开放许可海报参考 | 开放许可海报参考 | 开放许可海报参考 |
-| --- | --- | --- |
-| <img src="docs/assets/gallery/open-poster-market-wpa.jpg" alt="Public-domain market poster reference" width="260"> | <img src="docs/assets/gallery/open-poster-mucha-job.jpg" alt="Public-domain poster reference by Alphonse Mucha" width="260"> | <img src="docs/assets/gallery/open-poster-aetna-dynamite.jpg" alt="Public-domain advertising poster reference" width="260"> |
-
-自有生图用于展示出图方向；开放许可海报用于视觉配方灵感参考。来源与使用说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。
+来源与许可证说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。上游 prompt 和图片只作为结构参考；公开 prompt 已由本项目流程重新生成、去品牌化并改写为可复用版本。
 
 ## 价值
 
