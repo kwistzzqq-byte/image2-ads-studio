@@ -1,17 +1,17 @@
 [
   {
-    "id": "adimg_recipe_0022",
-    "name": "门店夜景生活切片",
+    "id": "adimg_recipe_0001",
+    "name": "黑金奢侈品香水主图",
     "source": {
-      "repo": "ZeroLu/awesome-gpt-image",
-      "path": "README.zh-CN.md",
-      "caseId": "便利店夜景街头摄影",
-      "license": "MIT",
+      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
+      "path": "cases/ecommerce.md",
+      "caseId": "Case 113",
+      "license": "Apache-2.0",
       "transformation": "debranded_rewritten_recipe"
     },
     "taskTypes": [
-      "storefront_signboard",
-      "local_store_promotion",
+      "ecommerce_main_image",
+      "product_ad",
       "commercial_photography"
     ],
     "supportedInputModes": [
@@ -26,22 +26,24 @@
       "none"
     ],
     "industries": [
-      "便利店",
-      "餐饮",
-      "奶茶",
-      "夜间门店"
+      "美妆",
+      "香水",
+      "护肤",
+      "奢侈品",
+      "电商"
     ],
     "styleTags": [
-      "night_lighting",
-      "street_photo",
-      "local_store"
+      "luxury",
+      "black_gold",
+      "marble",
+      "studio_product"
     ],
-    "layoutFormula": "夜间街头横版或方图，门店立面和入口为背景，人物或顾客活动作为生活氛围，招牌清楚。",
-    "subjectFormula": "门头、玻璃门窗、促销海报、冰柜或店内光源保持真实，不要网红化。",
-    "sceneFormula": "城市夜晚路边场景，路灯、车灯、玻璃反射、共享单车或门口小物增加真实感。",
-    "lightingFormula": "店内白光和外部暖光混合，玻璃反射真实，人物面部自然不过度精修。",
-    "typographyFormula": "门头文案和促销文字只使用用户提供内容，背景小字可弱化。",
-    "detailFormula": "强调真实抓拍感、夜间门店光线、普通生活氛围、玻璃反射和可落地门店视觉。",
+    "layoutFormula": "方图或竖图，产品中心偏右，左侧留标题区，底部有自然反射和接触阴影。",
+    "subjectFormula": "单个高端瓶装产品直立展示，玻璃、液体、金属盖、标签和包装边缘必须清晰。",
+    "sceneFormula": "深色棚拍背景，黑色或深棕石材台面，少量烟雾、柔焦花材、金属或织物道具辅助高级感。",
+    "lightingFormula": "暖金主光从左上切入，边缘高光勾勒玻璃和金属，暗部保持层次。",
+    "typographyFormula": "文字只放用户提供内容，建议左侧大标题、下方一行副标题或短横线。",
+    "detailFormula": "强调玻璃折射、冷凝水珠、金属高光、石材纹理、浅景深和高端商业摄影。",
     "negativeConstraints": [
       "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
       "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
@@ -49,92 +51,93 @@
     ],
     "variables": [
       {
-        "name": "signText",
-        "label": "门头文字",
+        "name": "productName",
+        "label": "产品名称",
         "required": true
       },
       {
-        "name": "scene",
-        "label": "门店氛围",
+        "name": "headline",
+        "label": "标题文案",
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "黑金奢侈品香水主图 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
-      "门头",
-      "店招",
-      "招牌",
-      "门脸",
-      "现场改造",
-      "水牌",
-      "橱窗贴",
-      "外卖图",
-      "门店促销",
-      "团购",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
       "商业摄影",
       "棚拍",
       "空间摄影",
       "菜品摄影",
-      "门店夜景生活切片",
-      "便利店",
-      "餐饮",
-      "奶茶",
-      "夜间门店"
+      "黑金奢侈品香水主图",
+      "美妆",
+      "香水",
+      "护肤",
+      "奢侈品",
+      "电商"
     ],
     "materialKeywords": [
-      "亚克力",
-      "发光字",
-      "灯箱",
-      "金属",
       "玻璃",
-      "墙面",
-      "KT板",
-      "贴膜",
-      "海报纸",
+      "金属",
+      "塑料",
+      "纸盒",
       "布料",
+      "液体",
       "食材",
       "木纹"
     ],
     "businessKeywords": [
-      "开店",
-      "改造",
-      "换招牌",
-      "夜间识别",
-      "促销",
-      "开业",
-      "会员",
-      "套餐",
-      "团购",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
       "拍摄",
       "展示",
       "宣传",
       "成片",
-      "门头",
-      "玻璃门窗",
-      "促销海报",
-      "冰柜或店内光源保持真实",
-      "不要网红化"
+      "单个高端瓶装产品直立展示",
+      "玻璃",
+      "液体",
+      "金属盖",
+      "标签和包装边缘必须清晰"
     ],
     "visualKeywords": [
-      "入口清楚",
-      "可制作",
-      "真实透视",
-      "夜间亮化",
-      "利益点醒目",
-      "到店转化",
-      "产品清楚",
-      "行动区",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
       "真实光影",
       "浅景深",
       "材质纹理",
       "自然阴影",
-      "night_lighting",
-      "street_photo",
-      "local_store",
-      "夜间街头横版或方图",
-      "门店立面和入口为背景",
-      "人物或顾客活动作为生活氛围",
-      "招牌清楚"
+      "luxury",
+      "black_gold",
+      "marble",
+      "studio_product",
+      "方图或竖图",
+      "产品中心偏右",
+      "左侧留标题区",
+      "底部有自然反射和接触阴影"
     ]
   },
   {
@@ -199,7 +202,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "热带饮品水花广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -275,773 +284,6 @@
     ]
   },
   {
-    "id": "adimg_recipe_0020",
-    "name": "咖啡信息图海报",
-    "source": {
-      "repo": "ZeroLu/awesome-gpt-image",
-      "path": "README.zh-CN.md",
-      "caseId": "咖啡信息图海报",
-      "license": "MIT",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "poster_design",
-      "rollup_banner"
-    ],
-    "supportedInputModes": [
-      "text_to_image",
-      "image_edit"
-    ],
-    "referenceImageRoles": [
-      "preserve_subject",
-      "style_reference_only",
-      "background_replace",
-      "local_edit",
-      "none"
-    ],
-    "industries": [
-      "咖啡",
-      "教育",
-      "餐饮",
-      "品牌"
-    ],
-    "styleTags": [
-      "infographic",
-      "coffee",
-      "typography",
-      "premium"
-    ],
-    "layoutFormula": "竖版信息图，流程从上到下或左到右，节点、箭头、图标和模块卡片形成阅读路径。",
-    "subjectFormula": "咖啡杯、豆子、器具或流程插图为主体，图标简洁统一。",
-    "sceneFormula": "咖啡棕、奶白、墨黑、铜色点缀，背景干净带轻微纸张或桌面质感。",
-    "lightingFormula": "柔和商业插画或摄影混合光，重点保证小字和图标清晰。",
-    "typographyFormula": "标题、流程节点和说明文字全部来自用户或保持占位，不生成大段随机文字。",
-    "detailFormula": "强调信息组织、模块化卡片、箭头流程、科普清晰度和高级商业展示感。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "headline",
-        "label": "信息图标题",
-        "required": true
-      },
-      {
-        "name": "steps",
-        "label": "流程节点",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "海报",
-      "活动",
-      "促销",
-      "招生",
-      "招聘",
-      "易拉宝",
-      "展架",
-      "竖版物料",
-      "展会",
-      "咖啡信息图海报",
-      "咖啡",
-      "教育",
-      "餐饮",
-      "品牌"
-    ],
-    "materialKeywords": [
-      "纸张",
-      "喷绘",
-      "屏幕",
-      "展架",
-      "铝合金",
-      "画布"
-    ],
-    "businessKeywords": [
-      "促销",
-      "发布",
-      "报名",
-      "招聘",
-      "开业",
-      "介绍",
-      "招商",
-      "咨询",
-      "咖啡杯",
-      "豆子",
-      "器具或流程插图为主体",
-      "图标简洁统一"
-    ],
-    "visualKeywords": [
-      "主标题",
-      "主视觉",
-      "信息层级",
-      "留白",
-      "远距可读",
-      "三段式",
-      "安全边距",
-      "底部联系",
-      "infographic",
-      "coffee",
-      "typography",
-      "premium",
-      "竖版信息图",
-      "流程从上到下或左到右",
-      "节点",
-      "箭头",
-      "图标和模块卡片形成阅读路径"
-    ]
-  },
-  {
-    "id": "adimg_recipe_0012",
-    "name": "高级城市品牌海报",
-    "source": {
-      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
-      "path": "cases/poster.md",
-      "caseId": "Case 48",
-      "license": "Apache-2.0",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "poster_design",
-      "event_backdrop"
-    ],
-    "supportedInputModes": [
-      "text_to_image",
-      "image_edit"
-    ],
-    "referenceImageRoles": [
-      "preserve_subject",
-      "style_reference_only",
-      "background_replace",
-      "local_edit",
-      "none"
-    ],
-    "industries": [
-      "城市",
-      "文旅",
-      "园区",
-      "活动",
-      "政府"
-    ],
-    "styleTags": [
-      "city_branding",
-      "cinematic",
-      "premium_poster"
-    ],
-    "layoutFormula": "9:16竖版城市宣传海报，地标和道路形成纵深，标题位于底部或左下。",
-    "subjectFormula": "核心城市、园区或活动地标必须清楚，建筑、道路、天空和科技纹理统一。",
-    "sceneFormula": "融合地标、道路、山水、科技、数据或产业元素，不能堆砌成旅游拼贴。",
-    "lightingFormula": "冷暖对比和空气透视晨昏光或蓝金色调，空气透视和云层让画面有深度。",
-    "typographyFormula": "标题、年份、短口号只使用用户提供内容，字距优雅，不能压过地标主体。",
-    "detailFormula": "强调城市品牌、未来感、地标融合、编辑排版和高级宣传海报质感。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "headline",
-        "label": "城市/活动标题",
-        "required": true
-      },
-      {
-        "name": "landmarks",
-        "label": "地标元素",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "海报",
-      "活动",
-      "促销",
-      "招生",
-      "招聘",
-      "背景板",
-      "签到墙",
-      "舞台",
-      "会议",
-      "发布会",
-      "高级城市品牌海报",
-      "城市",
-      "文旅",
-      "园区",
-      "政府"
-    ],
-    "materialKeywords": [
-      "纸张",
-      "喷绘",
-      "屏幕",
-      "桁架",
-      "LED",
-      "展板"
-    ],
-    "businessKeywords": [
-      "促销",
-      "发布",
-      "报名",
-      "招聘",
-      "开业",
-      "活动",
-      "会议",
-      "年会",
-      "核心城市",
-      "园区或活动地标必须清楚",
-      "建筑",
-      "道路",
-      "天空和科技纹理统一"
-    ],
-    "visualKeywords": [
-      "主标题",
-      "主视觉",
-      "信息层级",
-      "留白",
-      "远距标题",
-      "拍照区",
-      "横版安全区",
-      "city_branding",
-      "cinematic",
-      "premium_poster",
-      "16竖版城市宣传海报",
-      "地标和道路形成纵深",
-      "标题位于底部或左下"
-    ]
-  },
-  {
-    "id": "adimg_recipe_0033",
-    "name": "门店招牌真实改造",
-    "source": {
-      "repo": "ZeroLu/awesome-gpt-image",
-      "path": "README.zh-CN.md",
-      "caseId": "门店夜景结构参考",
-      "license": "MIT",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "storefront_signboard",
-      "brand_wall",
-      "signage_wayfinding"
-    ],
-    "supportedInputModes": [
-      "image_edit",
-      "text_to_image"
-    ],
-    "referenceImageRoles": [
-      "preserve_structure",
-      "local_edit",
-      "scene_mockup"
-    ],
-    "industries": [
-      "门店",
-      "餐饮",
-      "零售",
-      "服务业"
-    ],
-    "styleTags": [
-      "storefront",
-      "scene_mockup",
-      "photorealistic"
-    ],
-    "layoutFormula": "基于现场照片的真实透视，设计只贴合门头、墙面或标识安装区域，不改变建筑和门窗关系。",
-    "subjectFormula": "招牌、logo字、灯箱或导视牌按用户文案制作，材质和厚度真实。",
-    "sceneFormula": "保留街道、入口、橱窗、墙面、地面和邻近环境，加入合理灯光和招牌反射。",
-    "lightingFormula": "日景用自然光，夜景用招牌发光和环境光，不能过曝。",
-    "typographyFormula": "门头文字必须准确，不添加上游案例店名或无关品牌。",
-    "detailFormula": "强调施工可落地、真实贴合、透视保留、材质厚度和现场效果图可信度。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "signText",
-        "label": "招牌/标识文字",
-        "required": true
-      },
-      {
-        "name": "installArea",
-        "label": "安装区域",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "门头",
-      "店招",
-      "招牌",
-      "门脸",
-      "现场改造",
-      "形象墙",
-      "文化墙",
-      "前台墙",
-      "上墙",
-      "展厅墙",
-      "导视",
-      "标识",
-      "指引",
-      "吊牌",
-      "立柱",
-      "门店招牌真实改造",
-      "门店",
-      "餐饮",
-      "零售",
-      "服务业"
-    ],
-    "materialKeywords": [
-      "亚克力",
-      "发光字",
-      "灯箱",
-      "金属",
-      "玻璃",
-      "墙面",
-      "石材",
-      "木饰面",
-      "金属字",
-      "灯带",
-      "反光膜"
-    ],
-    "businessKeywords": [
-      "开店",
-      "改造",
-      "换招牌",
-      "夜间识别",
-      "品牌展示",
-      "接待",
-      "企业文化",
-      "上墙",
-      "指路",
-      "分流",
-      "楼层",
-      "科室",
-      "招牌",
-      "logo字",
-      "灯箱或导视牌按用户文案制作",
-      "材质和厚度真实"
-    ],
-    "visualKeywords": [
-      "入口清楚",
-      "可制作",
-      "真实透视",
-      "夜间亮化",
-      "墙面贴合",
-      "透视真实",
-      "材质层次",
-      "灯带",
-      "箭头清楚",
-      "远距可读",
-      "安装真实",
-      "路径明确",
-      "storefront",
-      "scene_mockup",
-      "photorealistic",
-      "基于现场照片的真实透视",
-      "设计只贴合门头",
-      "墙面或标识安装区域",
-      "不改变建筑和门窗关系"
-    ]
-  },
-  {
-    "id": "adimg_recipe_0036",
-    "name": "导视空间安装 mockup",
-    "source": {
-      "repo": "ZeroLu/awesome-gpt-image",
-      "path": "README.zh-CN.md",
-      "caseId": "空间标识结构参考",
-      "license": "MIT",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "signage_wayfinding",
-      "brand_wall"
-    ],
-    "supportedInputModes": [
-      "image_edit",
-      "text_to_image"
-    ],
-    "referenceImageRoles": [
-      "preserve_structure",
-      "local_edit",
-      "scene_mockup"
-    ],
-    "industries": [
-      "商场",
-      "办公",
-      "医院",
-      "园区",
-      "学校"
-    ],
-    "styleTags": [
-      "wayfinding",
-      "scene_mockup",
-      "production_ready"
-    ],
-    "layoutFormula": "在真实空间透视中放置导视牌、门牌、吊牌或墙面标识，位置和比例必须符合现场安装。",
-    "subjectFormula": "标识文字、箭头、楼层和区域信息清晰，材质厚度真实。",
-    "sceneFormula": "保留墙面、地面、天花、灯光和通行动线，标识贴合环境。",
-    "lightingFormula": "室内自然光或顶灯照明，标识边缘有真实阴影和反光。",
-    "typographyFormula": "方向、楼层、科室、区域文字只用用户给定信息。",
-    "detailFormula": "强调空间安装、透视贴合、导视可读、材质真实和商业空间整洁感。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "signContent",
-        "label": "导视内容",
-        "required": true
-      },
-      {
-        "name": "installArea",
-        "label": "安装位置",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "导视",
-      "标识",
-      "指引",
-      "吊牌",
-      "立柱",
-      "形象墙",
-      "文化墙",
-      "前台墙",
-      "上墙",
-      "展厅墙",
-      "导视空间安装 mockup",
-      "商场",
-      "办公",
-      "医院",
-      "园区",
-      "学校"
-    ],
-    "materialKeywords": [
-      "亚克力",
-      "金属",
-      "灯箱",
-      "反光膜",
-      "石材",
-      "木饰面",
-      "金属字",
-      "灯带"
-    ],
-    "businessKeywords": [
-      "指路",
-      "分流",
-      "楼层",
-      "科室",
-      "品牌展示",
-      "接待",
-      "企业文化",
-      "上墙",
-      "标识文字",
-      "箭头",
-      "楼层和区域信息清晰",
-      "材质厚度真实"
-    ],
-    "visualKeywords": [
-      "箭头清楚",
-      "远距可读",
-      "安装真实",
-      "路径明确",
-      "墙面贴合",
-      "透视真实",
-      "材质层次",
-      "灯带",
-      "wayfinding",
-      "scene_mockup",
-      "production_ready",
-      "在真实空间透视中放置导视牌",
-      "门牌",
-      "吊牌或墙面标识",
-      "位置和比例必须符合现场安装"
-    ]
-  },
-  {
-    "id": "adimg_recipe_0006",
-    "name": "四宫格广告 Banner 组",
-    "source": {
-      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
-      "path": "cases/ad-creative.md",
-      "caseId": "Case 90",
-      "license": "Apache-2.0",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "poster_design",
-      "local_store_promotion",
-      "product_ad"
-    ],
-    "supportedInputModes": [
-      "text_to_image",
-      "image_edit"
-    ],
-    "referenceImageRoles": [
-      "preserve_subject",
-      "style_reference_only",
-      "background_replace",
-      "local_edit",
-      "none"
-    ],
-    "industries": [
-      "本地生活",
-      "餐饮",
-      "旅游",
-      "教育",
-      "美妆",
-      "电商"
-    ],
-    "styleTags": [
-      "ad_grid",
-      "banner",
-      "campaign",
-      "multi_panel"
-    ],
-    "layoutFormula": "2x2四宫格，每格独立主题但共享品牌色和字体系统，适合多活动、多品类或营销案例展示。",
-    "subjectFormula": "每个象限都有明确主体：人物、产品、食物、服务或场景，主体与对应文案一一匹配。",
-    "sceneFormula": "四个广告位使用不同背景和氛围，但边距、圆角、徽章、图标语言保持统一。",
-    "lightingFormula": "每格使用符合主题的商业光效，整体亮度和对比度统一。",
-    "typographyFormula": "每格包含用户提供标题、短卖点、优惠或行动引导；不自行编造折扣数字。",
-    "detailFormula": "强调广告 banner 的真实投放感，图标、徽章、价格区、标题区和主体图都要分层。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "headline",
-        "label": "总标题",
-        "required": true
-      },
-      {
-        "name": "panels",
-        "label": "四个广告主题",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "海报",
-      "活动",
-      "促销",
-      "招生",
-      "招聘",
-      "水牌",
-      "橱窗贴",
-      "外卖图",
-      "门店促销",
-      "团购",
-      "产品广告",
-      "新品广告",
-      "卖点图",
-      "包装展示",
-      "四宫格广告 Banner 组",
-      "本地生活",
-      "餐饮",
-      "旅游",
-      "教育",
-      "美妆",
-      "电商"
-    ],
-    "materialKeywords": [
-      "纸张",
-      "喷绘",
-      "屏幕",
-      "KT板",
-      "灯箱",
-      "贴膜",
-      "海报纸",
-      "玻璃",
-      "金属",
-      "塑料",
-      "纸盒",
-      "液体"
-    ],
-    "businessKeywords": [
-      "促销",
-      "发布",
-      "报名",
-      "招聘",
-      "开业",
-      "会员",
-      "套餐",
-      "团购",
-      "新品",
-      "卖点",
-      "转化",
-      "每个象限都有明确主体",
-      "人物",
-      "产品",
-      "食物",
-      "服务或场景",
-      "主体与对应文案一一匹配"
-    ],
-    "visualKeywords": [
-      "主标题",
-      "主视觉",
-      "信息层级",
-      "留白",
-      "利益点醒目",
-      "到店转化",
-      "产品清楚",
-      "行动区",
-      "hero主体",
-      "卖点区",
-      "商业摄影",
-      "材质高光",
-      "ad_grid",
-      "banner",
-      "campaign",
-      "multi_panel",
-      "2x2四宫格",
-      "每格独立主题但共享品牌色和字体系统",
-      "适合多活动",
-      "多品类或营销案例展示"
-    ]
-  },
-  {
-    "id": "adimg_recipe_0001",
-    "name": "黑金奢侈品香水主图",
-    "source": {
-      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
-      "path": "cases/ecommerce.md",
-      "caseId": "Case 113",
-      "license": "Apache-2.0",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "ecommerce_main_image",
-      "product_ad",
-      "commercial_photography"
-    ],
-    "supportedInputModes": [
-      "text_to_image",
-      "image_edit"
-    ],
-    "referenceImageRoles": [
-      "preserve_subject",
-      "style_reference_only",
-      "background_replace",
-      "local_edit",
-      "none"
-    ],
-    "industries": [
-      "美妆",
-      "香水",
-      "护肤",
-      "奢侈品",
-      "电商"
-    ],
-    "styleTags": [
-      "luxury",
-      "black_gold",
-      "marble",
-      "studio_product"
-    ],
-    "layoutFormula": "方图或竖图，产品中心偏右，左侧留标题区，底部有自然反射和接触阴影。",
-    "subjectFormula": "单个高端瓶装产品直立展示，玻璃、液体、金属盖、标签和包装边缘必须清晰。",
-    "sceneFormula": "深色棚拍背景，黑色或深棕石材台面，少量烟雾、柔焦花材、金属或织物道具辅助高级感。",
-    "lightingFormula": "暖金主光从左上切入，边缘高光勾勒玻璃和金属，暗部保持层次。",
-    "typographyFormula": "文字只放用户提供内容，建议左侧大标题、下方一行副标题或短横线。",
-    "detailFormula": "强调玻璃折射、冷凝水珠、金属高光、石材纹理、浅景深和高端商业摄影。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "productName",
-        "label": "产品名称",
-        "required": true
-      },
-      {
-        "name": "headline",
-        "label": "标题文案",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "电商主图",
-      "商品图",
-      "平台主图",
-      "白底图",
-      "场景主图",
-      "产品广告",
-      "新品广告",
-      "卖点图",
-      "包装展示",
-      "商业摄影",
-      "棚拍",
-      "空间摄影",
-      "菜品摄影",
-      "黑金奢侈品香水主图",
-      "美妆",
-      "香水",
-      "护肤",
-      "奢侈品",
-      "电商"
-    ],
-    "materialKeywords": [
-      "玻璃",
-      "金属",
-      "塑料",
-      "纸盒",
-      "布料",
-      "液体",
-      "食材",
-      "木纹"
-    ],
-    "businessKeywords": [
-      "上架",
-      "卖点",
-      "详情页",
-      "大促",
-      "新品",
-      "发布",
-      "转化",
-      "拍摄",
-      "展示",
-      "宣传",
-      "成片",
-      "单个高端瓶装产品直立展示",
-      "玻璃",
-      "液体",
-      "金属盖",
-      "标签和包装边缘必须清晰"
-    ],
-    "visualKeywords": [
-      "主体占比",
-      "包装清楚",
-      "平台合规",
-      "阴影",
-      "hero主体",
-      "卖点区",
-      "商业摄影",
-      "材质高光",
-      "真实光影",
-      "浅景深",
-      "材质纹理",
-      "自然阴影",
-      "luxury",
-      "black_gold",
-      "marble",
-      "studio_product",
-      "方图或竖图",
-      "产品中心偏右",
-      "左侧留标题区",
-      "底部有自然反射和接触阴影"
-    ]
-  },
-  {
     "id": "adimg_recipe_0003",
     "name": "高端手表暗棚广告",
     "source": {
@@ -1103,7 +345,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "高端手表暗棚广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "产品广告",
       "新品广告",
@@ -1178,139 +426,6 @@
     ]
   },
   {
-    "id": "adimg_recipe_0009",
-    "name": "极简白台产品广告",
-    "source": {
-      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
-      "path": "cases/ecommerce.md",
-      "caseId": "Case 158",
-      "license": "Apache-2.0",
-      "transformation": "debranded_rewritten_recipe"
-    },
-    "taskTypes": [
-      "ecommerce_main_image",
-      "product_ad",
-      "commercial_photography"
-    ],
-    "supportedInputModes": [
-      "text_to_image",
-      "image_edit"
-    ],
-    "referenceImageRoles": [
-      "preserve_subject",
-      "style_reference_only",
-      "background_replace",
-      "local_edit",
-      "none"
-    ],
-    "industries": [
-      "食品",
-      "家居",
-      "美妆",
-      "数码",
-      "电商"
-    ],
-    "styleTags": [
-      "minimal",
-      "white_podium",
-      "apple_style",
-      "premium"
-    ],
-    "layoutFormula": "产品放在干净白色或浅色台座上，画面中央构图，大面积留白，标题少而强。",
-    "subjectFormula": "单个产品完整清楚，包装和轮廓不能变形，主体与台座有自然接触阴影。",
-    "sceneFormula": "柔和渐变背景，极少量道具或完全无道具，靠光影和比例营造高级感。",
-    "lightingFormula": "柔和漫射棚拍光，阴影干净，产品边缘高光克制。",
-    "typographyFormula": "中心或上方一句大标题，底部一行短 slogan；无用户文案时不添加随机英文。",
-    "detailFormula": "强调极简、干净、留白、台座、柔光、商业广告完成度和产品可购买感。",
-    "negativeConstraints": [
-      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
-      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
-      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
-    ],
-    "variables": [
-      {
-        "name": "productName",
-        "label": "产品名称",
-        "required": true
-      },
-      {
-        "name": "headline",
-        "label": "标题",
-        "required": false
-      }
-    ],
-    "referenceImages": [],
-    "useCases": [
-      "电商主图",
-      "商品图",
-      "平台主图",
-      "白底图",
-      "场景主图",
-      "产品广告",
-      "新品广告",
-      "卖点图",
-      "包装展示",
-      "商业摄影",
-      "棚拍",
-      "空间摄影",
-      "菜品摄影",
-      "极简白台产品广告",
-      "食品",
-      "家居",
-      "美妆",
-      "数码",
-      "电商"
-    ],
-    "materialKeywords": [
-      "玻璃",
-      "金属",
-      "塑料",
-      "纸盒",
-      "布料",
-      "液体",
-      "食材",
-      "木纹"
-    ],
-    "businessKeywords": [
-      "上架",
-      "卖点",
-      "详情页",
-      "大促",
-      "新品",
-      "发布",
-      "转化",
-      "拍摄",
-      "展示",
-      "宣传",
-      "成片",
-      "单个产品完整清楚",
-      "包装和轮廓不能变形",
-      "主体与台座有自然接触阴影"
-    ],
-    "visualKeywords": [
-      "主体占比",
-      "包装清楚",
-      "平台合规",
-      "阴影",
-      "hero主体",
-      "卖点区",
-      "商业摄影",
-      "材质高光",
-      "真实光影",
-      "浅景深",
-      "材质纹理",
-      "自然阴影",
-      "minimal",
-      "white_podium",
-      "apple_style",
-      "premium",
-      "产品放在干净白色或浅色台座上",
-      "画面中央构图",
-      "大面积留白",
-      "标题少而强"
-    ]
-  },
-  {
     "id": "adimg_recipe_0004",
     "name": "微缩工地产品隐喻广告",
     "source": {
@@ -1371,7 +486,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "微缩工地产品隐喻广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "产品广告",
       "新品广告",
@@ -1504,7 +625,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "中文电商详情页营销板 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -1579,6 +706,155 @@
     ]
   },
   {
+    "id": "adimg_recipe_0006",
+    "name": "四宫格广告 Banner 组",
+    "source": {
+      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
+      "path": "cases/ad-creative.md",
+      "caseId": "Case 90",
+      "license": "Apache-2.0",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "poster_design",
+      "local_store_promotion",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "industries": [
+      "本地生活",
+      "餐饮",
+      "旅游",
+      "教育",
+      "美妆",
+      "电商"
+    ],
+    "styleTags": [
+      "ad_grid",
+      "banner",
+      "campaign",
+      "multi_panel"
+    ],
+    "layoutFormula": "2x2四宫格，每格独立主题但共享品牌色和字体系统，适合多活动、多品类或营销案例展示。",
+    "subjectFormula": "每个象限都有明确主体：人物、产品、食物、服务或场景，主体与对应文案一一匹配。",
+    "sceneFormula": "四个广告位使用不同背景和氛围，但边距、圆角、徽章、图标语言保持统一。",
+    "lightingFormula": "每格使用符合主题的商业光效，整体亮度和对比度统一。",
+    "typographyFormula": "每格包含用户提供标题、短卖点、优惠或行动引导；不自行编造折扣数字。",
+    "detailFormula": "强调广告 banner 的真实投放感，图标、徽章、价格区、标题区和主体图都要分层。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "总标题",
+        "required": true
+      },
+      {
+        "name": "panels",
+        "label": "四个广告主题",
+        "required": false
+      }
+    ],
+    "referenceImages": [
+      {
+        "name": "四宫格广告 Banner 组 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "四宫格广告 Banner 组",
+      "本地生活",
+      "餐饮",
+      "旅游",
+      "教育",
+      "美妆",
+      "电商"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "新品",
+      "卖点",
+      "转化",
+      "每个象限都有明确主体",
+      "人物",
+      "产品",
+      "食物",
+      "服务或场景",
+      "主体与对应文案一一匹配"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "ad_grid",
+      "banner",
+      "campaign",
+      "multi_panel",
+      "2x2四宫格",
+      "每格独立主题但共享品牌色和字体系统",
+      "适合多活动",
+      "多品类或营销案例展示"
+    ]
+  },
+  {
     "id": "adimg_recipe_0007",
     "name": "品牌周边视觉板",
     "source": {
@@ -1640,7 +916,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "品牌周边视觉板 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -1782,7 +1064,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "街头潮流服饰海报 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -1858,6 +1146,145 @@
     ]
   },
   {
+    "id": "adimg_recipe_0009",
+    "name": "极简白台产品广告",
+    "source": {
+      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
+      "path": "cases/ecommerce.md",
+      "caseId": "Case 158",
+      "license": "Apache-2.0",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "ecommerce_main_image",
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "industries": [
+      "食品",
+      "家居",
+      "美妆",
+      "数码",
+      "电商"
+    ],
+    "styleTags": [
+      "minimal",
+      "white_podium",
+      "apple_style",
+      "premium"
+    ],
+    "layoutFormula": "产品放在干净白色或浅色台座上，画面中央构图，大面积留白，标题少而强。",
+    "subjectFormula": "单个产品完整清楚，包装和轮廓不能变形，主体与台座有自然接触阴影。",
+    "sceneFormula": "柔和渐变背景，极少量道具或完全无道具，靠光影和比例营造高级感。",
+    "lightingFormula": "柔和漫射棚拍光，阴影干净，产品边缘高光克制。",
+    "typographyFormula": "中心或上方一句大标题，底部一行短 slogan；无用户文案时不添加随机英文。",
+    "detailFormula": "强调极简、干净、留白、台座、柔光、商业广告完成度和产品可购买感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "productName",
+        "label": "产品名称",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题",
+        "required": false
+      }
+    ],
+    "referenceImages": [
+      {
+        "name": "极简白台产品广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "极简白台产品广告",
+      "食品",
+      "家居",
+      "美妆",
+      "数码",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料",
+      "液体",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "单个产品完整清楚",
+      "包装和轮廓不能变形",
+      "主体与台座有自然接触阴影"
+    ],
+    "visualKeywords": [
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "minimal",
+      "white_podium",
+      "apple_style",
+      "premium",
+      "产品放在干净白色或浅色台座上",
+      "画面中央构图",
+      "大面积留白",
+      "标题少而强"
+    ]
+  },
+  {
     "id": "adimg_recipe_0010",
     "name": "耳机/数码人像近景广告",
     "source": {
@@ -1918,7 +1345,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "耳机/数码人像近景广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -2051,7 +1484,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "可持续服饰自然广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "产品广告",
       "新品广告",
@@ -2122,6 +1561,129 @@
       "服饰或产品位于左侧主体区",
       "右侧放标题和三行短卖点",
       "背景是自然植物或有机材质"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0012",
+    "name": "高级城市品牌海报",
+    "source": {
+      "repo": "EvoLinkAI/awesome-gpt-image-2-prompts",
+      "path": "cases/poster.md",
+      "caseId": "Case 48",
+      "license": "Apache-2.0",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "poster_design",
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "industries": [
+      "城市",
+      "文旅",
+      "园区",
+      "活动",
+      "政府"
+    ],
+    "styleTags": [
+      "city_branding",
+      "cinematic",
+      "premium_poster"
+    ],
+    "layoutFormula": "9:16竖版城市宣传海报，地标和道路形成纵深，标题位于底部或左下。",
+    "subjectFormula": "核心城市、园区或活动地标必须清楚，建筑、道路、天空和科技纹理统一。",
+    "sceneFormula": "融合地标、道路、山水、科技、数据或产业元素，不能堆砌成旅游拼贴。",
+    "lightingFormula": "冷暖对比和空气透视晨昏光或蓝金色调，空气透视和云层让画面有深度。",
+    "typographyFormula": "标题、年份、短口号只使用用户提供内容，字距优雅，不能压过地标主体。",
+    "detailFormula": "强调城市品牌、未来感、地标融合、编辑排版和高级宣传海报质感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "城市/活动标题",
+        "required": true
+      },
+      {
+        "name": "landmarks",
+        "label": "地标元素",
+        "required": false
+      }
+    ],
+    "referenceImages": [
+      {
+        "name": "高级城市品牌海报 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "高级城市品牌海报",
+      "城市",
+      "文旅",
+      "园区",
+      "政府"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "活动",
+      "会议",
+      "年会",
+      "核心城市",
+      "园区或活动地标必须清楚",
+      "建筑",
+      "道路",
+      "天空和科技纹理统一"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "city_branding",
+      "cinematic",
+      "premium_poster",
+      "16竖版城市宣传海报",
+      "地标和道路形成纵深",
+      "标题位于底部或左下"
     ]
   },
   {
@@ -2314,7 +1876,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "美妆柔光花材棚拍 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -2446,7 +2014,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "工业设计多视图展示板 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -2581,7 +2155,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "豪华家居生活方式产品照 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "商业摄影",
       "棚拍",
@@ -2715,7 +2295,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "高端礼盒包装展示 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "产品广告",
       "新品广告",
@@ -2848,7 +2434,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "高端科技黑棚主图 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -3059,6 +2651,125 @@
     ]
   },
   {
+    "id": "adimg_recipe_0020",
+    "name": "咖啡信息图海报",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "咖啡信息图海报",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "poster_design",
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "industries": [
+      "咖啡",
+      "教育",
+      "餐饮",
+      "品牌"
+    ],
+    "styleTags": [
+      "infographic",
+      "coffee",
+      "typography",
+      "premium"
+    ],
+    "layoutFormula": "竖版信息图，流程从上到下或左到右，节点、箭头、图标和模块卡片形成阅读路径。",
+    "subjectFormula": "咖啡杯、豆子、器具或流程插图为主体，图标简洁统一。",
+    "sceneFormula": "咖啡棕、奶白、墨黑、铜色点缀，背景干净带轻微纸张或桌面质感。",
+    "lightingFormula": "柔和商业插画或摄影混合光，重点保证小字和图标清晰。",
+    "typographyFormula": "标题、流程节点和说明文字全部来自用户或保持占位，不生成大段随机文字。",
+    "detailFormula": "强调信息组织、模块化卡片、箭头流程、科普清晰度和高级商业展示感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "headline",
+        "label": "信息图标题",
+        "required": true
+      },
+      {
+        "name": "steps",
+        "label": "流程节点",
+        "required": false
+      }
+    ],
+    "referenceImages": [],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "咖啡信息图海报",
+      "咖啡",
+      "教育",
+      "餐饮",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "介绍",
+      "招商",
+      "咨询",
+      "咖啡杯",
+      "豆子",
+      "器具或流程插图为主体",
+      "图标简洁统一"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "infographic",
+      "coffee",
+      "typography",
+      "premium",
+      "竖版信息图",
+      "流程从上到下或左到右",
+      "节点",
+      "箭头",
+      "图标和模块卡片形成阅读路径"
+    ]
+  },
+  {
     "id": "adimg_recipe_0021",
     "name": "护肤品科学感海报",
     "source": {
@@ -3194,6 +2905,144 @@
     ]
   },
   {
+    "id": "adimg_recipe_0022",
+    "name": "门店夜景生活切片",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "便利店夜景街头摄影",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "storefront_signboard",
+      "local_store_promotion",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "none"
+    ],
+    "industries": [
+      "便利店",
+      "餐饮",
+      "奶茶",
+      "夜间门店"
+    ],
+    "styleTags": [
+      "night_lighting",
+      "street_photo",
+      "local_store"
+    ],
+    "layoutFormula": "夜间街头横版或方图，门店立面和入口为背景，人物或顾客活动作为生活氛围，招牌清楚。",
+    "subjectFormula": "门头、玻璃门窗、促销海报、冰柜或店内光源保持真实，不要网红化。",
+    "sceneFormula": "城市夜晚路边场景，路灯、车灯、玻璃反射、共享单车或门口小物增加真实感。",
+    "lightingFormula": "店内白光和外部暖光混合，玻璃反射真实，人物面部自然不过度精修。",
+    "typographyFormula": "门头文案和促销文字只使用用户提供内容，背景小字可弱化。",
+    "detailFormula": "强调真实抓拍感、夜间门店光线、普通生活氛围、玻璃反射和可落地门店视觉。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "门头文字",
+        "required": true
+      },
+      {
+        "name": "scene",
+        "label": "门店氛围",
+        "required": false
+      }
+    ],
+    "referenceImages": [],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "门店夜景生活切片",
+      "便利店",
+      "餐饮",
+      "奶茶",
+      "夜间门店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "KT板",
+      "贴膜",
+      "海报纸",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "门头",
+      "玻璃门窗",
+      "促销海报",
+      "冰柜或店内光源保持真实",
+      "不要网红化"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "night_lighting",
+      "street_photo",
+      "local_store",
+      "夜间街头横版或方图",
+      "门店立面和入口为背景",
+      "人物或顾客活动作为生活氛围",
+      "招牌清楚"
+    ]
+  },
+  {
     "id": "adimg_recipe_0023",
     "name": "产品TVC九宫格分镜板",
     "source": {
@@ -3253,7 +3102,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "产品TVC九宫格分镜板 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "产品广告",
       "新品广告",
@@ -3388,7 +3243,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "高级食物黑背景广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -3524,7 +3385,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "旅行目的地促销 banner 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -3644,7 +3511,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "在线教育转化广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -3778,7 +3651,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "大型文字背景服饰广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -3908,7 +3787,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "运动霓虹能量海报 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -4025,7 +3910,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "柔和房间好物清单 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -4155,7 +4046,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "开业外卖复古广告 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "海报",
       "活动",
@@ -4272,7 +4169,13 @@
         "required": false
       }
     ],
-    "referenceImages": [],
+    "referenceImages": [
+      {
+        "name": "产品成分原料环绕 参考图",
+        "mimeType": "image/jpeg",
+        "role": "style_reference_only"
+      }
+    ],
     "useCases": [
       "电商主图",
       "商品图",
@@ -4467,6 +4370,140 @@
       "主标题远距离可读",
       "背景装饰简化",
       "信息分区适合喷绘和现场拍照"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0033",
+    "name": "门店招牌真实改造",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "门店夜景结构参考",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "storefront_signboard",
+      "brand_wall",
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "image_edit",
+      "text_to_image"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "industries": [
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "styleTags": [
+      "storefront",
+      "scene_mockup",
+      "photorealistic"
+    ],
+    "layoutFormula": "基于现场照片的真实透视，设计只贴合门头、墙面或标识安装区域，不改变建筑和门窗关系。",
+    "subjectFormula": "招牌、logo字、灯箱或导视牌按用户文案制作，材质和厚度真实。",
+    "sceneFormula": "保留街道、入口、橱窗、墙面、地面和邻近环境，加入合理灯光和招牌反射。",
+    "lightingFormula": "日景用自然光，夜景用招牌发光和环境光，不能过曝。",
+    "typographyFormula": "门头文字必须准确，不添加上游案例店名或无关品牌。",
+    "detailFormula": "强调施工可落地、真实贴合、透视保留、材质厚度和现场效果图可信度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "signText",
+        "label": "招牌/标识文字",
+        "required": true
+      },
+      {
+        "name": "installArea",
+        "label": "安装区域",
+        "required": false
+      }
+    ],
+    "referenceImages": [],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "门店招牌真实改造",
+      "门店",
+      "餐饮",
+      "零售",
+      "服务业"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "招牌",
+      "logo字",
+      "灯箱或导视牌按用户文案制作",
+      "材质和厚度真实"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "storefront",
+      "scene_mockup",
+      "photorealistic",
+      "基于现场照片的真实透视",
+      "设计只贴合门头",
+      "墙面或标识安装区域",
+      "不改变建筑和门窗关系"
     ]
   },
   {
@@ -4718,6 +4755,125 @@
       "一个强轮廓主体占据中心",
       "内部或周围包含多层叙事空间",
       "标题低调放置"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0036",
+    "name": "导视空间安装 mockup",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "空间标识结构参考",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "taskTypes": [
+      "signage_wayfinding",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "image_edit",
+      "text_to_image"
+    ],
+    "referenceImageRoles": [
+      "preserve_structure",
+      "local_edit",
+      "scene_mockup"
+    ],
+    "industries": [
+      "商场",
+      "办公",
+      "医院",
+      "园区",
+      "学校"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "scene_mockup",
+      "production_ready"
+    ],
+    "layoutFormula": "在真实空间透视中放置导视牌、门牌、吊牌或墙面标识，位置和比例必须符合现场安装。",
+    "subjectFormula": "标识文字、箭头、楼层和区域信息清晰，材质厚度真实。",
+    "sceneFormula": "保留墙面、地面、天花、灯光和通行动线，标识贴合环境。",
+    "lightingFormula": "室内自然光或顶灯照明，标识边缘有真实阴影和反光。",
+    "typographyFormula": "方向、楼层、科室、区域文字只用用户给定信息。",
+    "detailFormula": "强调空间安装、透视贴合、导视可读、材质真实和商业空间整洁感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要改变用户上传主体的核心外观、包装形状、文字标签和空间透视"
+    ],
+    "variables": [
+      {
+        "name": "signContent",
+        "label": "导视内容",
+        "required": true
+      },
+      {
+        "name": "installArea",
+        "label": "安装位置",
+        "required": false
+      }
+    ],
+    "referenceImages": [],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "导视空间安装 mockup",
+      "商场",
+      "办公",
+      "医院",
+      "园区",
+      "学校"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "标识文字",
+      "箭头",
+      "楼层和区域信息清晰",
+      "材质厚度真实"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "wayfinding",
+      "scene_mockup",
+      "production_ready",
+      "在真实空间透视中放置导视牌",
+      "门牌",
+      "吊牌或墙面标识",
+      "位置和比例必须符合现场安装"
     ]
   },
   {
@@ -8954,6 +9110,6686 @@
       "产品主体居中",
       "零部件或功能模块沿轴线分解",
       "标注线连接卖点"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0076",
+    "name": "产品礼盒开箱广告",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 76",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "礼盒",
+      "食品",
+      "美妆"
+    ],
+    "styleTags": [
+      "gift_box",
+      "packaging"
+    ],
+    "layoutFormula": "礼盒打开呈45度，内盒、单品和外包装形成三角构图。",
+    "subjectFormula": "礼盒和内含产品为主体。",
+    "sceneFormula": "棚拍台面，背景用浅色或深色材质衬托。",
+    "lightingFormula": "侧上方柔光，包装边缘和烫金有高光。",
+    "typographyFormula": "礼赠文案和品牌名按用户输入放置。",
+    "detailFormula": "强调纸盒纹理、烫金、内衬、阴影和系列完整度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品礼盒开箱广告",
+      "礼盒",
+      "食品",
+      "美妆"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "上架",
+      "详情页",
+      "大促",
+      "礼盒和内含产品为主体"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "gift_box",
+      "packaging",
+      "礼盒打开呈45度",
+      "内盒",
+      "单品和外包装形成三角构图"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0077",
+    "name": "产品户外使用广告",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 77",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "户外",
+      "运动",
+      "产品"
+    ],
+    "styleTags": [
+      "outdoor",
+      "use_case"
+    ],
+    "layoutFormula": "产品在真实户外场景前景展示，使用场景在背景说明功能。",
+    "subjectFormula": "产品主体清楚，人物或环境只做辅助。",
+    "sceneFormula": "山地、草地、道路或露营场景按需求选择。",
+    "lightingFormula": "自然侧光，产品边缘和地面接触清楚。",
+    "typographyFormula": "标题少量，功能点不超过三条。",
+    "detailFormula": "强调材质耐用感、环境尺度、接触阴影和真实使用逻辑。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "产品户外使用广告",
+      "户外",
+      "运动",
+      "产品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "产品主体清楚",
+      "人物或环境只做辅助"
+    ],
+    "visualKeywords": [
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "outdoor",
+      "use_case",
+      "产品在真实户外场景前景展示",
+      "使用场景在背景说明功能"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0078",
+    "name": "玻璃饮品棚拍",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 78",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography",
+      "product_ad",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "饮品",
+      "咖啡",
+      "奶茶"
+    ],
+    "styleTags": [
+      "drink",
+      "studio"
+    ],
+    "layoutFormula": "杯体居中，冰块和液体层次可见，背景干净留白。",
+    "subjectFormula": "透明杯、液体、冰块和杯壁水珠为主体。",
+    "sceneFormula": "浅色或深色棚拍台面，少量原料辅助。",
+    "lightingFormula": "侧逆光穿透液体，杯壁高光和阴影真实。",
+    "typographyFormula": "默认不加文字，除非用户提供文案。",
+    "detailFormula": "强调液体透明度、冰块折射、水珠和杯底阴影。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "玻璃饮品棚拍",
+      "饮品",
+      "咖啡",
+      "奶茶"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "上架",
+      "详情页",
+      "大促",
+      "透明杯",
+      "液体",
+      "冰块和杯壁水珠为主体"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "drink",
+      "studio",
+      "杯体居中",
+      "冰块和液体层次可见",
+      "背景干净留白"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0079",
+    "name": "服饰模特弱化摄影",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 79",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "服饰",
+      "鞋包",
+      "电商"
+    ],
+    "styleTags": [
+      "fashion",
+      "catalog"
+    ],
+    "layoutFormula": "服饰主体清楚，模特面部可弱化，版型和材质占主导。",
+    "subjectFormula": "服装、鞋包或配饰为主体。",
+    "sceneFormula": "纯色棚拍或简洁室内，背景不抢产品。",
+    "lightingFormula": "大面积柔光，布料纹理和褶皱自然。",
+    "typographyFormula": "不添加无关文字。",
+    "detailFormula": "强调面料纹理、轮廓、接触阴影和尺码展示可信度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "服饰模特弱化摄影",
+      "服饰",
+      "鞋包",
+      "电商"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹",
+      "塑料",
+      "纸盒"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "服装",
+      "鞋包或配饰为主体"
+    ],
+    "visualKeywords": [
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "fashion",
+      "catalog",
+      "服饰主体清楚",
+      "模特面部可弱化",
+      "版型和材质占主导"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0080",
+    "name": "舞台LED背景结构 扩展结构 39",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 80",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "舞台",
+      "年会",
+      "发布会"
+    ],
+    "styleTags": [
+      "led",
+      "stage"
+    ],
+    "layoutFormula": "LED屏横向铺开，中心标题，左右动态图形留出视觉缓冲。",
+    "subjectFormula": "活动主题和品牌标识为主体，舞台设备不遮挡文字。",
+    "sceneFormula": "室内舞台，地台、灯架和屏幕比例真实。",
+    "lightingFormula": "屏幕自发光，舞台顶光弱化，标题亮度稳定。",
+    "typographyFormula": "标题和副标题居中，其他信息靠下或两侧。",
+    "detailFormula": "强调LED像素面、舞台比例、观众视距和安全区。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "舞台LED背景结构 扩展结构 39",
+      "年会"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "活动主题和品牌标识为主体",
+      "舞台设备不遮挡文字"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "led",
+      "stage",
+      "LED屏横向铺开",
+      "中心标题",
+      "左右动态图形留出视觉缓冲"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0081",
+    "name": "商场吊牌导视结构 扩展结构 40",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 81",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "商场",
+      "导视",
+      "零售"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "mall"
+    ],
+    "layoutFormula": "吊牌横向悬挂，箭头、楼层和品类从左到右分区。",
+    "subjectFormula": "导视牌文字、箭头和图标为主体，背景空间弱化。",
+    "sceneFormula": "商场通道，吊顶、灯带和远处店铺保持真实透视。",
+    "lightingFormula": "吊牌下方受顶灯照亮，文字对比强。",
+    "typographyFormula": "方向信息最大，辅助图标统一，禁止虚构楼层。",
+    "detailFormula": "强调吊装结构、金属边框、亚克力面板和远距可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "商场吊牌导视结构 扩展结构 40",
+      "商场",
+      "零售"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "导视牌文字",
+      "箭头和图标为主体",
+      "背景空间弱化"
+    ],
+    "visualKeywords": [
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "wayfinding",
+      "mall",
+      "吊牌横向悬挂",
+      "箭头",
+      "楼层和品类从左到右分区"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0082",
+    "name": "街边窄门面发光字改造 扩展结构 41",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 82",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "零售",
+      "门店"
+    ],
+    "styleTags": [
+      "signboard",
+      "night_light"
+    ],
+    "layoutFormula": "门头横向招牌占上方三分之一，入口玻璃门居中，左右墙面保持原现场边界。",
+    "subjectFormula": "店名发光字为主体，辅助品类字位于下方或侧边，门窗和橱窗不改变。",
+    "sceneFormula": "真实街边夜间或傍晚场景，路面、邻店和门口台阶保留空间关系。",
+    "lightingFormula": "招牌内发光均匀，字边缘有柔和光晕，室内暖光从玻璃门透出。",
+    "typographyFormula": "店名最大，品类字次级，营业信息只在用户提供时出现。",
+    "detailFormula": "强调招牌厚度、亚克力面板、金属包边、墙面纹理和真实安装缝。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "街边窄门面发光字改造 扩展结构 41",
+      "餐饮",
+      "零售",
+      "门店"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "店名发光字为主体",
+      "辅助品类字位于下方或侧边",
+      "门窗和橱窗不改变"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "signboard",
+      "night_light",
+      "门头横向招牌占上方三分之一",
+      "入口玻璃门居中",
+      "左右墙面保持原现场边界"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0083",
+    "name": "社区便利店灯箱门头 扩展结构 42",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 83",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "便利店",
+      "零售",
+      "社区"
+    ],
+    "styleTags": [
+      "lightbox",
+      "retail"
+    ],
+    "layoutFormula": "宽幅灯箱横向拉满，入口和橱窗下方有促销位，门头与建筑立面平行。",
+    "subjectFormula": "店名、品类和基础图标构成主体，玻璃橱窗内有货架轮廓。",
+    "sceneFormula": "夜间社区街角，门口地面反射灯光，周围环境弱化。",
+    "lightingFormula": "灯箱白底高亮，橱窗暖光，路面有轻微反射。",
+    "typographyFormula": "店名字号最大，促销短句放门口立牌或橱窗贴，禁止虚构价格。",
+    "detailFormula": "强调灯箱透光、玻璃反射、货架深度和街边可见度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "社区便利店灯箱门头 扩展结构 42",
+      "便利店",
+      "零售",
+      "社区"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "KT板",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "店名",
+      "品类和基础图标构成主体",
+      "玻璃橱窗内有货架轮廓"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "lightbox",
+      "retail",
+      "宽幅灯箱横向拉满",
+      "入口和橱窗下方有促销位",
+      "门头与建筑立面平行"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0084",
+    "name": "餐饮外摆门头效果 扩展结构 43",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 84",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "咖啡",
+      "小吃"
+    ],
+    "styleTags": [
+      "outdoor_seating",
+      "storefront"
+    ],
+    "layoutFormula": "门头、外摆桌椅和入口三段式构图，招牌位于上方，外摆不挡门。",
+    "subjectFormula": "店招与门口产品展示为主体，外摆桌椅辅助到店氛围。",
+    "sceneFormula": "白天商业街，门口有遮阳伞或小桌，行人弱化。",
+    "lightingFormula": "自然光从街道侧面进入，招牌和玻璃有真实反射。",
+    "typographyFormula": "店名清楚，菜单或促销只保留用户提供内容。",
+    "detailFormula": "强调木纹、金属椅、玻璃、墙面和招牌材质比例。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "餐饮外摆门头效果 扩展结构 43",
+      "餐饮",
+      "咖啡",
+      "小吃"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "KT板",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "店招与门口产品展示为主体",
+      "外摆桌椅辅助到店氛围"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "outdoor_seating",
+      "storefront",
+      "门头",
+      "外摆桌椅和入口三段式构图",
+      "招牌位于上方",
+      "外摆不挡门"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0085",
+    "name": "墙面旧招牌局部替换 扩展结构 44",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 85",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "门店",
+      "改造",
+      "招牌"
+    ],
+    "styleTags": [
+      "local_edit",
+      "mockup"
+    ],
+    "layoutFormula": "以用户上传图透视为准，只替换招牌区域，墙面、门窗、地面和邻店不动。",
+    "subjectFormula": "新招牌与原建筑结构贴合，店名和品类清楚。",
+    "sceneFormula": "现场照片质感保留，不额外生成不相关装饰。",
+    "lightingFormula": "新招牌光照匹配原图方向，阴影落在真实墙面上。",
+    "typographyFormula": "文字严格使用用户文案，字号适合原招牌比例。",
+    "detailFormula": "强调局部编辑边界、透视校正、材质贴合和无痕安装。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "墙面旧招牌局部替换 扩展结构 44",
+      "门店",
+      "改造"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "新招牌与原建筑结构贴合",
+      "店名和品类清楚"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "local_edit",
+      "mockup",
+      "以用户上传图透视为准",
+      "只替换招牌区域",
+      "墙面",
+      "门窗",
+      "地面和邻店不动"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0086",
+    "name": "商场店铺门头内透光 扩展结构 45",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 86",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "商场",
+      "零售",
+      "服饰"
+    ],
+    "styleTags": [
+      "mall_storefront",
+      "lightbox"
+    ],
+    "layoutFormula": "商场通道视角，门头上沿和橱窗形成一体，店铺入口居中。",
+    "subjectFormula": "品牌字和橱窗陈列为主体，门头灯箱与室内照明统一。",
+    "sceneFormula": "室内商场空间，地面反射和吊顶灯光清楚。",
+    "lightingFormula": "灯箱均匀发光，橱窗有柔和重点光，地面弱反射。",
+    "typographyFormula": "店名置于门头中心，橱窗贴字只在用户提供时出现。",
+    "detailFormula": "强调玻璃反射、地砖反光、灯箱厚度和橱窗层次。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "商场店铺门头内透光 扩展结构 45",
+      "商场",
+      "零售",
+      "服饰"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "品牌字和橱窗陈列为主体",
+      "门头灯箱与室内照明统一"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "mall_storefront",
+      "lightbox",
+      "商场通道视角",
+      "门头上沿和橱窗形成一体",
+      "店铺入口居中"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0087",
+    "name": "复古木质餐饮门头 扩展结构 46",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 87",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "咖啡",
+      "酒馆"
+    ],
+    "styleTags": [
+      "wood",
+      "warm_light"
+    ],
+    "layoutFormula": "木质门头横向铺开，入口窄而清楚，两侧可放菜单灯箱或小黑板。",
+    "subjectFormula": "木牌、金属字和门口暖灯为主体，品类识别清楚。",
+    "sceneFormula": "傍晚街区，门口暖光和木纹形成亲和商业氛围。",
+    "lightingFormula": "暖色壁灯从两侧照亮招牌，木纹高光柔和。",
+    "typographyFormula": "店名居中，品类字小一档，菜单信息不编造。",
+    "detailFormula": "强调木纹、金属字、壁灯、玻璃门和真实老街墙面。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "复古木质餐饮门头 扩展结构 46",
+      "餐饮",
+      "咖啡",
+      "酒馆"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "KT板",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "木牌",
+      "金属字和门口暖灯为主体",
+      "品类识别清楚"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "wood",
+      "warm_light",
+      "木质门头横向铺开",
+      "入口窄而清楚",
+      "两侧可放菜单灯箱或小黑板"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0088",
+    "name": "医疗清洁门头 扩展结构 47",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 88",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "诊所",
+      "医美",
+      "口腔"
+    ],
+    "styleTags": [
+      "clinic",
+      "clean"
+    ],
+    "layoutFormula": "浅色门头与玻璃入口结合，logo和机构名称横向排列，信息少而清楚。",
+    "subjectFormula": "机构名、logo和入口为主体，辅助科室字不拥挤。",
+    "sceneFormula": "白天或室内商业街，环境整洁，医疗属性明确。",
+    "lightingFormula": "柔和白光，招牌无强烈眩光，玻璃反射干净。",
+    "typographyFormula": "机构名最大，科室或预约信息只使用用户文案。",
+    "detailFormula": "强调白色铝板、亚克力字、玻璃门、洁净墙面和真实尺度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "医疗清洁门头 扩展结构 47",
+      "诊所",
+      "医美",
+      "口腔"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "机构名",
+      "logo和入口为主体",
+      "辅助科室字不拥挤"
+    ],
+    "visualKeywords": [
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "clinic",
+      "clean",
+      "浅色门头与玻璃入口结合",
+      "logo和机构名称横向排列",
+      "信息少而清楚"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0089",
+    "name": "中文层级强促销海报 扩展结构 48",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 89",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "零售",
+      "餐饮",
+      "门店"
+    ],
+    "styleTags": [
+      "promotion",
+      "typography"
+    ],
+    "layoutFormula": "竖版三段式，上方主标题，中部产品或门店主体，下方利益点和行动区。",
+    "subjectFormula": "主视觉与大标题共同构成主体，利益点围绕主体分层。",
+    "sceneFormula": "背景用单一主色和浅纹理，装饰只服务主标题。",
+    "lightingFormula": "主视觉有清晰高光和接触阴影，背景不抢字。",
+    "typographyFormula": "主标题最大，副标题次级，行动信息底部对齐，所有文字来自用户。",
+    "detailFormula": "强调字号层级、留白比例、主视觉占比和印刷安全边距。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "中文层级强促销海报 扩展结构 48",
+      "零售",
+      "餐饮",
+      "门店"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "主视觉与大标题共同构成主体",
+      "利益点围绕主体分层"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "promotion",
+      "typography",
+      "竖版三段式",
+      "上方主标题",
+      "中部产品或门店主体",
+      "下方利益点和行动区"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0090",
+    "name": "红色开业海报结构 扩展结构 49",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 90",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "开业",
+      "餐饮",
+      "零售"
+    ],
+    "styleTags": [
+      "opening",
+      "red"
+    ],
+    "layoutFormula": "竖版中心构图，店名或主标题在上方，产品/礼花/门店元素居中，下方放权益。",
+    "subjectFormula": "开业主标题和门店/产品图为主体，装饰围绕边缘。",
+    "sceneFormula": "红色渐变或纸张背景，金色线条少量点缀，避免复杂图案。",
+    "lightingFormula": "主体有暖色高光，边缘装饰弱化，文字区亮度稳定。",
+    "typographyFormula": "开业标题最大，日期和地址只在用户提供时出现。",
+    "detailFormula": "强调红金对比、纸张纹理、留白和活动信息清楚。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "红色开业海报结构 扩展结构 49",
+      "开业",
+      "餐饮",
+      "零售"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "开业主标题和门店",
+      "产品图为主体",
+      "装饰围绕边缘"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "opening",
+      "red",
+      "竖版中心构图",
+      "店名或主标题在上方",
+      "产品",
+      "礼花",
+      "门店元素居中",
+      "下方放权益"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0091",
+    "name": "教育招生信息海报 扩展结构 50",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 91",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "教育",
+      "培训",
+      "课程"
+    ],
+    "styleTags": [
+      "education",
+      "enrollment"
+    ],
+    "layoutFormula": "上方课程名，中部课程收益和适合人群，下方报名信息和二维码预留。",
+    "subjectFormula": "课程主题和学习场景为主体，人物可弱化为辅助。",
+    "sceneFormula": "浅色背景配清楚信息卡片，避免过多插画。",
+    "lightingFormula": "柔和自然光或干净平面光，卡片边界清楚。",
+    "typographyFormula": "课程名最大，时间地点报名区底部固定，文案严格按用户提供。",
+    "detailFormula": "强调网格对齐、行距、模块边界和远距可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "教育招生信息海报 扩展结构 50",
+      "教育",
+      "培训",
+      "课程"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "介绍",
+      "招商",
+      "咨询",
+      "课程主题和学习场景为主体",
+      "人物可弱化为辅助"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "education",
+      "enrollment",
+      "上方课程名",
+      "中部课程收益和适合人群",
+      "下方报名信息和二维码预留"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0092",
+    "name": "医疗项目合规海报 扩展结构 51",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 92",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "医美",
+      "医疗",
+      "健康"
+    ],
+    "styleTags": [
+      "clinic",
+      "compliance"
+    ],
+    "layoutFormula": "项目名在上方，适合人群和预约入口分区，人物或器械不夸张。",
+    "subjectFormula": "项目名称和可信场景为主体，不制造夸大前后对比。",
+    "sceneFormula": "浅白或浅蓝背景，医疗空间元素少量出现。",
+    "lightingFormula": "柔和无阴影硬光，皮肤或器械质感真实。",
+    "typographyFormula": "项目名和预约方式清楚，不加入未提供功效承诺。",
+    "detailFormula": "强调清洁留白、合规表达、字体清楚和真实材质。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "医疗项目合规海报 扩展结构 51",
+      "医美",
+      "医疗",
+      "健康"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "项目名称和可信场景为主体",
+      "不制造夸大前后对比"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "clinic",
+      "compliance",
+      "项目名在上方",
+      "适合人群和预约入口分区",
+      "人物或器械不夸张"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0093",
+    "name": "餐饮新品海报食欲构图 扩展结构 52",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 93",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "product_ad",
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "食品",
+      "新品"
+    ],
+    "styleTags": [
+      "food",
+      "launch"
+    ],
+    "layoutFormula": "菜品主体占画面中下部，标题位于上方或左上，卖点围绕食材。",
+    "subjectFormula": "菜品、汤汁、蒸汽或食材切面为主体。",
+    "sceneFormula": "深浅对比背景，餐桌或厨房元素弱化。",
+    "lightingFormula": "侧后方柔光带出食物油光和热气，阴影自然。",
+    "typographyFormula": "新品名称最大，口味卖点次级，不编造价格。",
+    "detailFormula": "强调食材纹理、蒸汽、器皿、餐桌材质和食欲细节。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "餐饮新品海报食欲构图 扩展结构 52",
+      "餐饮",
+      "食品",
+      "新品"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "新品",
+      "卖点",
+      "转化",
+      "会员",
+      "套餐",
+      "团购",
+      "菜品",
+      "汤汁",
+      "蒸汽或食材切面为主体"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "food",
+      "launch",
+      "菜品主体占画面中下部",
+      "标题位于上方或左上",
+      "卖点围绕食材"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0094",
+    "name": "房产到访活动海报 扩展结构 53",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 94",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "房产",
+      "楼盘",
+      "活动"
+    ],
+    "styleTags": [
+      "real_estate",
+      "event"
+    ],
+    "layoutFormula": "楼盘或空间大图占上半区，主标题和到访权益在下半区分层。",
+    "subjectFormula": "建筑外立面、样板间或活动主标题为主体。",
+    "sceneFormula": "干净城市或室内空间背景，避免虚构楼盘信息。",
+    "lightingFormula": "自然光或室内暖光，空间线条清楚。",
+    "typographyFormula": "楼盘名、活动时间和地址只使用用户提供内容。",
+    "detailFormula": "强调建筑线条、空间透视、留白和销售信息层级。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "房产到访活动海报 扩展结构 53",
+      "房产",
+      "楼盘"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "活动",
+      "会议",
+      "年会",
+      "建筑外立面",
+      "样板间或活动主标题为主体"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "real_estate",
+      "event",
+      "楼盘或空间大图占上半区",
+      "主标题和到访权益在下半区分层"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0095",
+    "name": "美妆产品竖版海报 扩展结构 54",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 95",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "poster_design",
+      "product_ad",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "美妆",
+      "护肤",
+      "产品"
+    ],
+    "styleTags": [
+      "beauty",
+      "product"
+    ],
+    "layoutFormula": "产品瓶罐居中偏下，标题在上方，成分或卖点卡片在两侧。",
+    "subjectFormula": "产品包装和膏体/水滴/花材为主体，标签保持清楚。",
+    "sceneFormula": "浅色棚拍背景，少量花材或水面元素辅助。",
+    "lightingFormula": "柔光从左上方进入，瓶身边缘有细高光。",
+    "typographyFormula": "标题和卖点文字清楚，功效不编造。",
+    "detailFormula": "强调玻璃、塑料、金属盖、水滴和背景细腻纹理。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "海报",
+      "活动",
+      "促销",
+      "招生",
+      "招聘",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "美妆产品竖版海报 扩展结构 54",
+      "美妆",
+      "护肤",
+      "产品"
+    ],
+    "materialKeywords": [
+      "纸张",
+      "喷绘",
+      "屏幕",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料"
+    ],
+    "businessKeywords": [
+      "促销",
+      "发布",
+      "报名",
+      "招聘",
+      "开业",
+      "新品",
+      "卖点",
+      "转化",
+      "上架",
+      "详情页",
+      "大促",
+      "产品包装和膏体",
+      "水滴",
+      "花材为主体",
+      "标签保持清楚"
+    ],
+    "visualKeywords": [
+      "主标题",
+      "主视觉",
+      "信息层级",
+      "留白",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "beauty",
+      "product",
+      "产品瓶罐居中偏下",
+      "标题在上方",
+      "成分或卖点卡片在两侧"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0096",
+    "name": "展架黄金三段结构 扩展结构 55",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 96",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "展会",
+      "企业",
+      "服务"
+    ],
+    "styleTags": [
+      "rollup",
+      "three_section"
+    ],
+    "layoutFormula": "顶部大标题，中段三到五个卖点模块，底部行动区，安全边距固定。",
+    "subjectFormula": "品牌主张和服务模块为主体，图标只做辅助。",
+    "sceneFormula": "竖版白底或浅色背景，模块边界清楚。",
+    "lightingFormula": "平面光均匀，重点模块有轻微阴影。",
+    "typographyFormula": "标题字号最大，卖点短句可读，联系方式只使用用户文案。",
+    "detailFormula": "强调竖版边距、模块对齐、二维码预留和远距识别。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "展架黄金三段结构 扩展结构 55",
+      "企业",
+      "服务"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "品牌主张和服务模块为主体",
+      "图标只做辅助"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "rollup",
+      "three_section",
+      "顶部大标题",
+      "中段三到五个卖点模块",
+      "底部行动区",
+      "安全边距固定"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0097",
+    "name": "展架产品参数结构 扩展结构 56",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 97",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "产品",
+      "设备",
+      "展会"
+    ],
+    "styleTags": [
+      "technical",
+      "rollup"
+    ],
+    "layoutFormula": "产品图在上中部，参数表和卖点列表在下方，底部品牌区稳定。",
+    "subjectFormula": "产品主体和关键参数为主体，背景弱化。",
+    "sceneFormula": "展会或纯色背景，参数模块以线条分隔。",
+    "lightingFormula": "产品有左上主光和接触阴影，参数区亮度一致。",
+    "typographyFormula": "参数名、数值和行动文案分层，不编造技术指标。",
+    "detailFormula": "强调产品轮廓、参数表边框、留白和印刷清晰度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "展架产品参数结构 扩展结构 56",
+      "产品",
+      "设备"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "产品主体和关键参数为主体",
+      "背景弱化"
+    ],
+    "visualKeywords": [
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "technical",
+      "rollup",
+      "产品图在上中部",
+      "参数表和卖点列表在下方",
+      "底部品牌区稳定"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0098",
+    "name": "活动背景板远距标题 扩展结构 57",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 98",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "会议",
+      "峰会",
+      "活动"
+    ],
+    "styleTags": [
+      "backdrop",
+      "conference"
+    ],
+    "layoutFormula": "横版背景板，主标题居中最大，副标题、日期和主办方分区。",
+    "subjectFormula": "活动主题文字和简洁图形为主体，现场人物不进入主体区。",
+    "sceneFormula": "舞台、展台或拍照区背景，大面积留白。",
+    "lightingFormula": "舞台灯均匀照亮标题，左右边缘有柔和渐变。",
+    "typographyFormula": "标题远距可读，日期地点只按用户输入出现。",
+    "detailFormula": "强调喷绘尺度、字距、横向安全区和拍照遮挡预留。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "活动背景板远距标题 扩展结构 57",
+      "峰会",
+      "活动"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "活动主题文字和简洁图形为主体",
+      "现场人物不进入主体区"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "backdrop",
+      "conference",
+      "横版背景板",
+      "主标题居中最大",
+      "副标题",
+      "日期和主办方分区"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0099",
+    "name": "签到墙重复标识结构 扩展结构 58",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Business Derived Recipe 99",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "活动",
+      "签到",
+      "品牌"
+    ],
+    "styleTags": [
+      "step_repeat",
+      "backdrop"
+    ],
+    "layoutFormula": "横版或方形墙面，logo按网格重复，主标题位于中心或上方。",
+    "subjectFormula": "品牌标识和活动标题为主体，重复标识不抢主标题。",
+    "sceneFormula": "签到区现场，地面和墙面交界真实。",
+    "lightingFormula": "柔和面光避免反光过强，墙面阴影自然。",
+    "typographyFormula": "主标题清楚，重复标识保持小而统一。",
+    "detailFormula": "强调网格间距、墙面材质、喷绘平整度和拍照可用性。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "签到墙重复标识结构 扩展结构 58",
+      "活动",
+      "签到",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "品牌标识和活动标题为主体",
+      "重复标识不抢主标题"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "step_repeat",
+      "backdrop",
+      "横版或方形墙面",
+      "logo按网格重复",
+      "主标题位于中心或上方"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0100",
+    "name": "舞台LED背景结构 扩展结构 59",
+    "source": {
+      "repo": "ZeroLu/awesome-gpt-image",
+      "path": "README.zh-CN.md",
+      "caseId": "Business Derived Recipe 100",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "舞台",
+      "年会",
+      "发布会"
+    ],
+    "styleTags": [
+      "led",
+      "stage"
+    ],
+    "layoutFormula": "LED屏横向铺开，中心标题，左右动态图形留出视觉缓冲。",
+    "subjectFormula": "活动主题和品牌标识为主体，舞台设备不遮挡文字。",
+    "sceneFormula": "室内舞台，地台、灯架和屏幕比例真实。",
+    "lightingFormula": "屏幕自发光，舞台顶光弱化，标题亮度稳定。",
+    "typographyFormula": "标题和副标题居中，其他信息靠下或两侧。",
+    "detailFormula": "强调LED像素面、舞台比例、观众视距和安全区。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "舞台LED背景结构 扩展结构 59",
+      "年会"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "活动主题和品牌标识为主体",
+      "舞台设备不遮挡文字"
+    ],
+    "visualKeywords": [
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "led",
+      "stage",
+      "LED屏横向铺开",
+      "中心标题",
+      "左右动态图形留出视觉缓冲"
+    ]
+  },
+  {
+    "id": "adimg_recipe_0101",
+    "name": "眼镜店清透门头配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 101",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "眼镜",
+      "视光"
+    ],
+    "styleTags": [
+      "storefront",
+      "glass"
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "眼镜店清透门头配方",
+      "眼镜",
+      "视光"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "店名",
+      "视光符号和橱窗陈列为主体"
+    ],
+    "visualKeywords": [
+      "storefront",
+      "glass",
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "横向招牌加大面积橱窗",
+      "入口居中",
+      "橱窗内展示镜框轮廓"
+    ],
+    "layoutFormula": "横向招牌加大面积橱窗，入口居中，橱窗内展示镜框轮廓。",
+    "subjectFormula": "店名、视光符号和橱窗陈列为主体。",
+    "sceneFormula": "白天街边或商场通道，玻璃反射控制在边缘。",
+    "lightingFormula": "柔和自然光照亮门头，室内白光透出。",
+    "typographyFormula": "店名最大，验光配镜信息次级。",
+    "detailFormula": "强调玻璃、亚克力字、金属边框和橱窗层次。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0102",
+    "name": "商场吊牌远距配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 102",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "商场",
+      "导视"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "hanging"
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "商场吊牌远距配方",
+      "商场"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "导视牌文字",
+      "箭头和图标为主体"
+    ],
+    "visualKeywords": [
+      "wayfinding",
+      "hanging",
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "吊牌位于画面上方",
+      "箭头和楼层信息按横向网格排列"
+    ],
+    "layoutFormula": "吊牌位于画面上方，箭头和楼层信息按横向网格排列。",
+    "subjectFormula": "导视牌文字、箭头和图标为主体。",
+    "sceneFormula": "商场通道或中庭，吊顶和远处店铺真实。",
+    "lightingFormula": "顶灯均匀照亮牌面，文字对比强。",
+    "typographyFormula": "楼层、品类、箭头三级文字清楚。",
+    "detailFormula": "强调吊装结构、金属边框和远距可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0103",
+    "name": "医疗走廊导视配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 103",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "医院",
+      "医疗"
+    ],
+    "styleTags": [
+      "clinic",
+      "wayfinding"
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "医疗走廊导视配方",
+      "医院",
+      "医疗"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "科室文字和方向箭头为主体"
+    ],
+    "visualKeywords": [
+      "clinic",
+      "wayfinding",
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "墙面导视牌沿走廊透视排列",
+      "科室和箭头清楚"
+    ],
+    "layoutFormula": "墙面导视牌沿走廊透视排列，科室和箭头清楚。",
+    "subjectFormula": "科室文字和方向箭头为主体。",
+    "sceneFormula": "医院走廊，墙面干净，地面反射轻微。",
+    "lightingFormula": "白色环境光均匀，牌面无强反光。",
+    "typographyFormula": "科室名最大，楼层和箭头次级。",
+    "detailFormula": "强调安装高度、牌面边缘、箭头方向和视距。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0104",
+    "name": "竖版展架服务模块配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 104",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "服务"
+    ],
+    "styleTags": [
+      "rollup",
+      "service"
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "竖版展架服务模块配方",
+      "企业",
+      "服务"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "服务标题和模块卡片为主体"
+    ],
+    "visualKeywords": [
+      "rollup",
+      "service",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "顶部大标题",
+      "中段四个服务模块",
+      "底部行动区"
+    ],
+    "layoutFormula": "顶部大标题，中段四个服务模块，底部行动区。",
+    "subjectFormula": "服务标题和模块卡片为主体。",
+    "sceneFormula": "纯色或浅色背景，模块边界清楚。",
+    "lightingFormula": "平面均匀光，卡片阴影很轻。",
+    "typographyFormula": "标题、卖点、行动区三级层级。",
+    "detailFormula": "强调竖版安全边距、网格对齐和底部预留。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0105",
+    "name": "软件展架功能配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 105",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "软件",
+      "SaaS"
+    ],
+    "styleTags": [
+      "software",
+      "rollup"
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "软件展架功能配方",
+      "软件",
+      "SaaS"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "界面框和功能卖点为主体"
+    ],
+    "visualKeywords": [
+      "software",
+      "rollup",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "产品界面截图在中上部",
+      "功能点沿两侧排列",
+      "底部咨询入口"
+    ],
+    "layoutFormula": "产品界面截图在中上部，功能点沿两侧排列，底部咨询入口。",
+    "subjectFormula": "界面框和功能卖点为主体。",
+    "sceneFormula": "浅色技术背景，线条简洁。",
+    "lightingFormula": "均匀平面光，界面边缘清晰。",
+    "typographyFormula": "功能点短句，按钮或咨询区底部固定。",
+    "detailFormula": "强调界面清晰、模块间距和远距阅读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0106",
+    "name": "签到墙网格配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 106",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "活动",
+      "品牌"
+    ],
+    "styleTags": [
+      "step_repeat"
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "签到墙网格配方",
+      "活动",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "活动标题和重复品牌标识为主体"
+    ],
+    "visualKeywords": [
+      "step_repeat",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "横版墙面",
+      "品牌标识按网格重复",
+      "主标题居中或上方"
+    ],
+    "layoutFormula": "横版墙面，品牌标识按网格重复，主标题居中或上方。",
+    "subjectFormula": "活动标题和重复品牌标识为主体。",
+    "sceneFormula": "签到区现场，地面和墙面交界真实。",
+    "lightingFormula": "柔和面光，避免反光过强。",
+    "typographyFormula": "主标题最大，重复标识小而统一。",
+    "detailFormula": "强调网格间距、喷绘平整和拍照可用。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0107",
+    "name": "直播间品牌背板配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 107",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "直播",
+      "电商"
+    ],
+    "styleTags": [
+      "live",
+      "backdrop"
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "直播间品牌背板配方",
+      "直播",
+      "电商"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "品牌名",
+      "产品图和直播主题为主体"
+    ],
+    "visualKeywords": [
+      "live",
+      "backdrop",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "主播后方背景板",
+      "品牌和主推产品区留在画面左右安全区"
+    ],
+    "layoutFormula": "主播后方背景板，品牌和主推产品区留在画面左右安全区。",
+    "subjectFormula": "品牌名、产品图和直播主题为主体。",
+    "sceneFormula": "直播间小空间，桌面和灯架弱化。",
+    "lightingFormula": "面光均匀，背景亮度低于人物区域。",
+    "typographyFormula": "标题和产品卖点清楚，避免过多小字。",
+    "detailFormula": "强调竖屏裁切、背景安全区和品牌露出。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0108",
+    "name": "前台石材灯带墙配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 108",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "前台"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "stone"
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "前台石材灯带墙配方",
+      "企业",
+      "前台"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "品牌字",
+      "石材纹理和接待台为主体"
+    ],
+    "visualKeywords": [
+      "brand_wall",
+      "stone",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "logo位于墙面中心",
+      "线性灯带沿上下或侧边洗墙"
+    ],
+    "layoutFormula": "logo位于墙面中心，线性灯带沿上下或侧边洗墙。",
+    "subjectFormula": "品牌字、石材纹理和接待台为主体。",
+    "sceneFormula": "办公室前台，地面和吊顶透视真实。",
+    "lightingFormula": "灯带柔和洗墙，logo有轻微背光。",
+    "typographyFormula": "品牌名准确，口号只在用户提供时出现。",
+    "detailFormula": "强调石材、金属字厚度、灯槽和落地阴影。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0109",
+    "name": "文化墙时间轴配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 109",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "展厅"
+    ],
+    "styleTags": [
+      "timeline",
+      "wall"
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "文化墙时间轴配方",
+      "企业",
+      "展厅"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "时间轴节点",
+      "品牌标题和图文模块为主体"
+    ],
+    "visualKeywords": [
+      "timeline",
+      "wall",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "横向时间轴贯穿墙面",
+      "节点和成果模块有序排列"
+    ],
+    "layoutFormula": "横向时间轴贯穿墙面，节点和成果模块有序排列。",
+    "subjectFormula": "时间轴节点、品牌标题和图文模块为主体。",
+    "sceneFormula": "展厅或走廊墙面，参观动线从左到右。",
+    "lightingFormula": "顶部轨道灯均匀照亮墙面。",
+    "typographyFormula": "年份和标题层级清楚，不编造历史。",
+    "detailFormula": "强调墙贴、亚克力字、图文间距和视距。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0110",
+    "name": "门口A字牌配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 110",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "门店"
+    ],
+    "styleTags": [
+      "a_board",
+      "promotion"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门口A字牌配方",
+      "餐饮",
+      "门店"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "水牌文字和产品图为主体"
+    ],
+    "visualKeywords": [
+      "a_board",
+      "promotion",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "A字牌居中",
+      "店门口背景虚化",
+      "标题上方",
+      "产品中部",
+      "行动区底部"
+    ],
+    "layoutFormula": "A字牌居中，店门口背景虚化，标题上方、产品中部、行动区底部。",
+    "subjectFormula": "水牌文字和产品图为主体。",
+    "sceneFormula": "门店入口地面真实，人物不遮挡牌面。",
+    "lightingFormula": "自然光或门店暖光照亮牌面。",
+    "typographyFormula": "标题远距可读，价格只用用户文案。",
+    "detailFormula": "强调板材、支架、纸面纹理和落地阴影。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0111",
+    "name": "橱窗贴促销配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 111",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion",
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "零售",
+      "门店"
+    ],
+    "styleTags": [
+      "window",
+      "sticker"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "橱窗贴促销配方",
+      "零售",
+      "门店"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸",
+      "亚克力",
+      "发光字",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "橱窗贴文字和店内商品轮廓为主体"
+    ],
+    "visualKeywords": [
+      "window",
+      "sticker",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "玻璃橱窗作为画布",
+      "主标题位于视线高度",
+      "产品或权益围绕"
+    ],
+    "layoutFormula": "玻璃橱窗作为画布，主标题位于视线高度，产品或权益围绕。",
+    "subjectFormula": "橱窗贴文字和店内商品轮廓为主体。",
+    "sceneFormula": "真实街边橱窗，有反射但不遮挡文字。",
+    "lightingFormula": "室内灯光透出，玻璃反射控制在边缘。",
+    "typographyFormula": "促销文字准确，不加入未提供折扣。",
+    "detailFormula": "强调贴膜边缘、玻璃反射和街边透视。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0112",
+    "name": "生鲜团购长图配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 112",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "生鲜",
+      "团购"
+    ],
+    "styleTags": [
+      "long_poster",
+      "grocery"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "生鲜团购长图配方",
+      "生鲜"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "商品组图和规格信息为主体"
+    ],
+    "visualKeywords": [
+      "long_poster",
+      "grocery",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "竖长图多商品卡片排列",
+      "顶部标题",
+      "底部下单信息"
+    ],
+    "layoutFormula": "竖长图多商品卡片排列，顶部标题，底部下单信息。",
+    "subjectFormula": "商品组图和规格信息为主体。",
+    "sceneFormula": "浅色背景，卡片边界清楚。",
+    "lightingFormula": "商品有自然高光，整体亮度一致。",
+    "typographyFormula": "规格、价格、到货信息只按用户文案出现。",
+    "detailFormula": "强调卡片间距、商品新鲜度和文字可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0113",
+    "name": "保健食品合规主图配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 113",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "保健",
+      "营养"
+    ],
+    "styleTags": [
+      "health_food",
+      "ecommerce"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "保健食品合规主图配方",
+      "保健",
+      "营养"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "产品包装和真实原料为主体"
+    ],
+    "visualKeywords": [
+      "health_food",
+      "ecommerce",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "包装居中",
+      "原料碗或成分图围绕",
+      "卖点区靠侧"
+    ],
+    "layoutFormula": "包装居中，原料碗或成分图围绕，卖点区靠侧。",
+    "subjectFormula": "产品包装和真实原料为主体。",
+    "sceneFormula": "浅色棚拍台面，背景简洁。",
+    "lightingFormula": "左上柔光，包装边缘和食材有自然高光。",
+    "typographyFormula": "卖点短句，不写未提供功效和认证。",
+    "detailFormula": "强调包装标签、原料质感和合规留白。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0114",
+    "name": "宠物食品温和主图配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 114",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "宠物",
+      "食品"
+    ],
+    "styleTags": [
+      "pet",
+      "food"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "宠物食品温和主图配方",
+      "宠物",
+      "食品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料",
+      "液体"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
+      "包装和食材颗粒为主体",
+      "宠物不遮挡产品"
+    ],
+    "visualKeywords": [
+      "pet",
+      "food",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "包装居中偏右",
+      "宠物轮廓或食材在侧边辅助"
+    ],
+    "layoutFormula": "包装居中偏右，宠物轮廓或食材在侧边辅助。",
+    "subjectFormula": "包装和食材颗粒为主体，宠物不遮挡产品。",
+    "sceneFormula": "浅色家居或棚拍背景。",
+    "lightingFormula": "柔光照亮包装和食物颗粒。",
+    "typographyFormula": "标题和卖点清楚，不编造营养承诺。",
+    "detailFormula": "强调包装清晰、颗粒质感和宠物亲和。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0115",
+    "name": "车载用品安装主图配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 115",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "汽车",
+      "车品"
+    ],
+    "styleTags": [
+      "car",
+      "installation"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "车载用品安装主图配方",
+      "汽车",
+      "车品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料",
+      "液体"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
+      "产品主体和安装位置为主体"
+    ],
+    "visualKeywords": [
+      "car",
+      "installation",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品和车内安装位置同框",
+      "局部放大说明在侧边"
+    ],
+    "layoutFormula": "产品和车内安装位置同框，局部放大说明在侧边。",
+    "subjectFormula": "产品主体和安装位置为主体。",
+    "sceneFormula": "真实车内或车外局部，背景简洁。",
+    "lightingFormula": "自然车窗光，产品边缘清楚。",
+    "typographyFormula": "安装说明短句，不编造参数。",
+    "detailFormula": "强调比例真实、固定方式、材质和车内环境。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0116",
+    "name": "香氛产品静物广告配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 116",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "香氛",
+      "家居"
+    ],
+    "styleTags": [
+      "fragrance",
+      "still_life"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "香氛产品静物广告配方",
+      "香氛",
+      "家居"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "瓶体",
+      "标签和扩香道具为主体"
+    ],
+    "visualKeywords": [
+      "fragrance",
+      "still_life",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "瓶体居中",
+      "香薰石或植物在前景",
+      "背景留白"
+    ],
+    "layoutFormula": "瓶体居中，香薰石或植物在前景，背景留白。",
+    "subjectFormula": "瓶体、标签和扩香道具为主体。",
+    "sceneFormula": "浅色台面或石材背景，安静陈列。",
+    "lightingFormula": "柔和侧光，玻璃和液体高光清楚。",
+    "typographyFormula": "标题少量，卖点不超过三条。",
+    "detailFormula": "强调玻璃、液体、石材、阴影和香气联想。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0117",
+    "name": "工具设备硬光广告配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 117",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "工具",
+      "设备"
+    ],
+    "styleTags": [
+      "industrial",
+      "tool"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "工具设备硬光广告配方",
+      "工具",
+      "设备"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "工具结构",
+      "金属边缘和握持区域为主体"
+    ],
+    "visualKeywords": [
+      "industrial",
+      "tool",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "工具45度角大主体",
+      "功能模块和参数卡片沿边缘分布"
+    ],
+    "layoutFormula": "工具45度角大主体，功能模块和参数卡片沿边缘分布。",
+    "subjectFormula": "工具结构、金属边缘和握持区域为主体。",
+    "sceneFormula": "深灰或浅灰技术背景。",
+    "lightingFormula": "硬主光加边缘光，金属高光明确。",
+    "typographyFormula": "参数文字短句，不编造数值。",
+    "detailFormula": "强调金属、橡胶、螺丝、边缘高光和工业质感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0118",
+    "name": "露营产品户外广告配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 118",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "露营",
+      "户外"
+    ],
+    "styleTags": [
+      "camping",
+      "outdoor"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "露营产品户外广告配方",
+      "露营",
+      "户外"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "露营产品主体清楚",
+      "人物弱化"
+    ],
+    "visualKeywords": [
+      "camping",
+      "outdoor",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "产品位于营地前景",
+      "帐篷或草地形成背景纵深"
+    ],
+    "layoutFormula": "产品位于营地前景，帐篷或草地形成背景纵深。",
+    "subjectFormula": "露营产品主体清楚，人物弱化。",
+    "sceneFormula": "户外黄昏或白天自然场景。",
+    "lightingFormula": "自然侧光或火光，产品边缘和地面接触清楚。",
+    "typographyFormula": "标题少量，功能点在侧边。",
+    "detailFormula": "强调布料、金属支架、草地、接触阴影和场景可信度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0119",
+    "name": "珠宝微距摄影配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 119",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "珠宝",
+      "饰品"
+    ],
+    "styleTags": [
+      "jewelry",
+      "macro"
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "珠宝微距摄影配方",
+      "珠宝",
+      "饰品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹",
+      "塑料",
+      "纸盒"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "金属",
+      "宝石和镶嵌细节为主体"
+    ],
+    "visualKeywords": [
+      "jewelry",
+      "macro",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "饰品在绒布或石材上居中",
+      "局部微距展示切面"
+    ],
+    "layoutFormula": "饰品在绒布或石材上居中，局部微距展示切面。",
+    "subjectFormula": "金属、宝石和镶嵌细节为主体。",
+    "sceneFormula": "深色或浅色棚拍台面，背景虚化。",
+    "lightingFormula": "窄边高光和柔和反射，避免过曝。",
+    "typographyFormula": "默认不加文字。",
+    "detailFormula": "强调宝石切面、金属反光、绒布纹理和浅景深。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0120",
+    "name": "菜品热气摄影配方",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 120",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "菜品"
+    ],
+    "styleTags": [
+      "food",
+      "steam"
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "菜品热气摄影配方",
+      "餐饮",
+      "菜品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "主菜",
+      "汤汁和食材切面为主体"
+    ],
+    "visualKeywords": [
+      "food",
+      "steam",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "菜品碗盘居中",
+      "热气从主体上方升起",
+      "食材纹理清楚"
+    ],
+    "layoutFormula": "菜品碗盘居中，热气从主体上方升起，食材纹理清楚。",
+    "subjectFormula": "主菜、汤汁和食材切面为主体。",
+    "sceneFormula": "餐桌或厨房台面，背景弱化。",
+    "lightingFormula": "侧后方柔光带出油光和蒸汽。",
+    "typographyFormula": "默认不加文字，除非用户提供。",
+    "detailFormula": "强调热气、油光、汤色、器皿和食材纹理。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0121",
+    "name": "眼镜店清透门头配方 扩展 21",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 121",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "眼镜",
+      "视光"
+    ],
+    "styleTags": [
+      "storefront",
+      "glass"
+    ],
+    "useCases": [
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "眼镜店清透门头配方 扩展 21",
+      "眼镜",
+      "视光"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "发光字",
+      "灯箱",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "店名",
+      "视光符号和橱窗陈列为主体"
+    ],
+    "visualKeywords": [
+      "storefront",
+      "glass",
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "横向招牌加大面积橱窗",
+      "入口居中",
+      "橱窗内展示镜框轮廓"
+    ],
+    "layoutFormula": "横向招牌加大面积橱窗，入口居中，橱窗内展示镜框轮廓。",
+    "subjectFormula": "店名、视光符号和橱窗陈列为主体。",
+    "sceneFormula": "白天街边或商场通道，玻璃反射控制在边缘。",
+    "lightingFormula": "柔和自然光照亮门头，室内白光透出。",
+    "typographyFormula": "店名最大，验光配镜信息次级。",
+    "detailFormula": "强调玻璃、亚克力字、金属边框和橱窗层次。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0122",
+    "name": "商场吊牌远距配方 扩展 22",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 122",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "商场",
+      "导视"
+    ],
+    "styleTags": [
+      "wayfinding",
+      "hanging"
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "商场吊牌远距配方 扩展 22",
+      "商场"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "导视牌文字",
+      "箭头和图标为主体"
+    ],
+    "visualKeywords": [
+      "wayfinding",
+      "hanging",
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "吊牌位于画面上方",
+      "箭头和楼层信息按横向网格排列"
+    ],
+    "layoutFormula": "吊牌位于画面上方，箭头和楼层信息按横向网格排列。",
+    "subjectFormula": "导视牌文字、箭头和图标为主体。",
+    "sceneFormula": "商场通道或中庭，吊顶和远处店铺真实。",
+    "lightingFormula": "顶灯均匀照亮牌面，文字对比强。",
+    "typographyFormula": "楼层、品类、箭头三级文字清楚。",
+    "detailFormula": "强调吊装结构、金属边框和远距可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0123",
+    "name": "医疗走廊导视配方 扩展 23",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 123",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "signage_wayfinding"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "医院",
+      "医疗"
+    ],
+    "styleTags": [
+      "clinic",
+      "wayfinding"
+    ],
+    "useCases": [
+      "导视",
+      "标识",
+      "指引",
+      "吊牌",
+      "立柱",
+      "医疗走廊导视配方 扩展 23",
+      "医院",
+      "医疗"
+    ],
+    "materialKeywords": [
+      "亚克力",
+      "金属",
+      "灯箱",
+      "反光膜"
+    ],
+    "businessKeywords": [
+      "指路",
+      "分流",
+      "楼层",
+      "科室",
+      "科室文字和方向箭头为主体"
+    ],
+    "visualKeywords": [
+      "clinic",
+      "wayfinding",
+      "箭头清楚",
+      "远距可读",
+      "安装真实",
+      "路径明确",
+      "墙面导视牌沿走廊透视排列",
+      "科室和箭头清楚"
+    ],
+    "layoutFormula": "墙面导视牌沿走廊透视排列，科室和箭头清楚。",
+    "subjectFormula": "科室文字和方向箭头为主体。",
+    "sceneFormula": "医院走廊，墙面干净，地面反射轻微。",
+    "lightingFormula": "白色环境光均匀，牌面无强反光。",
+    "typographyFormula": "科室名最大，楼层和箭头次级。",
+    "detailFormula": "强调安装高度、牌面边缘、箭头方向和视距。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0124",
+    "name": "竖版展架服务模块配方 扩展 24",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 124",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "服务"
+    ],
+    "styleTags": [
+      "rollup",
+      "service"
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "竖版展架服务模块配方 扩展 24",
+      "企业",
+      "服务"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "服务标题和模块卡片为主体"
+    ],
+    "visualKeywords": [
+      "rollup",
+      "service",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "顶部大标题",
+      "中段四个服务模块",
+      "底部行动区"
+    ],
+    "layoutFormula": "顶部大标题，中段四个服务模块，底部行动区。",
+    "subjectFormula": "服务标题和模块卡片为主体。",
+    "sceneFormula": "纯色或浅色背景，模块边界清楚。",
+    "lightingFormula": "平面均匀光，卡片阴影很轻。",
+    "typographyFormula": "标题、卖点、行动区三级层级。",
+    "detailFormula": "强调竖版安全边距、网格对齐和底部预留。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0125",
+    "name": "软件展架功能配方 扩展 25",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 125",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "rollup_banner"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "软件",
+      "SaaS"
+    ],
+    "styleTags": [
+      "software",
+      "rollup"
+    ],
+    "useCases": [
+      "易拉宝",
+      "展架",
+      "竖版物料",
+      "展会",
+      "软件展架功能配方 扩展 25",
+      "软件",
+      "SaaS"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "展架",
+      "铝合金",
+      "画布"
+    ],
+    "businessKeywords": [
+      "介绍",
+      "招商",
+      "咨询",
+      "报名",
+      "界面框和功能卖点为主体"
+    ],
+    "visualKeywords": [
+      "software",
+      "rollup",
+      "远距可读",
+      "三段式",
+      "安全边距",
+      "底部联系",
+      "产品界面截图在中上部",
+      "功能点沿两侧排列",
+      "底部咨询入口"
+    ],
+    "layoutFormula": "产品界面截图在中上部，功能点沿两侧排列，底部咨询入口。",
+    "subjectFormula": "界面框和功能卖点为主体。",
+    "sceneFormula": "浅色技术背景，线条简洁。",
+    "lightingFormula": "均匀平面光，界面边缘清晰。",
+    "typographyFormula": "功能点短句，按钮或咨询区底部固定。",
+    "detailFormula": "强调界面清晰、模块间距和远距阅读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0126",
+    "name": "签到墙网格配方 扩展 26",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 126",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop",
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "活动",
+      "品牌"
+    ],
+    "styleTags": [
+      "step_repeat"
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "签到墙网格配方 扩展 26",
+      "活动",
+      "品牌"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板",
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "活动标题和重复品牌标识为主体"
+    ],
+    "visualKeywords": [
+      "step_repeat",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "横版墙面",
+      "品牌标识按网格重复",
+      "主标题居中或上方"
+    ],
+    "layoutFormula": "横版墙面，品牌标识按网格重复，主标题居中或上方。",
+    "subjectFormula": "活动标题和重复品牌标识为主体。",
+    "sceneFormula": "签到区现场，地面和墙面交界真实。",
+    "lightingFormula": "柔和面光，避免反光过强。",
+    "typographyFormula": "主标题最大，重复标识小而统一。",
+    "detailFormula": "强调网格间距、喷绘平整和拍照可用。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0127",
+    "name": "直播间品牌背板配方 扩展 27",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 127",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "event_backdrop"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "直播",
+      "电商"
+    ],
+    "styleTags": [
+      "live",
+      "backdrop"
+    ],
+    "useCases": [
+      "背景板",
+      "签到墙",
+      "舞台",
+      "会议",
+      "发布会",
+      "直播间品牌背板配方 扩展 27",
+      "直播",
+      "电商"
+    ],
+    "materialKeywords": [
+      "喷绘",
+      "桁架",
+      "LED",
+      "展板"
+    ],
+    "businessKeywords": [
+      "活动",
+      "发布",
+      "会议",
+      "年会",
+      "品牌名",
+      "产品图和直播主题为主体"
+    ],
+    "visualKeywords": [
+      "live",
+      "backdrop",
+      "远距标题",
+      "拍照区",
+      "横版安全区",
+      "主视觉",
+      "主播后方背景板",
+      "品牌和主推产品区留在画面左右安全区"
+    ],
+    "layoutFormula": "主播后方背景板，品牌和主推产品区留在画面左右安全区。",
+    "subjectFormula": "品牌名、产品图和直播主题为主体。",
+    "sceneFormula": "直播间小空间，桌面和灯架弱化。",
+    "lightingFormula": "面光均匀，背景亮度低于人物区域。",
+    "typographyFormula": "标题和产品卖点清楚，避免过多小字。",
+    "detailFormula": "强调竖屏裁切、背景安全区和品牌露出。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0128",
+    "name": "前台石材灯带墙配方 扩展 28",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 128",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "前台"
+    ],
+    "styleTags": [
+      "brand_wall",
+      "stone"
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "前台石材灯带墙配方 扩展 28",
+      "企业",
+      "前台"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "品牌字",
+      "石材纹理和接待台为主体"
+    ],
+    "visualKeywords": [
+      "brand_wall",
+      "stone",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "logo位于墙面中心",
+      "线性灯带沿上下或侧边洗墙"
+    ],
+    "layoutFormula": "logo位于墙面中心，线性灯带沿上下或侧边洗墙。",
+    "subjectFormula": "品牌字、石材纹理和接待台为主体。",
+    "sceneFormula": "办公室前台，地面和吊顶透视真实。",
+    "lightingFormula": "灯带柔和洗墙，logo有轻微背光。",
+    "typographyFormula": "品牌名准确，口号只在用户提供时出现。",
+    "detailFormula": "强调石材、金属字厚度、灯槽和落地阴影。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0129",
+    "name": "文化墙时间轴配方 扩展 29",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 129",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "brand_wall"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "企业",
+      "展厅"
+    ],
+    "styleTags": [
+      "timeline",
+      "wall"
+    ],
+    "useCases": [
+      "形象墙",
+      "文化墙",
+      "前台墙",
+      "上墙",
+      "展厅墙",
+      "文化墙时间轴配方 扩展 29",
+      "企业",
+      "展厅"
+    ],
+    "materialKeywords": [
+      "石材",
+      "木饰面",
+      "金属字",
+      "灯带",
+      "亚克力"
+    ],
+    "businessKeywords": [
+      "品牌展示",
+      "接待",
+      "企业文化",
+      "上墙",
+      "时间轴节点",
+      "品牌标题和图文模块为主体"
+    ],
+    "visualKeywords": [
+      "timeline",
+      "wall",
+      "墙面贴合",
+      "透视真实",
+      "材质层次",
+      "灯带",
+      "横向时间轴贯穿墙面",
+      "节点和成果模块有序排列"
+    ],
+    "layoutFormula": "横向时间轴贯穿墙面，节点和成果模块有序排列。",
+    "subjectFormula": "时间轴节点、品牌标题和图文模块为主体。",
+    "sceneFormula": "展厅或走廊墙面，参观动线从左到右。",
+    "lightingFormula": "顶部轨道灯均匀照亮墙面。",
+    "typographyFormula": "年份和标题层级清楚，不编造历史。",
+    "detailFormula": "强调墙贴、亚克力字、图文间距和视距。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0130",
+    "name": "门口A字牌配方 扩展 30",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 130",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "门店"
+    ],
+    "styleTags": [
+      "a_board",
+      "promotion"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门口A字牌配方 扩展 30",
+      "餐饮",
+      "门店"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "水牌文字和产品图为主体"
+    ],
+    "visualKeywords": [
+      "a_board",
+      "promotion",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "A字牌居中",
+      "店门口背景虚化",
+      "标题上方",
+      "产品中部",
+      "行动区底部"
+    ],
+    "layoutFormula": "A字牌居中，店门口背景虚化，标题上方、产品中部、行动区底部。",
+    "subjectFormula": "水牌文字和产品图为主体。",
+    "sceneFormula": "门店入口地面真实，人物不遮挡牌面。",
+    "lightingFormula": "自然光或门店暖光照亮牌面。",
+    "typographyFormula": "标题远距可读，价格只用用户文案。",
+    "detailFormula": "强调板材、支架、纸面纹理和落地阴影。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0131",
+    "name": "橱窗贴促销配方 扩展 31",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 131",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion",
+      "storefront_signboard"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "零售",
+      "门店"
+    ],
+    "styleTags": [
+      "window",
+      "sticker"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "门头",
+      "店招",
+      "招牌",
+      "门脸",
+      "现场改造",
+      "橱窗贴促销配方 扩展 31",
+      "零售",
+      "门店"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸",
+      "亚克力",
+      "发光字",
+      "金属",
+      "玻璃",
+      "墙面"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "开店",
+      "改造",
+      "换招牌",
+      "夜间识别",
+      "橱窗贴文字和店内商品轮廓为主体"
+    ],
+    "visualKeywords": [
+      "window",
+      "sticker",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "入口清楚",
+      "可制作",
+      "真实透视",
+      "夜间亮化",
+      "玻璃橱窗作为画布",
+      "主标题位于视线高度",
+      "产品或权益围绕"
+    ],
+    "layoutFormula": "玻璃橱窗作为画布，主标题位于视线高度，产品或权益围绕。",
+    "subjectFormula": "橱窗贴文字和店内商品轮廓为主体。",
+    "sceneFormula": "真实街边橱窗，有反射但不遮挡文字。",
+    "lightingFormula": "室内灯光透出，玻璃反射控制在边缘。",
+    "typographyFormula": "促销文字准确，不加入未提供折扣。",
+    "detailFormula": "强调贴膜边缘、玻璃反射和街边透视。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0132",
+    "name": "生鲜团购长图配方 扩展 32",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 132",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "local_store_promotion",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "生鲜",
+      "团购"
+    ],
+    "styleTags": [
+      "long_poster",
+      "grocery"
+    ],
+    "useCases": [
+      "水牌",
+      "橱窗贴",
+      "外卖图",
+      "门店促销",
+      "团购",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "生鲜团购长图配方 扩展 32",
+      "生鲜"
+    ],
+    "materialKeywords": [
+      "KT板",
+      "灯箱",
+      "贴膜",
+      "海报纸",
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "促销",
+      "开业",
+      "会员",
+      "套餐",
+      "团购",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "商品组图和规格信息为主体"
+    ],
+    "visualKeywords": [
+      "long_poster",
+      "grocery",
+      "利益点醒目",
+      "到店转化",
+      "产品清楚",
+      "行动区",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "竖长图多商品卡片排列",
+      "顶部标题",
+      "底部下单信息"
+    ],
+    "layoutFormula": "竖长图多商品卡片排列，顶部标题，底部下单信息。",
+    "subjectFormula": "商品组图和规格信息为主体。",
+    "sceneFormula": "浅色背景，卡片边界清楚。",
+    "lightingFormula": "商品有自然高光，整体亮度一致。",
+    "typographyFormula": "规格、价格、到货信息只按用户文案出现。",
+    "detailFormula": "强调卡片间距、商品新鲜度和文字可读。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0133",
+    "name": "保健食品合规主图配方 扩展 33",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 133",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "保健",
+      "营养"
+    ],
+    "styleTags": [
+      "health_food",
+      "ecommerce"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "保健食品合规主图配方 扩展 33",
+      "保健",
+      "营养"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "产品包装和真实原料为主体"
+    ],
+    "visualKeywords": [
+      "health_food",
+      "ecommerce",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "包装居中",
+      "原料碗或成分图围绕",
+      "卖点区靠侧"
+    ],
+    "layoutFormula": "包装居中，原料碗或成分图围绕，卖点区靠侧。",
+    "subjectFormula": "产品包装和真实原料为主体。",
+    "sceneFormula": "浅色棚拍台面，背景简洁。",
+    "lightingFormula": "左上柔光，包装边缘和食材有自然高光。",
+    "typographyFormula": "卖点短句，不写未提供功效和认证。",
+    "detailFormula": "强调包装标签、原料质感和合规留白。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0134",
+    "name": "宠物食品温和主图配方 扩展 34",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 134",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "宠物",
+      "食品"
+    ],
+    "styleTags": [
+      "pet",
+      "food"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "宠物食品温和主图配方 扩展 34",
+      "宠物",
+      "食品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料",
+      "液体"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
+      "包装和食材颗粒为主体",
+      "宠物不遮挡产品"
+    ],
+    "visualKeywords": [
+      "pet",
+      "food",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "包装居中偏右",
+      "宠物轮廓或食材在侧边辅助"
+    ],
+    "layoutFormula": "包装居中偏右，宠物轮廓或食材在侧边辅助。",
+    "subjectFormula": "包装和食材颗粒为主体，宠物不遮挡产品。",
+    "sceneFormula": "浅色家居或棚拍背景。",
+    "lightingFormula": "柔光照亮包装和食物颗粒。",
+    "typographyFormula": "标题和卖点清楚，不编造营养承诺。",
+    "detailFormula": "强调包装清晰、颗粒质感和宠物亲和。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0135",
+    "name": "车载用品安装主图配方 扩展 35",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 135",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "ecommerce_main_image",
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "汽车",
+      "车品"
+    ],
+    "styleTags": [
+      "car",
+      "installation"
+    ],
+    "useCases": [
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "车载用品安装主图配方 扩展 35",
+      "汽车",
+      "车品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "布料",
+      "液体"
+    ],
+    "businessKeywords": [
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "新品",
+      "发布",
+      "转化",
+      "产品主体和安装位置为主体"
+    ],
+    "visualKeywords": [
+      "car",
+      "installation",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "产品和车内安装位置同框",
+      "局部放大说明在侧边"
+    ],
+    "layoutFormula": "产品和车内安装位置同框，局部放大说明在侧边。",
+    "subjectFormula": "产品主体和安装位置为主体。",
+    "sceneFormula": "真实车内或车外局部，背景简洁。",
+    "lightingFormula": "自然车窗光，产品边缘清楚。",
+    "typographyFormula": "安装说明短句，不编造参数。",
+    "detailFormula": "强调比例真实、固定方式、材质和车内环境。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0136",
+    "name": "香氛产品静物广告配方 扩展 36",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 136",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "香氛",
+      "家居"
+    ],
+    "styleTags": [
+      "fragrance",
+      "still_life"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "香氛产品静物广告配方 扩展 36",
+      "香氛",
+      "家居"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "瓶体",
+      "标签和扩香道具为主体"
+    ],
+    "visualKeywords": [
+      "fragrance",
+      "still_life",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "瓶体居中",
+      "香薰石或植物在前景",
+      "背景留白"
+    ],
+    "layoutFormula": "瓶体居中，香薰石或植物在前景，背景留白。",
+    "subjectFormula": "瓶体、标签和扩香道具为主体。",
+    "sceneFormula": "浅色台面或石材背景，安静陈列。",
+    "lightingFormula": "柔和侧光，玻璃和液体高光清楚。",
+    "typographyFormula": "标题少量，卖点不超过三条。",
+    "detailFormula": "强调玻璃、液体、石材、阴影和香气联想。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0137",
+    "name": "工具设备硬光广告配方 扩展 37",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 137",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "工具",
+      "设备"
+    ],
+    "styleTags": [
+      "industrial",
+      "tool"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "工具设备硬光广告配方 扩展 37",
+      "工具",
+      "设备"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "工具结构",
+      "金属边缘和握持区域为主体"
+    ],
+    "visualKeywords": [
+      "industrial",
+      "tool",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "工具45度角大主体",
+      "功能模块和参数卡片沿边缘分布"
+    ],
+    "layoutFormula": "工具45度角大主体，功能模块和参数卡片沿边缘分布。",
+    "subjectFormula": "工具结构、金属边缘和握持区域为主体。",
+    "sceneFormula": "深灰或浅灰技术背景。",
+    "lightingFormula": "硬主光加边缘光，金属高光明确。",
+    "typographyFormula": "参数文字短句，不编造数值。",
+    "detailFormula": "强调金属、橡胶、螺丝、边缘高光和工业质感。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0138",
+    "name": "露营产品户外广告配方 扩展 38",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 138",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "product_ad",
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "露营",
+      "户外"
+    ],
+    "styleTags": [
+      "camping",
+      "outdoor"
+    ],
+    "useCases": [
+      "产品广告",
+      "新品广告",
+      "卖点图",
+      "包装展示",
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "露营产品户外广告配方 扩展 38",
+      "露营",
+      "户外"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "塑料",
+      "纸盒",
+      "液体",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "新品",
+      "卖点",
+      "发布",
+      "转化",
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "露营产品主体清楚",
+      "人物弱化"
+    ],
+    "visualKeywords": [
+      "camping",
+      "outdoor",
+      "hero主体",
+      "卖点区",
+      "商业摄影",
+      "材质高光",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "产品位于营地前景",
+      "帐篷或草地形成背景纵深"
+    ],
+    "layoutFormula": "产品位于营地前景，帐篷或草地形成背景纵深。",
+    "subjectFormula": "露营产品主体清楚，人物弱化。",
+    "sceneFormula": "户外黄昏或白天自然场景。",
+    "lightingFormula": "自然侧光或火光，产品边缘和地面接触清楚。",
+    "typographyFormula": "标题少量，功能点在侧边。",
+    "detailFormula": "强调布料、金属支架、草地、接触阴影和场景可信度。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0139",
+    "name": "珠宝微距摄影配方 扩展 39",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 139",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography",
+      "ecommerce_main_image"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "珠宝",
+      "饰品"
+    ],
+    "styleTags": [
+      "jewelry",
+      "macro"
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "电商主图",
+      "商品图",
+      "平台主图",
+      "白底图",
+      "场景主图",
+      "珠宝微距摄影配方 扩展 39",
+      "珠宝",
+      "饰品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹",
+      "塑料",
+      "纸盒"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "上架",
+      "卖点",
+      "详情页",
+      "大促",
+      "金属",
+      "宝石和镶嵌细节为主体"
+    ],
+    "visualKeywords": [
+      "jewelry",
+      "macro",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "主体占比",
+      "包装清楚",
+      "平台合规",
+      "阴影",
+      "饰品在绒布或石材上居中",
+      "局部微距展示切面"
+    ],
+    "layoutFormula": "饰品在绒布或石材上居中，局部微距展示切面。",
+    "subjectFormula": "金属、宝石和镶嵌细节为主体。",
+    "sceneFormula": "深色或浅色棚拍台面，背景虚化。",
+    "lightingFormula": "窄边高光和柔和反射，避免过曝。",
+    "typographyFormula": "默认不加文字。",
+    "detailFormula": "强调宝石切面、金属反光、绒布纹理和浅景深。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "adimg_recipe_0140",
+    "name": "菜品热气摄影配方 扩展 40",
+    "source": {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "path": "docs/gallery.md",
+      "caseId": "Quality Derived Recipe 140",
+      "license": "MIT",
+      "transformation": "debranded_rewritten_recipe"
+    },
+    "referenceImages": [],
+    "taskTypes": [
+      "commercial_photography"
+    ],
+    "supportedInputModes": [
+      "text_to_image",
+      "image_edit"
+    ],
+    "referenceImageRoles": [
+      "preserve_subject",
+      "style_reference_only",
+      "background_replace",
+      "local_edit",
+      "scene_mockup",
+      "none"
+    ],
+    "industries": [
+      "餐饮",
+      "菜品"
+    ],
+    "styleTags": [
+      "food",
+      "steam"
+    ],
+    "useCases": [
+      "商业摄影",
+      "棚拍",
+      "空间摄影",
+      "菜品摄影",
+      "菜品热气摄影配方 扩展 40",
+      "餐饮",
+      "菜品"
+    ],
+    "materialKeywords": [
+      "玻璃",
+      "金属",
+      "布料",
+      "食材",
+      "木纹"
+    ],
+    "businessKeywords": [
+      "拍摄",
+      "展示",
+      "宣传",
+      "成片",
+      "主菜",
+      "汤汁和食材切面为主体"
+    ],
+    "visualKeywords": [
+      "food",
+      "steam",
+      "真实光影",
+      "浅景深",
+      "材质纹理",
+      "自然阴影",
+      "菜品碗盘居中",
+      "热气从主体上方升起",
+      "食材纹理清楚"
+    ],
+    "layoutFormula": "菜品碗盘居中，热气从主体上方升起，食材纹理清楚。",
+    "subjectFormula": "主菜、汤汁和食材切面为主体。",
+    "sceneFormula": "餐桌或厨房台面，背景弱化。",
+    "lightingFormula": "侧后方柔光带出油光和蒸汽。",
+    "typographyFormula": "默认不加文字，除非用户提供。",
+    "detailFormula": "强调热气、油光、汤色、器皿和食材纹理。",
+    "negativeConstraints": [
+      "不要保留上游案例中的具体品牌、价格、人物姓名、日期、社交账号或固定标语",
+      "不要编造用户未提供的价格、电话、地址、认证、功效或活动日期",
+      "不要使用不可执行的流派名称，必须写成明确构图、材质、灯光、色彩和文字层级"
+    ],
+    "variables": [
+      {
+        "name": "subject",
+        "label": "主体",
+        "required": true
+      },
+      {
+        "name": "headline",
+        "label": "标题文案",
+        "required": false
+      }
     ]
   }
 ]

@@ -27,7 +27,7 @@ export function buildUpstreamReferenceImages(
   const images: AdImageReferenceImage[] = [];
   for (const item of recipes) {
     const referenceImage = item.recipe.referenceImages[0];
-    if (!referenceImage) continue;
+    if (!referenceImage?.path) continue;
     images.push({
       id: `upstream_${item.recipe.id}_${images.length + 1}`,
       origin: "upstream_reference",

@@ -91,32 +91,18 @@ const retrievalEvaluationCases: Array<{
   { userRequest: "护肤品棚拍商业摄影，标签和水滴清楚", industry: "护肤", expectedTaskType: "commercial_photography", expectedTemplateNames: ["护肤品棚拍摄影"], forbiddenTemplateNames: ["停车场"] }
 ];
 
-const isCommunityEdition = promptTemplates.length === 120 && visualRecipes.length === 75;
-const expectedTemplateCounts = isCommunityEdition
-  ? {
-      brand_wall: 11,
-      commercial_photography: 8,
-      ecommerce_main_image: 12,
-      event_backdrop: 11,
-      local_store_promotion: 10,
-      poster_design: 18,
-      product_ad: 12,
-      rollup_banner: 11,
-      signage_wayfinding: 11,
-      storefront_signboard: 16
-    }
-  : {
-      brand_wall: 20,
-      commercial_photography: 14,
-      ecommerce_main_image: 22,
-      event_backdrop: 20,
-      local_store_promotion: 18,
-      poster_design: 34,
-      product_ad: 22,
-      rollup_banner: 20,
-      signage_wayfinding: 20,
-      storefront_signboard: 30
-    };
+const expectedTemplateCounts = {
+  brand_wall: 20,
+  commercial_photography: 14,
+  ecommerce_main_image: 22,
+  event_backdrop: 20,
+  local_store_promotion: 18,
+  poster_design: 34,
+  product_ad: 22,
+  rollup_banner: 20,
+  signage_wayfinding: 20,
+  storefront_signboard: 30
+};
 const activeRetrievalEvaluationCases = retrievalEvaluationCases.filter((testCase) =>
   testCase.expectedTemplateNames.some((name) => promptTemplates.some((template) => template.name.includes(name)))
 );
@@ -205,7 +191,7 @@ describe("ad-image-agent-core", () => {
   });
 
   it("keeps the quality expansion template library at the target size and unique ids", () => {
-    expect(promptTemplates.length).toBe(isCommunityEdition ? 120 : 220);
+    expect(promptTemplates.length).toBe(220);
     expect(new Set(promptTemplates.map((template) => template.id)).size).toBe(promptTemplates.length);
     expect(countBy(promptTemplates, (template) => template.taskType)).toEqual(expectedTemplateCounts);
   });
@@ -225,7 +211,7 @@ describe("ad-image-agent-core", () => {
   });
 
   it("loads rewritten upstream visual recipes at the target size", () => {
-    expect(visualRecipes.length).toBe(isCommunityEdition ? 75 : 140);
+    expect(visualRecipes.length).toBe(140);
     expect(new Set(visualRecipes.map((recipe) => recipe.id)).size).toBe(visualRecipes.length);
     expect(visualRecipes.every((recipe) => recipe.source.transformation === "debranded_rewritten_recipe")).toBe(true);
     expect(visualRecipes.every((recipe) => Array.isArray(recipe.referenceImages))).toBe(true);
@@ -301,9 +287,10 @@ describe("ad-image-agent-core", () => {
     });
     const recipes = retrieveVisualRecipes(brief);
     const upstreamImages = buildUpstreamReferenceImages(recipes);
-    if (isCommunityEdition) {
-      expect(upstreamImages).toHaveLength(0);
-    } else {
+    const hasReadableRecipeReference = recipes.some((item) =>
+      item.recipe.referenceImages.some((image) => Boolean(image.path))
+    );
+    if (hasReadableRecipeReference) {
       expect(upstreamImages.length).toBeGreaterThan(0);
       expect(upstreamImages.length).toBeLessThanOrEqual(2);
       expect(upstreamImages[0]).toMatchObject({
@@ -312,6 +299,8 @@ describe("ad-image-agent-core", () => {
         sendToImage2: false
       });
       expect(upstreamImages[0].path).toContain(`${["prompt", "sources"].join("_")}/`);
+    } else {
+      expect(upstreamImages).toHaveLength(0);
     }
   });
 
@@ -347,9 +336,12 @@ describe("ad-image-agent-core", () => {
     }));
     const recipes = retrieveVisualRecipes(parseIntent({ userRequest: "热带饮品电商主图", industry: "饮品" }));
     const images = buildLlmReferenceImages(userImages, recipes);
+    const hasReadableRecipeReference = recipes.some((item) =>
+      item.recipe.referenceImages.some((image) => Boolean(image.path))
+    );
     expect(images.filter((image) => image.origin === "user_upload")).toHaveLength(3);
     expect(images.filter((image) => image.origin === "upstream_reference").length).toBeLessThanOrEqual(2);
-    expect(images.some((image) => image.origin === "upstream_reference")).toBe(!isCommunityEdition);
+    expect(images.some((image) => image.origin === "upstream_reference")).toBe(hasReadableRecipeReference);
     expect(redactReferenceImageData(images).some((image) => "dataUrl" in image)).toBe(false);
   });
 

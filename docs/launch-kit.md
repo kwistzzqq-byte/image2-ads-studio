@@ -37,8 +37,8 @@ This first Community Edition focuses on the prompt-planning layer before image g
 
 - Local Web workbench
 - Core prompt agent framework
-- 120 advertising business templates
-- 75 visual recipes
+- 220 advertising business templates
+- 140 visual recipes
 - LLM prompt brain interface
 - Deterministic prompt validation
 - Reference image policy
@@ -75,7 +75,7 @@ I built this as a focused prompt agent for advertising image generation, not as 
 
 The current Community Edition takes a business brief and reference image policy, parses the intent, retrieves advertising templates and visual recipes, uses an LLM prompt brain to rewrite the output, and validates that the final prompt contains concrete composition, lighting, material, typography, and source-reference instructions.
 
-It includes a local Web workbench, 120 business templates, 75 visual recipes, and 50 public gallery cases. It does not call an image generation API yet; the current workflow is to copy the optimized prompt into Image2 for manual testing.
+It includes a local Web workbench, 220 business templates, 140 visual recipes, and 50 public gallery cases. It does not call an image generation API yet; the current workflow is to copy the optimized prompt into Image2 for manual testing.
 ```
 
 ## Reddit
@@ -102,8 +102,8 @@ Brief -> intent parser -> advertising templates -> visual recipes -> LLM prompt 
 The Community Edition includes:
 
 - local Web UI
-- 120 advertising templates
-- 75 visual recipes
+- 220 advertising templates
+- 140 visual recipes
 - LLM prompt brain interface
 - 50 image-to-prompt gallery cases
 - manual Image2 workflow
@@ -136,7 +136,7 @@ The useful part is not a single "magic prompt". The system separates:
 - reference image policy
 - exportable prompt records
 
-The current open-source version includes 120 templates, 75 visual recipes, and 50 public gallery cases. The gallery uses public upstream examples as attributed structure references, but the prompts are regenerated and debranded through the agent flow.
+The current open-source version includes 220 templates, 140 visual recipes, and 50 public gallery cases. The gallery uses public upstream examples as attributed structure references, but the prompts are regenerated and debranded through the agent flow.
 
 Repo: https://github.com/kwistzzqq-byte/image2-ads-studio
 ```
@@ -165,8 +165,8 @@ Repo: https://github.com/kwistzzqq-byte/image2-ads-studio
 社区版目前包含：
 
 - 本地 Web 工作台
-- 120 条广告业务模板
-- 75 条视觉配方
+- 220 条广告业务模板
+- 140 条视觉配方
 - 50 个一图一 prompt 的公开 gallery 案例
 - 参考图策略
 - 手动 Image2 测试流程
@@ -196,7 +196,7 @@ Outline:
 1. 为什么不是再做一个提示词合集
 2. 广告作图和泛创意 prompt 的差异
 3. 核心流程：Brief -> Parser -> Template Retriever -> Visual Recipe -> LLM Brain -> Prompt
-4. 当前社区版：120 模板、75 配方、50 gallery 案例
+4. 当前社区版：220 模板、140 配方、50 gallery 案例
 5. 上游 prompt 库如何作为结构参考，而不是直接复制
 6. 为什么需要确定性校验：构图、材质、灯光、文字层级、参考图策略
 7. 后续路线：真实 Image2 Adapter、ERP 集成、案例评分、模板治理

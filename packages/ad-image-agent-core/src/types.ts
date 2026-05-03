@@ -152,7 +152,7 @@ export interface ScoredVisualRecipe {
 export type AdImageReferenceImageOrigin = "user_upload" | "upstream_reference";
 
 export interface VisualRecipeReferenceImage {
-  path: string;
+  path?: string;
   name: string;
   mimeType: "image/jpeg" | "image/png" | "image/webp";
   role: ReferenceImageRole;
