@@ -26,7 +26,7 @@ Image2 Ads Studio answers: "Given this business brief, copywriting, industry, as
 
 ## Prompt Gallery
 
-The public gallery contains 50 image-to-prompt cases: 2 project-generated concepts, 28 advertising references from the first upstream set, and 20 additional multi-source references across brand systems, wayfinding, commercial photography, ecommerce layouts, product posters, and lightbox mockups. Each case includes one preview image, one Image2-ready optimized prompt, and source attribution.
+The public gallery contains 100 image-to-prompt cases from project-generated concepts and multiple in-repo source libraries. Each case includes one preview image, one Image2-ready optimized prompt, source attribution, and an in-repo composite source made from matched advertising templates plus visual recipes.
 
 View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
 

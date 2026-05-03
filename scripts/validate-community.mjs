@@ -4,6 +4,7 @@ import { join, resolve } from "node:path";
 const root = resolve(process.argv[2] ?? "community-export");
 const templateTarget = 220;
 const recipeTarget = 140;
+const galleryTarget = 100;
 const taskTypes = [
   "storefront_signboard",
   "poster_design",
@@ -31,11 +32,16 @@ function main() {
   assert(existsSync(root), `Community root not found: ${root}`);
   const templates = readJson("packages/ad-image-agent-core/src/templates.json");
   const recipes = readJson("packages/ad-image-agent-core/src/visual-recipes.json");
+  const gallery = readJson("examples/gallery/cases.json");
 
   assert(templates.length === templateTarget, `Expected ${templateTarget} templates, got ${templates.length}`);
   assert(recipes.length === recipeTarget, `Expected ${recipeTarget} visual recipes, got ${recipes.length}`);
+  assert(gallery.count === galleryTarget, `Expected gallery count ${galleryTarget}, got ${gallery.count}`);
+  assert(Array.isArray(gallery.cases), "Gallery cases must be an array");
+  assert(gallery.cases.length === galleryTarget, `Expected ${galleryTarget} gallery cases, got ${gallery.cases.length}`);
   assertUnique(templates.map((item) => item.id), "template ids");
   assertUnique(recipes.map((item) => item.id), "recipe ids");
+  assertUnique(gallery.cases.map((item) => item.id), "gallery case ids");
 
   for (const taskType of taskTypes) {
     assert(templates.some((template) => template.taskType === taskType), `Missing template coverage for ${taskType}`);
@@ -53,6 +59,15 @@ function main() {
       assert(Array.isArray(recipe[field]), `Recipe ${recipe.id} missing array field ${field}`);
     }
     assert(recipe.referenceImages.every((image) => !image.path), `Recipe ${recipe.id} still contains redistributable image path`);
+  }
+
+  for (const galleryCase of gallery.cases) {
+    assert(galleryCase.optimizedPrompt?.length > 0, `Gallery case ${galleryCase.id} missing optimized prompt`);
+    assert(galleryCase.image && existsSync(join(root, galleryCase.image)), `Gallery case ${galleryCase.id} missing image asset`);
+    assert(Array.isArray(galleryCase.librarySource?.templateIds), `Gallery case ${galleryCase.id} missing template composite source`);
+    assert(Array.isArray(galleryCase.librarySource?.recipeIds), `Gallery case ${galleryCase.id} missing recipe composite source`);
+    assert(galleryCase.librarySource.templateIds.length > 0, `Gallery case ${galleryCase.id} has no template composite ids`);
+    assert(galleryCase.librarySource.recipeIds.length > 0, `Gallery case ${galleryCase.id} has no recipe composite ids`);
   }
 
   scanForForbiddenTerms();

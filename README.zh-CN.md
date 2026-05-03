@@ -26,7 +26,7 @@ Image2 Ads Studio 回答的是：“给定客户需求、行业、文案、画�
 
 ## Prompt Gallery
 
-公开 gallery 目前包含 50 个“一张图 + 一份 optimized prompt”的案例：2 张项目自有生图概念图、28 张第一批上游广告参考图，以及 20 张新增多源参考图，覆盖品牌系统、导视图、商业摄影、电商详情页、产品海报和灯箱 mockup。每个案例都包含预览图、Image2 可用提示词和具体来源标注。
+公开 gallery 目前包含 100 个“一张图 + 一份 optimized prompt”的案例，来源包括项目自有概念图和多个库内来源。每个案例都包含预览图、Image2 可用提示词、具体来源标注，以及由本仓库业务模板和视觉配方组成的库内复合来源。
 
 查看完整案例：[examples/gallery/cases.md](examples/gallery/cases.md)
 
