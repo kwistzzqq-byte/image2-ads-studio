@@ -2,7 +2,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 const root = resolve(process.argv[2] ?? "community-export");
-const templateTarget = 220;
+const templateTarget = 320;
 const recipeTarget = 240;
 const galleryTarget = 100;
 const taskTypes = [

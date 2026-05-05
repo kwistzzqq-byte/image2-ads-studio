@@ -92,16 +92,16 @@ const retrievalEvaluationCases: Array<{
 ];
 
 const expectedTemplateCounts = {
-  brand_wall: 20,
-  commercial_photography: 14,
-  ecommerce_main_image: 22,
-  event_backdrop: 20,
-  local_store_promotion: 18,
-  poster_design: 34,
-  product_ad: 22,
-  rollup_banner: 20,
-  signage_wayfinding: 20,
-  storefront_signboard: 30
+  brand_wall: 30,
+  commercial_photography: 24,
+  ecommerce_main_image: 32,
+  event_backdrop: 30,
+  local_store_promotion: 28,
+  poster_design: 44,
+  product_ad: 32,
+  rollup_banner: 30,
+  signage_wayfinding: 30,
+  storefront_signboard: 40
 };
 const activeRetrievalEvaluationCases = retrievalEvaluationCases.filter((testCase) =>
   testCase.expectedTemplateNames.some((name) => promptTemplates.some((template) => template.name.includes(name)))
@@ -191,7 +191,7 @@ describe("ad-image-agent-core", () => {
   });
 
   it("keeps the quality expansion template library at the target size and unique ids", () => {
-    expect(promptTemplates.length).toBe(220);
+    expect(promptTemplates.length).toBe(320);
     expect(new Set(promptTemplates.map((template) => template.id)).size).toBe(promptTemplates.length);
     expect(countBy(promptTemplates, (template) => template.taskType)).toEqual(expectedTemplateCounts);
   });

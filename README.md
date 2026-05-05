@@ -4,7 +4,7 @@ Advertising prompt agent for Image2: turn business briefs and reference images i
 
 This is not another prompt dump. Prompt libraries are useful for browsing examples; Image2 Ads Studio is a working prompt pipeline for advertising production. It parses a customer brief, retrieves advertising templates and visual recipes, rewrites references through an LLM prompt brain, validates deterministic execution details, and returns an optimized prompt that can be manually tested in Image2.
 
-This repository is the **Community Edition**. It opens the agent framework, local Web workbench, all current 220 business templates, 240 visual recipes, LLM prompt brain interface, deterministic prompt checks, reference image policy, and a public case gallery.
+This repository is the **Community Edition**. It opens the agent framework, local Web workbench, all current 320 business templates, 240 visual recipes, LLM prompt brain interface, deterministic prompt checks, reference image policy, and a public case gallery.
 
 ![Workflow](docs/assets/github-workflow.svg)
 
@@ -51,7 +51,7 @@ Image2 Ads Studio turns that loose brief into a structured advertising plan and 
 ## Core Features
 
 - Advertising vertical coverage: storefront signboards, posters, roll-up banners, event backdrops, wayfinding signage, brand walls, local promotions, ecommerce main images, product ads, and commercial photography.
-- Open template library: 220 business templates and 240 visual recipes.
+- Open template library: 320 business templates and 240 visual recipes.
 - LLM prompt brain: uses a Responses-compatible LLM endpoint to refine the rule prompt.
 - Reference image policy: user uploads can be read by the LLM and marked for later Image2 editing; upstream references are only used for visual understanding.
 - Deterministic prompt validation: removes vague expressions and requires composition, lighting, typography, material, and image-reference policy.
@@ -96,7 +96,7 @@ flowchart LR
 | --- | --- | --- |
 | Local Web UI | Included | Included |
 | Core prompt agent framework | Included | Included |
-| Business templates | 220 open templates | Custom/private templates and governance |
+| Business templates | 320 open templates | Custom/private templates and governance |
 | Visual recipes | 240 open recipes | Custom/private recipes and scored evaluation |
 | LLM prompt brain | Interface + local server | Production setup |
 | Image generation | Manual adapter | Real adapters and storage |
