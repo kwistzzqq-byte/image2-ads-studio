@@ -1,0 +1,5477 @@
+# 案例库
+
+English gallery: [cases.md](cases.md)
+
+每个案例都包含一张预览图、一份中文 optimized prompt 和一份英文 optimized prompt。Prompt 由 Image2 Ads Studio 的结构化 brief -> 模板检索 -> 视觉配方检索 -> LLM prompt brain 流程生成。
+
+上游图片和 prompt 只作为视觉结构参考；公开 prompt 已重新生成、去品牌化，并改写成可复用的广告作图指令。
+
+每个案例也记录库内复合来源：本仓库命中的业务模板和视觉配方。预览图来源用于署名，prompt 的来源以 agent 流程为准。
+
+## 1. 饮品产品广告概念
+
+<img src="../../docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="饮品产品广告概念" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：Project owner generated concept preview；Project-owned AI-generated preview; visible third-party marks are not reusable assets。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0175`, `adimg_recipe_0177`
+
+**中文 Brief**
+
+基于“饮品产品广告概念”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于饮品广告制作场景，主题为“饮品产品广告概念”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Refresh the Night”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable 16:9 beverage advertising hero image for a new debranded sparkling drink. Composition: place a tall matte-gloss red can slightly right of center as the primary hero object, upright and sharply in focus, with generous negative space on the left for campaign copy. Include an anonymous fashion model in the background-right or midground holding or framing the can, but keep the product as the clear focal point; do not make the person resemble any specific real individual. Scene: black reflective wet tabletop, scattered clear ice cubes across the foreground, energetic water splash arcs around the base of the can, faint atmospheric mist, and a dark charcoal-to-black background with two vertical red light bars behind the subject for depth. Materials: realistic aluminum can with smooth red finish, fine condensation droplets, crisp rim highlights, clean pull-tab detail, and no logos, no protected text, no recognizable brand graphics. Lighting: high-contrast studio setup with a soft key light from front-left, strong red rim light from rear-right, controlled specular highlights on the can and ice, deep shadows, cinematic contrast, and splash droplets frozen with high-speed flash clarity. Color palette: dominant black, deep crimson, bright red, silver highlights, and cool transparent ice reflections. Typography area: reserve the left 35 to 40 percent of the frame as clean negative space; add the headline text exactly as 'Refresh the Night' in large modern sans-serif type, bright white or pale silver, with small secondary placeholder lines beneath it for future campaign details, aligned cleanly and fully readable. Advertising finish: premium studio product photography, production-ready composition, clean hierarchy, realistic reflections, sharp packaging silhouette, polished post-production, no clutter. Reference-image policy: use the provided concept preview only as inspiration for overall layout, cold-surface mood, splash energy, red rim lighting, and copy-space balance; do not reproduce any visible logos, brand wording, exact face, can artwork, or distinctive proprietary details from the reference. Negative constraints: no trademarked names, no cursive cola-style script, no copied label design, no pricing, no extra claims, no watermarks, no social handles, no distorted hands, no malformed ice, no unreadable headline, no busy background.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 项目自有预览图只用于提炼构图、光影、材质和广告完成度，不作为可复用品牌资产。
+
+**风险提示：** 不要复制预览图中任何可识别品牌、标志、包装文字、人物身份或其他不可复用细节。
+
+## 2. 高端家电产品广告概念
+
+<img src="../../docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="高端家电产品广告概念" width="420">
+
+- 作图类型：`product_ad`
+- 行业：消费电子
+- 来源：Project owner generated concept preview；Project-owned AI-generated preview; visible third-party marks are not reusable assets。
+- 库内复合来源：templates `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0077`, `adimg_template_0076`; recipes `adimg_recipe_0233`, `adimg_recipe_0234`, `adimg_recipe_0016`
+
+**中文 Brief**
+
+基于“高端家电产品广告概念”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于消费电子广告制作场景，主题为“高端家电产品广告概念”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Engineered Airflow”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device with a sleek vertical handle and metallic intake ring, shown as a single hero object standing on a glossy dark reflective floor. Place the product on the right third of the frame, slightly angled in three-quarter view, leaving a clean negative-space branding zone on the left for a simple text lockup. Background: deep black to warm brown gradient studio environment with subtle haze. Add elegant golden smoke or airflow light trails sweeping low across the floor and curving behind the product to suggest motion and controlled power.
+
+Lighting: low-key cinematic studio lighting with one warm spotlight from the upper left, soft rim light on the product edges, controlled metallic highlights on the gold surfaces, and gentle falloff into the background. Materials must read clearly: satin black anodized body, brushed champagne-gold metal accents, fine perforated metal texture near the base, polished reflective floor with realistic mirrored reflection and faint surface imperfections. Keep the scene crisp, premium, and physically plausible.
+
+Typography and layout: on the left side, place the headline exactly as "Engineered Airflow" in clean modern sans-serif lettering, high legibility, white or soft warm-white text, medium-large size, with generous spacing and minimal supporting graphic treatment. Do not include any other words, numbers, badges, prices, or labels. No logos, no brand marks, no watermarks, no UI elements.
+
+Color palette: black, charcoal, champagne gold, bronze glow, warm amber highlights. Maintain a luxury commercial-ad finish with strong contrast, restrained saturation, precise product silhouette, and ample negative space for ad use.
+
+Reference-image policy: use the provided concept preview only as off-model inspiration for overall composition, mood, lighting direction, product category silhouette, floor reflection, smoke-trail energy, and left-side text zone. Do not reproduce any visible logo, brand styling, exact product geometry, proprietary detailing, or distinctive text from the reference. Generate an original debranded advertising image suitable for commercial concept presentation.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 项目自有预览图只用于提炼构图、光影、材质和广告完成度，不作为可复用品牌资产。
+
+**风险提示：** 不要复制预览图中任何可识别品牌、标志、包装文字、人物身份或其他不可复用细节。
+
+## 3. 电商主图 - 琥珀香水高端广告
+
+<img src="../../docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="电商主图 - 琥珀香水高端广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 113](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“电商主图 - 琥珀香水高端广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于美妆护肤广告制作场景，主题为“电商主图 - 琥珀香水高端广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Signature Scent”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object, placed upright slightly right of center on a polished black marble surface with fine white veining and a clean mirror reflection below. Use a faceted transparent stopper, thick clear glass walls, and a warm amber liquid that appears luminous from within. Cover the bottle lightly with realistic condensation droplets for texture. Build a dark studio background with soft atmospheric smoke curling on both sides, leaving the center clean for product focus. Light the scene with a strong warm key light from the upper left, a subtle rim light along the bottle edges, and a soft golden bloom in the far background; keep contrast high, shadows deep, and glass highlights crisp. Color palette: black, amber gold, warm bronze, and soft ivory highlights. Typography layout: place the headline "Signature Scent" in a clean premium sans-serif at the upper center or upper left; keep the bottle label generic with minimal non-branded placeholder text only, no logos, no known brand wording, no creator marks, no prices, no badges. Preserve a commercially usable visual hierarchy: headline first, bottle second, atmosphere third. Product photography finish must be photorealistic, sharply focused on the bottle, with shallow depth of field in the background, realistic reflections, premium material rendering, and advertising-grade retouching. Negative constraints: do not include any real brand names, monograms, watermark-like corner marks, celebrity associations, social handles, pricing, exaggerated claims, or copied label text; do not reproduce the original reference exactly; do not add extra objects unless they are subtle atmospheric accents.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 4. 电商主图 - 护肤品棚拍主图
+
+<img src="../../docs/assets/gallery/cases/gallery-04-e-commerce-main-image-skincare-product-studio-shot.jpg" alt="电商主图 - 护肤品棚拍主图" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 114](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0149`
+
+**中文 Brief**
+
+基于“电商主图 - 护肤品棚拍主图”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的电商主图，用于美妆护肤广告制作场景，主题为“电商主图 - 护肤品棚拍主图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Clean Glow”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 e-commerce main image for a beauty cleansing product. Show one debranded skincare bottle centered slightly low in the frame on a round matte pedestal, with the bottle as the dominant subject occupying most of the image height. Surround it with soft white foam, a few small white-and-yellow botanical flowers, and a small number of translucent bubbles placed in the foreground and background to create depth without blocking the product. Use a pale butter-yellow to warm cream gradient background with a clean studio sweep and a premium commercial finish.
+
+Product and materials: the bottle should feel smooth, soft-touch plastic or coated glass with a clean pump dispenser, subtle edge highlights, realistic reflections, and legible but minimal packaging design. Keep the label generic and reusable. The only visible headline text on the packaging or poster area should be "Clean Glow" in clear modern sans-serif typography. Add 1 to 2 short secondary text lines only as generic placeholder layout, not as branded claims, certifications, or copied wording. No logos, no seals copied from reference material, no pricing, no social handles, no medical or regulatory badges.
+
+Composition and hierarchy: keep the bottle perfectly readable from the front, centered, upright, and unobstructed. Reserve the upper area for clean headline breathing room and the lower area for product stability and pedestal visibility. Flowers and foam should frame the base and sides, not cover the label. Maintain a strong vertical silhouette with balanced negative space for marketplace-ready readability.
+
+Lighting: use soft diffused studio lighting from upper left with a gentle front fill, bright but controlled highlights along the bottle edges, soft shadows under the pedestal, and a luminous, hygienic beauty-ad look. Keep contrast moderate, whites creamy rather than stark blue, and the overall finish polished and production-ready.
+
+Color and typography: palette should stay within warm cream, soft yellow, white, and a small touch of natural green from stems if needed. Typography must be crisp, minimal, and commercially usable, with "Clean Glow" as the main readable copy. Do not invent extra promotional text, prices, dates, or efficacy claims.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition, lighting direction, material treatment, flower-and-foam staging, and premium beauty-ad atmosphere. Do not replicate any exact label text, brand identifiers, logo shapes, badge designs, or unique arrangement details from the reference. The reference image is style guidance only and is not directly inserted unless explicitly provided to the image model.
+
+Negative constraints: no people, no hands, no copied branding, no proprietary text, no cluttered props, no dark background, no exaggerated surreal effects, no blocked label, no distorted bottle geometry, no fake certifications, no watermarks, no collage layout.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 5. 电商主图 - 热带柑橘汽水广告海报
+
+<img src="../../docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="电商主图 - 热带柑橘汽水广告海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 115](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0182`, `adimg_recipe_0149`
+
+**中文 Brief**
+
+基于“电商主图 - 热带柑橘汽水广告海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于食品饮料广告制作场景，主题为“电商主图 - 热带柑橘汽水广告海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Fresh Energy”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object, placed slightly right of center and leaning a few degrees left, with a bright yellow cap, crisp molded bottle shape, realistic condensation droplets, and sparkling golden-orange liquid inside. Design the label as a generic citrus-themed package with abstract orange, lime, and grapefruit slice graphics and clean debranded typography; do not use any real brand names, logos, or copied label text. Build strong foreground depth with splashing water, scattered clear ice cubes, and several fresh citrus cuts at the bottom edge, while keeping the bottle fully dominant and sharply in focus.
+
+Use a bright tropical background with saturated blue sky, turquoise water, soft white clouds, and blurred palm leaves entering from the upper right. Light the scene like a polished retail ad: strong sun flare from the upper left, hard glossy highlights on the bottle, controlled specular reflections on droplets and ice, luminous translucency in the drink, and high micro-contrast without blowing out the label. Keep materials physically believable: wet plastic, transparent ice, juicy citrus pulp, and energetic water motion frozen at high shutter speed.
+
+Reserve the left third for typography and selling points. Place a large headline area in bold, rounded sans-serif lettering, with the exact copy "Fresh Energy" as the main text. Add one smaller accent line below it in a contrasting handwritten or brush-script style, but keep it generic and editable. Include a compact mid-left badge shape for a short slogan placeholder, a lower-left vertical features list with simple circular icons, and a small bottom-left banner area for size or flavor information. Add a round seal or stamp at the lower right as a generic promotional element. Use a palette of citrus yellow, orange, lime green, aqua, and sky blue, with clean separation between product, text, and background.
+
+Execution rules: production-ready advertising finish, sharp packaging detail, readable text zones, uncluttered hierarchy, no people, no store shelf, no price tags, no QR codes, no social handles, no copied slogans, no exact upstream wording, no proprietary logos, and no distinctive brand identity. Reference-image policy: use the reference only to inform overall composition, energy, lighting direction, foreground layering, and tropical refreshment mood; do not replicate exact branding, exact text, or uniquely traceable layout details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 6. 电商主图 - 毛绒乐福鞋生活方式摄影
+
+<img src="../../docs/assets/gallery/cases/gallery-06-e-commerce-main-image-luxury-fur-lined-loafer-lifestyle-photo.jpg" alt="电商主图 - 毛绒乐福鞋生活方式摄影" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：高端消费品
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 117](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0003`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“电商主图 - 毛绒乐福鞋生活方式摄影”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为高端消费品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的商业摄影，用于高端消费品广告制作场景，主题为“电商主图 - 毛绒乐福鞋生活方式摄影”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 commercial advertising photograph for a luxury slip-on loafer campaign. Show a close, low-angle lifestyle scene focused on the lower legs and feet only, with one backless black leather loafer worn on the right foot and the matching loafer placed in the lower-left foreground on a textured cream rug. The left foot is bare and slightly lifted, suggesting the act of trying on the product. Keep the product as the visual hero, positioned slightly right of center, with the secondary shoe anchoring the front-left corner and negative space reserved in the upper-left or upper-right area for clean ad copy.
+
+Materials and product details: smooth black leather upper, rounded almond toe, open mule-style heel, soft warm-toned faux-fur lining visible around the opening, refined small metallic horsebit-style hardware without logos, realistic stitching, natural creases, premium surface finish. Wardrobe should be cropped medium-blue denim with a raw hem, visible only from mid-calf down. No face, no full body, no jewelry, no branded clothing.
+
+Environment and composition: cozy minimalist interior with a cream shag rug, subtle irregular dark linear accents in the rug pattern, neutral plaster or painted wall, and a leaning rectangular mirror with a medium wood frame softly out of focus in the background. Preserve a candid editorial product-demo feeling, but keep the framing precise and commercially usable. Use shallow depth of field so the worn loafer is the sharpest point, the foreground shoe remains clear, and the mirror/background fall into soft blur.
+
+Lighting and color: soft natural window light from camera left, diffused and warm, with gentle shadow falloff, realistic skin texture, believable leather highlights, and visible fur texture. Use a muted palette of black, cream, beige, tan, wood brown, and medium denim blue. Add very subtle film-like grain, but keep the final image crisp, premium, and catalog-ready.
+
+Typography direction: place the exact text "Launch Campaign" once in a clean, elegant serif or modern high-contrast typeface in the reserved negative space, medium size, warm off-white or deep charcoal depending on local contrast. Keep typography flat and minimal, no extra slogans, no prices, no badges, no logos, no watermarks.
+
+Commercial finish: photorealistic, high detail, true-to-material rendering, natural proportions, premium fashion advertising quality, realistic contact shadows, no exaggerated styling, no surreal elements.
+
+Reference-image policy: use the reference only for overall composition logic, cozy interior mood, low close-up angle, and product-in-use storytelling; do not replicate the exact person, exact room, exact rug pattern, exact mirror placement, or any protected source-specific details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 7. 电商主图 - 大理石台面香水广告
+
+<img src="../../docs/assets/gallery/cases/gallery-07-e-commerce-main-image-luxury-perfume-ad-on-marble-vanity.jpg" alt="电商主图 - 大理石台面香水广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 118](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0001`, `adimg_recipe_0017`, `adimg_recipe_0055`
+
+**中文 Brief**
+
+基于“电商主图 - 大理石台面香水广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于美妆护肤广告制作场景，主题为“电商主图 - 大理石台面香水广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Signature Scent”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 luxury beauty product advertisement for a single perfume bottle hero shot. Use a polished gray-and-white marble vanity as the base surface with realistic reflection, contact shadow, and subtle veining. Place one sculpted glass perfume bottle slightly right of center, upright and dominant, with a tall elegant silhouette, smoky translucent glass that deepens toward the base, a reflective brushed-gold cap, a slim metallic collar, and a simple abstract gold monogram or geometric emblem on the front with no real brand text. Keep the bottle sharply focused and physically plausible, with accurate glass refraction, clean edge highlights, and premium material rendering.
+
+Build the scene with restrained luxury props only: one partially cropped cut-crystal bowl with a gold rim in the lower-left foreground, one dark stone or lacquered presentation box behind the bottle, one brushed metallic cylindrical vase with soft white flowers in the back-right background, and one champagne-toned satin fabric fold in the lower-right foreground. Keep props secondary, sparse, and softly blurred so the bottle remains the clear focal point. Reserve about 25% negative space on the left for typography.
+
+Lighting: warm key light from upper left, soft fill from front, narrow rim light to define glass contours and metal edges, deep but readable shadows, cinematic golden highlights, shallow depth of field, gentle background bokeh, dark brown-black studio backdrop with a vertical shadow panel on the left to support text legibility. Color palette: charcoal, espresso brown, warm beige, brushed gold, marble gray, ivory white. Finish should look like a production-ready high-end e-commerce campaign image.
+
+Typography layout: place the headline "Signature Scent" in the upper-left quadrant in large elegant serif lettering, warm beige color, high contrast against the dark background. Add one short supporting line below in smaller serif text or leave it blank if not provided. Add a thin short gold horizontal rule beneath the text block. Do not place any logo, watermark, price, social handle, or extra promotional badge. All visible text must be limited to the provided headline or neutral placeholder copy only.
+
+Reference-image policy: use the reference only as inspiration for composition balance, luxury material mix, lighting direction, prop hierarchy, and text placement; do not reproduce any exact bottle design, engraved wording, logo, monogram, or proprietary arrangement from the source image. Keep the result debranded, commercially reusable, and distinct from any existing fragrance brand.
+
+Negative constraints: no people, no extra products, no copied logos, no brand names, no watermark, no fake claims, no price tags, no clutter, no distorted glass, no unreadable typography, no surreal props, no low-detail textures, no direct replication of the reference bottle or its markings.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 8. 电商主图 - 微缩场景护肤品广告
+
+<img src="../../docs/assets/gallery/cases/gallery-08-e-commerce-main-image-miniature-diorama-skincare-advertisement.jpg" alt="电商主图 - 微缩场景护肤品广告" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 151](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0004`, `adimg_recipe_0055`, `adimg_recipe_0095`
+
+**中文 Brief**
+
+基于“电商主图 - 微缩场景护肤品广告”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于美妆护肤广告制作场景，主题为“电商主图 - 微缩场景护肤品广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Clean Glow”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertically framed 9:16 e-commerce beauty key visual featuring one oversized, debranded skincare pump bottle centered on a clean circular studio platform. Build the scene as a miniature construction diorama: tiny anonymous workers in solid-color safety clothing, modular scaffolding, a compact crane, small utility truck, ladders, barrels, cones, and industrial tanks arranged around the bottle to suggest careful product craftsmanship. Keep the bottle front-facing, symmetrical, and dominant in the frame, occupying most of the vertical space, with the miniature props concentrated at the lower half and along one side to preserve a clear product silhouette.
+
+Packaging and typography: use a premium matte cream bottle with a brushed warm-metal pump, subtle realistic seams, and soft edge highlights. Replace all brand-specific text with generic editable packaging design. The only readable headline text should be "Clean Glow" placed cleanly on the bottle or as a simple poster-style title area above the product, using elegant high-contrast serif or refined modern uppercase typography with generous spacing. Do not generate prices, claims, certifications, social handles, or dense paragraphs of copy. Keep secondary text minimal, generic, and non-proprietary.
+
+Lighting and materials: use soft diffused studio lighting from upper left with controlled fill from front right, very soft contact shadows, low glare, and crisp material separation. Render premium cosmetic materials with realistic matte plastic, satin metal, lightly worn steel scaffolding, and clean painted miniature props. Maintain a warm neutral palette of beige, ivory, sand, champagne gold, muted steel, and restrained safety-accent yellow. Background should be seamless and uncluttered, with a smooth tonal gradient and no environmental horizon line.
+
+Composition and finish: emphasize commercial clarity, product readability, and polished advertising realism. Use a shallow tilt-shift depth effect so the miniature scene feels handcrafted while the bottle label area stays sharp. Keep the image high-resolution, photoreal, and production-ready for an online storefront hero image. Avoid surreal distortion, exaggerated clutter, cartoon styling, or cinematic darkness.
+
+Reference-image policy: use the provided reference only as off-platform inspiration for layout logic, scale contrast, prop density, warm neutral art direction, and miniature-build metaphor. Do not reproduce any exact logo, wording, label layout, proprietary product identity, or distinctive protected details from the reference or upstream case.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 9. 电商主图 - 高端游戏主板棚拍
+
+<img src="../../docs/assets/gallery/cases/gallery-09-e-commerce-main-image-premium-gaming-motherboard-studio-shot.jpg" alt="电商主图 - 高端游戏主板棚拍" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：消费电子
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 153](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“电商主图 - 高端游戏主板棚拍”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的电商主图，用于消费电子广告制作场景，主题为“电商主图 - 高端游戏主板棚拍”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Built for Performance”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 e-commerce hero image for a premium gaming motherboard in a dark studio environment. Show one debranded ATX motherboard in a three-quarter top-down view, angled from lower left to upper right, filling most of the frame with strong product clarity and sharp edge definition. Keep the board centered slightly right of frame, with open negative space on the left or upper-left for headline placement. The motherboard should feature matte black and gunmetal surfaces, angular heat-dissipation covers, brushed metal accents, exposed CPU socket area, four memory slots, layered heatsinks, reinforced expansion slots, visible capacitors, headers, power connectors, and small diagnostic hardware details. Do not include any logos, brand marks, model names, or protected slogans on the product.
+
+Lighting: use controlled low-key studio lighting with a soft overhead key light, subtle rim lights from the rear and right edge, and restrained colored edge glow in cyan, violet, and magenta to emphasize contours without turning the image into a sci-fi scene. Keep reflections realistic and premium, with crisp metal highlights and deep neutral shadows. Background: seamless charcoal-to-black gradient backdrop with a faint floor reflection and no extra props, cables, components, or packaging.
+
+Typography: add the exact copy "Built for Performance" as the only visible headline. Set it in a clean bold sans-serif, uppercase or title case, large but secondary to the product, placed in the left or upper-left negative space. Use white or very light gray text with tight tracking and clean alignment. No prices, badges, fake certifications, extra claims, or random filler text.
+
+Color and finish: dominant palette of black, graphite, steel gray, cyan, violet, and magenta accents. Prioritize commercial realism, catalog-ready sharpness, accurate proportions, and a premium consumer-electronics advertising finish. Output should feel like a production-ready marketplace main image: clear, polished, minimal, high contrast, and focused on product desirability.
+
+Reference-image policy: use the provided reference only as inspiration for camera angle, visual hierarchy, material contrast, and lighting mood; do not replicate any specific logo shapes, text placement, proprietary markings, or uniquely identifying design details from the reference or source material.
+
+Negative constraints: no brand names, no logos, no protected text, no watermarks, no creator handles, no people, no hands, no RGB overload, no fantasy circuitry, no extra accessories, no distorted slots, no warped perspective, no cluttered background, no duplicated parts, no packaging, no price tags.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 10. 电商主图 - 精品 Grain Powder 广告 Board
+
+<img src="../../docs/assets/gallery/cases/gallery-10-e-commerce-main-image-premium-grain-powder-ad-board.jpg" alt="电商主图 - 精品 Grain Powder 广告 Board" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 154](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“电商主图 - 精品 Grain Powder 广告 Board”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于广告营销广告制作场景，主题为“电商主图 - 精品 Grain Powder 广告 Board”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical e-commerce advertising board for a premium instant grain powder drink, designed as a debranded gallery case for a future product launch. Build a polished commercial layout with a strong visual hierarchy and a luxury food-ad finish. Use a dark, premium palette: matte black, espresso brown, warm bronze-gold, walnut brown, soft beige, and muted oat tones. The product is a generic matte dark retail box with elegant metallic lettering areas left blank or replaced by neutral placeholder text, paired with a rich gray-brown grain beverage in a clear glass cup. The beverage surface should have a smooth spiral swirl, thick texture, and appetizing sheen.
+
+Composition: divide the board into multiple clear panels with thin metallic divider lines. Top-left: hero section with the product box as the dominant object, front-facing on a dark tabletop, with the drink cup beside it and subtle supporting ingredients around it. Top-right: ingredient detail section showing five round ingredient bowls in a clean row, such as black sesame seeds, dark beans, dark grains, walnut halves, and pale grain powder. Mid-right: texture-and-benefit section with a close-up of the prepared drink, spoon interaction, and short editable callout areas. Mid-left lower: a simple 3-step preparation guide using clean instructional mini-panels with pouring powder, adding hot water or milk, and stirring. Lower-left: lifestyle use-case strip with small framed scenes or icons suggesting breakfast, office break, post-workout, and evening comfort. Lower-right: portability section showing an opened box with several individual sachets arranged in perspective. Bottom: a full-width storyboard-style strip or structured information table that feels like a campaign planning board, but uses generic placeholders and no proprietary copy.
+
+Lighting: dramatic studio lighting from upper left with controlled glossy highlights on packaging edges, warm rim light on the cup, soft reflections on glass, and crisp shadow separation. Keep the background dark and atmospheric with subtle grain stalks or soft ingredient silhouettes, but avoid clutter. Materials must read clearly: matte paper box, lightly reflective foil accents, transparent glass, ceramic or metal bowls, natural walnut texture, powder granularity, and glossy seeds/beans.
+
+Typography and text handling: include one large headline area with the exact copy "Launch Campaign" in refined uppercase sans serif or elegant modern display type. Add smaller secondary text blocks as editable placeholders only, using short neutral descriptors rather than real brand language. Place typography in clearly reserved zones with strong alignment, generous margins, and high contrast for readability. Use gold or warm beige text on dark surfaces. No invented pricing, no seller badges, no social handles, no people names, no logos, no copied packaging text.
+
+Reference-image policy: use the reference only as off-image inspiration for layout rhythm, premium food-lighting logic, panel structure, and commercial finish. Do not replicate the original packaging design, exact text, brand identifiers, icon set, ingredient arrangement, or distinctive decorative details. Keep the result reusable for a new product, poster, or campaign with original packaging geometry, original text blocks, and fresh composition decisions.
+
+Negative constraints: no copied brand names, no Chinese product title from the source, no exact logo placement, no identical box artwork, no celebrity or person portrait, no watermark, no QR code, no fake certifications, no fabricated health claims, no overcrowded composition, no distorted packaging, no unreadable text, no direct imitation of the source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 11. 电商主图 - Earbuds E-commerce Infographic
+
+<img src="../../docs/assets/gallery/cases/gallery-11-e-commerce-main-image-earbuds-e-commerce-infographic.jpg" alt="电商主图 - Earbuds E-commerce Infographic" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：消费电子
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 155](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“电商主图 - Earbuds E-commerce Infographic”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的电商主图，用于消费电子广告制作场景，主题为“电商主图 - Earbuds E-commerce Infographic”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：如未提供明确文案，只保留清晰可编辑的标题区和辅助信息区，不编造价格、日期、电话、地址、功效或认证。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 e-commerce hero infographic for premium wireless earbuds, debranded and commercially reusable. Composition: place an open glossy white charging case in the extreme foreground, held toward the camera by a hand, with the case occupying the lower-left to center area and appearing largest in frame. Show two sleek white earbuds inside the case, with subtle black acoustic accents and a tiny soft green status light on the case front. Use shallow macro depth of field so the hand and case stay sharp while the background falls slightly out of focus. In the mid-ground, place a confident female model on the right half of the frame, facing camera, wearing a plain saturated yellow athletic top with no logos, one earbud in one ear, neutral studio-ready grooming, calm confident expression. Add 2 to 3 softly blurred floating earbuds around the scene for depth and motion, keeping them secondary.
+
+Background and lighting: use a dark charcoal-to-warm gray gradient studio backdrop with controlled golden light streaks and soft particulate glow for energy, not chaos. Light the product with clean commercial softboxes from front-left and top-front to create glossy highlights on the plastic surfaces, plus a subtle rim light on the model’s hair and shoulders. Keep skin natural, product edges crisp, reflections controlled, and contrast high enough for marketplace readability.
+
+Typography and layout: build a bold retail poster hierarchy with oversized white sans-serif headline text behind the model across the upper background, but do not use any real brand wording. Use a generic product line headline such as “WIRELESS EARBUDS” or another non-branded equivalent. In the top-right, add a smaller stacked product descriptor area for a fictional model name. On the left-middle, place a short feature block with the exact copy: “Built for Performance”. On the right side, place two large numeric callout zones with smaller supporting text beneath each, using placeholder numbers and generic benefit copy only, such as battery duration and warranty placeholders, without prices, certifications, or regulated claims. Keep all text crisp, aligned, and clearly separated from the product silhouette and the model’s face.
+
+Materials and finish: emphasize polished white plastic, smooth skin texture, soft fabric on the shirt, and premium retail-photography realism. Keep the palette focused on white product surfaces, warm yellow apparel, bright white typography, dark neutral background, and restrained gold light accents. Final image should feel like a production-ready consumer electronics campaign visual with clean hierarchy, premium finish, and ad-ready spacing.
+
+Reference-image policy: use the reference only as inspiration for framing logic, foreground product scale, model placement, dark studio mood, and infographic text hierarchy. Do not reproduce any exact brand names, logos, person identity, proprietary wording, or distinctive layout text from the reference. Negative constraints: no real brand marks, no celebrity likeness, no copied slogan, no price tags, no store badges, no certification icons, no watermarks, no social handles, no packaging redesign tied to a known brand.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 12. 电商主图 - Elegant Cosmetic 海报 Prompt
+
+<img src="../../docs/assets/gallery/cases/gallery-12-e-commerce-main-image-elegant-cosmetic-poster-prompt.jpg" alt="电商主图 - Elegant Cosmetic 海报 Prompt" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 157](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“电商主图 - Elegant Cosmetic 海报 Prompt”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于美妆护肤广告制作场景，主题为“电商主图 - Elegant Cosmetic 海报 Prompt”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Clean Glow”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 beauty advertising poster for a new skincare product called "Clean Glow". Build a refined commercial composition with one elegant cosmetic bottle as the hero object placed slightly right of center in the lower-right quadrant, scaled large enough to feel premium but leaving generous negative space for copy on the left. Add a softly smiling female model in close-up occupying the upper-right to center area, framed from shoulders up, with natural skin texture, minimal makeup, and wind-touched hair; she should support the mood of freshness and luminosity without resembling any identifiable real person. Use a light blue to pearl-white palette with subtle silver accents, airy gradients, translucent mist, and a few suspended water droplets or soft bubbles to suggest hydration.
+
+Lighting: use diffused studio lighting from the upper left, with soft wraparound facial light, clean catchlights in the eyes, gentle specular highlights on the bottle edges, and a faint glow through translucent liquid or frosted packaging. Materials: emphasize clear glass or glossy acrylic, brushed metal cap details, clean liquid reflections, soft fabric or sheer sleeve textures near the model’s hand, and crisp high-end retouching suitable for e-commerce display.
+
+Typography and layout: place the main headline "Clean Glow" in large elegant serif or high-contrast editorial lettering on the left side, stacked vertically or in two balanced lines with wide spacing. Above it, reserve a small rectangular text box for a short supporting line in a clean sans-serif. Below the headline, place 3 circular feature callouts aligned horizontally or in a gentle arc, each with a short placeholder benefit label only, no invented claims, certifications, prices, or numbers. Keep all text areas clean, readable, and intentionally spaced, with clear hierarchy: headline first, support line second, feature icons third. Include a small "NEW" marker near the product if needed, but keep it generic.
+
+Background and finish: use a luminous pale backdrop with a soft watery atmosphere, feathered gradients, and subtle light bloom, avoiding clutter. The overall result should feel premium, calm, fresh, and production-ready for a beauty campaign main image. Keep the image debranded and reusable: no logos, no proprietary slogans, no exact packaging text, no celebrity likeness, no copied layout text from any source image. Reference-image policy: use the reference only as inspiration for composition balance, lighting softness, watery materials, and ad hierarchy; do not reproduce any exact face, bottle design, wording, logo, or distinctive arrangement.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 13. 电商主图 - Minimalist 产品 广告: PURE CRUNCH
+
+<img src="../../docs/assets/gallery/cases/gallery-13-e-commerce-main-image-minimalist-product-ad-pure-crunch.jpg" alt="电商主图 - Minimalist 产品 广告: PURE CRUNCH" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 158](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0144`, `adimg_recipe_0149`
+
+**中文 Brief**
+
+基于“电商主图 - Minimalist 产品 广告: PURE CRUNCH”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“电商主图 - Minimalist 产品 广告: PURE CRUNCH”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable 9:16 minimalist product advertisement poster for a new food or packaged product campaign. Composition: one hero product centered on a matte white cylindrical podium in the lower half of the frame, with generous negative space above, clean vertical alignment, and a strong top-to-bottom visual hierarchy. Keep the product large, fully visible, and sharply defined, with natural contact shadows and accurate proportions. Background: seamless studio backdrop with a soft cream-to-white gradient, no environment details, no clutter, no decorative props unless they are extremely minimal and directly support the product. Lighting: soft diffused studio key light from upper front, gentle fill to reduce harsh contrast, subtle rim separation on product edges, clean shadow falloff, premium catalog finish, realistic texture detail, crisp material rendering. Materials: smooth paperboard podium, refined packaging surfaces, believable food or product texture, no distortion, no melted edges, no extra objects.
+
+Typography layout: place a bold uppercase headline in the upper center occupying roughly the top third of the frame; use a modern condensed sans serif with strong weight contrast, black or charcoal for the first line and muted warm ochre or sand for the second line if a two-line hierarchy is used. Add the exact campaign copy "Launch Campaign" as a smaller secondary line below the headline area, centered, clean, and fully legible. If a product label or container mark is shown, use generic original branding only: simple icon, abstract emblem, or invented neutral wordmark, with no real logos, no copied slogans, and no protected brand text. Color palette: warm white, cream, soft beige, charcoal, and restrained golden-brown accents, with the product as the main saturated element. Keep the overall look calm, premium, minimal, editorial, and production-ready.
+
+Reference-image policy: use the reference only as inspiration for composition, whitespace, central podium staging, soft gradient background, restrained color blocking, and typographic hierarchy. Do not replicate the original wording, logo, mascot, package branding, or exact food arrangement. Make the final design feel like a fresh debranded campaign template adaptable to different products. Negative constraints: no real brand names, no copied taglines, no prices, no social handles, no people, no busy backgrounds, no extra packaging variants, no legal seals, no fake claims, no unreadable text, no warped container geometry, no crowded layout.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 14. Burger hero image plus 9-cell 广告 storyboard
+
+<img src="../../docs/assets/gallery/cases/gallery-14-burger-hero-image-plus-9-cell-ad-storyboard.jpg" alt="Burger hero image plus 9-cell 广告 storyboard" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 163](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0023`, `adimg_recipe_0149`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“Burger hero image plus 9-cell 广告 storyboard”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的电商主图，用于食品饮料广告制作场景，主题为“Burger hero image plus 9-cell 广告 storyboard”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 debranded advertising gallery case board for a food-and-beverage campaign. Main concept: a premium burger hero image combined with a clean 9-cell commercial storyboard that explains the build-up from ingredients to final plated shot.
+
+Composition and layout: horizontal 16:9 canvas, divided into two zones. Left 60%: one large hero shot of a gourmet burger on a dark matte stone surface, centered slightly low, filling most of the frame, with visible glossy brioche bun, melted cheese, grilled patty, crisp lettuce, tomato, sauce detail, and subtle steam. Right 40%: a tidy 3x3 storyboard grid showing sequential close-ups and assembly moments such as empty surface, bun placement, patty landing, cheese melt, fresh toppings, sauce application, final stack, macro detail, and end-frame product beauty shot. Keep the storyboard cells visually consistent, with thin separators, small caption bars, and restrained diagram-like motion cues. No people, no character costumes, no brand mascots.
+
+Lighting and camera: premium studio food photography with warm key light from upper left, soft rim light from rear right, controlled specular highlights on bun and sauce, gentle falloff into shadow, shallow depth of field on the hero panel, slightly deeper focus in storyboard cells for readability. Use realistic steam, crumbs, sauce gloss, and appetizing surface texture. Camera angle for hero: three-quarter front angle at table height. Storyboard cells: mix of overhead, close crop, and macro detail shots.
+
+Materials and finish: realistic food textures, toasted bun sheen, moist grilled meat surface, creamy melted cheese, crisp vegetable edges, dark stone tabletop, minimal reflections, polished commercial retouching, high micro-contrast, print-ready cleanliness.
+
+Typography and text placement: add a narrow title band across the top with a generic campaign heading area, and reserve one clear text block in the lower left or lower center for the exact copy: "Taste the Moment". Use bold condensed sans-serif uppercase for headings, smaller neutral sans-serif for cell labels, white or warm light text on deep charcoal panels, excellent legibility, no invented prices, no fake certifications, no logos, no watermarks.
+
+Color palette: charcoal black, deep brown, warm amber highlights, burger gold, lettuce green, tomato red, creamy ivory, with restrained accent red only for storyboard emphasis lines.
+
+Reference-image policy: use the reference only for structural inspiration such as multi-panel instructional layout, strong top header, cinematic sequencing, and disciplined visual hierarchy. Do not reproduce any people, suits, helmets, Japanese text, logos, exact panel captions, or sci-fi setting from the reference. Keep this image fully food-focused and commercially reusable for a new campaign.
+
+Negative constraints: no copyrighted logos, no brand names, no creator handles, no prices, no celebrity likenesses, no exact upstream wording, no cluttered background, no exaggerated cartoon food styling, no deformed ingredients, no unreadable text, no watermark, no duplicated burger inconsistencies across panels.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 15. 高端 Chronograph Watch 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-15-luxury-chronograph-watch-ad.jpg" alt="高端 Chronograph Watch 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：高端消费品
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 144](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“高端 Chronograph Watch 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为高端消费品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于高端消费品广告制作场景，主题为“高端 Chronograph Watch 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“PRECISION IN MOTION”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 luxury product advertisement for a motorsport-inspired chronograph watch in a dark studio, designed as a reusable gallery case for premium goods. Composition: place one hero watch in the center-left foreground, standing upright at a three-quarter angle with the dial facing slightly toward camera; position one matte black presentation box behind and to the right, partially overlapping but clearly secondary; keep the overall frame balanced with strong negative space above and a clean text zone at the bottom. Product details: use a brushed stainless steel case, black dial, two contrasting red-accent subdials, slim metallic hour markers, tachymeter-style bezel, visible crown and pushers, and a black leather strap with red edge stitching; render crisp machining, realistic glass reflections, and premium leather texture. Environment: deep black studio backdrop with a glossy wet floor that produces controlled mirror reflections beneath the watch and box; add subtle horizontal red and white motion light streaks behind the products to suggest speed without distracting from the hero object. Lighting: use high-contrast commercial lighting with a focused key light from upper front-left for metallic specular highlights, a narrow rim light from rear-right to separate the silhouette, and a soft low fill to preserve shadow detail on the packaging; maintain moody shadows and premium contrast. Typography: place a large blurred uppercase headline across the background reading "PRECISION IN MOTION" in soft charcoal gray, spanning most of the width; add a small abstract silver emblem plus a generic fictional brand wordmark at the top center, avoiding any real or recognizable brand identifiers; place a bottom-centered line of clean white spaced capitals for a series title, flanked by thin red horizontal rules, with a smaller red subtitle underneath. Color palette: black, charcoal, gunmetal, polished silver, vivid racing red, and restrained white. Finish: sharp product focus, realistic materials, polished advertising retouching, elegant reflections, clean typography hierarchy, commercially usable poster quality. Negative constraints: no real brand names, no creator handles, no prices, no dates, no celebrity likenesses, no copied logos, no distinctive protected phrases, no extra props, no clutter, no exaggerated fantasy effects, no unreadable text. Reference-image policy: use the reference only as structural inspiration for composition, lighting hierarchy, materials, and premium automotive energy; do not reproduce any exact logo, wording, packaging graphics, or proprietary visual identifiers.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 16. Neon Nike Lumina 广告 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-16-neon-nike-lumina-ad-poster.jpg" alt="Neon Nike Lumina 广告 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 145](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Neon Nike Lumina 广告 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“Neon Nike Lumina 广告 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical advertising poster for a new launch campaign, debranded and commercially reusable. Show one athletic adult model or one hero product centered in the frame, captured in a powerful airborne or action pose, with the body forming a strong diagonal silhouette and enough negative space around the edges for clean layout. Build the composition with a dominant oversized serif headline spanning the upper background, partially hidden behind the subject, and a second wide display word across the mid-background with subtle horizontal scanline and glitch distortion. Place the exact copy "Launch Campaign" in a small but crisp text block near the lower margin, with a second small supporting line on the opposite side using generic collection or campaign wording only. Do not include any real brand names, logos, signatures, prices, handles, or identity-specific text.
+
+Wardrobe or product materials should feel premium and futuristic: iridescent white shell fabric, holographic metallic surfaces, glossy technical textiles, reflective trim, and clean white accessories or footwear. Keep material rendering sharp and tactile, with visible folds, stitching, specular highlights, and polished retouching. Add circular light trails wrapping around the lower body or around the product to suggest speed and energy, but keep the subject readable and not buried by effects.
+
+Lighting: use a neon studio setup with strong rear rim lights, frontal beauty fill, bright bloom on highlights, controlled lens flares, mild chromatic aberration near bright edges, and high contrast separation between subject and background. Color palette: saturated magenta, violet, cyan, and electric blue with luminous gradients and glossy reflections. Background should feel like a futuristic studio wall, not a real location.
+
+Typography and layout: top 35% reserved for the giant background headline, center 40% dominated by the subject, bottom 15% reserved for legal-safe campaign copy and small UI-like footer text. Use elegant high-contrast serif letterforms for the large headline and a bold condensed sans serif for the secondary glowing word. Keep all text generic, legible, and production-ready. No copied slogans. No exact protected wording from any existing campaign.
+
+Reference-image policy: use the reference only as inspiration for composition, motion, lighting hierarchy, material finish, and ad polish. Do not replicate the exact person, pose geometry, garment branding, headline wording, logo placement, or any distinctive proprietary design element. Generate an original campaign visual with similar energy but new creative details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 17. Streetwear Sneaker 海报 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-17-streetwear-sneaker-poster-ad.jpg" alt="Streetwear Sneaker 海报 广告" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 146](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Streetwear Sneaker 海报 广告”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于服饰时尚广告制作场景，主题为“Streetwear Sneaker 海报 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Move Beyond”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a commercially usable 9:16 fashion poster advertisement for a new streetwear sneaker campaign. Build the image as a low-angle studio fashion composition with one young adult model seated casually on the ground, one knee raised and one leg extended toward the camera so the front sneaker becomes the dominant oversized foreground product. Keep the model anonymous and generic with no recognizable identity cues; the product is the hero. Wardrobe: oversized dark leather jacket, plain black inner layer, loose light-wash denim, white socks, and chunky multi-panel sneakers in black, white, gray, and one controlled accent color. Do not place any real brand logos, creator handles, or recognizable trademarks on clothing or shoes.
+
+Background and materials: use an off-white textured paper backdrop with visible grain, distressed edges, subtle fold wear, torn-paper collage scraps, barcode-style label shapes without real numbers, ink splatter, rough marker scribbles, and hand-painted graphic doodles. Place a large diagonal paint stroke behind the model as the main color anchor. Add 3 to 5 expressive graphic marks around the frame such as a bold brush X, an upward arrow, a loose circular scribble, and a crown-like sketch, but make them original and asymmetrical rather than copied from any reference. The overall finish should feel like a premium printed street poster layered with editorial product photography.
+
+Lighting: use crisp commercial studio lighting with the key light from upper front-left, soft fill from camera-right, and a controlled rim light to separate the model from the background. The foreground sneaker must be tack sharp with visible leather grain, rubber texture, stitching, lace tension, and sole sculpting. Keep the background flatter and more graphic, with enough contrast to preserve readability of typography overlays.
+
+Typography and layout: reserve a clear brand lockup zone in the upper left for a fictional symbol and generic campaign label, but do not render any existing brand name. Place the headline "Move Beyond" in bold expressive lettering with strong readability, positioned as the primary copy block on the left or right mid-section. Add one secondary handwritten-style slogan block and one torn-paper caption patch in separate zones, but use only generic placeholder microcopy or abstract design text, never real social handles or upstream phrases. Add a clean footer strip across the bottom with three minimal icon placeholders and short neutral labels instead of platform-specific handles. Typography should combine a sharp geometric sans for the brand area, energetic brush lettering for the campaign line, and small condensed utility text for sticker-style details.
+
+Color palette: off-white paper, carbon black, weathered charcoal, light denim blue, dark brown, and one aggressive accent color such as signal red. Use the accent color mainly in the central brushstroke, small underline marks, and selected sticker details. Preserve strong contrast, premium print texture, and clear commercial polish.
+
+Composition rules: keep the dominant sneaker occupying the lower foreground, the seated figure centered slightly above mid-frame, large negative space for text blocks, and layered graphic elements framing but not obscuring the product. The poster must feel energetic, youthful, tactile, and production-ready for a fashion campaign.
+
+Reference-image policy: use the reference only as inspiration for pose energy, low-angle product emphasis, collage density, and street-poster material language. Do not reproduce any exact logo, wording, face, accessory pattern, shoe design marking, doodle arrangement, or layout signature from the reference or upstream case.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 18. Editorial Osaka Six Sweatshirt 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-18-editorial-osaka-six-sweatshirt-ad.jpg" alt="Editorial Osaka Six Sweatshirt 广告" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 147](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
+
+**中文 Brief**
+
+基于“Editorial Osaka Six Sweatshirt 广告”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于广告营销广告制作场景，主题为“Editorial Osaka Six Sweatshirt 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 advertising poster for a contemporary apparel launch. Use a pale powder-blue seamless studio backdrop with a glossy reflective floor. Build the layout with strong editorial hierarchy: the upper half is dominated by massive white condensed sans-serif background typography split across two or three stacked lines, using generic campaign wording rather than any existing slogan. Keep the type oversized, tightly tracked, and partially obscured by the subject so it feels integrated into the composition instead of floating on top.
+
+Place one oversized crewneck sweatshirt in the lower center as the hero object, standing upright like a sculptural product display. The garment should feel heavy, premium, and soft, with thick cotton fleece, dropped shoulders, relaxed volume, and sleeves slightly pooling onto the floor. Add a bold abstract collage-style chest graphic made from layered torn-paper textures in beige, charcoal, off-white, muted rust, and a small accent of saturated red; avoid any recognizable logo, label, mascot, or copyrighted artwork. Lean a fashion model against the right side of the oversized garment to create surreal scale contrast. The model wears a coordinated sweatshirt-and-wide-leg-pants set in a matching deep evergreen tone with clean white low-top sneakers. Pose the figure in side profile with a calm editorial posture, one hand in pocket, body reclining diagonally against the hero garment, legs extended forward. Keep the person anonymous and non-identifiable, with no resemblance to a known individual.
+
+Lighting should be crisp studio daylight from high front-left with soft fill from the opposite side, producing smooth shadows, subtle floor reflections, clean edge separation, and sharp product visibility. Materials must read clearly: brushed cotton fleece, matte fabric surface, layered paper collage texture, and polished floor reflection. Color palette: powder blue background, bright white typography, deep evergreen apparel, neutral collage fragments, restrained red accent. The overall finish should feel premium, minimal, polished, and commercially usable.
+
+Typography and text treatment: reserve a small text block near the bottom center for the exact copy 'Launch Campaign'. Add one short supporting line beneath it in a smaller clean sans-serif, but keep it generic and original. Add a tiny top-corner micro-label if needed, using neutral non-brand text only. Do not include prices, social handles, creator credits, product codes, or proprietary slogans.
+
+Reference-image policy: use the provided reference only as inspiration for composition, scale contrast, studio lighting, reflective floor, and editorial type hierarchy. Do not reproduce any exact words, names, garment graphics, brand identifiers, or distinctive protected details from the source image. Negative constraints: no logos, no trademarked phrases, no celebrity likeness, no copied label text, no watermarks, no extra products, no cluttered props, no discount stickers, no fake contact info, no busy background, no illegible typography.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 19. Editorial 香水 Shot on Moss
+
+<img src="../../docs/assets/gallery/cases/gallery-19-editorial-perfume-shot-on-moss.jpg" alt="Editorial 香水 Shot on Moss" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 148](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0175`
+
+**中文 Brief**
+
+基于“Editorial 香水 Shot on Moss”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于美妆护肤广告制作场景，主题为“Editorial 香水 Shot on Moss”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Signature Scent”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 beauty product advertisement for a fictional fragrance called "Signature Scent". Show one debranded perfume bottle as the hero object, centered slightly below the midpoint, upright on a single curved piece of pale weathered wood, with a dense carpet of natural green moss filling the lower foreground. Use a clean rectangular glass bottle filled with warm amber liquid, a smooth rounded dark cap, and a minimal front label with abstract placeholder typography only; do not use any real brand names, logos, or protected wording. Keep the composition minimal and premium, with generous negative space in the upper half for headline placement.
+
+Background and lighting: use a seamless studio backdrop with a warm brown-to-amber gradient, brighter toward the upper right and darker toward the left and lower edges. Light the scene with one strong directional warm key light from the upper right to create a glowing hotspot on the background, a crisp specular highlight on the cap, soft reflections along the bottle edges, and gentle realistic shadows across the wood and moss. Preserve a polished commercial finish with controlled contrast, sharp product detail, and natural material texture.
+
+Materials and surface detail: emphasize clear glass, transparent liquid, glossy cap reflections, dry wood grain, and soft organic moss texture. Keep the product label simple and readable but generic. The image should feel earthy, refined, cinematic, and production-ready for a fragrance campaign.
+
+Typography layout: place the headline "Signature Scent" in the upper third, centered or slightly above center, in elegant modern sans-serif typography with clean spacing. Leave room for a small secondary line of generic campaign copy beneath it if needed, but do not invent claims, prices, dates, certifications, or contact details. Keep all text areas clearly separated from the bottle silhouette.
+
+Color palette: amber, warm brown, moss green, soft cream, and black accents. Avoid extra props, people, flowers, jewelry, splash effects, or crowded information cards. Keep the layout reusable for a new product campaign.
+
+Reference-image policy: use the reference only as inspiration for composition, lighting direction, earthy materials, negative space, and luxury ad hierarchy. Do not reproduce any exact bottle design, label text, logo, brand identity, or distinctive protected visual details from the source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 20. Editorial 香水 Bottle in Golden Fur
+
+<img src="../../docs/assets/gallery/cases/gallery-20-editorial-perfume-bottle-in-golden-fur.jpg" alt="Editorial 香水 Bottle in Golden Fur" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 149](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“Editorial 香水 Bottle in Golden Fur”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于美妆护肤广告制作场景，主题为“Editorial 香水 Bottle in Golden Fur”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Signature Scent”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical beauty product advertisement as a premium editorial still life. Show one generic perfume bottle as the hero object, centered slightly below the midpoint and partially nestled into dense faux fur so the texture frames the bottle from all sides. Use a clear rounded or oval glass bottle filled with warm amber liquid, a smooth dark cap, and a clean rectangular label with minimal fictional branding. Place the headline text "Signature Scent" at the upper portion of the layout in sharp, elegant sans-serif typography, with ample negative space and balanced alignment. Keep any secondary text minimal, generic, and fully debranded.
+
+Build the scene around tactile material contrast: glossy glass, reflective cap, soft plush fur, and subtle liquid glow inside the bottle. Use a warm palette of honey gold, caramel, amber, and soft brown, with controlled tonal variation so the product remains distinct from the background. Light the set with soft studio key light from upper left, gentle fill from front, and narrow specular highlights along the bottle edges and cap. Add soft shadows inside the fur folds to create depth, while keeping the label plane crisp and readable. Use shallow depth of field so the bottle and headline area are in strongest focus and the surrounding fur falls slightly softer.
+
+The composition must feel commercially usable and production-ready: minimal layout, strong product hierarchy, clean text zone, high detail, realistic materials, premium retouching, no clutter, no extra props unless they are abstract and non-distracting. Do not imitate any real brand identity, logo, label wording, or protected packaging details. Reference-image policy: use the reference only as inspiration for composition, warm fur texture, lighting mood, and premium beauty-ad structure; do not reproduce exact bottle design, label text, or brand markers from any source image. Output as a polished advertising poster with legible typography, refined contrast, and luxury beauty-campaign finish.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 21. 高端 Miniature Dubai City Model
+
+<img src="../../docs/assets/gallery/cases/gallery-21-luxury-miniature-dubai-city-model.jpg" alt="高端 Miniature Dubai City Model" width="420">
+
+- 作图类型：`product_ad`
+- 行业：高端消费品
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 150](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“高端 Miniature Dubai City Model”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为高端消费品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于高端消费品广告制作场景，主题为“高端 Miniature Dubai City Model”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 luxury advertising key visual set in a black studio void, using a photoreal miniature metropolis on a square architectural display board as the scene structure. Build one dominant ultra-tall metallic spire at the exact center, surrounded by dense clusters of refined modern towers, illuminated roads, bridges, looping interchanges, and curved blue water basins that wrap around the core district. Keep the composition symmetrical and clean from a high three-quarter isometric angle, with the city model occupying the lower two-thirds of the frame and generous negative space above for campaign presence.
+
+Place the actual product hero as the commercial focus in the center-left foreground or integrated as a premium centerpiece within the miniature city, depending on the campaign adaptation, but keep it clearly larger, sharper, and more visually prioritized than the surrounding model. Add one supporting object such as a box, pedestal, or secondary accessory in the right-rear zone to balance the layout. Materials must feel expensive and physically believable: brushed silver metal, smoked glass, polished lacquer, satin black surfaces, glossy turquoise water, and warm pinpoint practical lights across the city grid. Use crisp micro-detail, precise reflections, premium scale-model craftsmanship, and flawless edge definition.
+
+Light the scene like a high-end product campaign: a focused soft key light from upper front-left, narrow rim lights from both sides to define silhouettes, warm golden accent lights embedded in roads and building edges, cool cyan reflections in the water, and subtle mirror reflections on the base plane. Keep the background fully black with no environmental clutter. Color palette: black, champagne gold, silver, gunmetal, and controlled turquoise highlights. The mood must feel luxurious, engineered, collectible, and commercially polished.
+
+Typography layout: place the headline "Launch Campaign" in large clean uppercase lettering in the upper right or upper center negative space, using elegant sans-serif typography with wide tracking and high contrast against black. Reserve a smaller subtitle zone beneath it for future campaign copy, but do not generate extra fictional claims, prices, dates, addresses, or certifications. Keep text minimal, readable, and aligned to a premium ad grid. Leave enough clean space for downstream brand adaptation without adding any logos or protected marks.
+
+Reference-image policy: use the reference only for overall composition logic, isometric viewpoint, central-spire hierarchy, lighting contrast, miniature-luxury material treatment, and board-based presentation. Do not reproduce any exact landmark identity, brand, logo, proprietary text, or one-to-one city layout. Keep the image debranded, reusable, and suitable as a gallery case for luxury goods advertising.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 22. Parody 高端 产品 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-22-parody-luxury-product-advertisement.jpg" alt="Parody 高端 产品 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：高端消费品
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 131](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Parody 高端 产品 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为高端消费品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于高端消费品广告制作场景，主题为“Parody 高端 产品 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 premium parody product advertisement for a fictional luxury-or-chaos beverage or lifestyle product, designed as a commercially usable gallery case. Composition: place one oversized hero product in the extreme foreground, slightly left of center, pushed close to the lens so it dominates the frame; the product should be held or presented toward camera by a rough, weathered hand with realistic skin texture, dirt, creases, and shallow depth-of-field falloff on the fingers while the product label area remains readable. In the mid-ground, place a charismatic but disheveled adult model seated casually in a gritty urban alley, posed with the confidence of a high-end campaign subject; wardrobe should be layered, worn, and textural, but fully generic and debranded. Background: cinematic alley with wet pavement, reflective puddles, scattered cans or packaging silhouettes, soft graffiti-like texture, dumpsters or industrial shapes blurred into bokeh, and a few floating out-of-focus product-shaped objects to exaggerate the ad concept. Lighting: combine polished studio lighting with street-night atmosphere; use a strong key light from upper front-left on the hero product, a softer fill on the model’s face, rim lighting on shoulders and can edges, subtle rainbow prism flares, controlled lens bloom, and glossy specular reflections on metal and wet ground. Materials: emphasize cold aluminum or coated packaging, condensation droplets, peeling fabric fibers, muddy leather, damp concrete, chrome-like highlights, and realistic grime contrast against premium lighting. Typography layout: add a massive bold sans-serif headline in the upper background behind the model using generic fictional brand wording only; add a small handwritten or italic accent slogan in the upper right; add one short feature callout on the left, one large numeric claim block on the right, one bold bottom-right statement, and a bright sticker-style burst near the lower area containing the exact text "Launch Campaign". Typography should be white with neon accent lines in acid yellow or hot pink, with clear hierarchy, strong kerning, thick weights, and clean poster spacing. Color palette: dirty jewel tones with electric magenta, cyan, acid yellow, off-white, deep charcoal, wet asphalt black, and metallic silver; keep the product the most saturated object in frame. Camera and finish: low-angle commercial product photography, 35mm look, shallow depth of field, crisp hero focus, high dynamic range, premium retouching, realistic skin and fabric detail, advertisement-grade compositing, vertical poster layout. Negative constraints: no real brand names, no real logos, no celebrity likenesses, no copied slogans, no exact numbers or claims from any source image, no protected label design, no social handles, no prices, no watermarks, no extra legal text, no unreadable typography, no generic stock-photo flatness. Reference-image policy: use the reference only as inspiration for visual hierarchy, foreground-product dominance, gritty-versus-luxury contrast, wet-night lighting, and layered ad typography; do not replicate the original packaging, wording, character identity, or composition exactly.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 23. Japanese Chinese 食品 Delivery Flyer
+
+<img src="../../docs/assets/gallery/cases/gallery-23-japanese-chinese-food-delivery-flyer.jpg" alt="Japanese Chinese 食品 Delivery Flyer" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 166](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0157`, `adimg_recipe_0159`
+
+**中文 Brief**
+
+基于“Japanese Chinese 食品 Delivery Flyer”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的本地门店促销，用于食品饮料广告制作场景，主题为“Japanese Chinese 食品 Delivery Flyer”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：如未提供明确文案，只保留清晰可编辑的标题区和辅助信息区，不编造价格、日期、电话、地址、功效或认证。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertically oriented 9:16 advertising poster for a local food-and-beverage promotion, designed as a commercially usable, production-ready print-and-digital key visual. Use the visual grammar of a busy East Asian neighborhood takeout flyer without replicating any existing brand, mascot, wording, prices, phone numbers, or map details. Build a strong three-zone hierarchy: top zone for a dominant campaign headline and store name area, middle zone for the food showcase, bottom zone for offer, call-to-action, and service-information blocks. The required copy is exactly: “Taste the Moment”.
+
+Composition: center the layout on a bold hero food image or plated signature dish, shot slightly above eye level with appetizing depth and visible steam or gloss. Surround it with a clean modular grid of smaller supporting dishes or category tiles, using evenly spaced rounded rectangles and thin divider lines so the page feels dense but organized. Add one friendly illustrated or stylized hospitality figure only if needed for warmth, placed off-center at the left or lower-right edge, clearly secondary to the food and generic in identity. Include a coupon or promotional badge area, a delivery or visit-now callout, and a simplified information panel, but leave all factual fields generic and editable. Keep safe margins for print trimming and mobile cropping.
+
+Lighting and materials: use bright commercial key light from upper front-left, soft fill from the opposite side, crisp specular highlights on sauces, noodles, fried surfaces, and ceramic bowls, with gentle contact shadows so every dish feels dimensional and edible. Simulate inexpensive glossy flyer stock with subtle paper grain, light ink spread, faint fold creases, mild halftone texture, and realistic print contrast. The finish should feel like a mass-market promotional handout photographed cleanly, not like a luxury editorial spread.
+
+Color system: use a high-energy palette built from lacquer red, warm golden yellow, off-white, and small accents of dark brown or black for contrast. Background should use layered red tones, soft radial glow, subtle ornamental framing, and restrained festive patterning to support the headline without reducing legibility. Food colors should remain natural and appetizing, with warm browns, amber highlights, vegetable greens, and chili reds separated clearly from the background.
+
+Typography and text handling: use bold condensed headline typography with thick strokes, high contrast outlines, and shallow drop shadows for the main title area. Secondary labels should use clear sans-serif or gothic-style display text with strong alignment and consistent sizing. Reserve the largest type for the campaign headline, medium type for category names or short benefits, and smaller type for service details and coupon text. Show text blocks as clean, editable promotional copy areas in English or neutral placeholder layout, but render the required phrase “Taste the Moment” exactly and legibly as the primary campaign line. Do not invent prices, dates, addresses, phone numbers, certifications, or discount percentages.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition density, print texture, hierarchy, and warm promotional mood. Do not reproduce any exact character design, logo, restaurant name, menu wording, coupon wording, business hours, map layout, or identifiable graphic asset from the reference. Generate a new debranded advertising concept suitable for adaptation to another restaurant, product poster, or local campaign.
+
+Negative constraints: no copied logos, no trademarked names, no anime character match, no exact menu replication, no readable fake prices, no real phone numbers, no addresses, no protected slogans, no clutter that blocks the hero dish, no luxury-minimal styling, no empty background, no photobash artifacts, no warped typography, no low-resolution print texture, no misshapen bowls or food.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 24. 高端 chocolate campaign system
+
+<img src="../../docs/assets/gallery/cases/gallery-24-luxury-chocolate-campaign-system.jpg" alt="高端 chocolate campaign system" width="420">
+
+- 作图类型：`product_ad`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 169](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“高端 chocolate campaign system”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于食品饮料广告制作场景，主题为“高端 chocolate campaign system”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 premium food-and-beverage product advertisement for a fictional dark chocolate collection. Build the layout as a polished gallery case with three coordinated flavor variants shown as a triptych in one frame: left panel warm citrus mood, center panel nut-and-sea-salt mood, right panel berry mood. In each panel, place one chocolate bar package as the hero object, standing upright and slightly tilted forward, with the top of the wrapper opened to reveal segmented chocolate pieces. Keep the product dominant and centered within each panel, with supporting ingredients arranged around the base and background to reinforce flavor cues without clutter.
+
+Use a luxury packaging system: matte black paper wrapper, subtle metallic foil accents in soft gold, embossed crest-like monogram that is original and non-branded, refined serif typography, realistic printed label hierarchy, crisp edges, premium carton structure, and highly believable chocolate texture. Show flavor distinction through environment and garnish only: dried citrus slices and dark cocoa fragments on the left, pistachios and coarse sea salt in the center, raspberries and glossy chocolate sauce on the right. Maintain shallow depth of field, sharp focus on the package front and chocolate surface, and gentle falloff into the background.
+
+Lighting must be cinematic and product-photography precise: controlled studio setup, strong key light from upper left, narrow rim light to define package edges, soft fill to preserve label legibility, localized specular highlights on foil and chocolate, subtle reflections on a dark or stone-textured surface, and rich shadow depth without losing detail. Color palette should be deep black, warm amber, muted pistachio green, and dark raspberry red, with each panel carrying its own tonal atmosphere while still feeling like one campaign system.
+
+Typography placement: reserve clean text zones in the lower third of each panel. Add one primary campaign line exactly as: "Taste the Moment". Support it with short generic descriptive copy in smaller elegant serif or clean small caps, but do not include prices, dates, social handles, or brand-specific claims. Keep text readable, evenly spaced, and integrated into the poster composition with high contrast against the background. The final result should look commercially finished, suitable for a luxury launch poster, social ad, or packaging campaign case study.
+
+Reference-image policy: use the unseen reference only as inspiration for composition rhythm, premium product staging, dark editorial mood, and multi-variant campaign structure. Do not reproduce any existing logo, brand name, exact flavor names, proprietary wording, or distinctive package graphics. Avoid copied slogans, copied icon marks, watermarks, celebrity likenesses, retail pricing, or protected text. Output as a clean, original, production-ready advertising visual.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 25. Urban fruit juice 广告 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-25-urban-fruit-juice-ad-poster.jpg" alt="Urban fruit juice 广告 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 170](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Urban fruit juice 广告 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“Urban fruit juice 广告 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Fresh Energy”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a commercially usable vertical 9:16 advertising gallery case for a bottled fruit beverage campaign. Build one tall poster composed as a clean 2x2 banner grid inside the frame, with shared margins, consistent corner radius, and one unified visual system across all four panels. Each panel should present a different campaign moment while keeping the same product family, color logic, and typography system. Use a debranded fictional beverage package with a simple generic wordmark, no recognizable real brand cues, and no copied label text. The hero panel should use strong forced perspective: an oversized chilled bottle pushed close to camera in the foreground, angled slightly upward, with visible condensation, glossy highlights, clear liquid color, and realistic label wrap. A confident fashion-forward adult model may appear in one panel as a generic campaign figure, crouched in an urban indoor corridor, but the face, styling, and identity must be original and non-specific. Secondary panels can feature smaller bottle variants, fruit ingredients, cropped packaging details, or clean product-only layouts. Keep the composition energetic but readable, with clear separation between product hero, feature badges, and headline zones.
+
+Lighting: combine bright daylight from the corridor with controlled studio fill. Use soft frontal fill on the product, subtle rim light on bottle edges, realistic contact shadows, glossy floor reflections, and shallow depth of field only where it helps hierarchy. Materials must feel premium and physical: transparent glass or high-clarity PET bottle, matte coated paper label, moisture droplets, brushed cap texture, polished floor, painted wall surface, and fresh-cut fruit with believable moisture and fiber detail.
+
+Typography and layout: reserve the top 25 percent for a bold headline system. Set the exact phrase "Fresh Energy" as the main headline in large uppercase sans serif with heavy weight, wide tracking control, and clean kerning. Add a second expressive brush or paint-stroke accent line beneath or overlapping it, but use generic supporting words only if needed and avoid copied slogans. Place four minimal circular feature icons with short placeholder benefit labels in a centered row below the headline. Keep all text areas editable, production-ready, and clearly separated from the subject. Add a bottom-right product lineup area with three smaller bottle variants aligned on the floor plane. Add a bottom information strip for generic website or campaign placeholders without real handles, prices, dates, or addresses.
+
+Color palette: fresh citrus orange, leaf green, off-white, charcoal, and small accents of aqua mint. Balance warm fruit tones against a bright architectural background. One side of the environment may include abstract mural color blocks for urban energy, while the opposite side stays minimal and clean to preserve contrast.
+
+Reference-image policy: use the unseen reference only as inspiration for visual hierarchy, forced-perspective product staging, urban corridor depth, glossy commercial finish, and ad-poster layering. Do not reproduce any exact logo, wording, bottle label design, person likeness, icon set, or unique arrangement from any source image. Keep the result reusable for a new beverage, wellness, skincare, or packaged-goods campaign.
+
+Negative constraints: no real brand names, no copied slogans, no social handles, no price tags, no certification claims, no health claims, no celebrity likeness, no trademarked logo shapes, no unreadable typography, no cluttered badge area, no distorted bottle geometry, no extra hands, no duplicated limbs, no broken reflections, no warped packaging text, no low-resolution textures.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 26. 高端 Sportswear Basketball Athlete Campaign 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-26-luxury-sportswear-basketball-athlete-campaign-poster.jpg" alt="高端 Sportswear Basketball Athlete Campaign 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 70](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0235`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“高端 Sportswear Basketball Athlete Campaign 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于服饰时尚广告制作场景，主题为“高端 Sportswear Basketball Athlete Campaign 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“MOVE BEYOND”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 premium sportswear campaign poster for a debranded fashion advertisement. Show one confident female basketball athlete in a full-body hero pose, centered and slightly forward, standing on a glossy indoor studio floor with subtle painted court lines and soft reflections. She holds a matte black basketball low at one side, with two or three additional basketballs placed near the foreground and background edges to create depth. Her stance should feel grounded, powerful, and editorial, with chin slightly raised and direct eye contact.
+
+Wardrobe and materials: cropped varsity-style jacket with clean trim and no visible brand marks, fitted performance top, tailored biker shorts, white crew socks, and modern high-top sneakers with generic paneling only. Fabrics should read as premium performance knit, satin-backed jacket sleeves, ribbed sock texture, and lightly pebbled rubber basketball surfaces. Skin should appear realistic and polished, with natural athletic definition and controlled sheen.
+
+Composition and typography: place the athlete in front of oversized condensed black letterforms spanning nearly the full height of the background wall. Use the phrase "MOVE BEYOND" as the only headline text, set in bold ultra-condensed sans serif capitals, stretched vertically across the backdrop as a graphic framing device rather than a foreground caption. Keep the letters large enough to create a strong black-and-light-gray contrast wall, with the athlete overlapping the typography at center. Preserve clear negative space around the figure silhouette and keep all other text minimal or absent.
+
+Lighting and color: use a high-end studio setup with a bright frontal key light slightly above eye level, soft fill from camera left and right, and a restrained rim highlight to separate the athlete from the dark typography. Maintain crisp highlights on skin and fabrics, soft controlled shadows on the floor, and a polished commercial contrast range. Palette should stay monochrome and neutral: light gray wall, black typography, black apparel, white socks, subtle charcoal floor reflections, and restrained skin tones.
+
+Camera and finish: eye-level or slightly low camera angle, medium-wide framing, sharp focus across the subject, realistic lens rendering, high micro-contrast in fabric and skin texture, clean retouching, premium print-ready poster finish, no clutter, no extra props beyond basketballs and court markings.
+
+Reference-image policy: use the provided reference only as off-model inspiration for pose confidence, visual hierarchy, studio sport-fashion mood, monochrome palette, oversized background typography, and reflective court-floor treatment. Do not replicate the same person, hairstyle, facial features, outfit details, footwear design, logos, initials, or exact text layout. Create a new original campaign image with similar structural intent but distinct identity.
+
+Negative constraints: no brand logos, no monograms, no signature shoe marks, no celebrity likeness, no copied slogan other than the supplied "MOVE BEYOND", no extra pricing, no social handles, no watermarks, no busy background elements, no distorted anatomy, no unreadable typography, no duplicate limbs, no low-detail textures.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 27. Streetwear Fashion Campaign Asian Apparel 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-27-streetwear-fashion-campaign-asian-apparel-poster.jpg" alt="Streetwear Fashion Campaign Asian Apparel 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 71](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Streetwear Fashion Campaign Asian Apparel 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于服饰时尚广告制作场景，主题为“Streetwear Fashion Campaign Asian Apparel 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a commercially usable 9:16 fashion campaign poster for a new streetwear collection. Create a full-body portrait of one young adult male model with softly textured, medium-length wavy hair, a calm upward side glance, relaxed confidence, legs crossed at the ankles, and both hands inside the jacket pockets. Place the model centered slightly left of frame so the body overlaps large background typography. Wardrobe: matte dark olive padded hooded jacket worn open, clean white crewneck sweatshirt with no visible branding, relaxed black utility trousers, and minimal white low-top sneakers. Keep the silhouette contemporary, clean, and editorial.
+
+Background and composition: use a seamless electric-blue studio backdrop with a soft radial gradient, subtle glow streaks near the floor, and a glossy reflective surface under the feet. Build strong vertical hierarchy with giant stretched condensed sans-serif letterforms running behind the model from top to bottom in pale warm gray or off-white. The large background text must be generic and non-brand-specific, for example abstract campaign lettering or repeated neutral words, and should function as graphic structure rather than identifiable branding. Reserve the lower-right quadrant for the exact copy line: "Launch Campaign" in bold clean sans-serif, with a smaller supporting line beneath it using generic collection text only. Add small microtext blocks near the bottom corners as decorative layout elements, but keep them fictional, minimal, and unreadable at distance rather than branded.
+
+Lighting and materials: use soft commercial studio lighting from front-left with controlled fill on the opposite side, gentle shadows, crisp edge separation around the jacket and hair, realistic skin texture, and visible fabric detail in the puffed nylon, cotton sweatshirt, cargo fabric, and rubber sole. Maintain polished advertising finish, high sharpness on the outfit, smooth tonal transitions in the background, and a restrained floor reflection. Color palette: electric blue, dark olive, white, black, and light warm gray. Typography style: extra-condensed sans serif, tall vertical scaling, wide tracking for secondary text, clean alignment, and clear negative space around the headline area.
+
+Keep the image debranded and reusable for a new campaign. Do not include logos, real brand names, creator handles, prices, product codes, watermarks, or recognizable proprietary slogans. Do not imitate any exact person from a reference. Reference-image policy: use the provided reference only as off-model inspiration for pose, lighting balance, background energy, visual hierarchy, and premium retail-poster finish; do not replicate exact text, identity, logo placement, or distinctive protected design elements.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 28. Surrealist Liquor Brand High Fashion 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-28-surrealist-liquor-brand-high-fashion-poster.jpg" alt="Surrealist Liquor Brand High Fashion 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 75](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Surrealist Liquor Brand High Fashion 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于服饰时尚广告制作场景，主题为“Surrealist Liquor Brand High Fashion 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical fashion advertising poster for a debranded liquor or luxury beverage campaign. Build a single, high-impact composition with an oversized bottle-like product as the dominant sculptural element, set diagonally so it acts as both product display and visual backdrop. Place one fashion-forward adult model in the foreground at lower center to center-left, leaning or striding with calm confidence; wardrobe should be premium and minimal, with a dark leather outer layer, fluid black fabric, and sharp footwear. The mood should merge surreal product scale with editorial street energy, while remaining clearly studio-crafted and commercially usable.
+
+Environment and composition: use a clean monochrome set in warm apricot, pale amber, or muted orange-beige, with a smooth semi-reflective floor and generous negative space around the hero subjects. Keep the camera at eye to slightly low angle for authority. The product occupies roughly 45 to 55 percent of the frame height and overlaps with the model to create depth. Maintain a clear reading path: hero product first, model second, campaign text third. Avoid clutter, secondary props, or busy scenery.
+
+Lighting and materials: use soft, even studio lighting with a cool-neutral key light from upper front-left, subtle fill from the right, and gentle shadow falloff. Add controlled specular highlights on glass, lacquer, leather, and polished floor reflections. Surfaces should feel premium: translucent bottle glass, satin label area without logos, smooth matte background, crisp leather texture, and soft fabric motion. Keep reflections subtle and believable, not mirror-like.
+
+Typography and graphic system: integrate one oversized background headline in bold condensed sans serif, all caps, spanning the upper to mid background and partially obscured by the product and model for layered depth. Do not use any real brand names or source text. Add a smaller bottom-center campaign line using clean modern sans serif. The only explicit copy should be: "Launch Campaign". Keep all other text as abstract layout blocks or non-legible placeholder shapes. Typography must look intentional, aligned, and print-ready.
+
+Color palette: warm pale orange or amber background, off-white typography, deep espresso brown, black, and smoked glass accents. Preserve a restrained luxury palette with high tonal cohesion and moderate contrast.
+
+Reference-image policy: use the attached reference image only as inspiration for attitude, walking energy, leather texture, urban editorial confidence, and natural body movement. Do not reproduce the exact face, hairstyle, outfit, street location, taxi, buildings, signage, crosswalk pattern, or any distinctive real-world detail. Use the upstream case only for structural ideas such as surreal scale contrast, layered typography, minimal set design, and premium poster finish. Generate a wholly new, debranded campaign image with no logos, no social handles, no protected slogans, no prices, and no identifiable person replication.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 29. Surrealist Rolex 高端 Watch Fashion 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-29-surrealist-rolex-luxury-watch-fashion-poster.jpg" alt="Surrealist Rolex 高端 Watch Fashion 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 78](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0226`, `adimg_recipe_0227`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“Surrealist Rolex 高端 Watch Fashion 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于服饰时尚广告制作场景，主题为“Surrealist Rolex 高端 Watch Fashion 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“TIME”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical fashion product advertisement poster for a debranded luxury wristwatch campaign. Build the composition around one monumental hero watch standing upright in the center, filling most of the frame like a sculptural object. Place a sharply dressed adult male model in a tailored dark forest-green suit leaning casually against the lower-left edge of the watch case, scaled smaller than the product so the watch remains dominant. Use a polished reflective floor with a soft mirror reflection beneath both subjects. Keep the background minimal and architectural, with deep emerald-to-black gradient tones and a faint misty studio atmosphere.
+
+Visual hierarchy: the watch is the primary focal point, the model is secondary, and typography is tertiary. Add oversized elegant serif headline letters spanning the background behind the watch, reading only a generic luxury title such as "TIME" or abstract letterforms, never any real brand name. Reserve the bottom center for the exact tagline: "Precision in Motion" in refined, small, high-contrast serif typography. Leave the upper-right corner clean for optional campaign metadata, but use only placeholder text if needed.
+
+Materials and product rendering: emphasize brushed metal links, polished bezel edges, crisp glass reflections, realistic dial depth, subtle metallic chamfers, and premium craftsmanship. The watch should feel expensive but unbranded: no logos, no crown emblems, no trademark dial text, no distinctive model codes. The dial may use simple baton markers, clean hands, and a minimal date window with non-specific numerals. The suit fabric should show a matte wool texture with controlled shadow detail. Shoes and accessories should remain understated and generic.
+
+Lighting: use controlled studio lighting with a soft frontal key light, a narrow top rim light to define the watch silhouette, and warm specular highlights across the bracelet and bezel. Add gentle side fill on the model’s face and suit so he remains readable without overpowering the product. Preserve deep shadows, high contrast, glossy reflections on the floor, and precise highlight rolloff on the metal. Keep the scene cinematic but commercially clean, with no chaotic flares.
+
+Color palette: deep emerald green, blackened green, antique gold, champagne metal, and subtle warm ivory typography. Maintain restrained saturation and premium contrast. The overall finish should feel like a high-end fashion editorial merged with a product campaign, but executable as a commercial ad layout.
+
+Typography and layout rules: typography must be sparse, luxurious, and legible. Use one large background word or abstract letter system, plus the exact tagline "Precision in Motion" near the bottom. Do not add prices, discounts, dates, phone numbers, addresses, certifications, social handles, or extra claims. Keep text integrated into the composition with generous negative space.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition, scale contrast, reflective staging, dark green palette, and premium ad finish. Do not reproduce any exact branding, logo shapes, dial text, signature typography, person identity, or distinctive watch design details from the reference. Generate a new, reusable luxury campaign image with original commercial styling.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 30. SPLASH Fashion Brand Hyper-Realistic Campaign 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-30-splash-fashion-brand-hyper-realistic-campaign-poster.jpg" alt="SPLASH Fashion Brand Hyper-Realistic Campaign 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 80](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“SPLASH Fashion Brand Hyper-Realistic Campaign 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于服饰时尚广告制作场景，主题为“SPLASH Fashion Brand Hyper-Realistic Campaign 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a 9:16 hyper-realistic fashion campaign poster for a debranded launch concept. Create a confident female model seated on a large transparent liquid-glass word sculpture placed across the lower third of the frame; the sculpture should feel like molded clear resin or water-solid lettering with crisp reflections, internal refraction, and splash energy around its base. Pose direction: one leg relaxed downward, one leg bent, one hand resting on the knee, one hand braced beside the body, upright posture, direct eye contact, calm editorial confidence. Wardrobe: black tailored blazer, fitted black top, black wide-leg trousers, monochrome high-top sneakers, minimal jewelry, clean contemporary styling. Do not replicate any exact face, identity, footwear branding, or logo from any source; generate a new generic campaign model.
+
+Background composition: fill most of the upper background with one oversized bold sans-serif display word in matte light gray or off-white, spanning nearly edge to edge and sitting partially behind the model to create depth. Keep the word generic and non-branded, or render it as abstract placeholder typography. Add a small clean tagline area on the right side at mid-height using the exact copy "Launch Campaign" in crisp modern sans-serif text. Preserve strong vertical hierarchy: giant background type, centered seated model, sculptural foreground lettering, minimal secondary copy.
+
+Lighting and materials: studio setup with a large soft key light from front-left, subtle rim light from rear-right, controlled specular highlights on the transparent sculpture, soft falloff on the backdrop, gentle shadow definition on the suit, realistic skin texture, premium cosmetic-grade retouching, glossy floor reflections, suspended splash droplets frozen sharply near the sculpture. Background should be a smoky charcoal-to-silver gradient with a clean premium finish, no clutter, no props beyond water-splash effects.
+
+Color palette: charcoal black, graphite, silver gray, off-white, clear glass, subtle cool highlights. Camera direction: full-body vertical framing, eye-level to slightly low angle, 85mm portrait look, shallow depth of field but text remains legible, sharp focus on the model and front edges of the sculpture. Output should feel like a production-ready commercial fashion poster with deliberate negative space and polished typography placement.
+
+Reference-image policy: use the reference only as inspiration for layout rhythm, seated pose attitude, oversized background typography, liquid-material foreground treatment, and premium studio mood. Do not copy exact text, person identity, facial features, brand cues, shoe marks, or distinctive composition line-for-line. Avoid copyrighted logos, avoid named fashion retailers, avoid creator handles, avoid prices, and avoid any protected slogan other than the user-provided copy "Launch Campaign".
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 31. Aurora Oolong Cold Brew Commercial 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-31-aurora-oolong-cold-brew-commercial-poster.jpg" alt="Aurora Oolong Cold Brew Commercial 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[wuyoscar/gpt_image_2_skill docs/product-food/aurora-oolong-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/aurora-oolong-poster.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Aurora Oolong Cold Brew Commercial 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于饮品广告制作场景，主题为“Aurora Oolong Cold Brew Commercial 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Aurora Oolong Cold Brew”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertically framed premium beverage advertising poster, aspect ratio 9:16, with a calm luxury studio setup and a clean commercial finish. Show one amber tea bottle as the hero product placed slightly right of center on a dark stone pedestal, with a short clear tumbler of iced tea on the lower left foreground. Keep the composition minimal and symmetrical in feeling, with large negative space above and around the products for headline and supporting copy. The bottle should be front-facing, sharp, and dominant, with realistic cold condensation, matte black cap, dark textured label, subtle metallic accent line, and believable glass thickness. The drink in the tumbler should show translucent ice cubes, warm amber liquid, soft internal glow, and crisp reflections without looking overly stylized.
+
+Lighting: use a soft central back glow behind the bottle to create a halo effect, plus diffused side falloff so the background fades from warm ivory in the center to smoky taupe and charcoal at the edges. Add gentle top-front studio fill to reveal label texture, condensation droplets, and glass shape. Keep highlights controlled, with no blown whites and no harsh specular clipping. Materials should feel premium and tactile: wet glass, slightly pebbled label paper, brushed metallic detailing, smooth stone surface, and faint atmospheric haze for depth.
+
+Typography layout: reserve a centered logo-sized emblem area at the top, then a large elegant serif headline zone across the upper middle, a smaller spaced sans-serif subtitle line below it, two short lines of supporting copy in the midsection, and a compact product descriptor block near the bottom. Use refined editorial typography: high-contrast serif for the main title, narrow tracking, generous line spacing, small uppercase sans-serif for supporting text. If text is rendered, keep it minimal, readable, and debranded. Use the supplied copy "Aurora Oolong Cold Brew" only as editable campaign headline text in the poster layout, not as a copied upstream logo lockup, and do not replicate any specific original label wording. Packaging text should be generic, sparse, and newly invented.
+
+Color palette: warm cream, champagne gold, smoky brown, charcoal black, and deep amber tea tones. Mood: quiet, elevated, polished, premium, restrained. Camera and framing: straight-on eye-level product shot with slight lens compression, sharp product focus, soft background diffusion, and realistic ad-photography proportions.
+
+Reference-image policy: use the reference only for overall composition logic, vertical hierarchy, lighting mood, product-plus-glass arrangement, negative space strategy, and premium commercial finishing. Do not reproduce exact branding, logo symbols, label copy, slogan text, or any distinctive protected graphic details from the source image. Avoid extra fruits, splashes, tropical props, beach cues, busy badges, discount labels, or invented claims. No people, no storefront, no pricing, no certification marks, no social handles, no dates, no addresses.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 32. Moss Radio 品牌识别展示板
+
+<img src="../../docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg" alt="Moss Radio 品牌识别展示板" width="420">
+
+- 作图类型：`poster_design`
+- 行业：品牌识别
+- 来源：[wuyoscar/gpt_image_2_skill docs/brand-systems-identity/brand-identity-moss-radio.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/brand-identity-moss-radio.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“Moss Radio 品牌识别展示板”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为品牌识别。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于品牌识别广告制作场景，主题为“Moss Radio 品牌识别展示板”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Moss Radio”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 brand-identity showcase board for a fictional audio, retail, or culture-focused business. Build a dense editorial presentation on a clean modular grid with many framed panels, like a premium gallery case study board. Use one large hero panel in the upper left, then surround it with smaller compartments for logo studies, wordmarks, app icons, color palette, typography samples, editorial posters, product cards, landing-page preview, packaging mockups, sticker system, textures, interface snippets, signage, merchandise, print collateral, and tag labels. Keep spacing tight but elegant, with thin dividers, consistent margins, and a refined presentation-board rhythm.
+
+Use the supplied customer headline as the main brand text, for example "Moss Radio", but treat it as editable demo copy rather than a protected logo to replicate. Set the headline in bold modern grotesk sans serif, paired with a high-contrast serif for secondary editorial headlines. Typography must feel art-directed and commercially finished: large title blocks, smaller captions, tiny technical labels, restrained tracking, clear hierarchy, no random filler paragraphs, no fake social handles, no phone numbers, no addresses, no dates, no prices unless explicitly provided. All text should be short, generic, and reusable, such as category labels, poster taglines, interface labels, and packaging descriptors.
+
+Art direct the board with tactile premium materials: uncoated paper, recycled card stock, matte labels, soft-touch packaging, brushed metal accents, rubber buttons, kraft shipping box surfaces, fabric tote texture, embroidered cap texture, and smooth app-icon glass or coated plastic. Show realistic print edges, subtle shadows, slight paper curl, embossed marks, foil-like accent lines used sparingly, and believable product mockup reflections.
+
+Lighting should be soft studio daylight from upper left with gentle warm fill, producing controlled shadows, mild depth, and a photographed presentation-board finish. Keep contrast moderate, highlights clean, blacks rich but not crushed, and preserve legibility across the whole board. The image should feel like a high-end brand case study pinned or laid out for client review, not a random collage.
+
+Color palette: muted olive green, parchment cream, charcoal black, warm gray, and copper-brown accents. Use the palette consistently across every panel so the system feels unified. Avoid overly saturated colors, neon tones, or glossy tech-brand gradients. Background should be warm off-white or parchment with dark section bands used selectively for contrast.
+
+Reference-image policy: use the reference only for composition logic, panel density, hierarchy, lighting mood, material mix, and overall commercial polish. Do not reproduce any exact logo shape, icon geometry, poster copy, packaging text, interface text, sticker wording, storefront naming, or distinctive arrangement from the source. Reinterpret the structure into a new debranded board for a different client-ready advertising case.
+
+Negative constraints: no exact upstream brand names beyond editable customer demo copy, no creator handles, no copied slogans, no recognizable proprietary logos, no celebrity or real-person identity, no exact product prices, no identical storefront text, no trademarked icon redraws, no messy typography, no warped text, no low-resolution collage artifacts, no duplicated panels, no chaotic spacing. Output should be commercially usable, polished, and presentation-ready.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 33. 海报设计案例 - Playful Mochi Metro Brand Kit Board
+
+<img src="../../docs/assets/gallery/cases/gallery-33-playful-mochi-metro-brand-kit-board.jpg" alt="海报设计案例 - Playful Mochi Metro Brand Kit Board" width="420">
+
+- 作图类型：`poster_design`
+- 行业：食品饮料
+- 来源：[wuyoscar/gpt_image_2_skill docs/brand-systems-identity/playful-brand-kit-mochi-metro.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/playful-brand-kit-mochi-metro.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0229`, `adimg_recipe_0182`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“海报设计案例 - Playful Mochi Metro Brand Kit Board”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于食品饮料广告制作场景，主题为“海报设计案例 - Playful Mochi Metro Brand Kit Board”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：如未提供明确文案，只保留清晰可编辑的标题区和辅助信息区，不编造价格、日期、电话、地址、功效或认证。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 advertising gallery case board for a fictional food-and-beverage dessert brand, designed as a polished commercial identity presentation. Build a clean modular layout with multiple framed panels arranged on one board: a large hero logo area at top left, a vertical color palette strip and type specimen at top right, a row of logo studies beneath, a central band of packaging mockups, a lower band of campaign posters, app icons, stickers, and UI fragments, then a bottom strip with brand slogan space and a secondary logo lockup. Keep the board readable from a distance, with strong hierarchy, even gutters, rounded card edges, and a premium retail-pitch finish.
+
+Use a cheerful kawaii transit-and-snack concept without copying any existing mascot, logo, or wording. The visual language should combine soft dessert shapes, simple transport-inspired pictograms, rounded geometric icons, and friendly packaging mockups. Show 3 to 4 snack package designs such as pouches, cups, or cartons with cute illustrated characters, but make all brand assets newly invented and generic. Use materials that feel real and printable: matte coated paper, soft-touch laminated pouches, glossy sticker vinyl, smooth mobile-screen glass, and lightly textured presentation board.
+
+Color system: warm pink, mango yellow, leaf green, bright violet, cream, and deep charcoal, with controlled saturation and clean contrast. Lighting: bright studio tabletop lighting from upper left with soft frontal fill, subtle contact shadows, crisp print detail, and gentle specular highlights on packaging and app icons. Background: warm off-white presentation surface with a minimal editorial product-design mood, no clutter, no scene depth beyond slight shadow lift.
+
+Typography: oversized rounded display lettering for the primary headline area, bold sans serif for secondary labels, compact clean captions for small annotations. If text is rendered, keep it sparse and generic: one main headline area using the new client brand name only, one short slogan area, a few category labels such as logo studies, color palette, packaging, app icon, stickers, UI fragments, and campaign tiles. Do not generate prices, addresses, phone numbers, social handles, dates, or protected slogans. Keep any smaller text minimal, legible, and non-branded.
+
+Composition rules: the top-left hero panel should dominate; the top-right palette and type area should feel like a design-spec sheet; the packaging row should be the most dimensional and tactile section; the lower poster and UI sections should feel like supporting applications rather than separate ads. Maintain consistent margins, alignment, icon style, stroke weight, and illustration proportions across all panels.
+
+Reference-image policy: use the unseen reference only as inspiration for board structure, visual hierarchy, product-identity presentation logic, lighting cleanliness, material realism, and commercial finish. Do not copy any exact names, logos, characters, sticker phrases, package layouts, poster text, badge wording, or distinctive compositions from a known source. Produce an original debranded gallery case suitable for adapting to a new customer or campaign.
+
+Negative constraints: no trademarked logos, no recognizable upstream mascot, no copied Japanese phrases, no creator handle, no price tags, no exact package text, no photoreal people, no messy collage, no low-end flyer aesthetics, no random extra objects, no warped typography, no duplicated panels, no dark moody lighting.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 34. Quiet-高端 护肤 Morning Tray
+
+<img src="../../docs/assets/gallery/cases/gallery-34-quiet-luxury-skincare-morning-tray.jpg" alt="Quiet-高端 护肤 Morning Tray" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：美妆护肤
+- 来源：[wuyoscar/gpt_image_2_skill docs/beauty-lifestyle/skincare-morning-routine-tray.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/skincare-morning-routine-tray.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0003`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“Quiet-高端 护肤 Morning Tray”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的商业摄影，用于美妆护肤广告制作场景，主题为“Quiet-高端 护肤 Morning Tray”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Morning Routine.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical commercial beauty still-life photograph for a debranded advertising gallery case titled "Morning Routine." Build the scene as a quiet morning skincare arrangement on a pale beige stone bathroom counter beside a frosted window. Use the reference image only to guide visual structure: a softly lit countertop vignette with a small flower vase at back left, folded cream towels in the lower left foreground, a jade facial roller placed diagonally across the towels, one clear serum dropper bottle near center-left, one matte cream squeeze tube standing center-right, one low cosmetic jar in the front-right midground, and a small dish with pearl-like accessories at the lower right. Keep the basin edge or a curved sink form barely visible on the far right for spatial realism. Maintain refined spacing, a calm premium hierarchy, and believable product-scale relationships.
+
+Lighting: soft natural daylight entering from the left through textured or frosted glass, producing gentle highlights, diffused shadows, and a warm-clean morning atmosphere. Avoid hard flash, dramatic rim lights, neon accents, or dark studio styling. Materials: translucent glass with clear liquid, matte ceramic, softly textured cotton towel, polished pale stone, smooth plastic or lacquered skincare packaging, natural flower petals with subtle dew. Surface finish should feel real and premium, with crisp micro-contrast on edges and believable reflections, not glossy CGI.
+
+Color palette: warm ivory, cream, soft stone beige, muted sage green, clear glass, and small touches of pearl white. Keep saturation restrained and elegant. Composition should feel editorial and commercially usable, with the hero products occupying the center band and negative space preserved in the upper left or upper center for typography.
+
+Typography direction: add only the text "Morning Routine" in clean, modern serif or refined sans-serif lettering, small to medium size, placed in the open negative space near the upper left or upper middle. Use subtle dark taupe or warm gray text. Do not add any other copy, price, logo, badge, handle, or claims. Packaging labels, if visible, must be minimal, generic, and unreadable or replaced with short abstract non-brand placeholder marks.
+
+Photographic execution: high-end beauty campaign still life, shallow to moderate depth of field, sharp focus on the serum bottle, tube, and jar, soft falloff to secondary props, realistic lens behavior, accurate perspective, premium retouching, clean edges, no clutter, no human figure. Preserve the logic of a morning vanity scene and the calm luxury mood while making the products fully generic and reusable for a new customer campaign.
+
+Negative constraints: no real brand names, no logos, no social handles, no prices, no medical claims, no celebrity likenesses, no copied packaging design, no excessive props, no surreal shapes, no over-smoothed materials, no dark black-background watch-style ad layout, no metallic speed lines, no unrelated typography blocks. Reference-image policy: use the provided reference only as inspiration for composition, hierarchy, lighting, materials, and scene logic; do not reproduce any exact proprietary text, product identity, or unique protected arrangement.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 35. 商业摄影案例 - Fragrance Evening Ritual Vanity
+
+<img src="../../docs/assets/gallery/cases/gallery-35-fragrance-evening-ritual-vanity.jpg" alt="商业摄影案例 - Fragrance Evening Ritual Vanity" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：美妆护肤
+- 来源：[wuyoscar/gpt_image_2_skill docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
+
+**中文 Brief**
+
+基于“商业摄影案例 - Fragrance Evening Ritual Vanity”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的商业摄影，用于美妆护肤广告制作场景，主题为“商业摄影案例 - Fragrance Evening Ritual Vanity”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Evening Ritual.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 premium beauty advertising still life for a fragrance campaign titled "Evening Ritual." Build the scene as an intimate evening vanity setup on a pale cream marble tabletop beside a softly blurred window at blue hour. Place two debranded perfume bottles as the hero objects in the lower center-left, one slightly taller and rounder, one smaller and closer to the viewer, both with clear glass, warm blush-toned liquid, polished metallic caps, and crisp realistic reflections. Arrange supporting props to guide depth and hierarchy: a faceted water glass on the right foreground, a small glowing candle behind the bottles, a satin ribbon draped diagonally from the lower left corner, a white flower in a glass vase near the left edge, and a few pearl hairpins or delicate accessories near the bottom right. Keep the background softly out of focus with a mirror edge, sheer curtain, bed linens, and distant city lights to suggest a refined private interior without showing any identifiable location.
+
+Lighting: use warm candlelit key light from front-left combined with soft ambient twilight from the window behind, creating luminous glass highlights, gentle specular reflections on metal, translucent glow through the fragrance liquid, and natural shadow falloff across the marble. Preserve realistic exposure and high-end commercial photography finish, with shallow depth of field, sharp focus on the bottles and nearest props, and smooth bokeh in the background.
+
+Materials and color: emphasize clear cut glass, blush champagne liquid, brushed silver or pale gold metal, creamy marble, ivory petals, transparent water, and dusty rose satin. Use a restrained palette of warm ivory, champagne, blush pink, soft amber, muted taupe, and cool dusk blue in the distance.
+
+Typography and layout: reserve clean negative space in the lower center or lower middle area for elegant campaign text overlay. Render the headline exactly as "Evening Ritual" in refined high-contrast serif typography, small to medium size, letterspaced, centered or slightly left aligned. If secondary text is shown, keep it generic and minimal, no more than two short lines, with no brand name, price, handle, claim, or promotional badge. No logos, no packaging marks, no distinctive label text.
+
+Reference-image policy: use the reference only for visual structure and scene logic: intimate vanity composition, object layering, warm evening glow, glass-and-stone material contrast, and editorial still-life hierarchy. Do not replicate the original bottles, exact flower arrangement, exact room details, mirror shape, text, or any unique identifying design elements. Produce a commercially reusable, debranded advertising image with believable product proportions and physically plausible reflections.
+
+Avoid: logos, trademarks, protected text, celebrity likenesses, copied bottle branding, distorted glass geometry, fake liquid physics, excessive filters, over-sharpening, clutter, unreadable typography, invented prices, invented claims, or direct duplication of any source image details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 36. Zoo Visitor 导视地图
+
+<img src="../../docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Zoo Visitor 导视地图" width="420">
+
+- 作图类型：`signage_wayfinding`
+- 行业：文旅
+- 来源：[wuyoscar/gpt_image_2_skill docs/events-experience/zoo-visitor-wayfinding-map.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/zoo-visitor-wayfinding-map.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`, `adimg_template_0261`; recipes `adimg_recipe_0230`, `adimg_recipe_0209`, `adimg_recipe_0158`
+
+**中文 Brief**
+
+基于“Zoo Visitor 导视地图”生成一个去品牌化的广告作图案例。作图类型为标识导视，行业场景为文旅。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的标识导视，用于文旅广告制作场景，主题为“Zoo Visitor 导视地图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Rivergate Zoo”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic. Main headline text must read exactly: "Rivergate Zoo". Build the layout as a single illustrated overview map printed on a lightly textured board with a warm off-white paper base, subtle aging at the edges, and crisp professional finishing. Use a top-down oblique composition with one large central map island, curved visitor paths looping through clearly separated habitat zones, small building markers near the lower edge, a legend panel on the left, a compact information panel on the right, and a north arrow in the upper-right corner. Keep the overall hierarchy immediately readable from distance.
+
+Composition and subject placement: place the title block large on the left third, with the map occupying the center and right two-thirds. Divide the map into 4 to 6 themed attraction zones with distinct shapes, clean boundaries, and different route colors. Include illustrated animals, trees, water, bridges, enclosures, and visitor facilities distributed logically by zone. Add numbered stop markers, accessible route symbols, restrooms, first aid, stroller-friendly markers, and entry/exit labels. Keep icons simple, consistent, and production-ready. Make the route network the main navigation layer, with dashed or dotted path styles that are easy to distinguish.
+
+Materials and finish: render the board as high-quality printed signage artwork with matte coated paper, ink-rich greens, muted blues, sandy beige grounds, and controlled earthy accents. Use finely painted environmental illustration with clean vector-like information overlays. The map should feel handcrafted but commercially finished, with sharp edges, legible panels, neat border framing, and no distressed novelty effects.
+
+Lighting and image quality: use even soft daylight simulation with gentle top illumination, low glare, and balanced contrast so all labels and icons remain readable. Avoid dramatic shadows, harsh reflections, neon colors, or cinematic mood lighting. The result should look like a premium visitor guide graphic prepared for tourism marketing, signage presentation, or campaign mockup.
+
+Typography and text policy: use bold uppercase display lettering for the main title, supported by clean sans-serif wayfinding text for zone names, legend labels, facility labels, and route descriptions. Only the main title must be exact: "Rivergate Zoo". All other text should be generic, short, and debranded, such as zone names, amenity labels, and route categories. Keep typography aligned inside dedicated label boxes, legend rows, and numbered callout panels. Do not include phone numbers, prices, dates, social handles, slogans, or proprietary taglines.
+
+Color palette: natural greens, river blues, warm tan, ivory, dark forest green, muted terracotta, and small safety-color accents for route coding and emergency markers. Maintain strong contrast between text and background for wayfinding clarity.
+
+Reference-image policy: use the provided case only as inspiration for composition, hierarchy, map logic, typography placement, color balance, lighting softness, and commercial finish. Do not replicate any exact logo, animal arrangement, route pattern, label wording, icon design, panel copy, or distinctive branded graphic element from the source. Produce a new original layout with similar functional clarity but different protected details.
+
+Negative constraints: no copied logos, no creator handles, no exact upstream slogans, no protected brand text beyond the required title, no real person likenesses, no copyrighted mascots, no unreadable tiny text, no chaotic path system, no incorrect arrows, no fantasy architecture that breaks map logic, no fake prices, no addresses, no QR codes, no watermarks, no mock social UI, no cluttered advertising overlays.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制标识导视的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 37. Scenic Area Chinese 导视地图
+
+<img src="../../docs/assets/gallery/cases/gallery-37-scenic-area-chinese-wayfinding-map.jpg" alt="Scenic Area Chinese 导视地图" width="420">
+
+- 作图类型：`signage_wayfinding`
+- 行业：文旅
+- 来源：[wuyoscar/gpt_image_2_skill docs/events-experience/huashan-5a-scenic-wayfinding-map.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/huashan-5a-scenic-wayfinding-map.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0185`, `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0230`, `adimg_recipe_0209`, `adimg_recipe_0158`
+
+**中文 Brief**
+
+基于“Scenic Area Chinese 导视地图”生成一个去品牌化的广告作图案例。作图类型为标识导视，行业场景为文旅。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的标识导视，用于文旅广告制作场景，主题为“Scenic Area Chinese 导视地图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“华山游览导览图”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a polished 16:9 tourism wayfinding poster rendered as a premium scenic-area navigation map for a mountain destination. Use a wide horizontal layout with the mountain massif filling most of the frame, a visitor center anchored near the bottom center, multiple peak destinations distributed across the upper and middle zones, and clearly separated route layers connecting them. Build the composition like a commercial information graphic fused with a hand-painted landscape: dramatic ridgelines, cliff paths, cable transport lines, scenic lookout nodes, rest icons, safety icons, and elevation callouts organized in a strong visual hierarchy. Keep the map readable first, atmospheric second.
+
+Place the main headline in the upper left as clear Chinese text: "华山游览导览图". Add supporting Chinese wayfinding labels throughout the map, but keep all secondary text generic, functional, and non-branded. Typography should be crisp and production-ready: bold brush-style display lettering for the main title, paired with clean high-legibility sans serif Chinese labels for routes, nodes, icons, and elevations. Use framed title plaques, route tags, and legend boxes with balanced spacing, consistent icon sizing, and strong contrast for print and outdoor readability.
+
+Visual style: ink-wash mountain atmosphere combined with high-end tourism advertising finish. Use layered mist, sunlit sky haze, textured rock faces, sparse pines, and subtle paper-grain background treatment. Color palette should be warm parchment beige, stone gray, moss green, muted crimson, dark charcoal, and small accents of safety blue and signal red. Materials should feel like a premium printed visitor guide board: matte paper poster surface, lightly aged parchment texture, sharp vector route overlays, crisp icon panels, and embossed plaque-style destination labels.
+
+Lighting: soft golden side light from the upper right, low-contrast ambient fill across the mountains, delicate morning mist in valleys, and clean highlights on text panels and route markers so the information remains readable. Preserve believable terrain depth with atmospheric perspective, but do not let fog or painterly effects obscure the map logic.
+
+Include a legend panel in the lower left, a small elevation profile or terrain summary near the bottom edge, a directional north marker in the upper right, and a safety advisory panel in the lower right. Route colors must be clearly differentiated by function, with solid, dashed, and alternate-color path systems that read instantly. Icons for restrooms, aid, viewing platforms, transport, and parking should be universal, simplified, and consistent.
+
+Reference-image policy: use the unseen reference only as inspiration for overall composition, information hierarchy, scenic-map logic, parchment-and-ink atmosphere, and commercial finishing quality. Do not reproduce any exact place names beyond the required title text, do not copy unique label wording, logo shapes, emblem designs, route geometry, icon arrangement, or proprietary text blocks. Generate an original debranded map design suitable as a reusable gallery case for future tourism, event, park, campus, or destination wayfinding campaigns.
+
+Negative constraints: no existing brand logos, no creator handles, no copied slogans, no exact upstream wording, no real contact details, no ticket prices, no dates, no identifiable people, no photoreal tourists, no warped typography, no unreadable Chinese text, no random gibberish labels, no impossible paths, no cluttered legend, no low-contrast signage, no direct duplication of the source image layout.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制标识导视的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 38. Tea Launch 海报 Metro Lightbox Mockup
+
+<img src="../../docs/assets/gallery/cases/gallery-38-tea-launch-poster-metro-lightbox-mockup.jpg" alt="Tea Launch 海报 Metro Lightbox Mockup" width="420">
+
+- 作图类型：`event_backdrop`
+- 行业：饮品
+- 来源：[wuyoscar/gpt_image_2_skill docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`, `adimg_template_0036`; recipes `adimg_recipe_0238`, `adimg_recipe_0214`, `adimg_recipe_0032`
+
+**中文 Brief**
+
+基于“Tea Launch 海报 Metro Lightbox Mockup”生成一个去品牌化的广告作图案例。作图类型为活动背景板，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的活动背景板，用于饮品广告制作场景，主题为“Tea Launch 海报 Metro Lightbox Mockup”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“New Chinese Tea Launch”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable 9:16 vertical advertising gallery case image for a beverage campaign. Scene: a realistic metro-station lightbox mockup viewed straight-on with a slight environmental perspective, installed in a brushed metal frame on a clean tiled wall, glossy protective glass, soft reflections from the station floor, and believable transit signage blur in the far background. The lightbox should feel premium, bright, and production-ready, as if photographed in a real underground passage.
+
+Poster composition inside the lightbox: build a debranded tea launch poster with a strong central hierarchy. Place the main headline in the upper-middle area and use the exact copy "New Chinese Tea Launch" as the dominant title. Add a smaller secondary label above or below it, plus a restrained information block for campaign details using placeholder text only, with no real prices, addresses, phone numbers, QR codes, social handles, or brand claims. Reserve the lower-right or lower-center area for a product hero: a tall transparent cup of iced tea with visible citrus slices, tea leaves, ice cubes, and condensation, standing on a textured stone pedestal. Surround it with a few botanical accents and fruit segments near the base. Keep typography unobstructed and readable from distance.
+
+Art direction: use an elegant East-Asian-inspired botanical atmosphere without imitating any existing brand identity. Background artwork should combine soft misty mountain silhouettes, subtle sun-disc shape, layered paper-like textures, and clean negative space. Color palette: deep forest green, warm ivory, muted gold, tea amber, and small accents of pinkish citrus flesh. Materials should feel tactile and premium: matte printed poster paper, luminous backlit panel, brushed stainless frame, polished glass, damp fruit surface, and cold drink condensation.
+
+Lighting: internal lightbox illumination should be even and bright, with a warm-neutral white balance. Add realistic overhead station lighting, gentle floor bounce, faint glass glare, and mild shadow separation around the frame. Avoid harsh contrast; preserve legibility across all text zones.
+
+Typography rules: use a refined serif or high-contrast display face for the main title and a clean sans-serif for supporting information. Keep text blocks aligned and spacious, with clear zones for headline, subtitle, feature list, and callout panel. All text other than "New Chinese Tea Launch" should be generic placeholder copy or simple abstract marks. Do not include logos, trademarks, creator credits, pricing, or recognizable proprietary wording.
+
+Reference-image policy: use the provided reference only as inspiration for layout hierarchy, premium beverage poster logic, backlit transit placement, material finish, and scene realism. Do not reproduce any exact brand names, logos, protected wording, specific price formatting, QR design, or distinctive graphic elements from the source. The final image must look like a new original campaign mockup for a different customer.
+
+Negative constraints: no copied branding, no exact upstream text, no faces as primary subject, no messy clutter, no warped poster edges, no unreadable tiny text, no fantasy architecture, no extra products blocking the headline, no watermarks, no fake certification badges, no invented promotional dates or contact details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制活动背景板的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 39. 品牌徽标设计图
+
+<img src="../../docs/assets/gallery/cases/gallery-39-freestyle-150.jpg" alt="品牌徽标设计图" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[freestylefly/awesome-gpt-image-2 Case 150](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-150)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0301`, `adimg_template_0302`, `adimg_template_0303`, `adimg_template_0304`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
+
+**中文 Brief**
+
+基于“品牌徽标设计图”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于饮品广告制作场景，主题为“品牌徽标设计图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Summer Refresh”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial beverage advertisement for a summer campaign. Scene composition: place the hero package slightly right of center on a sunlit weathered wooden table, with one tall clear glass of sparkling golden iced drink in the left foreground overlapping the package for depth. Add two fresh citrus wedges on the right edge of the table and a few small herb sprigs near the drink. Background: bright seaside atmosphere with turquoise water, pale blue sky, soft clouds, and a distant human silhouette on the far left, heavily defocused so the person reads only as lifestyle ambience and not as an identifiable subject. Product design: use a clean silver aluminum can or bottle with fine condensation droplets, minimal fictional branding, and a simple geometric emblem; no real logos, no copied label layout, no protected slogans. Show a small printed product illustration on the package if needed, but keep it generic. Lighting: strong warm daylight from upper left, crisp specular highlights on ice, glass, and metal, gentle rim light on the package, controlled exposure so label area remains readable, subtle bokeh and restrained lens flare for a refreshing premium-ad finish. Materials and detail: realistic transparent ice, bubbly liquid, wet citrus pulp, brushed metal, cold condensation, shallow depth of field, high micro-contrast on the hero objects. Typography: place the exact headline text "Summer Refresh" in the upper left sky area, elegant dark serif or refined modern display type, clean spacing, short premium campaign feel. Reserve a small lower-label text zone on the package for generic product facts using invented placeholder copy only, with clear legibility but no fake claims, prices, dates, addresses, or certifications. Color palette: airy sky blue, sea turquoise, citrus yellow, champagne gold, silver, and sun-warmed neutral wood. Overall result: production-ready advertising key visual, polished, bright, aspirational, refreshing, realistic, premium supermarket and poster campaign quality. Negative constraints: do not copy any exact brand names, logos, Japanese text, percentages, proprietary packaging graphics, person identity, or distinctive wording from any source image; avoid clutter, avoid extra products, avoid distorted typography, avoid unreadable labels. Reference-image policy: use the unseen reference only as inspiration for composition hierarchy, hero placement, lighting direction, material cues, depth staging, and text placement; create an original debranded scene rather than a replica.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 40. 界面交互设计图
+
+<img src="../../docs/assets/gallery/cases/gallery-40-freestyle-151.jpg" alt="界面交互设计图" width="420">
+
+- 作图类型：`poster_design`
+- 行业：多行业广告
+- 来源：[freestylefly/awesome-gpt-image-2 Case 151](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-151)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0231`, `adimg_template_0232`, `adimg_template_0233`, `adimg_template_0234`, `adimg_template_0235`; recipes `adimg_recipe_0182`, `adimg_recipe_0238`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“界面交互设计图”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为多行业广告。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于多行业广告广告制作场景，主题为“界面交互设计图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Four Campaign Concepts”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 commercial advertising gallery poster titled "Four Campaign Concepts" using a clean 2x2 quadrant layout with four distinct campaign panels that share one unified design system. Use the reference only as inspiration for overall structure, panel hierarchy, text placement, commercial polish, and mixed-industry contrast; do not reproduce any exact people, products, logos, brand names, or wording from the reference. Keep narrow gutters between panels, consistent outer margins, aligned typography zones, and a premium print-ready finish.
+
+Top-left panel: beauty or skincare concept. Place a debranded female model cropped on the left edge with a cosmetic bottle on the lower right. Background in pale ice blue and white with translucent water droplets, glossy reflections, frosted-glass highlights, and clean studio surfaces. Soft frontal daylight with subtle rim light, smooth skin texture, hydrated atmosphere, and airy negative space. Add a large headline area in elegant editorial typography, one short subheadline, and three small circular feature badges.
+
+Top-right panel: restaurant or food campaign. Place a dramatic plated pasta or gourmet dish slightly off-center on a dark tabletop with shallow depth of field, warm highlights, soft steam, ceramic plate texture, grated garnish, and a refined dining background bokeh. Use low-key directional lighting from upper left, rich shadows, amber-black color contrast, and a premium menu-poster mood. Add a large high-contrast serif headline, a small round limited-offer badge, and one short descriptive line near the lower area.
+
+Bottom-left panel: travel or outdoor escape concept. Show a single traveler from behind facing a mountain lake landscape, centered low in frame, with bright sky, fresh greenery framing the edges, reflective water, and layered alpine depth. Use crisp daylight, soft atmospheric haze, natural cyan-green palette, and lightly cinematic landscape realism. Add a tall poetic headline stacked vertically or in flowing line breaks, a short subheadline, a small handwritten-style accent line, and a bottom campaign strip with placeholder offer blocks but no specific prices or dates.
+
+Bottom-right panel: productivity or SaaS app concept. Use a clean off-white background with a tilted smartphone mockup on the right showing a simple task list interface with generic UI blocks and checklist icons, not a recognizable app. Add a bold sans-serif brand placeholder, a short efficiency-focused headline above or left, three icon-plus-feature lines, a circular callout badge, and a colored bottom banner for a free-trial style CTA without specific duration if not supplied. Use soft studio lighting, matte device materials, violet-to-blue accent graphics, and precise interface legibility.
+
+Global art direction: commercially usable, highly polished advertising composite; each quadrant has its own lighting logic and mood, but all four share consistent spacing, premium typography hierarchy, refined icon language, rounded graphic elements, and balanced color harmony. Use realistic materials: glass, water, ceramic, paper, metal, foliage, fabric, and smartphone glass. Typography must look intentional and production-ready with clear headline, supporting copy, badge, and CTA zones. Use generic placeholder copy except for the exact title "Four Campaign Concepts". Do not invent phone numbers, addresses, prices, medical claims, celebrity likenesses, or copyrighted slogans. No logos, no watermarks, no social handles, no copied Japanese text, no cloned composition details beyond broad layout inspiration.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 41. 主题海报版式设计
+
+<img src="../../docs/assets/gallery/cases/gallery-41-freestyle-153.jpg" alt="主题海报版式设计" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：食品饮料
+- 来源：[freestylefly/awesome-gpt-image-2 Case 153](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-153)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0291`, `adimg_template_0292`, `adimg_template_0293`, `adimg_template_0294`, `adimg_template_0295`; recipes `adimg_recipe_0149`, `adimg_recipe_0002`, `adimg_recipe_0055`
+
+**中文 Brief**
+
+基于“主题海报版式设计”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于食品饮料广告制作场景，主题为“主题海报版式设计”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Herbal Soup Mix.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a vertical 9:16 ecommerce poster for a debranded food-and-beverage product called "Herbal Soup Mix." Use the reference image only as structural inspiration for layout hierarchy and commercial finish, not as a direct asset. Build the composition with a warm light beige paper-texture background, a large hand-painted headline area at the top, a dominant product story zone in the middle, and a bold information band at the bottom. Place a realistic golden-brown whole chicken on the right half as the hero ingredient, angled slightly left, large enough to anchor the poster. On the left half, place a woven basket filled with exactly six clearly separated ingredient groups: natural woody root sticks, neat white herbal cubes, round tan root slices, glossy yellow soybeans, curled dried citrus peel strips, and deep red dates. Add six small dark brown ingredient tags with clean white text, each aligned to one ingredient pile. Near the lower-right of the main image, add a circular warm orange callout badge for ingredient-summary text. At the bottom, create a solid orange rectangular usage panel with a simple cooking-pot icon, short preparation text, and a secondary benefit slogan area. Typography must be production-ready: the main headline should be bold, expressive, brush-textured display lettering in dark charcoal; supporting text should be clean, legible, high-contrast sans serif; all text blocks should be editable placeholders except the exact product title "Herbal Soup Mix." Lighting should feel like a polished studio advertisement with soft frontal illumination, gentle top-left highlights, crisp ingredient texture, readable shadows, and strong edge separation without harsh glare. Materials should feel tactile and appetizing: matte paper background, natural wicker weave, fibrous roots, powdery herbal cuts, glossy beans, leathery dried peel, and slightly reflective dates. Use a warm earthy palette of toasted brown, herbal beige, amber orange, muted cream, and small dark accents, with the orange badge and bottom panel acting as the strongest contrast. Keep the poster clean, premium, and shelf-ready, with clear text hierarchy, generous negative space around the title, and strong product readability for marketplace use. Do not include logos, social handles, prices, certification marks, addresses, phone numbers, QR codes, water splashes, tropical fruit, beach imagery, or any copied slogans. Do not reproduce any exact wording, brand identity, or distinctive protected layout details from the source; only reuse the general idea of top headline, right-side hero subject, left-side ingredient display, circular callout, and bottom instruction banner.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 42. 写实摄影风格创作
+
+<img src="../../docs/assets/gallery/cases/gallery-42-freestyle-154.jpg" alt="写实摄影风格创作" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：汽车
+- 来源：[freestylefly/awesome-gpt-image-2 Case 154](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-154)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0155`, `adimg_template_0159`, `adimg_template_0160`, `adimg_template_0215`, `adimg_template_0216`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“写实摄影风格创作”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为汽车。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的商业摄影，用于汽车广告制作场景，主题为“写实摄影风格创作”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Hangar Performance”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 photorealistic commercial advertising image for an automotive campaign. Scene: a vivid electric-blue compact performance coupe with a dark carbon-texture hood, dark roof, and dark multi-spoke wheels is parked in the left-front foreground of a vast aircraft hangar. Behind it, place a large white narrow-body passenger jet with a muted blue tail, scaled much larger than the car to create dramatic hierarchy. Composition: low camera height, three-quarter front view of the car, car occupying the lower-left to center-left area, aircraft centered to right-rear background, wide open hangar door framing a bright overcast exterior and distant industrial skyline. Keep strong depth separation, realistic perspective, and generous negative space in the upper-right and right side for ad layout.
+
+Materials and surfaces: highly polished concrete floor with crisp but softened reflections of both vehicles; believable painted metal, carbon fiber, rubber, glass, and brushed metal details; clean body panels with subtle micro-reflections; no dirt, no crash damage, no exaggerated concept styling. Lighting: soft cinematic daylight entering from the open hangar, large diffused key light from front-right, gentle ambient fill from the interior, controlled rim highlights along the car roofline, hood edges, and aircraft fuselage curves. Preserve realistic shadow contact under wheels and landing gear. Aim for premium production photography realism, not stylized CGI.
+
+Typography and graphic placement: add the headline text "Hangar Performance" only, set in a clean bold sans-serif, upper-right area or upper-center-right, large enough to read clearly without covering the main subjects. Use minimal secondary graphic treatment: thin alignment lines or a subtle translucent text block if needed, but no extra slogans, no pricing, no dates, no fake certification marks. Keep all other surfaces debranded: no logos, no manufacturer emblems, no airline identity, no readable tail marks, no protected signage text, no recognizable license plate text. If environmental signage is present, replace it with generic maintenance wayfinding using unreadable or fully generic characters.
+
+Color palette: electric blue subject car, white and cool gray aircraft and hangar structure, graphite and black trim, restrained steel tones, soft neutral sky. Maintain commercial clarity, high dynamic range control, sharp focus on the car, slightly softer background aircraft details, natural contrast, and premium catalog-level finish.
+
+Reference-image policy: use the reference only as inspiration for scene logic, subject hierarchy, camera angle, reflective floor behavior, and soft daylight hangar mood. Do not reproduce any exact brand identifiers, aircraft livery, signage wording, plate text, or other unique protected details from the source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 43. 零食品牌技术分解图
+
+<img src="../../docs/assets/gallery/cases/gallery-43-freestyle-310.jpg" alt="零食品牌技术分解图" width="420">
+
+- 作图类型：`product_ad`
+- 行业：零食
+- 来源：[freestylefly/awesome-gpt-image-2 Case 310](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-310)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0148`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
+
+**中文 Brief**
+
+基于“零食品牌技术分解图”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为零食。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于零食广告制作场景，主题为“零食品牌技术分解图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Product System Breakdown”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial advertising image titled "Product System Breakdown" for a debranded snack product. Compose it as a clean white studio technical poster with one hero snack package centered slightly left, a few real edible pieces in the foreground, and a bite-reveal or cutaway detail near the lower edge to show texture and appetite appeal. Add a precise infographic system around the product: black ink technical annotations, sectional diagrams, material callouts, arrows, measurement lines, sustainability notes, and one small exploded-view inset. Keep the product photoreal and fully legible as a generic new brand, with no existing trademarks, no copied packaging graphics, and no recognizable real-world logos.
+
+Layout and hierarchy: use a structured editorial grid with generous negative space. Put the headline "Product System Breakdown" inside a hand-drawn technical label box in the upper left. Reserve the right side and corners for annotation clusters, cross-sections, and dimension notes. Place 1 to 2 small inset diagrams around the hero product showing internal layers, packaging structure, or product engineering logic. Keep all text blocks short, clean, and readable, using generic engineering-style labels only. No prices, no social handles, no dates, no certifications, no fake claims.
+
+Materials and rendering: photoreal snack packaging with matte or semi-gloss printed film, subtle crimped edges, realistic highlights, and accurate food texture. The snack pieces should look crisp, fresh, and edible, with believable crumbs and surface detail. Diagram overlays should look like black archival ink on white board, with slight hand-drawn imperfection but precise drafting discipline. Use one controlled accent color derived from the package design for 20 to 30 percent of arrows, borders, and highlight marks; keep the remaining 70 to 80 percent of linework and typography black.
+
+Lighting and color: bright high-key studio lighting from upper left, soft fill from front, minimal hard shadow, faint grounding shadow under the package, and a very light floor reflection if needed. Background stays pure white or near-white with no scenery. Palette is white, black, warm neutral food tones, and one restrained accent color. The result must feel premium, educational, appetizing, and retail-ready.
+
+Typography and text behavior: use bold condensed sans serif for the main title, technical sans serif for labels, neat alignment, consistent line spacing, and strong legibility. Only include the exact title "Product System Breakdown" plus generic neutral annotation text such as dimensions, layer names, materials, and structure labels. Do not include any real brand names, celebrity references, creator signatures, protected slogans, or copied packaging text.
+
+Reference-image policy: use the unseen reference only as inspiration for composition logic, infographic hierarchy, white-background studio treatment, mixed photoreal-plus-sketch execution, and technical annotation density. Do not replicate the original panel arrangement exactly, do not imitate any specific snack brand packaging, and do not reproduce any distinctive wording, icons, mascots, or logo shapes.
+
+Negative constraints: no copyrighted logos, no real brand trade dress, no copied canister or bag design, no watermarks, no QR codes, no social UI, no busy background, no fantasy ingredients, no medical or performance claims, no unreadable text, no extra people, no retail shelf scene. Output should be ultra-crisp, commercially polished, and suitable for a gallery case study or reusable ad concept.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 44. NOIR 街头服饰 Campaign
+
+<img src="../../docs/assets/gallery/cases/gallery-44-noir-campaign.jpg" alt="NOIR 街头服饰 Campaign" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[freestylefly/awesome-gpt-image-2 Case 344](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-344)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“NOIR 街头服饰 Campaign”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于服饰时尚广告制作场景，主题为“NOIR 街头服饰 Campaign”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Wear the Dark”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable 16:9 fashion product campaign poster for a debranded streetwear label. Show one oversized black hoodie as the hero product, front-facing and slightly turned, occupying the center-right of the frame and dominating the lower two-thirds. Build the scene inside a dark urban underpass with wet concrete ground, reflective puddles, stained walls, faint graffiti-like wall texture, and a light layer of drifting smoke. Keep the environment minimal and realistic so the hoodie remains the primary focus.
+
+Composition: place a large blocky brand wordmark area in the upper left, using an original invented label in bold sans-serif uppercase, with the campaign line "Wear the Dark" directly below in smaller clean type. Reserve a small micro-copy area near the lower left for 2 to 3 lines of tiny editorial text, but keep it generic and unreadable except for intentional provided text. Maintain strong visual hierarchy: typography top left, product center-right, empty negative space around the hoodie, reflective ground across the bottom edge.
+
+Lighting: use dramatic low-key lighting with a soft overhead key from upper left, subtle rim light on the hood and shoulders, controlled falloff into deep shadow, and faint practical lights receding in the tunnel background. Materials must feel premium and photographic: thick cotton fleece, matte fabric finish, visible seam structure, realistic rib cuffs, soft folds, and clean pocket definition. The black-on-black hoodie should separate from the background through tonal contrast, edge highlights, and texture detail rather than bright color.
+
+Color palette: charcoal black, asphalt gray, muted silver, and very restrained cool highlights. Avoid bright accents. Keep the image sharp, realistic, and suitable for a high-end apparel advertisement. No collage, no stickers, no torn paper, no exaggerated graphic overlays, no extra products, no visible model face, no crowd, no price tags, no social handles, no dates, no store address, no certification claims.
+
+Typography instructions: use only the provided campaign line "Wear the Dark" as readable copy. Any brand label must be newly invented and not match known brands. Keep the type minimal, geometric, premium, and aligned left. Do not reproduce any exact logo, slogan styling, or protected text from references.
+
+Reference-image policy: use the reference only as off-model inspiration for layout balance, product scale, moody tunnel setting, lighting direction, monochrome palette, and typography placement. Do not replicate any exact brand name, logo, garment graphic, wall lettering, or distinctive source-specific details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 45. 品牌口红推荐报告信息图
+
+<img src="../../docs/assets/gallery/cases/gallery-45-freestyle-353.jpg" alt="品牌口红推荐报告信息图" width="420">
+
+- 作图类型：`poster_design`
+- 行业：美妆护肤
+- 来源：[freestylefly/awesome-gpt-image-2 Case 353](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-353)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“品牌口红推荐报告信息图”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于美妆护肤广告制作场景，主题为“品牌口红推荐报告信息图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Lip Color Report”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a vertical 9:16 beauty advertising infographic poster titled "Lip Color Report". Create a refined editorial layout on a warm ivory paper-like background with thin metallic champagne divider lines, soft grayscale micro-text accents, and generous negative space. Use a clean three-zone composition: top-left a large framed portrait area for one anonymous young adult model with natural skin texture and dark hair; top-right a structured analysis panel with short headings, two-column bullet text, and one highlighted recommendation bar; center and lower section a five-column lip-color comparison matrix showing the same face repeated with identical pose, lighting, crop, and skin tone while only the lip color changes from muted nude to rose, dusty berry, brick red, and vivid red. At the bottom, add a concise summary paragraph and a subtle footer line. Keep all text editable, minimal, and commercially plausible, with no random filler paragraphs.
+
+Use soft front-facing studio daylight with slight warm fill, low shadow contrast, crisp facial detail, realistic lip texture, and consistent exposure across all portrait variants. Materials should feel premium but restrained: matte paper background, delicate metallic linework, subtle ink-black typography, and creamy cosmetic swatch strokes beneath each recommendation. Under each portrait in the comparison matrix, include a lipstick bullet packshot and a painted swatch smear in the matching shade. Typography should be elegant and modern: high-contrast serif for the main title, narrow uppercase small headers, and clean readable body text with disciplined alignment. Use a neutral luxury palette: ivory, soft taupe, charcoal, muted gold, rose-beige, berry, and red accents. Emphasize hierarchy through spacing, font weight, and thin rules instead of boxes or rounded cards.
+
+Reference-image policy: use the provided reference only as inspiration for information hierarchy, portrait-plus-analysis layout, repeated try-on grid logic, luxury beauty lighting, and premium editorial finish. Do not reproduce the exact person, brand identity, logo placement, original wording, shade names, numbers, or any distinctive proprietary details. Render as a polished, production-ready cosmetic campaign board for a new client, with sharp readable headline text "Lip Color Report" and otherwise generic editable English placeholder copy only.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 46. 抹茶品牌触点系统视觉板
+
+<img src="../../docs/assets/gallery/cases/gallery-46-freestyle-362.jpg" alt="抹茶品牌触点系统视觉板" width="420">
+
+- 作图类型：`poster_design`
+- 行业：饮品
+- 来源：[freestylefly/awesome-gpt-image-2 Case 362](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-362)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“抹茶品牌触点系统视觉板”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于饮品广告制作场景，主题为“抹茶品牌触点系统视觉板”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Matcha Brand Touchpoints”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical advertising gallery board for a premium beverage concept titled "Matcha Brand Touchpoints". Design it as a complete brand touchpoint presentation, not a single product shot. Use a clean editorial grid with one dominant hero panel on the upper left and center, a narrow information column on the far left, a stack of smaller supporting panels on the right, a horizontal product lineup band across the middle, and smaller packaging, menu, and retail-environment panels near the bottom. Keep generous negative space and a clear reading path from top to bottom.
+
+Hero scene: place a ceramic bowl or cup of vivid green matcha near the center-left, shot from a slightly elevated angle on a warm off-white stone or plaster surface. Show fine foam micro-bubbles, a light dusting of matcha powder, a bamboo whisk nearby, and one or two small supporting props such as a powder dish or folded napkin. Add soft botanical shadows crossing the surface to create depth. Materials should feel tactile and real: matte ceramic, lightly textured paper, natural wood, woven fabric, glass, and coated paper packaging.
+
+Supporting panels: include branded-but-generic touchpoints such as takeaway cups, cold drink containers, dessert or pastry pairings, tote bags, paper boxes, labels, seal stickers, sachets, menu cards, and a compact cafe interior vignette. Arrange these as polished commercial mockups with consistent art direction. Use realistic product proportions and retail display logic. Do not show any recognizable person identity. If figures appear, keep them anonymous, cropped, or implied.
+
+Typography and text policy: use a condensed uppercase serif or sans-serif headline style for major headings, paired with small clean editorial body text. The only exact visible headline text should be "Matcha Brand Touchpoints". Other text should be minimal, generic, and non-branded, using short placeholder descriptors, abstract menu labels, simple category names, or unreadable microtext blocks that preserve layout without inventing specific claims, prices, addresses, dates, handles, or slogans. Build strong hierarchy with a main headline, small section headers, icon-like bullets, and clean caption zones.
+
+Lighting and color: use warm natural daylight from upper left, soft shadow falloff, subtle reflections, and a calm premium atmosphere. Palette: matcha green, oat cream, warm beige, stone white, muted olive, light khaki, and small charcoal accents. Keep saturation controlled and commercially usable. Avoid neon tones, glossy plastic excess, or clutter.
+
+Image character: premium lifestyle advertising, high realism, agency presentation quality, crisp detail, refined composition, believable packaging surfaces, subtle imperfections for authenticity, clean print-ready finish, legible layout, visually modular, highly cohesive.
+
+Reference-image policy: use the reference only as inspiration for composition rhythm, panel hierarchy, lighting softness, material mix, and overall commercial finish. Do not replicate exact brand names, logos, protected phrases, prices, social handles, unique packaging graphics, or any one-to-one layout tracing. Produce a fresh, debranded visual system suitable for a new beverage client.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 47. E-Commerce 商品详情页版式
+
+<img src="../../docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="E-Commerce 商品详情页版式" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：消费电子
+- 来源：[ZeroLu/awesome-gpt-image assets/opennana/terminator-taobao-page.jpeg](https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/terminator-taobao-page.jpeg)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0149`
+
+**中文 Brief**
+
+基于“E-Commerce 商品详情页版式”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于消费电子广告制作场景，主题为“E-Commerce 商品详情页版式”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Flagship Product Detail”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout with a premium commercial finish. Composition: split the page into two primary columns. Left column: a large central hero render occupying about 55% of the total canvas height, slightly left of center, shown in a dramatic three-quarter view with strong scale and fine surface detail. Above and around it, place a bold headline block with the exact text "Flagship Product Detail" plus smaller supporting spec lines using generic placeholder copy only. Below the hero, build a grid of 6 close-up detail panels with thin dividers, each panel showing different product features, materials, joints, textures, ports, or precision components. Right column: top section contains three smaller technical views of the same product from front, side, and back against dark framed panels; middle section contains 6 circular or icon-led feature modules with short generic labels; lower section contains 4 usage scenario thumbnails in a neat grid; bottom edge contains a full-width badge strip with warranty, shipping, quality, or service icons using debranded generic symbols only.
+
+Subject and materials: the product should feel high-value, engineered, and photoreal, with metal, glass, coated polymer, brushed aluminum, glossy black composite, subtle chrome edges, and realistic micro-scratches. Do not depict a copyrighted character or recognizable branded robot; instead design an original advanced electronics device, wearable, appliance, or display product that fits the same premium technical merchandising logic. All parts must look manufacturable and commercially believable.
+
+Lighting: use a dark studio environment with cool blue-black gradients, controlled rim lighting from upper left and rear right, narrow specular highlights on metallic edges, soft fill on the front surfaces, and localized glow accents to separate the product from the background. Keep contrast high but preserve readable panel contents. Add subtle atmospheric bloom only around highlights, not across text.
+
+Typography and UI layout: typography should be crisp, condensed, and modular, with a clear hierarchy: oversized main headline at upper left, mid-size section headers, small spec copy, compact feature captions, and clean icon labels. Use generic debranded placeholder text except for the required phrase "Flagship Product Detail". Avoid any real brand names, prices, logos, store names, or protected slogans. Text should look like a polished marketplace interface with precise alignment, thin panel borders, consistent spacing, and strong readability.
+
+Color palette: deep navy, graphite, black, cold steel, silver, and restrained orange-red accents for calls to action and emphasis. Maintain a premium technical retail mood. Background should use layered dark gradients and faint industrial texture, not a flat fill.
+
+Image behavior and constraints: produce a finished advertising page mockup, not a simple product cutout. Keep the hierarchy dense but readable, with every section clearly separated. Use original iconography and original placeholder copy. No copyrighted logos, no exact prices, no social handles, no identifiable people, no copied product names, no unique protected phrases, no watermarks, no low-detail UI, no random gibberish text blocks, no broken anatomy, no clutter that obscures the product. Reference-image policy: use the unseen reference only as inspiration for overall composition, information hierarchy, lighting mood, material contrast, and commercial page structure; do not replicate its exact product design, text, branding, or distinctive layout details one-to-one.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 48. Blue-White Porcelain 产品 Infographic
+
+<img src="../../docs/assets/gallery/cases/gallery-48-blue-white-porcelain-product-infographic.jpg" alt="Blue-White Porcelain 产品 Infographic" width="420">
+
+- 作图类型：`poster_design`
+- 行业：文化零售
+- 来源：[ZeroLu/awesome-gpt-image assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg](https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0014`, `adimg_template_0020`, `adimg_template_0025`, `adimg_template_0013`; recipes `adimg_recipe_0237`, `adimg_recipe_0020`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“Blue-White Porcelain 产品 Infographic”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为文化零售。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的海报设计，用于文化零售广告制作场景，主题为“Blue-White Porcelain 产品 Infographic”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Craft Detail Guide”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a 16:9 commercial infographic poster for a culture-and-retail campaign about blue-and-white porcelain craftsmanship. Use a horizontal editorial layout with a strong reading path: a large headline zone in the upper left, a short intro paragraph beneath it, a sequence of 5 to 7 modular process panels across the center, a motif/material reference column on the right, and a product showcase strip along the bottom. Place the exact headline text "Craft Detail Guide" as the main title, with all other text kept to short clean placeholder labels only. Center the composition around hand-painted blue-and-white ceramic vessels, pattern studies, clay and glaze details, kiln process vignettes, and a final hero arrangement of porcelain pieces at the lower right. Render the artwork as a refined hybrid of watercolor illustration and high-end print design, with soft paper grain, ink wash edges, crisp linework, and premium poster finishing.
+
+Use a warm off-white handmade paper background with subtle aging, blue-and-white ceramic as the dominant material language, and restrained accent tones of muted indigo, mineral blue, pale beige, and light ash gray. Light the scene like a museum-quality catalog spread: soft diffuse daylight from upper left, gentle ambient fill, low glare, readable small details, and delicate shadowing under objects to create depth without losing diagram clarity. Keep all ceramic surfaces glossy but not mirror-like, with visible cobalt brush decoration, translucent glaze bloom, and realistic porcelain curvature.
+
+Typography and information design must feel production-ready and disciplined: one prominent title block, one secondary subtitle zone, evenly spaced labeled modules, circular callout badges, thin divider lines, and balanced margins with generous negative space. Text areas must be intentionally reserved and legible, with clean alignment and no random dense paragraphs. Include icon-like motif medallions, numbered craft steps, and small caption plates, but keep them generic and debranded. The poster should read like a collectible educational retail display, suitable for gallery merchandising, store decor, event promotion, or cultural product advertising.
+
+Reference-image policy: use the reference only as inspiration for composition hierarchy, modular infographic structure, paper texture, watercolor-commercial finish, object grouping, and text placement rhythm. Do not reproduce any exact wording, logos, names, symbols, signatures, location identifiers, or distinctive layout details from the source. Avoid copyrighted text blocks, avoid brand marks, avoid social handles, avoid prices, avoid specific real-person likenesses, avoid exact duplicates of the original poster arrangement. Output one polished debranded advertising image with premium print realism and clear commercial usability.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 49. Fresh Lemon Juice 产品 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-49-fresh-lemon-juice-product-poster.jpg" alt="Fresh Lemon Juice 产品 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[TanShilongMario/PromptFill public/images/LemonJuice.png](https://github.com/TanShilongMario/PromptFill/blob/main/public/images/LemonJuice.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Fresh Lemon Juice 产品 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于饮品广告制作场景，主题为“Fresh Lemon Juice 产品 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Fresh Lemon Juice”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial product poster for a fresh citrus beverage campaign. Build the image with a clean ad hierarchy: place one hero lemon-juice package slightly right of center, large and sharp, with realistic condensation droplets, crisp packaging edges, and a premium food-photography finish. Reserve a clear headline block on the left side for the exact text "Fresh Lemon Juice", with a smaller supporting badge area and a compact bottom information strip; keep all typography areas readable, aligned, and uncluttered. Use a bright summer color palette of lemon yellow, fresh green, white, and light sky blue.
+
+Use foreground depth elements inspired by beverage advertising: controlled water splash arcs, a few ice cubes, and fresh lemon slices arranged around the lower and front edges to frame the product without covering the label area. Add subtle green leaves as secondary accents to suggest freshness. Background should be a clean high-key gradient or airy seasonal scene with soft tropical cues, keeping the overall composition minimal, polished, and retail-ready.
+
+Lighting must be explicit: strong soft-edged key light from the upper left, gentle front fill to preserve label clarity, bright specular highlights on droplets and splash edges, and a faint grounding shadow under the package. Materials should feel photorealistic and appetizing: glossy liquid, translucent ice, juicy lemon pulp, fresh leaf texture, smooth printed packaging, and clean studio reflections. Keep product silhouette dominant and easy to read at thumbnail size.
+
+Typography instructions: use bold modern sans-serif headline styling, large left-aligned title, one short freshness callout badge, and a restrained footer zone for flavor or capacity placeholders. Do not generate brand logos, social handles, price tags, certification marks, phone numbers, addresses, or extra promotional claims. Only include the exact headline "Fresh Lemon Juice" and otherwise leave text generic or placeholder-safe.
+
+Reference-image policy: use the attached reference and upstream case only as inspiration for composition logic, cute freshness cues, lighting softness, color mood, and commercial finish; do not copy any exact character design, brand identity, layout signature, protected wording, or distinctive visual asset. Produce a debranded, reusable advertising image suitable for adaptation to a new beverage client.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 50. Minimal Table Lamp 产品 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-50-minimal-table-lamp-product-advertisement.jpg" alt="Minimal Table Lamp 产品 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：家居生活
+- 来源：[TanShilongMario/PromptFill public/images/lamp.png](https://github.com/TanShilongMario/PromptFill/blob/main/public/images/lamp.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0016`, `adimg_recipe_0182`, `adimg_recipe_0225`
+
+**中文 Brief**
+
+基于“Minimal Table Lamp 产品 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为家居生活。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于家居生活广告制作场景，主题为“Minimal Table Lamp 产品 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Warm Focus”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial product advertisement for a minimalist table lamp in the home and lifestyle category. Show one hero lamp centered as the main subject, using the visual logic of a slim suspended lamp with a rounded cage-like outer frame, a dark matte cylindrical light body, and a warm illuminated lower section. Keep the product large in frame with generous negative space around it, clean catalog composition, and a restrained premium layout suitable for a gallery case.
+
+Composition: place the lamp vertically in the center, front-facing, with precise symmetry and a long thin suspension line entering from the top edge. Keep the background plain and uncluttered, using a soft off-white to pale warm gray gradient. Reserve a clean text area in the upper left or lower left quadrant with clear separation from the product. Do not add extra furniture, people, or multiple products.
+
+Lighting: use soft studio lighting with diffused frontal fill, subtle edge highlights on the metal frame, and a warm amber glow emitted from the lower lamp section. Add a faint light bloom and a very soft shadow or tonal grounding under the lamp so it feels dimensional without breaking the minimal look. Maintain high detail in the matte coating, brushed metal, and transparent or translucent lower diffuser.
+
+Materials and finish: emphasize a matte black or charcoal body, thin powder-coated or anodized metal frame, and a warm metallic accent near the illuminated base. Surfaces should look premium, clean, and realistic, with crisp contours and controlled reflections. Keep the image production-ready, polished, and commercially usable.
+
+Typography and copy area: include the exact headline text "Warm Focus" in elegant, clean sans-serif typography. Use small supporting placeholder text blocks only if needed, but keep them generic and debranded. No logos, no prices, no social handles, no certification badges, no fake product claims. Text must be readable, sparse, and secondary to the product.
+
+Color palette: off-white, soft warm gray, matte black, muted bronze, and warm amber light. Keep saturation restrained and premium.
+
+Reference-image policy: use the reference only for composition, hierarchy, vertical proportions, lighting behavior, material contrast, and minimal commercial presentation. Do not replicate any exact original asset, protected branding, unique text, or source-specific identifying details. Generate a fresh debranded advertising image rather than a near-copy.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 51. 电商主图 - Industrial Design Presentation Sheet
+
+<img src="../../docs/assets/gallery/cases/gallery-51-e-commerce-main-image-industrial-design-presentation-sheet.jpg" alt="电商主图 - Industrial Design Presentation Sheet" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 116](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“电商主图 - Industrial Design Presentation Sheet”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“电商主图 - Industrial Design Presentation Sheet”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical advertising gallery case for a generic consumer product, designed as a clean industrial presentation sheet adapted into a commercial campaign layout. Use a 2x2 modular banner system with consistent outer margins, rounded panel corners, aligned gutters, and a unified typography grid. Each quadrant should feel like part of one campaign family while showing a different product story: panel 1 features a dominant hero product at three-quarter view with a bold headline area; panel 2 shows top-down and macro detail crops that highlight lid geometry, seams, grip surfaces, and material transitions; panel 3 presents the product upright in alternate colorways with clear spacing and subtle depth; panel 4 uses a dynamic floating or tilted composition with overlapping product angles for motion and visual impact. Keep the overall hierarchy clear: hero first, supporting detail second, campaign text third.
+
+Subject and materials: depict a modern cylindrical shaker-style bottle or similarly portable product with matte polymer body, soft-touch dark cap, satin accent ring, precise molded edges, and high-quality molded closure details. Keep surfaces clean, production-ready, and realistic, with controlled specular highlights on hard plastic and subdued reflections on matte areas. Do not place any real brand name, logo, creator handle, or protected packaging text on the product. If branding is needed, use abstract geometric marks or short generic placeholder text only.
+
+Lighting and environment: set the full composition against a neutral light-gray studio backdrop with a premium retail-photo finish. Use soft top lighting plus a front-side fill, gentle rim separation on dark edges, realistic contact shadows beneath standing objects, and crisp but not harsh macro detail lighting. Maintain consistent exposure across all four panels so the gallery reads as one campaign sheet. Add subtle shadow falloff and depth without dramatic cinematic contrast.
+
+Typography and copy: include the exact headline text "Launch Campaign" in a bold modern sans-serif, placed in a dedicated text zone that does not cover key product features. Support text may be minimal and generic, such as short feature labels or category tags, but must not invent prices, discounts, dates, phone numbers, certifications, or product claims. Use a strict information hierarchy: headline large, secondary labels small, micro captions restrained. Keep all text sharp, legible, and aligned to the grid.
+
+Color system: use a restrained commercial palette based on charcoal gray, warm orange, and soft neutral gray, with orange used as the accent for product trims, callout bars, and typography emphasis. Keep the palette cohesive across all four panels. Avoid random extra colors.
+
+Rendering and finish: high-resolution product-ad render, realistic industrial design photography aesthetic, sharp edge definition, premium e-commerce polish, clean silhouettes, no clutter, no people, no lifestyle scene, no unnecessary props. Make the layout feel suitable for a GitHub gallery case or design showcase board, with a finished advertising look rather than a raw concept sheet.
+
+Reference-image policy: use the provided reference only as off-image inspiration for composition rhythm, panel hierarchy, macro detail treatment, matte-versus-gloss material contrast, and orange-on-dark color balance. Do not reproduce any exact brand wording, logo, unique text arrangement, or distinctive proprietary design details from the reference. The reference image is not part of the final generated scene unless separately supplied to the model.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 52. 电商主图 - Traditional Chinese Art and Porcelain Vases
+
+<img src="../../docs/assets/gallery/cases/gallery-52-e-commerce-main-image-traditional-chinese-art-and-porcelain-vase.jpg" alt="电商主图 - Traditional Chinese Art and Porcelain Vases" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 152](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“电商主图 - Traditional Chinese Art and Porcelain Vases”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的电商主图，用于广告营销广告制作场景，主题为“电商主图 - Traditional Chinese Art and Porcelain Vases”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 e-commerce hero image for a premium product campaign. Show one central hero product in the lower-middle of the frame, large enough for marketplace main-image clarity, with balanced negative space around it. Build a refined backdrop inspired by classical East Asian landscape painting through abstract blue-green mountain contours, mist layers, porcelain-like surface accents, and soft flowing fabric forms, but do not reproduce any specific artwork, calligraphy, seal marks, or identifiable cultural text. Keep the composition commercially clean: product as the clear focal point, background scenery secondary and lightly diffused, with natural grounding shadow and precise edge definition.
+
+Materials and finish: emphasize polished ceramic, glazed porcelain, brushed metal, glass, or silk-like surfaces depending on the chosen product category; render tactile highlights, smooth reflections, and realistic texture transitions. Lighting should be soft studio lighting from upper left, with a gentle fill from front-right, subtle rim highlights on edges, and controlled specular reflections to preserve packaging readability. Use a restrained palette of celadon, pale jade, warm ivory, muted sand, and mineral blue, with premium tonal contrast and no oversaturation.
+
+Typography and layout: place the exact headline "Launch Campaign" in a clean text area in the upper third, aligned for high legibility against a calm light background. Reserve small side zones for optional feature callouts or campaign badges, but keep them empty or generic unless new copy is provided. Use elegant modern typography with medium weight, generous tracking, and strong hierarchy; do not add prices, dates, phone numbers, addresses, certification claims, or extra slogans.
+
+Commercial execution rules: image must feel production-ready, debranded, reusable, and suitable for a marketplace main image or poster adaptation. Preserve realistic product proportions and packaging logic. Avoid clutter, character portraits, brand logos, social handles, watermarks, and any copied ornamental text. Reference-image policy: use the reference only as off-image inspiration for color harmony, draped fabric flow, serene atmosphere, and premium material styling; do not replicate the original composition, artwork details, or distinctive markings.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 53. 电商主图 - Sustainable T-Shirt Plantable Tag 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-53-e-commerce-main-image-sustainable-t-shirt-plantable-tag-ad.jpg" alt="电商主图 - Sustainable T-Shirt Plantable Tag 广告" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 156](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“电商主图 - Sustainable T-Shirt Plantable Tag 广告”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于广告营销广告制作场景，主题为“电商主图 - Sustainable T-Shirt Plantable Tag 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a production-ready 9:16 ecommerce advertising poster for a sustainable apparel product. Show one plain off-white or natural cream crew-neck T-shirt as the hero item, hanging on a smooth light-wood hanger with a dark metal hook. Frame the shirt on the left half of the composition, cropped from upper hanger to lower torso so the garment fills most of the vertical space. Attach one small rectangular recycled-paper seed tag at the collar with natural brown twine; from the tag, a fresh green herb sprig grows upward across the front of the shirt to demonstrate a plantable packaging concept. Keep all branding generic: if any label or neck print appears, use only minimal abstract marks or unreadable placeholder microtext, with no real brand names or protected wording.
+
+Background: build a dense wall of layered green leaves and climbing vines with soft depth separation. Keep the right half darker and cleaner to support typography. Materials must read clearly: matte cotton jersey with subtle folds, lightly textured recycled paper tag, smooth wood grain on the hanger, organic leaf surfaces with natural variation. Use soft diffused daylight from upper left, gentle edge highlights on the shirt sleeve and hanger, shallow depth of field, realistic contact shadows, and a calm premium commercial finish.
+
+Typography layout: place the exact headline text "Launch Campaign" in large elegant white display serif type in the upper-right quadrant, high contrast against the dark foliage. Below it, add 2 to 3 short stacked lines of narrow uppercase sans-serif supporting copy using generic sustainability messaging with no brand claims, certifications, prices, or unverifiable statements. Add one small fine-line annotation near the tag with generic product-callout text such as "PLANTABLE SEED TAG". Reserve lower corners for optional campaign footer text, but keep any footer generic, minimal, and not tied to a real company.
+
+Color and tone: restrict the palette to cream, deep botanical green, warm wood brown, and soft neutral beige. Maintain a moody organic grade, clean negative space, high readability, and polished marketplace-ready art direction. Keep the product fully visible and unobstructed. No extra garments, no people, no hands, no storefront, no excessive props.
+
+Reference-image policy: use the provided reference only as off-model inspiration for composition balance, subject-to-text hierarchy, organic background treatment, and premium natural lighting. Do not reproduce any logos, exact wording, brand identifiers, distinctive layout text, or unique proprietary details from the reference or upstream source.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 54. 电商主图 - Pastel Blue Crocs Fashion 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-54-e-commerce-main-image-pastel-blue-crocs-fashion-ad.jpg" alt="电商主图 - Pastel Blue Crocs Fashion 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 159](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“电商主图 - Pastel Blue Crocs Fashion 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于服饰时尚广告制作场景，主题为“电商主图 - Pastel Blue Crocs Fashion 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable fashion product advertising poster in a 9:16 vertical format, designed as a 2x2 gallery-style banner set within one unified canvas. Keep a consistent pastel blue and white palette across all four panels, with shared typography, spacing, rounded panel edges, and icon language. Use one hero product family as the visual anchor, shown at oversized scale in at least two panels, with supporting lifestyle styling in the other panels. Build a clean editorial set with a soft sky-blue gradient backdrop, glossy reflective floor, translucent sculptural side forms, floating or grounded spheres, and geometric crystalline plinths. Materials should read clearly: matte foam or rubber on the product, soft woven fabric on apparel, polished acrylic spheres, translucent gel edges, and glossy floor reflections.
+
+Composition: panel 1 should feature a dominant oversized product standing upright or tilted for a strong silhouette; panel 2 should show the product elevated on sculptural blocks with accessory details; panel 3 should present an adult fashion model interacting with the product in a relaxed pose; panel 4 should balance the layout with a seated or reclining figure and a secondary product angle. If people are included, use adult models only, with neutral styling, minimal expression, and no recognizable identity emphasis. Keep faces partially turned away, softly obscured by angle, depth of field, or cropping. Maintain clear visual hierarchy: product first, campaign headline second, supporting benefits third.
+
+Lighting: use high-key studio lighting with a large soft source from upper front-left, subtle fill from the right, soft shadow edges, controlled specular highlights on glossy surfaces, and gentle separation light on product contours. Avoid harsh contrast. Preserve premium catalog clarity and ad-ready polish.
+
+Typography: place one giant condensed sans-serif headline behind the composition, spanning most of the canvas height, using a generic campaign word such as LAUNCH or MOVE, not a brand name. Add the exact copy "Launch Campaign" as the main promotional line in a clean sans-serif text block near the lower center or lower third. Add a short secondary support line beneath it in smaller type, but keep it generic and non-branded. Include four minimalist feature icons with short generic labels such as COMFORT, LIGHTWEIGHT, EASY CARE, and PERSONAL STYLE. Reserve a bottom-center area for a fictional or blank brand lockup without using any existing logo, trademark, or protected wording.
+
+Reference-image policy: use the provided reference only to infer composition density, pastel color direction, oversized product staging, glossy studio finish, and text-to-subject hierarchy. Do not reproduce any exact wording, logo shapes, charm arrangement, model likeness, shoe design details, badge graphics, or brand identifiers from the reference. Keep the result debranded, reusable, and suitable for adaptation to a new campaign.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 55. 电商主图 - 9-Panel 产品 TVC Storyboard
+
+<img src="../../docs/assets/gallery/cases/gallery-55-e-commerce-main-image-9-panel-product-tvc-storyboard.jpg" alt="电商主图 - 9-Panel 产品 TVC Storyboard" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 160](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0023`, `adimg_recipe_0182`, `adimg_recipe_0149`
+
+**中文 Brief**
+
+基于“电商主图 - 9-Panel 产品 TVC Storyboard”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“电商主图 - 9-Panel 产品 TVC Storyboard”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a production-ready e-commerce advertising storyboard board in a 9:16 vertical format, designed as a 3x3 nine-panel gallery for a single product campaign. Show one consistent product identity across all nine panels, presented as a refined ceramic or premium crafted object with realistic surface detail, clean edges, and believable scale. Use a dark charcoal storyboard background with thin panel dividers, a clear top header zone, and disciplined spacing so the layout reads like a professional commercial shot list. Place the main title at the top in clean simplified Chinese, with a smaller product subtitle beneath it, and use the exact English campaign line "Launch Campaign" as a secondary callout in a reserved text area. Keep all typography crisp, high-contrast, and editorial, using a modern sans-serif for technical labels and a restrained serif or elegant display accent only for the main campaign emphasis.
+
+Panel structure: panel 1 wide establishing scene with the product placed in a warm desk or countertop environment near books, glass, wood, or window light; panel 2 centered hero medium shot with the product isolated on a table; panel 3 extreme close-up of material, glaze, engraving, texture, or craftsmanship detail; panel 4 use-case shot with a hand interacting naturally with the product; panel 5 top-down functional capacity shot; panel 6 cleaning, maintenance, or care scene with water or cloth depending on product type; panel 7 underside or construction detail showing base, feet, finish, or assembly; panel 8 night mood lifestyle shot with ambient lamp glow and shallow depth of field; panel 9 final closing hero frame with the product cleanly staged and a premium marketing composition. Give each panel a short Chinese scene title, a compact timestamp label, and one line of small Chinese descriptive copy below the image area. Use generic, non-branded wording only.
+
+Lighting: premium commercial product photography, warm key light from the side or back-side, soft fill, controlled specular highlights, realistic reflections, subtle atmospheric haze only where appropriate, and shallow depth of field for hero and lifestyle panels. Materials: emphasize ceramic, glazed surfaces, brushed metal accents, wood grain, paper texture, glass reflections, and clean water highlights where relevant. Color palette: deep charcoal, warm amber, off-white, muted wood brown, and restrained accent blue or product-led accent tones. Composition must feel balanced, cinematic, and commercially usable, with strong visual hierarchy between header, panels, microcopy, and final hero frame.
+
+Do not include real brand names, creator handles, prices, dates, phone numbers, addresses, certification badges, social icons tied to real platforms, logos, or any distinctive protected slogans. Do not replicate any exact product pattern, exact packaging artwork, or unique text from source material. The reference image is inspiration for layout rhythm, shot sequencing, warm premium lighting, and storyboard presentation only; generate a fresh, original ad board rather than a near-copy.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 56. 精品 产品 棚拍 template
+
+<img src="../../docs/assets/gallery/cases/gallery-56-premium-product-studio-shot-template.jpg" alt="精品 产品 棚拍 template" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 161](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0175`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“精品 产品 棚拍 template”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的商业摄影，用于广告营销广告制作场景，主题为“精品 产品 棚拍 template”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 premium advertising studio image for a generic over-ear audio product, designed as a reusable gallery case for a new campaign. Show the product floating in the center at a three-quarter front angle so both earcups and the headband are clearly visible. Keep the silhouette clean and symmetrical with strong visual hierarchy: hero product in the middle, generous negative space around it, no props, no people, no packaging. Use a soft light-gray to warm-white gradient background with a subtle editorial falloff and a quiet high-end technology mood.
+
+Design the product with believable industrial materials: matte black composite surfaces, satin metal brackets, soft memory-foam ear cushions, precision-machined circular details, and restrained red accent lighting integrated into edges or inner rings. Avoid any existing brand marks, model names, logos, serial text, or distinctive protected graphics. If any product text is needed, use only minimal generic micro-labeling or omit it entirely.
+
+Lighting must be explicit and production-ready: a large diffused key light from upper front-left, soft fill from camera-right, controlled top light for headband shape, and a narrow red rim light from rear-right to define the outer contour. Preserve crisp specular highlights on metal, soft shadow transitions on matte surfaces, realistic contact-free floating shadows beneath the product, and subtle reflections that reinforce premium finish without looking glossy-plastic. Keep blacks rich but detailed, with no crushed shadows.
+
+Typography layout: place the exact copy 'Launch Campaign' as the only visible campaign text. Set it in a clean modern sans-serif, medium weight, uppercase or title case, positioned either top center or upper-left in the negative space. Use dark charcoal or near-black text, generous tracking, and restrained scale so the product remains dominant. No price, no badge, no callout sticker, no extra slogan, no fake certification, no social handle.
+
+Color palette: neutral white, soft gray, charcoal black, brushed metal silver, and controlled deep red accents only. Keep saturation disciplined. The final image should read as commercially usable product advertising with realistic materials, minimal composition, editorial polish, and high retouching quality.
+
+Reference-image policy: use the reference only for abstract inspiration about composition, floating presentation, lighting balance, premium material contrast, and sparse typography placement. Do not reproduce any exact product shape quirks, logo placement, wording, proprietary industrial details, or brand-specific visual identifiers from the reference or source case.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 57. 精品 食品 photography template
+
+<img src="../../docs/assets/gallery/cases/gallery-57-premium-food-photography-template.jpg" alt="精品 食品 photography template" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 162](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
+
+**中文 Brief**
+
+基于“精品 食品 photography template”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的商业摄影，用于食品饮料广告制作场景，主题为“精品 食品 photography template”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial food advertisement image featuring a steaming spicy stir-fried dish as the hero, served in a matte black stone bowl or seasoned dark cast-iron pan placed on a natural wooden board. Use a slightly elevated close-up camera angle, with the bowl centered and filling about 70% of the frame. Build strong visual hierarchy: richly glazed bite-sized protein in deep red chili oil at the center, surrounded by dried red chilies, green scallion segments, white onion pieces, garlic slices, chili flakes, and visible peppercorn-like spices. Keep the food sharply detailed and appetizing, with shallow depth of field so the background props fall into soft blur. Add natural rising steam with realistic density and direction.
+
+Lighting: warm directional key light from upper left, soft fill from front, subtle rim light on the bowl edge and steam, controlled specular highlights on the sauce, realistic shadow falloff, no harsh flash. Materials must read clearly: glossy sauce, textured browned protein, crisp vegetables, porous stone bowl, lightly worn wood grain, ceramic sauce dish. Color palette: deep chili red, dark charcoal black, warm brown wood, fresh scallion green, small accents of ivory and ember orange. Background should be dark and restrained, with a premium restaurant editorial mood.
+
+Composition and environment: keep the dish as the clear focal point. Use a few supporting props only at the edges, such as scattered dried chilies, loose spices, a small sauce bowl, or a softly blurred teapot shape, without distracting from the hero food. Avoid clutter, avoid perfect symmetry, and avoid stock-photo stiffness. Reserve clean negative space in the upper-left quadrant for typography. Add the exact headline text "Taste the Moment" in bold condensed sans-serif uppercase, white or warm ivory, aligned flush left, with strong contrast and clean tracking. No other text.
+
+Reference-image policy: use the reference only for general cues about food styling, moody warmth, vessel choice, steam treatment, and premium editorial composition. Do not reproduce any exact text, logos, watermark placement, brand markers, or distinctive arrangement from the reference. Keep the final result debranded, original in layout details, and reusable for a new food campaign.
+
+Avoid: logos, watermarks, extra slogans, people, hands, utensils covering the food, distorted ingredients, fake plastic textures, excessive grease puddles, cartoon rendering, oversharpening, flat lighting, unreadable typography, copied branded elements, or any protected text beyond the provided headline.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 58. 4-Panel Japanese Digital 广告 Banner Grid
+
+<img src="../../docs/assets/gallery/cases/gallery-58-4-panel-japanese-digital-ad-banner-grid.jpg" alt="4-Panel Japanese Digital 广告 Banner Grid" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 90](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0182`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“4-Panel Japanese Digital 广告 Banner Grid”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于广告营销广告制作场景，主题为“4-Panel Japanese Digital 广告 Banner Grid”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 advertising gallery poster as a 2x2 grid of four equal banner panels with thin white gutters and consistent outer margins. Treat it as a debranded commercial showcase for multiple campaign categories, unified by one typography system, one badge system, and one color-management approach. Place the exact headline text "Launch Campaign" once as the master gallery title in a clean top overlay or as a shared campaign tag that does not overpower the panel headlines. Each quadrant must have its own distinct hero subject and atmosphere, but all four must feel like one professional ad set with aligned spacing, matching corner radii, consistent icon style, and clear reading hierarchy.
+
+Panel 1, top-left: a travel-themed banner with a bright tropical coastline, white sand, turquoise water, blue sky, and two anonymous adults seen from behind or in three-quarter back view to avoid identity specificity. Use a fresh aqua, sky blue, and sunlit yellow palette. Add a bold headline zone in the upper left, a secondary ribbon label, a large offer block area, and three small circular service icons near the lower area. Lighting: hard daylight with crisp highlights, clean atmospheric depth, and vivid yet controlled saturation. Materials: glossy water, soft fabric, palm leaves, subtle print-poster finish.
+
+Panel 2, top-right: a skincare-themed banner with a close-up beauty portrait of a generic model with luminous hydrated skin, closed eyes, and hands near cheeks, without resembling any identifiable real person. Background: soft blush-to-pearl gradient with translucent water splash arcs and glassy cosmetic styling. Add a large headline stack on the left or upper left, three metallic circular benefit badges across the midsection, and a product container at the lower right with blank packaging and no brand name. Lighting: soft frontal beauty light plus rim highlights for wet-skin sheen. Materials: frosted glass, glossy cream jar, liquid splash, satin glow.
+
+Panel 3, bottom-left: a premium food-themed banner with sliced medium-rare steak on a dark hot plate, visible sear texture, steam, garlic chips, herbs, and ember-like bokeh. Use a deep charcoal, copper, and warm gold palette. Reserve a dramatic large headline area at upper left, a price or offer block at lower right, and one circular quality badge at upper right. Lighting: directional warm key light from upper left, strong specular highlights on meat juices, dark cinematic falloff, realistic smoke layers. Materials: cast iron, coarse salt, herb texture, glossy glaze, flame-lit reflections.
+
+Panel 4, bottom-right: an education or productivity-themed banner with a young adult studying at a desk beside a laptop and notebook, presented as a generic stock-style subject with no recognizable identity. Use a confident cobalt blue, white, and accent yellow palette. Place the main headline large at upper left, a horizontal subheading band below it, two simple line icons with short benefit text in the middle left, and a large circular achievement badge plus discount strip in the lower area. Lighting: bright indoor daylight with soft shadow edges, clean desk reflections, practical lifestyle realism. Materials: matte paper, brushed laptop surface, cotton shirt, laminated badge finish.
+
+Typography and layout rules: use bold Japanese-ad-inspired hierarchy but render all visible text as clean placeholder layout shapes or short generic ad copy only, except for the exact phrase "Launch Campaign" which must be clearly readable. Use oversized headline blocks, angled ribbons, circular badges, price-box placeholders, and icon clusters. Keep text zones crisp, intentional, and production-ready, with strong contrast and generous padding. Do not generate exact prices, brand names, social handles, addresses, phone numbers, certifications, or copied slogans. Avoid gibberish microtext; use tidy short placeholder lines where needed.
+
+Overall art direction: high-end digital ad creative, polished ecommerce-marketing finish, sharp retouching, high local contrast, subtle bloom, clean compositing, realistic materials, and commercially usable layout discipline. The image must look like a reusable ad-template case study rather than a copy of any one campaign.
+
+Reference-image policy: use the provided reference only as inspiration for grid composition, visual hierarchy, category contrast, badge placement, color energy, and commercial finish. Do not replicate the same people, exact wording, brand identifiers, numeric offers, package labels, or distinctive protected design details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 59. 海报设计案例 - 18-Panel Mascot Brand Identity Document
+
+<img src="../../docs/assets/gallery/cases/gallery-59-18-panel-mascot-brand-identity-document.jpg" alt="海报设计案例 - 18-Panel Mascot Brand Identity Document" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 107](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“海报设计案例 - 18-Panel Mascot Brand Identity Document”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于广告营销广告制作场景，主题为“海报设计案例 - 18-Panel Mascot Brand Identity Document”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical advertising gallery poster that feels like a premium brand identity presentation board reimagined for a new campaign, using a clean modular grid inspired by an 18-panel design manual. Build a structured page with one dominant hero zone and multiple smaller information cards, arranged with strong alignment, wide margins, rounded panel blocks, thin divider lines, icon rows, palette chips, sketch-style support graphics, and product or mascot application mockups. The reading path must be clear from top to bottom: headline, concept overview, design studies, expressions or variants, application examples, and a final hero render. Use the exact headline text: "Launch Campaign". Any secondary text should be short, generic, and legible placeholder-style editorial copy with no brand names, no prices, no addresses, no social handles, and no protected slogans.
+
+Visual direction: commercially usable, polished, production-ready, bright editorial advertising layout. Combine a warm natural palette with soft cream, muted yellow, moss green, light tan, cocoa brown, and charcoal accents. Materials should feel tactile and believable: matte paper board, soft-touch print stock, subtle ink texture, clean vector iconography, smooth 3D character or product surfaces, light fabric texture, and gentle packaging mockup finishes. If a mascot or hero object is included, it should be original and generic, cute and approachable, with simplified forms and no resemblance to any known branded character.
+
+Lighting: high-key studio lighting with soft frontal illumination, mild top fill, delicate contact shadows under cards and objects, controlled specular highlights on glossy details, and even exposure across the full composition. Keep contrast moderate and commercial. Avoid dramatic cinematic darkness. Ensure every panel remains readable.
+
+Typography and text placement: place the main title in the upper section with large clean sans-serif lettering, supported by smaller bilingual-style editorial labeling if needed, but use only invented generic section names. Use a disciplined hierarchy: large title, medium subheads, small captions, micro labels, and icon annotations. Keep text blocks left-aligned or center-aligned within cards, with consistent spacing and baseline rhythm. Typography should look like a professional design guideline sheet, not a social-media meme or a chaotic flyer.
+
+Composition details: include multiple panel types such as color swatches, form studies, line-art exploration, front/side turnaround views, expression tiles, pose tiles, material chips, application mockups, and one large final presentation image. Panels should vary in density but share one visual system. The overall page should feel information-rich but uncluttered, with generous whitespace and precise borders. Maintain a premium advertising finish suitable for a design case study, launch board, or campaign gallery feature.
+
+Negative constraints: do not copy any exact upstream brand names, logos, creator handles, prices, dates, people identities, packaging text, or distinctive slogans. Do not reproduce the source layout verbatim. Do not use copyrighted mascots or near-matching characters. Do not add fake discount numbers or contact information. Avoid messy typography, low-resolution panels, warped text, broken anatomy, or inconsistent perspective.
+
+Reference-image policy: use the provided reference only as off-model inspiration for grid structure, visual hierarchy, panel rhythm, lighting balance, material treatment, and commercial presentation quality. Do not imitate any exact brand, logo, wording, or character design from the reference. The reference image is style guidance only and is not included as an input image by default.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 60. 产品广告案例 - Dark Mode Marketing Case Study UI
+
+<img src="../../docs/assets/gallery/cases/gallery-60-dark-mode-marketing-case-study-ui.jpg" alt="产品广告案例 - Dark Mode Marketing Case Study UI" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 108](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“产品广告案例 - Dark Mode Marketing Case Study UI”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“产品广告案例 - Dark Mode Marketing Case Study UI”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable 9:16 vertical advertising gallery case image for the advertising industry. Build a dark, premium campaign-presentation layout with a strong hero panel at the top and three to four supporting content bands below it, using the reference only as structural inspiration for hierarchy and atmosphere, not as content to replicate. The image should feel like a polished marketing case-study poster that can be adapted to a new product or campaign.
+
+Composition: top section occupies about 35% of the canvas and contains the main focal area, with a large headline zone on the left and a cinematic media-style visual on the right. Below that, stack modular content sections with rounded rectangular panels, consistent gutters, and a clean grid. Include one timeline-style strategy section, one performance-data section with metric cards and a growth chart, one three-card benefits section, and one bottom call-to-action strip. Keep spacing disciplined, with clear separation between panels and a strong reading flow from top to bottom.
+
+Subject and imagery: use a generic campaign-tech visual language, such as abstract screens, interface reflections, glowing charts, light trails, and a debranded media-control symbol. If a human silhouette is included, keep it anonymous, back-facing or side-facing, without identifiable features. No logos, no brand marks, no social handles, no known platform icons, no real company names. The visual emphasis is on launch energy, momentum, analytics, and campaign execution.
+
+Typography and text policy: show one clear headline area and multiple smaller information zones, but keep all text minimal and generic. The only exact visible copy allowed is "Launch Campaign". All other text should appear as short neutral placeholders, abstract UI labels, or unreadable microtext blocks. Use a modern geometric sans-serif look, bold for headline zones, medium weight for subheads, compact small caps for labels, and high legibility with strong contrast.
+
+Materials and surface treatment: use dark glass panels, soft translucency, subtle bloom, fine edge highlights, polished UI cards, faint noise texture, and metallic-violet accent reflections. Rounded corners should be consistent across cards. Charts and badges should feel embedded in the interface, with layered depth and restrained glassmorphism rather than exaggerated blur.
+
+Lighting and color: low-key studio lighting with a deep navy to near-black background, accented by electric violet, indigo, and cool blue highlights. Add controlled neon glow around key UI elements, a soft rim light on the hero visual, and gentle volumetric haze for depth. Maintain premium contrast and clean highlight rolloff; avoid flat black emptiness.
+
+Commercial finish: make the final image look production-ready, with crisp edges, clean alignment, realistic UI depth, premium ad-poster polish, and balanced information density. The composition should support reuse for a different campaign, product, or service without depending on any specific upstream identity.
+
+Negative constraints: do not copy any exact brand name, creator name, logo, slogan, testimonial, company list, price, date, person identity, social handle, or protected text from the source material. Do not recreate the original layout verbatim. Do not use recognizable platform branding. Do not generate extra claims, certifications, phone numbers, addresses, discounts, or fabricated statistics that look factual.
+
+Reference-image policy: the provided reference is style inspiration only for composition, lighting, panel rhythm, and color hierarchy. Do not treat it as an image-to-image source; reinterpret it into a new, debranded, original campaign case visual.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 61. VR Headset Exploded View 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-61-vr-headset-exploded-view-poster.jpg" alt="VR Headset Exploded View 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：消费电子
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 109](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0233`, `adimg_recipe_0234`, `adimg_recipe_0170`
+
+**中文 Brief**
+
+基于“VR Headset Exploded View 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于消费电子广告制作场景，主题为“VR Headset Exploded View 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Built for Performance”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical consumer-electronics advertising poster for a next-generation mixed-reality headset, shown as a precise exploded-view assembly diagram with a premium commercial finish. Center the product on the page as a tall vertical stack of separated components, aligned on one axis from top shell to face cushion, with 8 to 10 clearly distinct layers: outer front cover, sensor modules, structural frame, main logic board, optical lens assembly, internal support parts, battery modules, side arms, head strap, and soft face interface. Keep spacing even and readable so each part feels engineered, intentional, and physically plausible. Use a clean poster layout with a small brand-neutral wordmark area at the top left, a short two-line subheading beneath it, thin technical callout lines extending to the left and right sides, and a bottom text block containing the exact headline: "Built for Performance". Add short generic feature labels only, without real brand names, model numbers, or proprietary claims.
+
+Render the headset with high-detail industrial design materials: matte white polymer shell, dark graphite internal frame, black sensor housings, brushed metal fasteners, reflective multi-coated glass lenses, subtle rubber and woven-fabric strap textures, and soft memory-foam facial padding. Make the assembly look premium and believable, as if photographed for a launch campaign rather than a rough engineering sketch. Show fine edge definition, realistic thickness, clean machining, and restrained glow around key optical and sensor elements.
+
+Light the scene like a studio product shoot: soft frontal key light, cool rim lights from upper left and upper right, faint underglow between exploded layers, and gentle ambient bloom around the stack. Use a pale atmospheric gradient background in icy white, soft blue, and faint lavender-gray, with very light falloff and no busy environment. Keep contrast controlled, highlights crisp, shadows soft, and the overall mood futuristic, clean, and commercially usable.
+
+Typography should be minimal, modern, and highly legible: a neutral sans-serif, medium weight for headings, lighter weight for annotations, generous spacing, and disciplined alignment. Keep all text areas flat and printable, with clear hierarchy: top identity zone, side annotations, bottom campaign statement. Leave enough negative space for a designer to replace copy later. Avoid dense paragraphs, avoid fake certifications, avoid price tags, and avoid UI clutter.
+
+Reference-image policy: use the reference only for overall composition logic, exploded-view hierarchy, technical-poster pacing, and premium lighting mood; do not reproduce any exact logo, trademarked product shape, original wording, Japanese text, or protected brand identifiers. Output should feel like a fresh debranded campaign concept for a new headset product.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 62. 海报设计案例 - Anime Character Brand Identity & Merch Board
+
+<img src="../../docs/assets/gallery/cases/gallery-62-anime-character-brand-identity-merch-board.jpg" alt="海报设计案例 - Anime Character Brand Identity &amp; Merch Board" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 112](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0195`
+
+**中文 Brief**
+
+基于“海报设计案例 - Anime Character Brand Identity & Merch Board”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于广告营销广告制作场景，主题为“海报设计案例 - Anime Character Brand Identity & Merch Board”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a production-ready 9:16 advertising gallery board for a fictional kawaii confectionery launch, presented as a debranded brand-identity and merchandise showcase. Use a soft blush pink, cream white, and pale rose palette with small blossom petals, heart motifs, pearlescent sparkles, and subtle lace-like border details. The overall finish should feel polished, retail-ready, and suitable for a portfolio case study.
+
+Composition: design the canvas as a clean multi-panel vertical board with generous outer margins and rounded panel corners. Place a wide header banner across the top with a large custom wordmark area on the left and a mascot portrait on the right. Below it, arrange two mid-sized panels side by side: left panel for product packaging mockup, right panel for a launch poster mockup. Add a slim horizontal web banner panel beneath them. At the bottom, place two final panels side by side: left panel for a social profile mockup, right panel for a merchandise collection flat lay. Keep spacing, corner radius, stroke weight, and panel shadows consistent across all sections.
+
+Subject and assets: feature an original anime-style mascot with short warm-brown bob hair, large pink eyes, soft blush, and a white hoodie, drawn in a gentle commercial illustration style. In the packaging panel, show one cube box with a heart-shaped clear window revealing glossy pink candies, plus two small wrapped sweets and several loose heart candies scattered in front. In the poster panel, show the mascot portrait, a heart-shaped candy dish, a generic launch subheadline, and a clear callout area containing the exact text "Launch Campaign". In the social profile panel, show a fictional interface layout with a circular avatar, banner image, abstract placeholder UI labels, and no real platform branding. In the merchandise panel, show a coordinated set including a white T-shirt, mug, round badges, acrylic charm, sticker sheet, and candy packets.
+
+Lighting and materials: use high-key studio lighting with soft frontal illumination, mild top fill, delicate edge highlights on plastic and acrylic, and faint grounded shadows under objects. Packaging should look semi-gloss laminated paperboard; candy should appear translucent and gelatin-like; badges should have reflective coated surfaces; the acrylic charm should have clear polished edges; apparel should show soft cotton texture; ceramics should have smooth glazed highlights.
+
+Typography and text policy: use only invented branding and generic placeholder microcopy, except preserve the required phrase "Launch Campaign" exactly once as the main campaign line. Build a rounded display wordmark style for the fictional brand, with a smaller phonetic-style subtitle beneath it, but do not use any existing brand name, creator handle, date, price, or recognizable slogan. Keep all text areas clean, readable, and intentionally spaced, with the main headline in the top banner, campaign line in the poster panel, and minimal supporting labels elsewhere.
+
+Visual hierarchy: make the top banner the strongest focal point, the mascot face the emotional anchor, the candy packaging the tactile product anchor, and the merch panel the detail-rich closing section. Maintain a unified commercial design system across every panel with consistent icon language, ornament density, and color rhythm.
+
+Reference-image policy: use the reference only as inspiration for layout logic, pastel mood, merchandising-board structure, soft lighting, and cute retail presentation. Do not reproduce any exact text, logos, names, handles, dates, packaging graphics, facial identity, or composition one-to-one. Generate a fresh original campaign board with similar commercial clarity but new assets and new branding.
+
+Avoid: copied logos, copied Japanese text, copied social handles, copied dates, copied package wording, real-person likeness, messy typography, extra price tags, fake contact details, watermarks, platform logos, low-resolution details, distorted anatomy, inconsistent panel spacing, or cluttered backgrounds.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 63. 产品广告案例 - Magical Seed Packet Diorama
+
+<img src="../../docs/assets/gallery/cases/gallery-63-magical-seed-packet-diorama.jpg" alt="产品广告案例 - Magical Seed Packet Diorama" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 143](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“产品广告案例 - Magical Seed Packet Diorama”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于广告营销广告制作场景，主题为“产品广告案例 - Magical Seed Packet Diorama”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 commercial advertising key visual for a new product launch using a debranded diorama concept. Build the scene on a real tabletop or studio platform with rich tactile detail: loose soil, water droplets, dust, small tools, natural imperfections, and a crafted miniature-world finish. Place one hero product or hero package slightly right of center as the dominant subject, scaled up like a landmark object or sculptural installation. Around it, stage a transformation narrative where the printed promise of the product becomes a physical miniature environment emerging from or surrounding the product, with visible progression details from early stage to finished result. Use a clear visual hierarchy: hero product first, transformation detail second, supporting micro props third. Keep the composition readable for advertising and leave clean negative space in the upper left or upper center for headline placement.
+
+Lighting: warm directional morning light from the upper right with one defined shaft of sunlight hitting the tallest or most important part of the scene; soft ambient fill from the left; realistic shadows; subtle atmospheric glow; shallow tilt-shift depth of field with the focal plane locked on the hero product and the main transformation area. Materials: weathered paper, printed carton, natural soil, glossy moisture, matte wood, delicate roots, fresh plant surfaces, and crisp product packaging textures. If insects or miniature workers are included, keep them tiny, believable, and supportive, never dominating the frame.
+
+Typography and text policy: include only the exact headline text "Launch Campaign" as clean, legible ad typography. Set it in a bold modern sans serif with generous tracking, placed in the reserved negative space, with smaller optional subtext blocks represented as simple geometric placeholders only, not readable copy. Do not generate prices, dates, phone numbers, addresses, certification badges, or extra slogans. Do not place dense text on the product. Any incidental packaging text must be generic, minimal, and non-branded.
+
+Color palette: sunlit botanical greens, earthy browns, warm neutrals, muted paper beige, and controlled accent color chosen from the product itself. Keep saturation natural, premium, and commercially polished. Finish as a production-ready campaign image with crisp subject separation, realistic texture, subtle lens bloom, and retouch-quality cleanliness.
+
+Reference-image policy: use the reference only as inspiration for composition logic, greenhouse-like warmth, tactile miniature realism, visible growth stages, and the contrast between fragile printed material and life-sized emergence. Do not copy any exact wording, illustrations, layout, packet graphics, logo shapes, or distinctive protected elements from the reference or any upstream source.
+
+Negative constraints: no copied brand names, no creator handles, no protected slogans, no exact seed-packet text, no people identities, no messy ad layout, no fantasy exaggeration that breaks realism, no unreadable typography, no extra promotional claims, no duplicate hero products, no clutter that hides the main subject.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 64. Pastel Jellyfish Room Goods 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-64-pastel-jellyfish-room-goods-poster.jpg" alt="Pastel Jellyfish Room Goods 海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 167](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Pastel Jellyfish Room Goods 海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“Pastel Jellyfish Room Goods 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 commercial advertising gallery poster for a dreamy room-goods campaign, designed as a debranded reinterpretation of a pastel lifestyle feature sheet. Build a clean white high-key background with faint line doodles such as tiny sea-creature icons, stars, bubbles, and sparkles, kept subtle and low-contrast. Use a soft palette of white, powder lavender, pale lilac, misty blue, and blush-tinted highlights. Compose the layout with a strong editorial hierarchy: a large headline zone across the upper third, a circular badge or sticker element at the upper right, a narrow ribbon tagline beneath the title, a left-heavy grid of six rounded-corner product cards through the upper and middle sections, a small handwritten-style note area on the right, a rounded concept box at the lower left, and one circular callout near the lower center-left. Reserve the lower-right third for a human lifestyle portrait that overlaps the layout slightly without obscuring key products. The person should be a generic young adult model in a plush pale-lavender hoodie over a light inner layer, soft makeup, short light-blonde bob, relaxed friendly pose, commercial beauty-retail styling, no resemblance to any real identifiable person.
+
+Show six room-goods product vignettes as polished ad inserts: a translucent ocean-inspired lamp with a glowing soft blue-lilac core, plush pastel bedding, a rounded shell-like tabletop mirror, a gradient ceramic mug, a tidy cosmetic storage container, and a fluffy accent mat. Each card should feel like a mini product shot with soft shadows, diffused studio lighting, smooth acrylic, ceramic, plush fabric, and matte plastic materials rendered clearly. Keep the products varied but unified by color and softness. Lighting should be bright, airy, and production-ready: main diffused frontal light, gentle top fill, very soft contact shadows, slight bloom on glossy highlights, no harsh contrast. Typography should be fully original and generic: use large rounded sans-serif headline lettering, small uppercase micro-labels, and delicate handwritten annotation lines for side notes. Include the exact copy "Launch Campaign" once as a clear campaign label or CTA in the header system. All other text should be abstract placeholder text, short generic product labels, or pseudo-editorial blocks with no protected names, no logos, no prices, no social handles, no dates, and no copied phrases. Make the final image feel like a premium retail poster, part magazine layout and part campaign board, with clear negative space, precise alignment, rounded modules, subtle shadows, and a cohesive commercial finish.
+
+Reference-image policy: use the supplied reference only for general inspiration on layout density, pastel atmosphere, product-card rhythm, and soft editorial styling. Do not reproduce any exact wording, identity, character name, badge text, logo, facial likeness, product design signature, or composition-specific protected detail from the source. Keep the result reusable for a new brand or campaign.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 65. 高端 海报 for fictional AI 广告 printer
+
+<img src="../../docs/assets/gallery/cases/gallery-65-luxury-poster-for-fictional-ai-ad-printer.jpg" alt="高端 海报 for fictional AI 广告 printer" width="420">
+
+- 作图类型：`product_ad`
+- 行业：高端消费品
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 168](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“高端 海报 for fictional AI 广告 printer”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为高端消费品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于高端消费品广告制作场景，主题为“高端 海报 for fictional AI 广告 printer”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 luxury product advertisement for a fictional intelligent print device in a dark studio environment. Show one large hero machine at a slight low angle, turned about 45 degrees, occupying the center-right of the frame. The device should feel premium and futuristic: matte black metal body, brushed alloy edges, transparent upper cover, visible precision rails and print head, illuminated internal core, integrated control screen, and a wide output slot releasing a large glossy poster sheet toward the foreground. The printed sheet should curve naturally onto a reflective floor and display a fictional luxury campaign visual for a generic premium product, with no real brands or recognizable trademarks.
+
+Use a cinematic commercial layout with clear ad hierarchy. Reserve the upper-left area for a bold headline block, place a compact product name and descriptor beneath it, keep a narrow feature list or interface callout column on the right side of the machine, and place the exact copy "Launch Campaign" as the bottom call-to-action. Do not invent prices, dates, phone numbers, social handles, certification marks, or extra promotional claims. If any additional text is rendered, keep it minimal, generic, legible, and debranded.
+
+Lighting must be precise and production-ready: deep navy-to-black background, cool white and blue key lighting from above and front-left, thin rim lights tracing the machine silhouette, controlled specular highlights on metal and glass, subtle volumetric haze, and a glossy floor with clean reflections. Materials must read clearly: anodized metal, tempered glass, illuminated display, smooth plastic interface elements, and high-quality coated poster paper. Keep edges crisp, contrast high, and surfaces physically believable.
+
+Color palette: near-black, graphite, gunmetal, silver, electric blue highlights, and restrained warm accent tones only inside the printed poster artwork. Composition should feel like a premium launch poster: strong hero dominance, negative space for typography, clean commercial finish, sharp focal priority on the machine and emerging print, and a balanced premium-tech mood.
+
+Reference-image policy: use the reference only as inspiration for composition, visual hierarchy, luxury studio lighting, machine materials, and poster-emerging-from-device staging. Do not copy any exact wording, logos, brand names, interface labels, numeric pricing, dates, or distinctive graphic elements from the reference or any upstream example.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 66. Refreshing Summer Udon 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-66-refreshing-summer-udon-ad.jpg" alt="Refreshing Summer Udon 广告" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 46](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
+
+**中文 Brief**
+
+基于“Refreshing Summer Udon 广告”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的本地门店促销，用于广告营销广告制作场景，主题为“Refreshing Summer Udon 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical advertising poster for a local store summer launch campaign. Build a debranded commercial food-and-beverage key visual with one hero product centered slightly low in frame, occupying about 40% of the canvas, presented in a clear serving vessel with visible texture, condensation, gloss, and fresh garnish. Surround the hero with cooling cues: translucent ice forms, flowing chilled liquid, soft mist, crisp botanical accents, and a bright seasonal atmosphere. Use a layered composition with a strong left-side title zone, a compact top-right seasonal badge, a mid-lower feature strip with three simple ingredient or benefit callouts, and a bottom-right action zone containing the exact text "Launch Campaign". Do not add any other readable brand names, prices, dates, phone numbers, addresses, or promotional claims.
+
+Art direction: production-ready advertising image, high-detail food styling, realistic materials, premium retail finish, clean separation between subject and typography areas. Background should blend icy aqua, pale sky blue, white, and small fresh green accents, with soft watery gradients and subtle refractive highlights. Lighting should be bright diffused daylight from upper left, supported by gentle front fill and crisp specular highlights on wet surfaces; preserve soft contact shadows under the bowl or product so the layout feels grounded. Materials must read clearly: ceramic or glass vessel, glossy cooked food surfaces, translucent liquid, fibrous garnish, citrus pulp, shaved ice, and clear ice edges.
+
+Typography and layout instructions: reserve 25% to 30% negative space on the left for a tall vertical headline stack in a refined serif or high-contrast display style; keep the headline large, elegant, and legible. Place a small vertical secondary line near the headline for a short freshness cue. Add a geometric seasonal badge in the upper-right corner. Add a narrow ribbon or label near the lower center for a short descriptive line. Add three evenly spaced circular or rounded feature markers across the lower third, each paired with a tiny ingredient visual and one short caption line. Keep all text zones clean, aligned, and unobstructed by the hero product. Use only generic placeholder copy except for the exact CTA text "Launch Campaign".
+
+Reference-image policy: use the provided reference only as inspiration for cooling mood, visual hierarchy, fresh seasonal atmosphere, and commercial food-poster finish. Do not replicate the original product arrangement, exact wording, logo shapes, price block, or any distinctive branded elements. Make the result feel original, reusable, and adaptable to another menu item, product, or campaign.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 67. 本地门店促销案例 - Japanese Supermarket Sale Flyer
+
+<img src="../../docs/assets/gallery/cases/gallery-67-japanese-supermarket-sale-flyer.jpg" alt="本地门店促销案例 - Japanese Supermarket Sale Flyer" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 49](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0182`, `adimg_recipe_0148`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“本地门店促销案例 - Japanese Supermarket Sale Flyer”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的本地门店促销，用于广告营销广告制作场景，主题为“本地门店促销案例 - Japanese Supermarket Sale Flyer”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a 9:16 vertical retail promotion poster for a local store campaign with a dense, high-energy supermarket flyer layout adapted into a reusable commercial advertising image. Build a clear three-zone hierarchy: a top hero banner with a very large headline area containing the exact text "Launch Campaign", a middle merchandise zone with multiple product or service feature blocks arranged in a tight modular grid, and a bottom conversion zone for store benefits, badges, QR-style call-to-action space, and supporting promotional panels. Use a bold editorial composition with thick borders, layered callout bursts, rounded price-tag placeholders, angled stickers, and strong separation lines so every block reads instantly at thumbnail size.
+
+Make the central visual language bright, crowded, and highly organized rather than chaotic: 6 to 10 feature panels mixing fresh produce, packaged goods, or adaptable retail/service offerings, each with its own image window, short label area, and promotional badge shape, but do not render real brand names, exact prices, dates, addresses, or phone numbers. Product images should look studio-shot and appetizing with crisp surface detail, realistic moisture on fresh items, clean packaging reflections, and subtle contact shadows. Materials should feel print-ready: glossy coated paper finish, saturated ink, sharp cutout edges, laminated badge stickers, and dense offset-flyer color reproduction.
+
+Lighting should simulate commercial catalog photography composited into a print flyer: bright frontal key light, soft fill to preserve readable typography, controlled specular highlights on food and packaging, and minimal deep shadows so all subjects remain legible. Use a dominant palette of vivid red, warm yellow, white, and deep blue accents, with green used selectively for freshness cues. Keep the background energetic with subtle radial bursts, halftone dots, or soft gradient texture, but do not let background graphics compete with the headline or product panels.
+
+Typography must be explicit and executable: oversized condensed sans-serif headline at the top, heavy-weight secondary sans-serif for subheads, compact bold labels inside badges, and small clean sans-serif for supporting text blocks. Preserve strong text hierarchy with large headline, medium promotional callouts, and smaller utility text. Use only generic placeholder copy besides the required phrase "Launch Campaign". Keep all other text minimal, editable, and non-branded. Avoid Japanese store names, logos, copyrighted slogans, creator handles, or any distinctive wording from source material.
+
+Reference-image policy: use the reference only as structural inspiration for visual hierarchy, density, color energy, flyer segmentation, and retail urgency. Do not reproduce any exact products, compositions, logos, dates, prices, icon shapes, mascots, or unique text from the reference. Produce a fresh debranded campaign asset suitable for a new retail poster, local promotion, or gallery case study.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 68. Pilates Studio 广告 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-68-pilates-studio-ad-poster.jpg" alt="Pilates Studio 广告 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 51](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
+
+**中文 Brief**
+
+基于“Pilates Studio 广告 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于广告营销广告制作场景，主题为“Pilates Studio 广告 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 advertising poster for a modern wellness or movement studio, built as a debranded commercial template. Use a bright indoor lifestyle setting with a single adult woman performing a controlled reformer-style exercise on premium studio equipment, positioned on the right half of the frame. Keep the left half reserved for a strong editorial text system with a clear reading path: small eyebrow line at the top, large headline block in the upper-left and center-left, one short supporting line below, three circular benefit icons across the lower-left to mid-left, one rectangular feature card near the lower-right, and one bold call-to-action button near the bottom. Include the exact phrase "Launch Campaign" as the main callout or CTA text, and keep all other text generic, minimal, and reusable with no prices, phone numbers, addresses, dates, or brand names.
+
+Composition and hierarchy: soft asymmetrical layout, generous negative space, premium brochure-like balance, large headline area on the left, active human subject on the right, modular information zones with clean spacing, layered but uncluttered typography, elegant badge or ribbon accents for secondary emphasis. Use subtle depth separation between foreground equipment, subject, and airy studio background. Add small wellness-themed line icons inside circular frames for the benefits row.
+
+Lighting and materials: daylight-filled studio with high-key exposure, soft directional window light from upper right, gentle fill light from front-left, clean skin tones, soft shadows, luminous highlights, matte walls, sheer curtains, pale wood or ivory furnishings, premium exercise equipment with black padded surfaces, brushed metal hardware, and a polished but realistic commercial retouch finish.
+
+Color and typography: palette of warm white, blush pink, dusty rose, muted coral, soft beige, and light taupe, with restrained gold or sand accents for icon outlines. Typography should feel refined and feminine without imitating any existing brand: large high-contrast headline, thinner supporting serif or humanist-style secondary text, clean sans-serif for small information blocks, all fully legible and production-ready. Keep typography integrated into the composition rather than floating randomly.
+
+Reference-image policy: use the provided reference only as off-model inspiration for layout logic, lighting mood, soft color palette, premium fitness-studio atmosphere, and text-image balance. Do not reproduce any exact wording, pricing structure, logo placement, icon design, person likeness, studio layout, or distinctive branded details from the reference. Generate an original ad image that is commercially reusable for a new campaign.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 69. 海报设计案例 - 6-Block Fashion Campaign Prompt Formula
+
+<img src="../../docs/assets/gallery/cases/gallery-69-6-block-fashion-campaign-prompt-formula.jpg" alt="海报设计案例 - 6-Block Fashion Campaign Prompt Formula" width="420">
+
+- 作图类型：`poster_design`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 52](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“海报设计案例 - 6-Block Fashion Campaign Prompt Formula”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的海报设计，用于服饰时尚广告制作场景，主题为“海报设计案例 - 6-Block Fashion Campaign Prompt Formula”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a 16:9 fashion campaign poster for a new brand concept, built as a six-block commercial layout with one dominant hero image area and five supporting information blocks. Main subject: a confident young fashion model in a street-luxury outfit, standing full-body in the center-right foreground of a neon-lit urban arcade at night; keep the styling generic and debranded, with layered denim, faux-fur trim, fitted top, cargo pants, and clean sneakers, avoiding any recognizable logos or protected character likeness. Background: glossy storefront glass, arcade machines, illuminated signage shapes, reflective pavement, and soft atmospheric depth, all treated as generic nightlife retail scenery rather than a specific real location. Composition: block 1 is the hero figure; block 2 is a large top-left headline zone with the exact text "Launch Campaign" in crisp modern sans-serif; block 3 is a short supporting tagline area below the headline using clean placeholder editorial text; block 4 is a compact product or collection callout card; block 5 is a small badge or feature chip cluster; block 6 is a bottom information strip for campaign metadata or CTA placeholders. Maintain a clear reading path from top left to center hero to lower detail blocks, with generous margins and disciplined alignment. Lighting: cinematic retail night lighting with pink, amber, and cool cyan practical sources; key light from front-left on the model, soft rim light from rear-right, controlled highlights on glass, patent plastic, metal trim, and polished floor, with realistic skin tone retention and moderate contrast. Materials: glossy acrylic, laminated poster stock, brushed metal, glass reflections, soft faux fur, worn denim texture, matte cotton jersey, and rubber sole detail rendered sharply. Typography: bold uppercase headline, medium-weight subheads, small technical captions, and modular label blocks; all text must be sparse, readable, and intentionally placed inside dedicated negative-space panels, never floating randomly over the subject’s face or torso. Color system: warm pink, coral red, cream, charcoal, faded olive, and electric cyan accents, balanced for premium retail advertising rather than chaotic club visuals. Finish: production-ready poster mockup quality, high clarity, realistic proportions, layered depth, clean edge separation, premium retouching, no distorted hands, no malformed text, no cluttered ad stack, no fake discount numbers, no invented phone numbers or addresses. Reference-image policy: use the provided image only as offline inspiration for pose energy, nightlife ambiance, color contrast, and urban fashion attitude; do not replicate the original person, venue, signage, machine design, text, or brand-specific details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 70. A professional 产品 photography shot of a cold sparkling water
+
+<img src="../../docs/assets/gallery/cases/gallery-70-a-professional-product-photography-shot-of-a-cold-sparkling-wate.jpg" alt="A professional 产品 photography shot of a cold sparkling water" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 59](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0175`, `adimg_recipe_0164`
+
+**中文 Brief**
+
+基于“A professional 产品 photography shot of a cold sparkling water”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的商业摄影，用于广告营销广告制作场景，主题为“A professional 产品 photography shot of a cold sparkling water”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial product advertising image for a new sparkling water campaign. Show one tall, slim beverage can standing upright in fine golden beach sand at the center, with a slight natural lean and a small sand mound at the base. The can must be fully debranded: use a generic tropical fruit illustration, abstract geometric label shapes, and clean placeholder packaging design with no real brand marks, no protected slogans, and no copied logo structures. Add realistic cold condensation droplets across the aluminum surface, crisp metallic highlights on the rim, and subtle moisture texture to emphasize refreshment.
+
+Build the composition with a strong vertical hero product, shallow depth of field, and a bright tropical background. Use a warm sunset-orange to yellow sky gradient, soft blurred clouds, a distant low horizon, and a lightly blurred shoreline band near the lower background. Place one fresh citrus wedge in the front-right foreground and a few small tropical leaves or grasses near the can base for scale and framing. Keep the can in sharp focus and the background softly blurred.
+
+Lighting must feel like high-end studio advertising blended with outdoor summer atmosphere: frontal key light for label clarity, a warm backlight for rim separation, soft fill from camera left, and clean contact shadows in the sand. Materials must read as realistic aluminum, wet condensation, juicy fruit flesh, fine sand grains, and soft atmospheric haze. Avoid plastic-looking textures, oversharpening, or artificial glow.
+
+Typography layout: reserve a clear headline zone in the upper-left or upper-center sky area and place the exact text "Launch Campaign" there in bold, clean sans-serif lettering. Keep the typography minimal, large, and highly legible with strong contrast against the sky. Do not add price, dates, social handles, certification marks, ingredient claims, or extra marketing copy. Leave enough negative space so the layout can function as a reusable campaign poster.
+
+Color palette: dominant warm orange, sunlit yellow, aqua-teal, fresh citrus green, and neutral metallic silver. Overall finish: polished advertising photography, production-ready, commercially usable, realistic lens rendering, controlled reflections, natural perspective, and premium retouching.
+
+Reference-image policy: use the provided reference only as off-image inspiration for composition, refreshment cues, tropical mood, color blocking, and commercial finish; do not reproduce any exact branding, label text, logo arrangement, or distinctive protected package design from the reference or source case.
+
+Negative constraints: no real brand names, no copied package graphics, no exact logo shapes, no celebrity likenesses, no extra cans, no distorted proportions, no fantasy liquids, no unreadable headline, no fake labels, no watermark, no random text blocks.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 71. generate an image of a racing car 海报 with its spec and pricing
+
+<img src="../../docs/assets/gallery/cases/gallery-71-generate-an-image-of-a-racing-car-poster-with-its-spec-and-prici.jpg" alt="generate an image of a racing car 海报 with its spec and pricing" width="420">
+
+- 作图类型：`product_ad`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 68](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“generate an image of a racing car 海报 with its spec and pricing”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于广告营销广告制作场景，主题为“generate an image of a racing car 海报 with its spec and pricing”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a vertically oriented 9:16 automotive product advertisement poster for a fictional high-performance sports car, created as a debranded commercial key visual. Composition: place the car as the dominant hero subject in the lower-middle portion of the frame, shown in a low front three-quarter angle, driving toward camera on a wet racetrack at dusk; keep strong forward motion with subtle wheel blur, reflective pavement streaks, and a stadium barrier receding into the background. Reserve the top 28% for a bold headline system with one large condensed sans-serif model name placeholder and the exact campaign line "Launch Campaign" as a secondary text element; do not use any real brand names, logos, or copied slogans. In the middle zone, emphasize the vehicle body, aerodynamic surfaces, glossy painted metal, carbon-fiber accents, glass reflections, tire texture, and precise panel highlights. In the lower 32%, build clean infographic modules: a left-aligned specifications panel with icon-led rows and short editable labels, a right-aligned technical diagram area with blueprint-style line drawings or dimension-callout placeholders, and a bottom pricing / CTA block using generic placeholder fields only, with no invented numbers. Lighting: cinematic commercial lighting with warm sunset glow from the left horizon, cool ambient fill from the sky, crisp rim light on body edges, specular highlights on paint and carbon fiber, and soft atmospheric haze behind the car for depth. Color palette: black charcoal background, deep crimson body color, metallic silver typography, restrained orange-red accents, and small white technical text for hierarchy. Typography: use condensed italic headline lettering, wide tracking for small caps subheads, modular grid alignment, sharp spacing, and high legibility; keep all text areas editable and clearly separated from the vehicle silhouette. Materials and finish: premium print-ad look, high contrast, polished reflections, subtle film grain, realistic road spray, clean vector UI panels, premium motorsport brochure quality. Negative constraints: no real manufacturer badges, no copied names, no creator handles, no real prices, no celebrity likenesses, no existing slogans, no watermarks, no distorted anatomy of the car, no unreadable text blocks, no cluttered layout, no extra vehicles stealing focus. Reference-image policy: use the reference only for overall visual hierarchy, poster density, lighting mood, and the relationship between hero car, specs, and pricing panels; generate an original composition, original wording, and new graphic structure rather than replicating the source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 72. Epic Career Moments Cinematic 海报 Template
+
+<img src="../../docs/assets/gallery/cases/gallery-72-epic-career-moments-cinematic-poster-template.jpg" alt="Epic Career Moments Cinematic 海报 Template" width="420">
+
+- 作图类型：`poster_design`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 72](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0220`, `adimg_recipe_0154`
+
+**中文 Brief**
+
+基于“Epic Career Moments Cinematic 海报 Template”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于广告营销广告制作场景，主题为“Epic Career Moments Cinematic 海报 Template”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a vertical 9:16 advertising poster for a new campaign with the exact headline text "Launch Campaign". Build the composition as a dramatic multi-moment hero collage: one dominant central subject in the middle occupying about 40% of the frame height, surrounded by 5 to 7 smaller supporting scenes placed around the top-left, top-right, mid-left, mid-right, and lower corners to suggest milestones, use cases, or campaign highlights. Keep a strong vertical reading path from top slogan area, to oversized headline block, to central hero, to supporting feature callouts, to bottom metrics or CTA band. Use a polished commercial poster finish with layered depth, atmospheric haze, subtle particles, and controlled lens bloom, but keep all elements clean, premium, and ad-ready rather than chaotic.
+
+Subject and scene treatment: the central figure or product must feel aspirational and iconic without resembling any real person, public figure, or existing brand asset. Supporting scenes should show varied campaign moments, product angles, service touchpoints, or audience interactions, each framed as separate visual chapters with distinct pose, crop, or environment, but unified by the same color system and lighting logic. If using a person, create an original fictional face and body language. If using a product, keep the product silhouette original and generic. Do not include any logos, team crests, brand marks, signature packaging, or recognizable proprietary design features.
+
+Typography and information hierarchy: place a small uppercase strapline at the very top with wide letter spacing. Place the main headline "Launch Campaign" in a very large condensed sans serif across the upper third, stacked or tightly kerned, with metallic gold or brushed champagne texture, crisp edges, and subtle bevel depth. Add secondary tagline text below the headline in a much smaller uppercase sans serif. Distribute 3 to 5 short feature captions around the side scenes, each aligned to its corresponding visual moment. Reserve a clean bottom band for simplified achievements, product benefits, launch pillars, or CTA icons using generic symbols only. All text except the required headline should be placeholder-style generic campaign copy, not real names, not dates, not prices, not social handles.
+
+Lighting, color, and materials: use a cinematic stadium-scale lighting approach translated into advertising language: bright backlight behind the central subject, warm rim light from rear left and rear right, cool shadow fill from the front, and selective highlights on skin, fabric, metal, glass, or packaging surfaces. Build a dark charcoal-to-black background with glowing amber, bronze, and muted gold energy in the center, plus restrained white highlights for contrast. Materials should feel tactile and premium: brushed metal typography, realistic textile or matte packaging surfaces, soft smoke, fine dust, glossy specular highlights, and subtle volumetric light rays. Maintain high contrast, sharp focal clarity on the hero, and slightly softer depth on surrounding montage scenes.
+
+Layout and production rules: maintain balanced negative space around text blocks so the poster stays editable for future campaigns. Use magazine-quality retouching, precise masking, realistic shadows, smooth compositing transitions, and coherent perspective. Avoid clutter. Make the collage feel intentionally designed, with each supporting scene clearly separated by light, scale, or atmosphere rather than hard borders. Output as a production-ready ad key visual, portrait orientation, 9:16 aspect ratio.
+
+Reference-image policy: use the reference only as inspiration for composition density, central-hero dominance, surrounding milestone montage, metallic headline treatment, dramatic backlighting, and premium sports-poster energy. Do not reproduce any exact person, face, uniform, trophy, logo, flag, number, slogan, record text, or protected layout detail from the reference. Generate entirely new subject matter and original graphic details.
+
+Negative constraints: no real celebrity likenesses, no athlete identity cues, no existing brand names, no logos, no watermarks, no copyrighted slogans, no exact stats, no team uniforms, no recognizable trophies, no social handles, no price tags, no fake endorsements, no low-detail text, no messy typography, no flat lighting, no cheap collage edges, no distorted anatomy, no duplicated faces, no unreadable microcopy.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 73. Avant-Garde Basketball Sculpture Sports Fashion 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-73-avant-garde-basketball-sculpture-sports-fashion-ad.jpg" alt="Avant-Garde Basketball Sculpture Sports Fashion 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 73](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“Avant-Garde Basketball Sculpture Sports Fashion 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于服饰时尚广告制作场景，主题为“Avant-Garde Basketball Sculpture Sports Fashion 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 fashion advertising image for a new campaign launch. Build a single-frame poster with a monumental sports-object sculpture as the hero: an oversized textured ball-like form placed in the lower half of the frame, treated as a premium design object rather than branded equipment. Pose a contemporary athletic model reclining diagonally across the curved surface, with confident editorial body language and clean modern sportswear in neutral tones. Keep the visual hierarchy simple and strong: hero object first, model second, typography third. Use a burnt orange to clay-red studio backdrop with a glossy reflective floor, minimal set seams, and generous negative space around the subject.
+
+Lighting must be studio-precise and commercially finished: one large soft key light from upper left, a controlled rim light from rear right to define legs and silhouette, subtle specular highlights on skin and fabric, and soft shadow falloff under the sculpture. Materials must read clearly: pebbled rubber texture on the oversized object, matte stretch fabric on the outfit, smooth skin highlights, and polished floor reflections with realistic attenuation. Camera angle should be slightly low and centered to make the object feel monumental, with a clean symmetrical frame and the model breaking the symmetry through pose.
+
+Typography instructions: place one giant condensed all-caps background word behind the subject, spanning most of the height, using an abstract non-branded term such as RISE or MOTION, set in tall block letterforms with wide vertical presence and off-white color. Add the exact campaign line "Launch Campaign" in a smaller clean sans-serif text block on the right or lower-right area. Keep all text crisp, readable, and integrated into the poster layout. No additional slogans, no prices, no dates, no social handles, no badges, no logos. Color palette: burnt orange, warm terracotta, ivory, sand, and soft black accents. Final image should feel like a premium sports-fashion poster with production-ready polish, controlled contrast, clean edges, and ad-grade retouching.
+
+Reference-image policy: use the reference only for high-level inspiration on composition, scale contrast, lighting discipline, material separation, and text placement. Do not reproduce any exact brand markers, logos, trademarked wording, person identity, styling signature, or distinctive protected layout from the reference or upstream source.
+
+Avoid: brand logos, exact upstream wording, copied letterforms, copied pose details, copied shoe design, copied product markings, extra props, cluttered background, unrealistic anatomy, messy reflections, unreadable typography, fake promotional claims, or any protected brand-identifying elements.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 74. Avant-Garde Tennis Racket Sculpture Sports Fashion 广告
+
+<img src="../../docs/assets/gallery/cases/gallery-74-avant-garde-tennis-racket-sculpture-sports-fashion-ad.jpg" alt="Avant-Garde Tennis Racket Sculpture Sports Fashion 广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 74](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“Avant-Garde Tennis Racket Sculpture Sports Fashion 广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于服饰时尚广告制作场景，主题为“Avant-Garde Tennis Racket Sculpture Sports Fashion 广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 fashion advertising gallery case as a polished 2x2 campaign board with four coordinated panels and one shared visual system. Use a monumental sports-object composition as the core idea: an oversized racket-like sculptural prop and a clean athletic hero presence, treated as a generic sports-fashion concept with no brand marks. Keep the overall layout highly controlled and commercial: strong central visual hierarchy, generous margins, consistent corner radius, aligned typography blocks, small badge areas, and clear negative space for ad readability.
+
+Panel composition: panel one features the main hero scene with the athlete and monumental sports prop centered slightly right of frame, large condensed black sans-serif typography running vertically or stacked behind the subject as abstract graphic architecture, and the exact copy "Launch Campaign" placed in a clean headline zone. Panel two isolates the product or outfit details with material close-ups and sharp crop framing. Panel three shows a secondary lifestyle angle with simplified motion cues and minimal props. Panel four presents a clean call-to-action or campaign summary block with the same typographic system and matching badge/icon language. Keep all four panels visually unified while allowing slight background variation between panels.
+
+Lighting and materials: bright white studio environment, soft frontal key light with controlled side fill, subtle overhead highlight on skin and fabric, crisp edge separation, and glossy reflections on a court-like floor surface. Materials should read clearly: matte athletic fabric, smooth rubber, painted metal or composite sports equipment, polished floor lacquer, and clean paper-like typography edges. Shadows must be soft but defined enough to anchor the subject and prop realistically.
+
+Color and typography: use a restrained monochrome base of white, black, soft gray, and a very small accent color only if needed for interface details. Typography must be oversized, condensed, bold, uppercase, and treated as a compositional block rather than a protected slogan. Do not use the exact wording from the reference image; instead use neutral generic display text plus the required copy "Launch Campaign" in a separate readable text area. Keep all text clean, legible, and production-ready.
+
+Reference-image policy: use the provided reference only as structural inspiration for scale contrast, subject-to-prop relationship, stark studio backdrop, reflective sports-floor finish, and oversized background typography. Do not reproduce the same person, pose, styling details, letters, branded markings, or exact scene arrangement. Generate a new debranded campaign image suitable for reuse across fashion, footwear, or sports-product advertising.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 75. 精品 食品 Recipe 海报 Elegant Layout
+
+<img src="../../docs/assets/gallery/cases/gallery-75-premium-food-recipe-poster-elegant-layout.jpg" alt="精品 食品 Recipe 海报 Elegant Layout" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 76](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0019`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“精品 食品 Recipe 海报 Elegant Layout”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的本地门店促销，用于食品饮料广告制作场景，主题为“精品 食品 Recipe 海报 Elegant Layout”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a 9:16 vertical premium food-and-beverage promotional poster for a local store, built as a reusable advertising template for [STORE NAME] and [FEATURED PRODUCT]. Use a strong commercial hierarchy: top zone for a small category label and the main headline, center-right or center for a large hero product photographed at a three-quarter angle, mid-lower zone for a short ingredient or feature strip, and bottom zone for a clean step, benefit, or call-to-action panel. The required copy must appear exactly as: "Taste the Moment". Keep all other text generic and editable with placeholders such as [headline], [subheadline], [benefit 1], [benefit 2], [call to action].
+
+Visual direction: elegant premium food poster, not a copy of any existing brand. Show one hero serving with rich texture and appetizing detail, plated or packaged neatly, with a few supporting ingredients arranged in an orderly editorial layout. Use warm natural key light from upper left, soft fill from front, subtle rim light on the product edges, realistic shadows, crisp highlights on glaze, broth, batter, ice, foam, or sauce depending on product type. Materials should feel tactile and believable: ceramic, paper card, brushed metal, lacquered wood, linen, matte cream stock, and subtle food-surface gloss. Background should be warm cream with restrained texture, with optional soft botanical, grain, or paper-fiber detail that does not compete with the product.
+
+Typography and layout: refined serif for the main headline, clean sans serif for supporting text, generous spacing, high legibility, clear alignment grid, premium editorial balance. Reserve a visible title block in the upper third, a concise descriptive paragraph block on the left or lower left, a row of small icon or feature markers, and a lower information band divided into neat modules. If using multilingual styling, keep generated text minimal and generic; avoid exact borrowed phrases. Make the poster feel production-ready for print or digital in-store promotion, with clean edges, balanced negative space, and realistic ad-finishing polish.
+
+Color palette: warm cream, toasted gold, deep tea green, dark brown, soft black, and natural food tones. Keep saturation controlled except for the hero product, which should be the visual focal point. Emphasize depth, appetite appeal, and premium clarity rather than clutter.
+
+Negative constraints: no logos, no watermarks, no social handles, no prices, no phone numbers, no addresses, no invented certifications, no copied slogans, no celebrity likenesses, no copyrighted mascots, no protected packaging text, no dense unreadable text blocks, no distorted utensils, no messy composition, no extra hands unless explicitly needed, no low-resolution artifacts.
+
+Reference-image policy: use the unseen reference only as inspiration for structural layout, visual hierarchy, warm lighting, ingredient-strip logic, and premium recipe-poster finish. Do not reproduce exact wording, badge shapes, product arrangement, icon set, or any distinctive brand-identifying details from the source material.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 76. Illustrated City 食品 Map
+
+<img src="../../docs/assets/gallery/cases/gallery-76-illustrated-city-food-map.jpg" alt="Illustrated City 食品 Map" width="420">
+
+- 作图类型：`signage_wayfinding`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 110](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0045`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0158`, `adimg_recipe_0209`, `adimg_recipe_0171`
+
+**中文 Brief**
+
+基于“Illustrated City 食品 Map”生成一个去品牌化的广告作图案例。作图类型为标识导视，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的标识导视，用于食品饮料广告制作场景，主题为“Illustrated City 食品 Map”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 advertising key visual for a food-and-beverage wayfinding campaign titled "Taste the Moment." Design it as a debranded illustrated city food map poster that blends hand-painted map charm with production-ready commercial clarity. Composition: place a bold headline block in the upper left, a decorative mascot or food icon near the title, a clear central map field filling most of the canvas, 8 to 12 numbered food destination callouts distributed evenly around the map, a small legend panel in the lower right, and a compass or orientation device nearby. Keep the visual hierarchy explicit: headline first, hero map second, numbered destinations third, legend and support notes last. Use generous negative space between labels so every information cluster remains readable at poster distance.
+
+Render the base as warm textured parchment paper with subtle fiber grain, softly aged edges, and a refined print finish. Build roads as pale ochre lines, water as muted blue brush strokes, green zones as desaturated botanical washes, and landmarks as miniature ink-and-watercolor illustrations. Show food bowls, plates, skewers, desserts, or tea vessels as appetizing illustrated inserts with slight dimensional emphasis, but keep them integrated into the map rather than floating like product packshots. Add a light botanical border of leaves and spice-inspired accents around the frame for a handcrafted premium feel. Avoid any exact landmark replicas, exact dishes tied to a real venue, or direct reuse of any unique map layout from the inspiration.
+
+Lighting: simulate soft overhead studio lighting on a flat printed poster, with even illumination, gentle paper shadowing, crisp contrast on text, and no harsh glare. Materials: watercolor pigment blooms, fine ink outlines, matte paper texture, and subtle printed-ink imperfections for authenticity. Color palette: warm cream, terracotta, chili red, moss green, muted teal, toasted brown, and soft charcoal. Keep saturation controlled so the result feels premium, legible, and suitable for retail display, campaign boards, menu covers, or mall/event signage.
+
+Typography: reserve the upper-left title area for a large custom hand-lettered display headline, with "Taste the Moment" integrated clearly as the primary campaign line or subtitle. Use a second-tier serif or clean humanist sans for destination labels and legend text. Make numbers large and easy to scan; keep supporting descriptions short and structured. All text must be original, generic, and reusable for a new campaign. Do not include brand names, social handles, prices, addresses, phone numbers, dates, or identifiable personal names. If additional copy is needed, use neutral placeholder venue names and generic category labels only.
+
+Reference-image policy: use the reference only for broad inspiration on illustrated-map composition, layered callouts, vintage paper mood, and decorative framing. Do not copy exact wording, exact icons, exact mascots, exact layout geometry, exact labels, or any distinctive protected details. Output should feel like a new commercial campaign asset, not a replica.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制标识导视的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 77. 产品广告案例 - Outdoor Sportswear Grid Campaign
+
+<img src="../../docs/assets/gallery/cases/gallery-77-outdoor-sportswear-grid-campaign.jpg" alt="产品广告案例 - Outdoor Sportswear Grid Campaign" width="420">
+
+- 作图类型：`product_ad`
+- 行业：服饰时尚
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 168](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0228`, `adimg_recipe_0226`
+
+**中文 Brief**
+
+基于“产品广告案例 - Outdoor Sportswear Grid Campaign”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于服饰时尚广告制作场景，主题为“产品广告案例 - Outdoor Sportswear Grid Campaign”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Move Beyond”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical fashion advertising gallery as a polished 2x2 grid campaign poster. Each quadrant is a distinct outdoor sportswear micro-scene, but all four panels share one unified brand system: consistent margins, equal gutters, subtle rounded panel corners, matching badge shapes, and one clean typography family. Place the grid centrally with a premium editorial layout and clear negative space around the outer frame. Use the headline text exactly as: "Move Beyond". Keep all other text minimal, generic, and editable, using short placeholder subheads only if needed.
+
+Panel 1: winter performance scene with a model in a cobalt blue insulated jacket and dark technical pants stepping through windblown snow; energetic forward motion, airborne snow particles, textured blue graphic backing. Panel 2: rugged trail scene with a model climbing rocky terrain in olive and black layered gear with a functional backpack; warm dust, ochre accent graphics, directional arrows, terrain energy. Panel 3: quiet outdoor recovery scene with a seated model in muted green outerwear on a rock, sparse mountain backdrop, calmer composition, softer spacing, nature-led atmosphere. Panel 4: speed-focused running scene with a model mid-stride in a vivid athletic top and dark shorts; dynamic diagonal motion, bright accent splashes, playful directional marks, high-energy finish. Keep faces non-identifiable and avoid resemblance to any real person.
+
+Lighting: premium commercial lighting with strong subject separation, crisp edge highlights, controlled contrast, and realistic material reflections. Winter panel uses cool top-left light with icy rim glow; trail panel uses warm side light with dusty atmosphere; calm panel uses diffused soft daylight; running panel uses bright punchy cross-light with clean motion emphasis. Materials must read clearly: matte shell fabric, nylon weave, technical stitching, rubber soles, brushed zippers, breathable mesh, and natural rock, snow, and dust textures.
+
+Typography and graphic system: place "Move Beyond" as the primary headline in a bold modern sans serif, large and legible, either spanning the top area or integrated across the grid without covering key subjects. Add smaller secondary copy blocks inside each panel with clean alignment and strong hierarchy. Use real readable text only, no fake glyphs, no logos, no brand names, no prices, no dates, no social handles. Include restrained graphic overlays such as brush textures, thin dividers, icons, arrows, and abstract terrain marks, but keep the layout commercially clean and production-ready.
+
+Color palette: unified outdoor campaign palette with cobalt blue, alpine white, olive green, basalt black, warm earth orange, and a small vivid accent in the running panel. Maintain cross-panel consistency so the collage feels like one campaign rather than four unrelated posters.
+
+Output should feel like a high-end retail launch visual for a new sportswear collection: energetic, aspirational, editorial, sharp, realistic, and ready for gallery or ad showcase use. Do not imitate any existing brand identity, slogan, logo, packaging, or proprietary poster text. Reference-image policy: use the supplied reference only as inspiration for premium ad composition, lighting hierarchy, machine-like precision, glossy materials, and poster finish; do not reproduce its specific product, layout text, branding, or distinctive protected elements.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 78. Iced 咖啡 产品 Infographic
+
+<img src="../../docs/assets/gallery/cases/gallery-78-iced-coffee-product-infographic.jpg" alt="Iced 咖啡 产品 Infographic" width="420">
+
+- 作图类型：`product_ad`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 170](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0053`, `adimg_recipe_0093`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“Iced 咖啡 产品 Infographic”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于食品饮料广告制作场景，主题为“Iced 咖啡 产品 Infographic”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical food-and-beverage advertising poster for an iced coffee launch. Build a debranded commercial composition with one large hero drink dominating the lower-left to center foreground, photographed in sharp perspective so the glass feels close to the camera and visually oversized. Use a transparent tumbler filled with dark espresso, swirling milk, visible clear ice cubes, and fine condensation droplets. Place a second, smaller clean product lineup or alternate serving variation near the lower-right edge to suggest a product family without using any real brand marks. Keep the background as a bright indoor architectural corridor or studio set with soft depth, pale cream and warm beige surfaces, and enough negative space for typography in the upper half.
+
+Typography layout: place the required headline "Launch Campaign" large in the upper third, using bold condensed sans-serif uppercase for the main line. Add a secondary hand-painted brush-script accent behind or overlapping part of the headline in a contrasting mint or light aqua tone, but do not use any existing slogan. Reserve a centered row beneath the headline for four simple circular benefit icons with short generic labels such as "Fresh Brew", "Cold Served", "Smooth Blend", and "Crafted Daily". Keep all text clean, legible, and editable, with clear hierarchy: headline first, icon row second, product detail area third, footer metadata last. Footer can include generic placeholders only, no social handles, no prices, no dates, no addresses.
+
+Materials and product rendering: glass must be crystal clear with realistic refraction, glossy liquid separation, semi-melted ice edges, soft foam at the top, and natural moisture beads. If packaging is shown, use original fictional label graphics only: abstract coffee bean motif, neutral geometric shapes, and non-branded typography blocks. Avoid logos, trademarks, celebrity likenesses, or copied packaging structure from any known beverage ad.
+
+Lighting: use soft commercial studio lighting mixed with directional top-left key light and gentle front fill. Create crisp highlights on ice and glass, smooth gradients in the coffee-to-milk transition, and a controlled soft shadow on the floor below the hero product. Keep exposure clean and premium, with realistic contrast and no blown highlights on label areas.
+
+Color palette: warm cream, soft beige, roasted coffee brown, milk white, transparent ice blue-gray, and one fresh accent color such as mint green for headline emphasis. Overall finish should feel polished, appetizing, modern, and suitable for a real campaign mockup.
+
+Reference-image policy: use the provided reference only as inspiration for visual hierarchy, oversized foreground product treatment, upper headline placement, icon-row organization, and premium ad finish. Do not replicate any exact logo, slogan, person, bottle shape, label text, social handle, or distinctive brand styling from the reference or upstream case. Output should look like a new original ad concept, not a variation of an existing brand poster.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 79. Fast 食品 Character 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-79-fast-food-character-poster.jpg" alt="Fast 食品 Character 海报" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：食品饮料
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 173](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0182`, `adimg_recipe_0195`
+
+**中文 Brief**
+
+基于“Fast 食品 Character 海报”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为食品饮料。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的本地门店促销，用于食品饮料广告制作场景，主题为“Fast 食品 Character 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Taste the Moment”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical promotional poster for a local food-and-beverage campaign, commercially usable and production-ready. Build the layout as a structured 2x2 campaign collage inside one poster: four rounded rectangular panels with consistent margins, badge language, and typography system, plus one dominant hero panel that carries the main visual impact. The subject should be an original, friendly mascot or product hero designed for this campaign, not a replica of any existing character. Place the hero large in the center-to-lower middle area, photographed from a slightly low angle with a wide-lens feel for scale and energy. Surround it with three supporting panels for product detail, side item, and call-to-action atmosphere, keeping every panel readable and visually connected.
+
+Use a bold diner-inspired palette of warm red, golden yellow, cream white, and toasted brown, with controlled accents of glossy sauce red and melted cheese gold. Materials must feel tactile and appetizing: crisp fried textures, glossy sauces, sesame bun texture, reflective cup surfaces, coated paper poster stock, enamel signage, and layered cutout shapes. Add energetic but controlled graphic elements such as comic-style burst badges, dripping condiment shapes, checkered diner trims, and paper-cut promotional stickers, without cluttering the focal subject.
+
+Lighting should be explicit: strong key light from upper front-left, warm fill from front-right, bright specular highlights on food surfaces, gentle rim light separating the hero from the background, and clean contact shadows for depth. Keep the background darker and slightly textured so the product, mascot, and typography remain dominant. The overall finish should resemble a premium printed ad with sharp edge separation, dense color, crisp retouching, realistic food styling, and layered commercial compositing.
+
+Typography must be built into clear zones. Reserve the top area for a large headline in bold condensed block lettering, reserve side or burst shapes for short benefit phrases, reserve the lower band for the exact copywriting: "Taste the Moment", and reserve one clean callout area for offer details without inventing prices, dates, addresses, phone numbers, or brand claims. Text should be legible, high contrast, and arranged in a strong hierarchy: headline largest, supporting claims medium, CTA smallest but clear. Use generic promotional wording only; no existing logos, brand names, social handles, or proprietary taglines.
+
+Reference-image policy: use the provided reference only as inspiration for composition energy, visual hierarchy, retro fast-food materials, color blocking, and layered poster density. Do not reproduce any exact character design, signage wording, logo structure, price layout, or distinctive protected text from the reference. Generate an original campaign image that is adaptable to a new store, new product, or new promotion.
+
+Negative constraints: no copied mascot, no brand imitation, no exact signage from the reference, no celebrity likeness, no watermark, no social media UI, no unreadable text, no random extra hands or food items, no invented discount numbers, no phone numbers, no addresses, no dates, and no clutter that blocks the main subject.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 80. Blue Tears cocktail tutorial infographic 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-80-blue-tears-cocktail-tutorial-infographic-poster.jpg" alt="Blue Tears cocktail tutorial infographic 海报" width="420">
+
+- 作图类型：`local_store_promotion`
+- 行业：广告营销
+- 来源：[EvoLinkAI/awesome-gpt-image-2-prompts Case 175](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md)；Apache-2.0, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0019`, `adimg_recipe_0182`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Blue Tears cocktail tutorial infographic 海报”生成一个去品牌化的广告作图案例。作图类型为本地门店促销，行业场景为广告营销。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的本地门店促销，用于广告营销广告制作场景，主题为“Blue Tears cocktail tutorial infographic 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Launch Campaign,”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 advertising poster for a local store promotion titled "Launch Campaign," featuring a signature blue cocktail tutorial as the hero product. Build the layout with a strong editorial hierarchy inspired by a high-impact studio campaign: one dominant main panel occupying the upper two-thirds, plus two smaller supporting panels along the bottom for ingredient callouts and step-by-step preparation. In the main panel, place a luminous blue cocktail glass slightly right of center on a clean studio floor line, with condensation, translucent liquid, citrus garnish, and premium glass reflections clearly rendered. Behind the drink, add one oversized condensed sans-serif background word in distressed deep red, scaled very large and cropped by the frame edges, used purely as abstract typographic structure rather than identifiable branding. On the left side of the main panel, reserve a compact text block for the campaign headline and short supporting copy, with "Launch Campaign" clearly legible and dominant. In the two lower panels, show close-up ingredient detail on one side and a simple reproducible mixing sequence on the other side, using clean icon-supported labels and short instructional lines. Use a restrained palette of mineral blue, clear ice white, warm neutral gray, oxidized red accents, and soft off-white background tones. Lighting should be controlled commercial studio lighting: large diffused key light from upper left, subtle rim highlights on glass edges, gentle floor shadow, moderate contrast, crisp material separation, no harsh club lighting. Materials should feel premium and tactile: frosted glass, glossy liquid surface, wet condensation, matte paper-like backdrop, slight print-grain texture in the typography. Typography must be modern, bold, and production-ready: oversized condensed headline in the background, smaller left-aligned informational copy, bottom panels with precise instructional labels, all text debranded and generic. Keep the composition clean, spacious, and commercially usable, with clear negative space and no clutter. Do not include any real brand names, creator handles, prices, dates, addresses, phone numbers, logos, or copied slogans. Do not depict any identifiable person from the reference. Reference-image policy: use the provided image only for visual lessons about hierarchy, scale, studio mood, bold background typography, and multi-panel ad composition; do not recreate its subject, props, text, styling marks, or exact scene.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制本地门店促销的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 81. 鲜艳霓虹光影下的动感苏打水飞溅商业海报
+
+<img src="../../docs/assets/gallery/cases/gallery-81-freestyle-312.jpg" alt="鲜艳霓虹光影下的动感苏打水飞溅商业海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[freestylefly/awesome-gpt-image-2 Case 312](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-312)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0177`, `adimg_recipe_0178`
+
+**中文 Brief**
+
+基于“鲜艳霓虹光影下的动感苏打水飞溅商业海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于饮品广告制作场景，主题为“鲜艳霓虹光影下的动感苏打水飞溅商业海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Summer Soda Energy”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 commercial beverage poster for a fictional summer soda campaign. Use a single aluminum can as the hero object, centered slightly low in frame, front-facing and large enough to dominate the composition. Surround it with a high-energy crown-shaped water splash exploding upward and outward, with suspended droplets, wet reflections on the surface below, and a few floating fruit pieces arranged for depth: citrus slice near upper left, pineapple chunk near upper right, mixed berries and one cut passionfruit near the lower foreground. Keep the can design original and generic: no existing logos, no protected slogans, no copied label artwork, only a bold custom headline area integrated on the can.
+
+Typography and copy layout: place the exact campaign text "Summer Soda Energy" as the main readable headline in a clean, bold, high-impact display style, either on the can label or in a dedicated adjacent title zone with strong hierarchy. Add one small secondary flavor descriptor area and one subtle bottom information strip, but keep all extra text generic and minimal. Typography must be crisp, legible, and production-ready, with thick letterforms, controlled spacing, and no imitation of any known brand wordmark.
+
+Lighting and materials: build a glossy studio setup with intense backlit liquid sparkle, sharp specular highlights on droplets, visible cold condensation on the can, and a reflective wet tabletop. Use a warm tropical palette led by saturated orange, coral pink, red, and small accents of golden yellow and deep berry tones. Light from upper back and both sides to create bright rim highlights in the splash while preserving readable packaging detail. Keep the product sharp, allow slight motion blur only on a few outer droplets, and render realistic metal, water, fruit flesh, and condensation textures.
+
+Composition and finish: emphasize a premium advertising look with strong center focus, layered foreground splash, clean depth separation, and a polished poster finish suitable for a reusable beverage campaign. Background should be a luminous orange-to-pink gradient with subtle glow, not a literal copied set. Reference-image policy: use the provided reference only for general composition logic, splash energy, lighting hierarchy, material treatment, and text placement strategy; do not recreate its exact can design, exact fruit arrangement, exact wording, or brand-specific visual identifiers.
+
+Negative constraints: no real brand names, no copied logos, no protected packaging text, no prices, no social handles, no people, no trademarked slogans, no duplicated label art, no low-detail typography, no cluttered layout, no flat lighting, no generic stock mockup look.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 82. 震撼视觉的深红影棚广角美妆大片
+
+<img src="../../docs/assets/gallery/cases/gallery-82-freestyle-317.jpg" alt="震撼视觉的深红影棚广角美妆大片" width="420">
+
+- 作图类型：`product_ad`
+- 行业：美妆护肤
+- 来源：[freestylefly/awesome-gpt-image-2 Case 317](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-317)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0073`, `adimg_template_0077`, `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0175`
+
+**中文 Brief**
+
+基于“震撼视觉的深红影棚广角美妆大片”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为美妆护肤。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于美妆护肤广告制作场景，主题为“震撼视觉的深红影棚广角美妆大片”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Studio Lip Color”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a photorealistic 16:9 beauty advertising key visual in a saturated deep-crimson studio. Use a two-panel composition divided vertically: left panel shows a confident fashion model in a sleek dark outfit holding an oversized lipstick bullet extremely close to the lens; right panel shows a large cosmetic cream jar on a glossy reflective floor with the model reaching forward from behind it. Use ultra-wide 20-28mm perspective so the foreground product feels dramatically enlarged, with slight natural finger distortion from lens proximity. Keep the model generic and debranded, with no resemblance to any real person or reference identity.
+
+Art direction: high-impact commercial studio photography, sharp packaging edges, premium cosmetic finish, clean geometry, controlled reflections, glossy floor, and a tonal red environment with subtle paneling or checker reflection patterns. Materials must read clearly: lacquered lipstick casing in black and warm metallic gold, satin red lipstick bullet, transparent glass cream jar, polished metallic lid, realistic skin texture, and natural fabric sheen. Depth of field should be shallow to medium so the foreground product is dominant while the model remains crisp enough for expression and pose.
+
+Lighting: use strong front-key commercial lighting plus soft side fill, with bright specular highlights on metal and glass, clear edge separation, luminous skin, and rich red gradients in the background. Add reflected glow from the floor and controlled hotspot highlights on the packaging. Keep contrast bold but clean, with no muddy shadows.
+
+Typography and layout: reserve a clean text zone integrated into the product label area or upper negative space. The only visible headline text should be "Studio Lip Color" in a modern high-legibility sans serif, uppercase or title case, centered and balanced with the product. Do not add prices, claims, social handles, logos, or extra brand copy. If additional microtext is needed, keep it generic and non-branded.
+
+Color palette: crimson, scarlet, warm red, black, champagne gold, and soft skin tones. Output should feel production-ready for a cosmetics campaign, with polished retouching but realistic pores and material detail.
+
+Reference-image policy: use the provided reference only as inspiration for composition logic, scale exaggeration, lighting intensity, reflective materials, red studio atmosphere, and text placement hierarchy. Do not copy any exact face, packaging design, brand wording, logo, or distinctive protected visual detail from the reference or upstream case.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 83. 珊瑚色极简影棚时尚商业大片
+
+<img src="../../docs/assets/gallery/cases/gallery-83-freestyle-318.jpg" alt="珊瑚色极简影棚时尚商业大片" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：服饰时尚
+- 来源：[freestylefly/awesome-gpt-image-2 Case 318](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-318)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0157`, `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`; recipes `adimg_recipe_0175`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“珊瑚色极简影棚时尚商业大片”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的商业摄影，用于服饰时尚广告制作场景，主题为“珊瑚色极简影棚时尚商业大片”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Coral Studio Look”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a production-ready 16:9 commercial fashion advertising image in a coral monochrome studio environment. Build a clean geometric studio box with soft wall gradients, a glossy reflective floor with a subtle checker pattern or polished lacquer finish, and a strong foreground-to-background depth structure. Place one oversized beauty or fashion product container in the exact center foreground so it dominates the frame through wide-angle perspective. Position a female model behind the product, leaning forward slightly with one arm reaching toward the camera to create depth and tension; keep her identity generic and newly generated, not matched to any real person. Use a low camera angle with a 24-35mm lens look, deep focus across both product and model, and sharp edge definition on packaging, skin, fabric, and reflections.
+
+Use bright commercial studio lighting: a large soft key from upper front, controlled side fill, subtle rim light on hair and shoulders, and crisp specular highlights on glossy packaging and reflective surfaces. Keep shadows soft but present so the scene feels physically grounded. Materials must read clearly: polished glass or acrylic jar, metallic cap or trim, smooth coated paper label, satin or tailored fabric on the model, and mirror-like floor reflections with realistic falloff.
+
+Color palette: coral, warm red, peach, soft rose, gold accents, and neutral black or cream for contrast. Keep the composition symmetrical or near-symmetrical, with optional smaller matching product units placed far left and far right in the background for balance. Leave a clear typography zone on the main product label and a secondary safe text area in the upper or side negative space for campaign copy. Use only the exact headline text: "Coral Studio Look". Any additional label text should be generic, minimal, and non-branded, with clean modern sans-serif typography, high legibility, proper alignment, and realistic print placement.
+
+Render as ultra-realistic commercial photography with precise perspective, believable reflections, natural skin texture, no beauty retouch distortion, no warped hands, no unreadable packaging, and no random extra props. Keep the scene commercially usable, polished, and adaptable for a new customer campaign.
+
+Reference-image policy: use the reference only as inspiration for composition hierarchy, oversized foreground product, model-behind-product staging, coral studio color logic, reflective materials, and ad-finish lighting. Do not replicate the exact person, product shape, label wording, brand identity, logo, layout details, or any distinctive protected visual element from the source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 84. 都市落日时尚大片
+
+<img src="../../docs/assets/gallery/cases/gallery-84-freestyle-321.jpg" alt="都市落日时尚大片" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：服饰时尚
+- 来源：[freestylefly/awesome-gpt-image-2 Case 321](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-321)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0175`, `adimg_recipe_0226`, `adimg_recipe_0228`
+
+**中文 Brief**
+
+基于“都市落日时尚大片”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为服饰时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的商业摄影，用于服饰时尚广告制作场景，主题为“都市落日时尚大片”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Urban Sunset Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertically framed 9:16 fashion advertising photograph for a campaign headline reading "Urban Sunset Campaign". Show one adult female model in a modern downtown street at sunset, full body visible, leaning lightly against a dark street pole near the right third of the frame. Use the reference image only as guidance for pose logic, framing, lens feel, lighting direction, urban depth, and premium commercial polish; do not replicate the same face, hair identity, exact wardrobe cut, or any distinctive source-specific details.
+
+Composition: place the model large in frame, centered slightly right, with negative space in the upper left and left-center for clean headline placement. Camera height around waist to chest level, portrait orientation, shallow depth of field, background traffic and city lights reduced to soft circular bokeh. Keep the street perspective believable and the subject sharply separated from the environment. Preserve a natural candid posture: one arm lifted into the hair, head turned slightly away from camera, body relaxed, confident, unforced.
+
+Styling and materials: wardrobe should communicate premium urban fashion without copying any exact outfit. Use fitted denim, tall leather boots, a cropped suede or brushed-leather outer layer with a soft textured collar, and a minimal dark top underneath. Emphasize material realism: suede nap, denim grain, leather sheen, natural seams, stitching, folds, and subtle wear. Skin must look realistic with visible texture, not plastic; makeup should be polished and editorial but believable.
+
+Lighting: warm low-angle sunset key light from upper left, soft wrap across face, jacket, and hair; gentle rim light on curls and shoulders; controlled shadow contrast; slight ambient cool fill from the city street. Keep highlights clean, cinematic, and ad-ready. No harsh flash look. Tone should feel premium, warm, urban, and contemporary.
+
+Typography and graphic space: include only the text "Urban Sunset Campaign" in a refined sans-serif, medium weight, uppercase or title case, placed in the upper left with strong readability over blurred background. Optional small secondary line or CTA area may be reserved below the headline as blank layout space, but do not invent extra copy, price, brand name, handle, logo, or legal text. Keep typography minimal, aligned, and commercially usable.
+
+Color palette: warm amber sunlight, espresso brown, deep denim blue, charcoal, muted skin tones, soft gold highlights. Grade the image with realistic contrast and restrained saturation for a high-end campaign finish.
+
+Negative constraints: no logos, no watermarks, no celebrity likeness, no copied identity, no exact upstream styling duplication, no extra text, no fake brand marks, no distorted anatomy, no over-smoothed skin, no surreal body proportions, no plastic materials, no posterized filters, no cluttered background, no exaggerated glamour retouching.
+
+Reference-image policy: treat the provided image and upstream case as structural inspiration only for commercial composition, lighting, hierarchy, and finish; generate a fresh debranded advertisement suitable for reuse across different fashion clients.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 85. 沉香玫瑰悬浮幻景
+
+<img src="../../docs/assets/gallery/cases/gallery-85-freestyle-327.jpg" alt="沉香玫瑰悬浮幻景" width="420">
+
+- 作图类型：`product_ad`
+- 行业：香氛
+- 来源：[freestylefly/awesome-gpt-image-2 Case 327](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-327)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“沉香玫瑰悬浮幻景”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为香氛。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于香氛广告制作场景，主题为“沉香玫瑰悬浮幻景”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Amber Rose Ritual”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical luxury fragrance advertising poster for a fictional perfume campaign titled "Amber Rose Ritual". Build a single-panel hero composition, not a collage: place one elegant unlabeled perfume bottle at the bottom center on a dark carved wooden pedestal with subtle gold inlay, facing straight toward camera. Use a refined rounded-rectangle glass bottle, clear transparent glass, pale amber liquid, polished warm-metal cap, no logo, no brand mark, no price, no social handle. Above the bottle, arrange a vertical floating ingredient column that rises in a clean stacked sequence: dark oud wood chips near the top with faint white smoke, glowing amber resin pieces below, full pink roses at mid-height, and soft white musk stones or powder-like mineral forms lower in the stack. Connect each ingredient to small caption zones on the left and right using thin curved metallic-gold lines with tiny circular endpoints.
+
+Set the scene inside an ornate old-world perfume market interior with arched stone architecture, textured carved walls, warm brown stone surfaces, spice bowls, wood trays, and softly blurred lanterns in the background. Keep the environment symmetrical and centered so the bottle and ingredient tower remain the visual anchor. Use shallow depth of field on the background and high micro-detail on the hero objects. Add controlled luminous particles and delicate golden vapor trails that spiral upward around the ingredients, but keep the effect premium and restrained rather than fantasy-heavy.
+
+Lighting: warm cinematic key light from upper front center, soft amber fill from both sides, subtle back rim light to define the bottle edges, glowing highlights inside the amber resin, gentle bloom around floating particles, realistic reflections on glass and metal, soft shadow pooling beneath the bottle. Materials must read clearly: polished glass, brushed metal, carved hardwood, resin translucency, velvety rose petals, dry fibrous oud texture, powdery musk surface.
+
+Typography and layout: place the headline "Amber Rose Ritual" at the top center in an elegant high-contrast serif, large size, warm ivory-gold color. Add one short subtitle directly below in a smaller serif. Place four ingredient callout labels around the floating column in balanced positions, with short generic descriptive lines beneath each. Keep all text crisp, readable, and debranded. Do not include claims, certifications, discounts, phone numbers, addresses, dates, or invented performance promises. Maintain generous negative space around the title and around each label so the ad feels premium and production-ready.
+
+Color palette: warm amber, rose pink, ivory, dark walnut, antique gold, smoky brown. Overall mood: luxurious, warm, heritage-inspired, precise commercial finish, high-end beauty advertising.
+
+Reference-image policy: use the unseen reference only as inspiration for composition hierarchy, centered bottle staging, floating ingredient annotation system, warm amber lighting, and architectural scene logic. Do not reproduce any exact wording, brand identity, logo, handle, bottle design, decorative arrangement, or distinctive layout details from any source image. Output as a polished photoreal advertising visual with clean text placement and realistic product-photography discipline.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 86. 茶π产品宣传海报
+
+<img src="../../docs/assets/gallery/cases/gallery-86-freestyle-332.jpg" alt="茶π产品宣传海报" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[freestylefly/awesome-gpt-image-2 Case 332](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-332)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0146`, `adimg_template_0209`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0019`
+
+**中文 Brief**
+
+基于“茶π产品宣传海报”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于饮品广告制作场景，主题为“茶π产品宣传海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Tea Touchpoint System”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable vertical beverage advertising poster in 9:16 ratio for a bottled tea drink called "Tea Touchpoint System". Build a clean premium layout with the bottle as the hero object centered slightly low in the frame, occupying about 35 to 40 percent of the height. Place a large headline block in the upper left, a smaller product descriptor and three short benefit lines beneath it, and a structured feature column with simple circular icons along the left side. Add a narrow vertical text accent on the right side and a soft information band across the bottom for three concise callouts. Keep all typography editable, sharp, and readable; use generic sans-serif or elegant high-contrast display typography, with clear hierarchy, generous spacing, and no logos or protected brand text.
+
+Scene design: warm orchard-inspired tabletop setting with pale golden tea, fresh peach fruit, green tea leaves, and a natural stone or textured pedestal under the bottle. Include one cut peach in the foreground and one whole peach near the base to support flavor storytelling. Background should be airy and luminous with soft botanical depth, pale cream-to-warm-gold gradients, faint atmospheric haze, and subtle organic shapes that frame the product without clutter. Materials should feel realistic and premium: transparent PET or glass bottle, lightly glossy label, translucent amber liquid, fresh fruit skin texture, matte stone surface, and crisp leaf edges.
+
+Lighting: use soft warm daylight from upper left as the key light, with controlled rim highlights on the bottle shoulders and cap, gentle front fill to preserve label readability, and a mild bloom in the background. Add small specular highlights on the bottle and fruit to enhance freshness, but avoid harsh reflections or overexposure. Keep shadows soft and grounded.
+
+Color palette: cream, warm ivory, honey gold, tea amber, peach blush, fresh leaf green, and dark brown typography. Overall mood should feel light, natural, refreshing, and polished for retail advertising.
+
+Text policy: only include the exact phrase "Tea Touchpoint System" as the main copy. Any remaining text should be placeholder microcopy or generic feature labels, with no invented prices, certifications, dates, addresses, phone numbers, or medical claims.
+
+Reference-image policy: use the unseen reference only as inspiration for composition, information hierarchy, lighting direction, product staging, and commercial finish. Do not reproduce any exact logo, brand name, label artwork, slogan, badge, seal, proprietary copy, or distinctive packaging graphics from the source image. Generate a new debranded design with similar poster logic but original text treatment and original packaging details.
+
+Negative constraints: no celebrity or identifiable person, no copied logo marks, no trademarked slogans, no fake award badges, no extra products, no crowded background, no warped bottle shape, no unreadable text, no duplicated fruit, no floating objects, no fantasy effects, no low-resolution print artifacts.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 87. AI 眼镜爆炸拆解图
+
+<img src="../../docs/assets/gallery/cases/gallery-87-ai.jpg" alt="AI 眼镜爆炸拆解图" width="420">
+
+- 作图类型：`product_ad`
+- 行业：消费电子
+- 来源：[freestylefly/awesome-gpt-image-2 Case 333](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-333)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“AI 眼镜爆炸拆解图”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的产品广告，用于消费电子广告制作场景，主题为“AI 眼镜爆炸拆解图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Smart Glasses Breakdown”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 commercial product advertising poster for smart glasses titled "Smart Glasses Breakdown". Show a premium exploded-view composition on a clean light gray to white studio background: the fully assembled smart glasses positioned in the lower-left foreground, with the product disassembled across the center and upper-right in a precise horizontal technical layout. Separate each component with realistic spacing and alignment, including frame halves, lenses, camera modules, micro display unit, circuit boards, speakers, battery cell, sensors, microphone parts, hinges, and charging case accessories. Use thin connector lines, numbered callouts, small icon markers, and short neutral feature labels placed in structured text zones around the parts. Keep the layout airy, engineering-focused, and easy to scan, with a strong hierarchy from headline to product anatomy to feature cards.
+
+Materials and rendering: matte and semi-gloss black polymer frame, brushed metal internal brackets, glass lenses with subtle reflections, compact electronic components with realistic textures, precise industrial design detailing, and high-end consumer electronics finish. Lighting should be bright studio softbox lighting from upper left with gentle fill from front right, crisp edge highlights on the frame, controlled shadows directly beneath the floating parts, and a polished catalog-grade look. Use sharp focus, high clarity, and consistent scale so the exploded structure feels manufacturable and believable.
+
+Typography and information layout: large bold headline in the upper-left reading exactly "Smart Glasses Breakdown"; smaller subheading beneath it; a clean specification strip along the bottom; a vertical column of rounded feature cards on the right; small technical labels near components; minimalist sans-serif typography, dark charcoal text, muted blue accent numbers and icons, generous margins, and disciplined grid alignment. Include only generic feature text such as smart assistant, photo capture, lightweight frame, long battery life, water resistance, wireless connectivity; do not invent prices, certifications, phone numbers, addresses, dates, or unverifiable claims.
+
+Color palette: white, light gray, graphite black, cool metallic gray, and restrained cobalt-blue accents. Overall finish should feel premium, modern, neutral, and production-ready for a reusable consumer electronics campaign.
+
+Reference-image policy: use the unseen reference only as inspiration for composition logic, exploded technical hierarchy, lighting direction, typography placement, and commercial polish. Do not reproduce any exact brand names, logos, original wording, distinctive icons, proprietary layout details, or unique protected visual signatures from the source material.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 88. 四季包装 Campaign 宫格
+
+<img src="../../docs/assets/gallery/cases/gallery-88-campaign.jpg" alt="四季包装 Campaign 宫格" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：包装
+- 来源：[freestylefly/awesome-gpt-image-2 Case 342](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-342)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0068`, `adimg_template_0208`, `adimg_template_0292`, `adimg_template_0065`, `adimg_template_0066`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“四季包装 Campaign 宫格”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为包装。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的电商主图，用于包装广告制作场景，主题为“四季包装 Campaign 宫格”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Seasonal Package Grid”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial advertising gallery image for a packaging campaign. Show one consistent package silhouette repeated across a clean 2x2 grid, with each quadrant presenting a distinct seasonal world while keeping the package shape, camera height, scale, and label architecture consistent. Use a centered hero package in every panel with enough negative space for premium retail presentation. Top-left: spring scene with fresh florals, soft moss, pale green and ivory palette, crisp glass or coated paper packaging surface, gentle natural highlights. Top-right: summer scene with bright sand, sea-glass accents, driftwood, airy blue and aqua palette, high-key daylight, clean reflections. Bottom-left: autumn scene with warm leaves, bark, seed pods, amber and copper palette, low warm sunlight, richer contrast and tactile texture. Bottom-right: winter scene with snow, frosted evergreen branches, icy translucent accents, cool silver and blue palette, soft overcast light with controlled sparkle.
+
+Package design: debranded premium packaging, minimal front label, no logos, no trademarked names, no prices, no social handles, no certification badges. Materials may be glass, coated carton, matte label stock, metallic cap, embossed paper, or soft-touch finish, but keep the material family realistic and consistent across all four panels. Composition must feel like a polished campaign board: equal quadrant sizing, precise alignment, subtle depth, strong subject isolation, realistic contact shadows, refined product reflections, and ecommerce-ready clarity.
+
+Typography: add one clean headline only, "Seasonal Package Grid", placed either centered above the grid or in a restrained caption zone with modern editorial spacing. If secondary text is needed, use short generic placeholders only such as "Spring", "Summer", "Autumn", "Winter" in small unobtrusive type. Typography must be sharp, minimal, and commercially usable, with no dense paragraphs and no invented promotional claims.
+
+Lighting: execute each quadrant with season-specific light while preserving overall campaign consistency. Use soft directional studio-natural hybrid lighting, premium retouching, realistic materials, high micro-contrast on edges, and balanced highlights on the package.
+
+Color and finish: clear seasonal palette separation, but unified premium tone across the full grid. Keep the image production-ready, elegant, and adaptable to a new customer or product category.
+
+Negative constraints: no branded text, no copied slogans, no people, no distorted packaging, no surreal anatomy, no clutter covering the product, no fake pricing, no extra badges, no watermark, no protected logos, no direct imitation of any existing brand packaging.
+
+Reference-image policy: use the reference only as inspiration for grid composition, centered product placement, seasonal scene logic, and commercial finish; do not reproduce exact objects, layouts, labels, or distinctive proprietary details from any source image.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 89. 运动时尚三联 Campaign
+
+<img src="../../docs/assets/gallery/cases/gallery-89-campaign.jpg" alt="运动时尚三联 Campaign" width="420">
+
+- 作图类型：`product_ad`
+- 行业：运动时尚
+- 来源：[freestylefly/awesome-gpt-image-2 Case 349](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-349)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0151`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0227`, `adimg_recipe_0175`, `adimg_recipe_0226`
+
+**中文 Brief**
+
+基于“运动时尚三联 Campaign”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为运动时尚。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的产品广告，用于运动时尚广告制作场景，主题为“运动时尚三联 Campaign”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Movement Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial sports-fashion advertising collage with three panels and a premium editorial finish. Top panel takes about 60% of the canvas and shows the hero athlete in a dark emerald performance outfit posed confidently on an oversized tilted racket-like sports prop; place the figure slightly right of center, with one leg extended and one arm resting casually to create a strong fashion silhouette. Use an indoor court-inspired set with a deep green wall, pale court lines, and a glossy reflective floor that mirrors the subject and prop. Behind the subject, place very large condensed sans-serif background typography reading exactly: "Movement Campaign"; set it in warm ivory, spanning most of the width, partially obscured by the athlete and prop for layered depth.
+
+Bottom left panel: tight beauty portrait crop from chest up, head turned slightly upward, clean skin texture, controlled athletic styling, minimal accessories. Keep small editorial text accents sparse and secondary, using short neutral words only if needed, but do not introduce brand names, handles, or claims. Bottom right panel: full-body low seated or crouched pose holding the same sports prop, framed in a structured court setting with thin geometric divider lines and a compact block of supporting slogan text that remains generic and debranded.
+
+Lighting: use controlled studio-editorial lighting with a soft key from upper left, subtle rim light on shoulders and legs, crisp specular highlights on skin, and gentle falloff into cinematic shadows. Materials: matte painted wall, polished court floor, woven strings or mesh on the oversized prop, technical stretch fabric with visible seams, clean white footwear and socks without logos. Color palette: deep emerald green, ivory, off-white, muted skin tones, and restrained shadow blacks. Typography: bold condensed uppercase for the main headline, smaller clean sans-serif for support copy, all text aligned to a visible grid with generous negative space and high legibility. Composition must feel balanced, premium, and production-ready, with sharp details, realistic proportions, and refined retouching.
+
+Reference-image policy: use the reference only for overall structure, panel hierarchy, pose logic, lighting direction, floor reflection, oversized-prop concept, and text placement rhythm; do not reproduce the exact person, outfit details, wording, logo placement, or unique brand identifiers. Avoid any trademarked logos, creator handles, prices, dates, watermarks, or copied slogans. Keep the final image reusable for a new customer campaign.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 90. 健身品牌力量 Campaign
+
+<img src="../../docs/assets/gallery/cases/gallery-90-campaign.jpg" alt="健身品牌力量 Campaign" width="420">
+
+- 作图类型：`poster_design`
+- 行业：健身
+- 来源：[freestylefly/awesome-gpt-image-2 Case 351](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-351)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0231`, `adimg_template_0237`, `adimg_template_0016`, `adimg_template_0022`, `adimg_template_0023`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“健身品牌力量 Campaign”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为健身。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的海报设计，用于健身广告制作场景，主题为“健身品牌力量 Campaign”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Strength Training Campaign”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a square 1:1 fitness advertising poster for a debranded campaign. Build the composition around one oversized black metal dumbbell placed diagonally across the lower half of the frame as a statement prop, with a strong athletic woman seated against it near center-left, one knee bent and one leg extended to create a dynamic triangular pose. Use a minimal black studio environment with a glossy reflective floor, deep negative space, and a clean premium commercial finish. Wardrobe should be simple performance apparel in red and white with no logos, no branded shoe details, and no identifiable personal features.
+
+Place the headline text "Strength Training Campaign" in very large condensed uppercase letters spanning most of the background height behind the model, aligned vertically across the width as a bold graphic layer. The typography should feel heavy, tall, and architectural, with clean edges, subtle depth, and controlled spacing. Keep all other text minimal or omitted; if extra copy is needed, use only short neutral placeholder lines with strong hierarchy and ample breathing room.
+
+Lighting should be high-contrast studio lighting from upper front-left with a controlled rim light from the opposite side, producing crisp highlights on skin, realistic shadow falloff, sharp edges on the dumbbell facets, and a soft red reflection on the polished floor. Materials must read clearly: matte textured black metal on the weight, smooth technical fabric on the clothing, natural skin sheen, and a lacquer-like floor reflection. Color palette: black, charcoal, deep red, white, and subtle silver accents only.
+
+Image should feel like a production-ready sports campaign poster: precise framing, clean silhouette separation, realistic anatomy, premium retouching, balanced contrast, and strong readability at thumbnail and full size. Avoid clutter, extra props, random text, logos, watermarks, brand marks, celebrity resemblance, copied slogans, pricing, dates, social handles, or protected identifiers.
+
+Reference-image policy: use the provided reference only as inspiration for composition, subject-to-prop scale, lighting direction, typography placement, reflective studio mood, and commercial polish; do not reproduce the exact person, exact dumbbell design, exact lettering treatment, or any distinctive source-specific details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 91. 草莓能量饮料商业广告
+
+<img src="../../docs/assets/gallery/cases/gallery-91-freestyle-358.jpg" alt="草莓能量饮料商业广告" width="420">
+
+- 作图类型：`product_ad`
+- 行业：饮品
+- 来源：[freestylefly/awesome-gpt-image-2 Case 358](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-358)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
+
+**中文 Brief**
+
+基于“草莓能量饮料商业广告”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于饮品广告制作场景，主题为“草莓能量饮料商业广告”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Strawberry Energy Drink”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a commercially usable vertical product advertisement for a strawberry energy drink, aspect ratio 9:16. Build the image as a high-end studio poster with a clear three-layer hierarchy: foreground splash elements, central product hero, and oversized background headline. Place a tall slim metallic can in the lower center, upright and dominant, with realistic aluminum texture, cold condensation droplets, subtle rim highlights, and a clean fictional label design with no real brand marks or logos. Surround the can with energetic arcs of red strawberry liquid, suspended ice cubes, and several fresh strawberries on a glossy reflective surface to create depth and motion.
+
+Add a dynamic athletic female model as a supporting figure in the upper and middle frame, captured mid-jump above or behind the can, wearing a translucent white sport jacket, orange athletic shorts, white socks, and white sneakers. She should enhance the sense of motion and energy without becoming the product focus. Use a strong diagonal pose, flowing hair, and controlled motion freeze. Keep the person generic and advertisement-ready, not identifiable as any real individual.
+
+Use a vivid orange background with a bright center glow and smooth gradient falloff. Behind the model, place very large bold italic uppercase sans-serif typography reading exactly: "Strawberry Energy Drink". The text should be oversized, luminous, partially obscured by the figure and splash elements, and integrated as a graphic backdrop rather than a separate caption block. Maintain clean letterforms, strong perspective scaling, and clear ad-style hierarchy.
+
+Lighting: use hard commercial key light from upper left, warm orange ambient fill, and crisp specular accents on water, ice, skin, fabric, and metal. Add controlled backlight or edge light to separate the figure and can from the background. Keep the can label readable, the droplets sharp, and the scene high contrast without blown highlights.
+
+Materials and finish: hyper-real product photography realism, frozen liquid splash details, transparent ice with internal refraction, wet reflective floor, fresh strawberry texture, breathable sport fabrics, and polished advertising-grade retouching. Keep everything sharp at the product plane, with slight depth falloff on secondary splash elements.
+
+Color palette: saturated orange, strawberry red, metallic silver, bright white, with small neutral shadows for contrast. Mood: refreshing, powerful, kinetic, premium, summer-energy campaign.
+
+Reference-image policy: use the reference only for general composition logic, visual hierarchy, lighting direction, material treatment, motion staging, and typography placement. Do not reproduce any real brand name, logo, slogan, creator identity, package graphics, or distinctive protected design from the reference or source case. Use only fictional packaging and debranded ad design.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 92. 手机爆炸拆解图
+
+<img src="../../docs/assets/gallery/cases/gallery-92-freestyle-361.jpg" alt="手机爆炸拆解图" width="420">
+
+- 作图类型：`product_ad`
+- 行业：消费电子
+- 来源：[freestylefly/awesome-gpt-image-2 Case 361](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-361)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0145`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0182`
+
+**中文 Brief**
+
+基于“手机爆炸拆解图”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为消费电子。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于消费电子广告制作场景，主题为“手机爆炸拆解图”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Smartphone Exploded View”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 premium consumer-electronics advertising poster for a generic flagship smartphone, shown as an ultra-detailed exploded assembly visualization. Use a single central hero composition: the phone body centered slightly left, front glass and rear shell separated in depth, with internal modules floating between them in precise layered alignment from left to right. Show realistic components such as camera cluster, battery block, logic board, cooling sheet, speaker unit, connector modules, screws, and frame segments, arranged with engineering clarity and even spacing. Keep the device design original and debranded, with no logos, no trademark shapes copied exactly, and no protected interface details.
+
+Background and scene: deep graphite-to-slate gradient studio backdrop with subtle atmospheric haze, faint blueprint texture, and soft vignette. Add thin technical callout lines, small numbered markers, micro-diagram panels, and a lower information strip to create the feel of a commercial engineering showcase. The layout must feel clean, expensive, and production-ready, with strong hierarchy and generous negative space around the hero object.
+
+Lighting and materials: use controlled studio lighting from upper left and upper rear, with crisp rim highlights on metal edges, soft reflections on glass, realistic brushed titanium or matte aluminum frame surfaces, satin-black internal components, copper-toned thermal layer accents, and refined shadows that separate every floating part clearly. Emphasize precision manufacturing, material contrast, and depth without making the image chaotic.
+
+Typography and text placement: place the headline "Smartphone Exploded View" in the upper left in a modern sans-serif font, bold, clean, high legibility. Add smaller debranded supporting labels and specification-style captions around the device, using short generic engineering phrases only. Keep all text readable, aligned to a clear grid, white or light gray on dark background, with selective pale blue accent lines. Do not invent prices, dates, certifications, phone numbers, addresses, or promotional claims. Do not include any real brand names, creator handles, or distinctive copied wording.
+
+Color palette: charcoal, gunmetal, silver, soft white, muted steel blue, and restrained copper accents. Keep saturation low to medium, contrast high, and finish polished like a launch campaign key visual.
+
+Reference-image policy: use the reference only as inspiration for composition logic, exploded-view hierarchy, lighting discipline, materials, annotation density, and premium technical-poster finish. Do not replicate any exact phone model, camera arrangement, labels, logos, or proprietary text from the reference or upstream source.
+
+Negative constraints: no brand marks, no copied product identity, no human subjects, no retail price tags, no social media UI, no watermark, no cluttered background, no fantasy sci-fi parts, no illegible text blocks, no duplicated components, no distorted perspective, no copyrighted slogans.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 93. 门头店招案例 - Neighborhood Cafe Storefront Signboard Concept
+
+<img src="../../docs/assets/gallery/cases/gallery-93-neighborhood-cafe-storefront-signboard-concept.jpg" alt="门头店招案例 - Neighborhood Cafe Storefront Signboard Concept" width="420">
+
+- 作图类型：`storefront_signboard`
+- 行业：咖啡店
+- 来源：[wuyoscar/gpt_image_2_skill docs/isometric/isometric-cafe.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/isometric/isometric-cafe.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0004`, `adimg_template_0008`, `adimg_template_0010`, `adimg_template_0001`, `adimg_template_0002`; recipes `adimg_recipe_0042`, `adimg_recipe_0044`, `adimg_recipe_0068`
+
+**中文 Brief**
+
+基于“门头店招案例 - Neighborhood Cafe Storefront Signboard Concept”生成一个去品牌化的广告作图案例。作图类型为门头店招，行业场景为咖啡店。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张1:1的门头店招，用于咖啡店广告制作场景，主题为“门头店招案例 - Neighborhood Cafe Storefront Signboard Concept”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Corner Coffee”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a square 1:1 commercial advertising image for a coffee shop storefront signboard concept. Scene: a compact corner cafe facade presented in a clean isometric three-quarter view, with the storefront occupying most of the frame and a small amount of surrounding pavement for context. Keep the architecture tidy and realistic: upper facade, ground-floor windows, centered or slightly offset glass entrance, visible display windows, modest outdoor seating, and subtle streetscape elements that support the store without stealing attention. The signboard must be the primary focal point and sit across the top front facade, taking roughly the upper third of the storefront composition.
+
+Branding and text: show the exact copy "Corner Coffee" once as the main storefront sign in clear, readable Latin letters. Do not add prices, phone numbers, addresses, social handles, dates, slogans, menus, or any extra promotional text. If secondary text is needed for balance, use generic non-branded category wording only, kept very small and subordinate.
+
+Materials and build logic: use realistic, fabricatable storefront materials such as painted wood trim, matte metal framing, glass windows, stone or stucco walls, awning canvas, and dimensional sign lettering or a slim lightbox panel. Show believable construction details including sign thickness, mounting seams, frame edges, window reflections, masonry texture, and warm interior shelving visible through the glass. Avoid impossible floating elements or overly ornate decorative features.
+
+Lighting: set the scene at early evening or blue-hour dusk. Use soft ambient exterior light, warm interior glow spilling through the windows, and gentle illumination on the sign so the lettering remains crisp and readable. Reflections on glass should be controlled and realistic, with highlights kept on edges rather than blocking the view inside. Keep contrast commercial and polished, not dramatic.
+
+Color palette: warm neutral walls, terracotta or muted earth architectural accents, deep green or dark teal storefront elements, natural wood notes, soft brass or black metal details, and warm amber interior light. Keep the palette cohesive, upscale, and neighborhood-friendly.
+
+Composition and hierarchy: prioritize a strong visual hierarchy with 1) the signboard and store name, 2) the entrance and display windows, 3) supporting cafe atmosphere such as planters, a few chairs, and subtle street details. Maintain clean negative space around the sign area so the branding reads immediately. Keep the storefront symmetrical or near-symmetrical enough to feel production-ready for advertising gallery use.
+
+Reference-image policy: use the provided reference only for general scene structure, spatial hierarchy, cozy storefront logic, material balance, and polished commercial finish. Do not reproduce any exact shop names, logos, façade details, text arrangements, characters, or unique protected elements from the reference. Produce a debranded, reusable concept for a new client.
+
+Negative constraints: no copied logos, no protected brand text, no creator handles, no identifiable people as focal subjects, no exact upstream storefront styling, no cluttered signage, no unreadable typography, no fabricated offers or event details, no exaggerated fantasy architecture, no distorted perspective, no low-detail textures.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制门头店招的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 94. 形象墙/上墙案例 - Corporate Lobby Brand Wall Mockup
+
+<img src="../../docs/assets/gallery/cases/gallery-94-corporate-lobby-brand-wall-mockup.jpg" alt="形象墙/上墙案例 - Corporate Lobby Brand Wall Mockup" width="420">
+
+- 作图类型：`brand_wall`
+- 行业：企业服务
+- 来源：[wuyoscar/gpt_image_2_skill docs/architecture-interior/mid-century-modern-office-studio.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/architecture-interior/mid-century-modern-office-studio.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0280`, `adimg_template_0271`, `adimg_template_0272`, `adimg_template_0273`, `adimg_template_0274`; recipes `adimg_recipe_0238`, `adimg_recipe_0214`, `adimg_recipe_0223`
+
+**中文 Brief**
+
+基于“形象墙/上墙案例 - Corporate Lobby Brand Wall Mockup”生成一个去品牌化的广告作图案例。作图类型为形象墙/上墙，行业场景为企业服务。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的形象墙/上墙，用于企业服务广告制作场景，主题为“形象墙/上墙案例 - Corporate Lobby Brand Wall Mockup”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Nova Works”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 photorealistic enterprise-services lobby brand wall mockup inside a refined modern office interior. Use a wide, eye-level camera with the wall as the primary focal plane on the center-right of the frame, while keeping believable spatial context: terrazzo or polished stone floor, warm walnut wood cabinetry, a clean matte plaster wall, soft seating, a desk in the foreground or midground, and large windows that bring controlled daylight from one side. The scene should feel premium, quiet, and commercially deployable, with clear architectural depth and realistic installation logic.
+
+Design the brand wall for the text "Nova Works" only. Place the brand name as dimensional mounted lettering or a brushed metal / satin acrylic logo wordmark on the main wall, horizontally centered within the usable wall zone, with disciplined spacing and crisp edges. Add a secondary presentation layer inspired by a gallery or event backdrop system: subtle repeated geometric marks, a restrained modular grid, or faint tonal patterning behind or around the main brand area, but keep the composition elegant and not crowded. Reserve clean negative space around the main lettering so the wall could function for reception photography, client visits, or campaign adaptation.
+
+Materials and finish: matte warm-white or light sand wall surface, walnut wood millwork, muted bronze or champagne-metal logo accents, soft fabric upholstery in olive, taupe, or moss tones, and stone or terrazzo flooring with fine grain. Lighting: late-afternoon natural light entering from the window side, soft ambient ceiling fill, gentle shadow falloff, no harsh glare, no blown highlights, no dramatic spotlighting. Keep reflections physically plausible on metal letters and polished surfaces.
+
+Typography and text handling: render only "Nova Works" as the primary readable text. Use a clean, modern sans-serif wordmark treatment with strong legibility, medium tracking, and balanced scale relative to the wall. Do not add taglines, phone numbers, web addresses, social handles, fake awards, dates, prices, or extra copy. If small environmental graphics are needed, keep them abstract and unreadable.
+
+Color palette: warm ivory, sand, walnut brown, muted olive, soft bronze, stone beige, and low-contrast charcoal details. Composition should emphasize professional hospitality, brand credibility, and real-world fabrication feasibility. The logo must appear physically mounted to the wall with correct perspective, shadow contact, and installation depth.
+
+Reference-image policy: use the reference only as inspiration for composition hierarchy, architectural mood, warm natural lighting, furniture-to-wall balance, and premium material relationships. Do not recreate any exact room layout, unique furniture signature, wall board content, artwork, logos, or protected text from any source. Generate a fresh debranded scene suitable as a reusable advertising gallery case.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制形象墙/上墙的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 95. Packaging Dieline 产品 Main Image
+
+<img src="../../docs/assets/gallery/cases/gallery-95-packaging-dieline-product-main-image.jpg" alt="Packaging Dieline 产品 Main Image" width="420">
+
+- 作图类型：`ecommerce_main_image`
+- 行业：包装
+- 来源：[wuyoscar/gpt_image_2_skill docs/product-food/product-dieline-box.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/product-dieline-box.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
+
+**中文 Brief**
+
+基于“Packaging Dieline 产品 Main Image”生成一个去品牌化的广告作图案例。作图类型为电商主图，行业场景为包装。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的电商主图，用于包装广告制作场景，主题为“Packaging Dieline 产品 Main Image”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Box System”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 ecommerce main image for a packaging concept called "Box System". Show one finished rectangular carton standing slightly turned in three-quarter view, centered and occupying about 65% of the frame, with the front panel fully readable and one side panel visible for hierarchy. Use a clean studio setup with a warm ivory background, soft floor shadow, and subtle premium depth. Keep the scene minimal and marketplace-ready: no people, no extra products, no busy props, no pricing, no badges, no fake certifications.
+
+Packaging design direction: debranded premium beverage or wellness box with a matte uncoated paper surface, crisp folded edges, realistic dieline logic, and refined print placement. Front panel: large headline area with the exact text "Box System" in elegant, modern typography; below it, a smaller descriptor line in neutral generic wording; lower area can include an abstract translucent botanical or geometric graphic made from layered olive, moss, and pale sage shapes. Side panel: use generic ingredient-style blocks, data blocks, and fine text layout as visual structure only, but keep all text fictional, minimal, and non-identifiable. Do not reproduce any existing brand, product name, label wording, logo, nutrition panel text, certification marks, or proprietary copy.
+
+Composition and layout: place the box slightly left of center or centered with generous negative space around it; maintain a straight vertical perspective and realistic tabletop contact. Keep typography aligned to a premium packaging grid with clear margins, small footer text area, and balanced spacing. Use a restrained palette of warm white, cream, olive green, muted moss, and soft charcoal. Materials should feel tactile and real: matte board, subtle ink absorption, gentle edge highlights, faint print texture.
+
+Lighting: soft diffused key light from upper left, mild bounce fill from front right, gentle shadow on the floor, controlled highlight along the front edge, and a faint falloff behind the product for separation. Render with high detail, accurate proportions, clean print-safe composition, production-ready commercial finish, and no background clutter.
+
+Reference-image policy: use the provided reference only as inspiration for overall composition, panel hierarchy, soft luxury lighting, box angle, minimal studio scene, and front-versus-side information balance. Do not copy any exact brand names, protected wording, logos, layout text, unique graphics, or distinctive trade dress from the reference or upstream example.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制电商主图的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 96. Chocolate Wafer 产品 Campaign
+
+<img src="../../docs/assets/gallery/cases/gallery-96-chocolate-wafer-product-campaign.jpg" alt="Chocolate Wafer 产品 Campaign" width="420">
+
+- 作图类型：`product_ad`
+- 行业：零食
+- 来源：[wuyoscar/gpt_image_2_skill docs/product-food/product-chocolate-wafer.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/product-chocolate-wafer.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
+
+**中文 Brief**
+
+基于“Chocolate Wafer 产品 Campaign”生成一个去品牌化的广告作图案例。作图类型为产品广告，行业场景为零食。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的产品广告，用于零食广告制作场景，主题为“Chocolate Wafer 产品 Campaign”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Cocoa Crisp.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 9:16 vertical product advertising image for a debranded chocolate wafer snack called "Cocoa Crisp." Build the layout as a premium 2x2 gallery poster with four rounded rectangular panels arranged in a clean grid, unified by consistent margins, typography, and warm cocoa-brown brand color. Use the reference-image idea only for scene logic and visual hierarchy: dramatic floating wafer sticks, swirling liquid chocolate, suspended nut crumbs, glossy confection surfaces, and a high-impact central product presentation. Do not recreate any original brand marks, letters, packaging graphics, or protected text from the reference.
+
+Panel 1: hero composition with multiple chocolate-coated wafer rolls crossing diagonally in the center, crisp wafer interiors visible on one or two open ends, splashes of liquid chocolate wrapping around the product, scattered hazelnut crumbs, shallow depth of field, rich warm brown background with amber highlights. Panel 2: a clean packshot-style product focus showing one or two wafer sticks with controlled crumbs and a small copy area. Panel 3: an ingredient detail scene with chocolate coating texture, wafer layers, and nut pieces, presented as macro food photography. Panel 4: a lifestyle retail poster variation using the same product language, with a simplified chocolate swirl backdrop and clear headline placement.
+
+Materials must look physically believable: glossy melted chocolate, lightly rough nut-studded coating, crisp layered wafer interior, soft powdery crumbs, subtle condensation-free studio finish. Lighting must be controlled commercial studio lighting: key light from upper left, warm rim light from rear right, soft front fill to preserve packaging and food detail, bright specular highlights on chocolate, deep but readable shadows, cinematic contrast without losing texture.
+
+Typography must be minimal and production-ready. Use the exact headline text "Cocoa Crisp" in a bold modern sans-serif, placed clearly in one or two panels only, with strong legibility and generous spacing. Add small generic subheading and CTA placeholders such as "signature wafer snack" and "discover more" in lowercase or title case, but do not add prices, dates, addresses, phone numbers, certifications, or health claims. Keep text areas aligned to panel edges and leave at least one clean copy zone.
+
+Color palette: deep cocoa brown, milk chocolate, caramel amber, toasted hazelnut beige, and subtle cream highlights. Backgrounds should vary slightly across the four panels while staying within one coherent brand system. Emphasize premium snack advertising polish, sharp product edges, appetizing texture separation, clean retouching, and layered commercial poster finish.
+
+Negative constraints: no real brand logos, no embossed letters, no social handles, no celebrity likenesses, no prices, no discount badges, no barcode, no legal pack text, no extra hands, no messy composition, no melted product deformation, no unrealistic crumbs, no copied packaging design, no protected slogans. Reference-image policy: use the unseen reference only as inspiration for composition intensity, splash dynamics, lighting mood, material realism, and premium food-ad finish; generate a new original layout and new brand-neutral design.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制产品广告的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 97. 商业摄影案例 - Fresh Salad Commercial Photography
+
+<img src="../../docs/assets/gallery/cases/gallery-97-fresh-salad-commercial-photography.jpg" alt="商业摄影案例 - Fresh Salad Commercial Photography" width="420">
+
+- 作图类型：`commercial_photography`
+- 行业：食品
+- 来源：[wuyoscar/gpt_image_2_skill docs/product-food/food-salad-explosion.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/food-salad-explosion.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
+
+**中文 Brief**
+
+基于“商业摄影案例 - Fresh Salad Commercial Photography”生成一个去品牌化的广告作图案例。作图类型为商业摄影，行业场景为食品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的商业摄影，用于食品广告制作场景，主题为“商业摄影案例 - Fresh Salad Commercial Photography”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Fresh Bowl”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a vertical 9:16 commercial food advertising image for a fresh salad campaign. Main subject: a matte black ceramic bowl centered in the lower third on a thick natural wood pedestal, filled with crisp green lettuce, cucumber slices, cherry tomato halves, dark olives, small white cheese cubes, basil leaves, broccoli florets, and one bright citrus wedge. Build a dramatic upward ingredient explosion above the bowl with believable gravity, spacing, and motion arcs, as if the ingredients were tossed in midair; keep the bowl stable and dominant while the floating ingredients form a tall tapered column through the center of the frame. Use a clean warm beige studio background with a soft radial glow behind the food to separate the silhouette and keep the scene premium, minimal, and appetizing.
+
+Lighting: high-speed studio photography with one soft key light from upper front-left, a controlled rim light from back-right, and subtle fill from camera front to preserve detail in greens and wet surfaces. Render tiny droplets of dressing or oil suspended in air with sharp specular highlights, realistic refraction, and crisp freeze-motion detail. Materials must feel real: moist lettuce edges, juicy tomato interiors, natural cucumber skin texture, slightly porous cheese surfaces, glossy olives, brushed matte bowl finish, and visible wood grain with soft shadow grounding.
+
+Composition and hierarchy: keep the product centered, with the bowl occupying the lower quarter, the ingredient burst rising through the middle, and generous negative space in the upper third for ad copy. Add clean typography only if text rendering is supported: place the headline "Fresh Bowl" in large elegant sans-serif type near the top center or top-left, white or deep olive lettering with high contrast, minimal tracking, no logo, no price, no extra claims, no social handle. If text rendering is unreliable, leave a clearly empty headline-safe area instead of generating distorted text.
+
+Color palette: fresh greens, tomato red, citrus orange-yellow, black accents, natural wood brown, warm cream background. Overall finish: premium supermarket poster or healthy cafe launch visual, realistic commercial photography, sharp focus on the bowl and nearest floating ingredients, slight depth falloff toward the highest particles, polished but not artificial.
+
+Reference-image policy: use the unseen reference only as inspiration for vertical composition, central bowl placement, upward food motion, warm studio lighting, and premium commercial finish; do not reproduce any exact arrangement, signature styling quirks, protected text, logos, or source-specific details. Negative constraints: no people, no packaging, no utensils, no table clutter, no watermark, no brand marks, no fake labels, no extra slogans, no price tags, no distorted ingredients, no melted textures, no surreal anatomy, no duplicated objects, no oversaturated filters, no illustrated look.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制商业摄影的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 98. City Tourism Promotion 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-98-city-tourism-promotion-poster.jpg" alt="City Tourism Promotion 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：文旅
+- 来源：[wuyoscar/gpt_image_2_skill docs/typography-posters/city-tourism-promo-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/typography-posters/city-tourism-promo-poster.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0230`, `adimg_recipe_0049`, `adimg_recipe_0089`
+
+**中文 Brief**
+
+基于“City Tourism Promotion 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为文旅。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于文旅广告制作场景，主题为“City Tourism Promotion 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Weekend City Guide”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a vertically composed 9:16 tourism promotion poster for a generic mountain river city at night. Use a three-zone layout with strong hierarchy: an oversized headline block in the upper left, the cinematic cityscape as the dominant middle visual, and modular travel-information blocks in the lower area. Show a layered urban scene with a river in the foreground, reflective wet streets, hillside buildings, transit infrastructure, mist in the low areas, and distant high-rise silhouettes. Keep the camera viewpoint elevated and slightly diagonal so the road, rail or bridge lines guide the eye from bottom right toward the skyline. The image should feel premium, believable, and suitable for print or digital campaign use.
+
+Lighting: night scene with cool blue ambient atmosphere, warm amber practical lights from windows and street lamps, soft fog diffusion, glossy reflections on pavement, and controlled contrast so the text remains readable. Materials: wet concrete, metal railings, glass towers, illuminated signage surfaces, masonry facades, and humid air haze. Color palette: deep navy, charcoal, muted steel blue, copper orange, and small accents of desaturated red. Avoid oversaturation; preserve a refined commercial finish.
+
+Typography and text system: place the exact copy "Weekend City Guide" as the main headline in a large, clean, high-contrast display treatment. Pair it with smaller supporting text blocks made of generic placeholder travel info such as district guide, food, river views, night walk, and local culture, but do not invent prices, dates, phone numbers, or addresses. Use a disciplined editorial grid with clear safe margins, consistent alignment, and distinct size contrast between headline, subhead, captions, and footer marks. Typography may include bold Latin headline styling and secondary compact text blocks, but all text must be debranded, generic, and fully readable.
+
+Reference-image policy: use the provided reference only as inspiration for composition, atmosphere, text placement, hierarchy, lighting logic, and premium tourism-poster finish. Do not replicate any exact city name, signage wording, logo, creator mark, or distinctive protected layout from the source. Create a fresh city-promo visual with new environmental details and original text arrangement.
+
+Negative constraints: no real brand names, no logos, no creator handles, no copied location names, no protected slogans, no exact signage text from the reference, no celebrity likenesses, no watermarks, no cluttered typography, no fake discounts, and no fabricated contact information.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 99. Modern Tea 产品 Launch 海报
+
+<img src="../../docs/assets/gallery/cases/gallery-99-modern-tea-product-launch-poster.jpg" alt="Modern Tea 产品 Launch 海报" width="420">
+
+- 作图类型：`poster_design`
+- 行业：饮品
+- 来源：[wuyoscar/gpt_image_2_skill docs/typography-posters/tea-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/typography-posters/tea-poster.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0019`, `adimg_recipe_0182`, `adimg_recipe_0238`
+
+**中文 Brief**
+
+基于“Modern Tea 产品 Launch 海报”生成一个去品牌化的广告作图案例。作图类型为海报设计，行业场景为饮品。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张9:16的海报设计，用于饮品广告制作场景，主题为“Modern Tea 产品 Launch 海报”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Spring Tea”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Design a production-ready vertical beverage launch poster in 9:16 aspect ratio for a premium cold tea campaign. Use a refined East Asian editorial retail layout with a tall text column on the left, a large headline block in the upper left, a product hero on the right-center, and a small modular information area near the lower left. Keep 20 to 25 percent negative space so the layout feels calm and upscale.
+
+Main subject: a transparent takeaway cup filled with pale golden iced tea, visible tea leaves suspended in the liquid, clear ice cubes, realistic condensation, and sliced citrus fruit inside the cup. Place the cup slightly right of center, large and dominant, standing on dark stone with a few loose tea leaves and fruit slices in the foreground. Add a subtle circular seal mark on the cup using generic geometric line art only, with no real logo.
+
+Background and scene: textured warm ivory paper backdrop with soft ink-wash mountains fading into mist, a muted golden sun disk near the upper right, and deep forest-green framing shapes along the left edge and lower right edge. Materials should feel tactile and premium: fibrous paper grain, mineral stone, glossy ice, translucent liquid, fresh citrus flesh, and matte botanical leaves. Do not make the scene busy; all decorative elements must support the product.
+
+Lighting: soft warm key light from upper left, gentle rim light on the cup edges, controlled specular highlights on the ice and lid, atmospheric haze in the mountain area, high micro-contrast on the beverage, no harsh flash, no blown highlights, no muddy shadows.
+
+Typography and copy layout: use elegant Chinese-inspired editorial typography placement but render clean commercially usable text. The primary headline must read exactly "Spring Tea". Place it in the upper left as the largest text element. Add smaller supporting text blocks below and around it as generic placeholder campaign copy only, using short debranded phrases such as product series, launch note, feature callouts, and event badge. Use clear hierarchy: headline, secondary label, launch statement, feature badge, small footer strip. Thin divider lines, framed label boxes, and neat vertical spacing are encouraged. Do not include prices, phone numbers, addresses, QR codes, social handles, dates, or proprietary slogans unless provided later by the customer.
+
+Color palette: deep forest green, warm ivory, muted gold, tea yellow, stone gray, and natural citrus pink-yellow accents. Keep saturation restrained and premium. The poster should feel modern, elegant, seasonal, and commercially finished.
+
+Reference-image policy: use the reference only as inspiration for composition hierarchy, product-to-text balance, material contrast, and premium tea-ad structure. Do not reproduce any exact brand name, logo, emblem, price block, QR code, signature text, or distinctive graphic arrangement from the reference. Generate an original debranded campaign visual suitable as a reusable gallery case.
+
+Negative constraints: no copied branding, no celebrity likeness, no exact protected text, no cluttered typography, no fake discounts, no invented store info, no low-end poster effects, no distorted cup anatomy, no unreadable text, no extra products competing with the hero cup.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制海报设计的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。
+
+## 100. 活动背景板案例 - B2B Operations Event Backdrop
+
+<img src="../../docs/assets/gallery/cases/gallery-100-b2b-operations-event-backdrop.jpg" alt="活动背景板案例 - B2B Operations Event Backdrop" width="420">
+
+- 作图类型：`event_backdrop`
+- 行业：B2B SaaS
+- 来源：[wuyoscar/gpt_image_2_skill docs/uiux-mockups/desktop-analytics-dashboard-operations.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/uiux-mockups/desktop-analytics-dashboard-operations.png)；MIT License, per upstream repository LICENSE；已重写并去品牌化。
+- 库内复合来源：templates `adimg_template_0258`, `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`; recipes `adimg_recipe_0240`, `adimg_recipe_0238`, `adimg_recipe_0214`
+
+**中文 Brief**
+
+基于“活动背景板案例 - B2B Operations Event Backdrop”生成一个去品牌化的广告作图案例。作图类型为活动背景板，行业场景为B2B SaaS。只提炼参考图或上游案例的构图、视觉层级、材质、灯光和商业完成度，不复制具体品牌、人物身份、价格、账号、专有文字或可追溯的独特细节。
+
+**中文 Optimized Prompt**
+
+```text
+请生成一张16:9的活动背景板，用于B2B SaaS广告制作场景，主题为“活动背景板案例 - B2B Operations Event Backdrop”。
+构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区；主体比例、前景、中景、背景关系要明确，避免杂乱堆叠。
+主体与场景：根据案例方向重构一个全新的去品牌化广告画面，保留可复用的商业视觉结构，例如产品主视觉、促销主视觉、海报信息层级、导视路径或空间效果图关系；不要复刻原图中的品牌、包装、人物、商标、价格或专有标语。
+材质：明确表现主要材质和表面细节，例如金属、玻璃、塑料、纸张、布面、石材、水滴、冰块、反光、印刷纹理或墙面安装材料；材质必须真实可信。
+灯光：写实商业广告光源，明确主光方向、辅光、轮廓光、高光、阴影和反射；让主体与背景分离，保持广告级清晰度。
+文字策略：必须准确使用文案“Ops Intelligence Summit.”。
+色彩与版式：使用清晰主色、辅助色和背景色，保证中文或英文文字可读，标题最大，卖点次级，说明文字成组对齐。
+参考图策略：参考图或上游案例只用于理解构图、材质、灯光、信息层级和完成度；不得直接照抄具体图案、品牌识别、人物面孔、包装文字或独特布局。
+负面约束：不要出现真实品牌名、商标、社交账号、水印、乱码文字、错误手部、变形产品、不可读标题、无关价格、虚假承诺、过度拥挤背景或不可商用的版权元素。
+```
+
+<details>
+<summary>English optimized prompt</summary>
+
+```text
+Create a 16:9 event backdrop for a B2B SaaS conference titled "Ops Intelligence Summit." Design it as a wide stage-ready conference background with a clean central headline zone in the upper-middle area, a secondary information band below it, and balanced side panels that echo enterprise dashboard structure without reproducing any specific UI, logo, or branded text. Use a calm technology palette of deep navy, slate blue, soft cyan, and white, with restrained mint accents. Build the background from large modular panels, thin data-line motifs, rounded metric-card geometry, subtle grid overlays, and abstract analytics icons that feel generic and debranded. Keep the composition symmetrical, spacious, and optimized for long-distance readability, with a clear photo-friendly open area across the center and lower third for on-site event shots.
+
+Materials and finish: premium printed backdrop or LED wall look, matte surface with low glare, crisp vector-like edges, soft translucent glass panels, faint metallic line accents, and smooth gradient bands. Lighting: even frontal illumination with gentle top-edge glow, soft side bloom, and controlled highlight falloff so the backdrop reads clearly on stage and in photography; no harsh shadows, no moody darkness, no busy texture. Typography: large bold sans-serif headline for "Ops Intelligence Summit" centered and highly legible from a distance; smaller placeholder lines for subtitle, date, venue, and organizer positioned in a clean hierarchy below the title, using generic filler only and no invented sensitive details. Allow ample negative space around all text zones. Keep decorative graphics behind or beside text, never overlapping the headline.
+
+Visual language should communicate operational intelligence, reliability, scale, and enterprise clarity. Emphasize commercial polish, real-world printability, simple large-form shapes, and strong hierarchy suitable for expo booths, keynote stages, media walls, or summit signage. Avoid tiny text, fake app screenshots, realistic brand marks, copyrighted interface text, people, products, mascots, QR codes, prices, social handles, addresses, or specific claims. Reference-image policy: use the provided reference only as inspiration for layout logic, module rhythm, color balance, lighting cleanliness, and dashboard-to-backdrop translation; do not recreate its brand identity, sidebar, charts, icons, labels, or any distinctive protected details.
+```
+
+</details>
+
+**Prompt 控制点**
+
+- 控制活动背景板的主体位置、信息层级和商业交付结构。
+- 明确材质、灯光、色彩和文字区域，减少只写风格词带来的不稳定结果。
+- 规定参考图只用于结构和视觉完成度提炼，避免复制品牌、价格、人物或专有文字。
+
+**参考图使用方式：** 上游案例只作为结构参考，用于提炼构图、光影、材质、文字层级和商业完成度；公开 prompt 已重新生成并去品牌化。
+
+**风险提示：** 不要复制上游案例中的品牌名、商标、价格、人物身份、社交账号、包装文字或独特可追溯设计。

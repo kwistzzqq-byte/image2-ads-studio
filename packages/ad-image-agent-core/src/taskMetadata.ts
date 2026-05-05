@@ -1,4 +1,4 @@
-import type { ReferenceImageRole, TaskType } from "./types.js";
+import type { OutputLanguage, ReferenceImageRole, TaskType } from "./types.js";
 
 export const taskTypeLabels: Record<TaskType, string> = {
   storefront_signboard: "门头店招",
@@ -23,10 +23,33 @@ export const referenceImageRoleLabels: Record<ReferenceImageRole, string> = {
   none: "无参考图"
 };
 
-export function taskTypeName(taskType: TaskType): string {
-  return taskTypeLabels[taskType];
+export const taskTypeLabelsEn: Record<TaskType, string> = {
+  storefront_signboard: "Storefront signboard",
+  poster_design: "Poster design",
+  rollup_banner: "Roll-up banner / display stand",
+  event_backdrop: "Event backdrop",
+  signage_wayfinding: "Signage and wayfinding",
+  brand_wall: "Brand wall / wall mockup",
+  local_store_promotion: "Local store promotion",
+  ecommerce_main_image: "E-commerce main image",
+  product_ad: "Product advertisement",
+  commercial_photography: "Commercial photography"
+};
+
+export const referenceImageRoleLabelsEn: Record<ReferenceImageRole, string> = {
+  preserve_structure: "Preserve structure",
+  preserve_subject: "Preserve subject",
+  style_reference_only: "Style reference only",
+  background_replace: "Replace background",
+  local_edit: "Local edit",
+  scene_mockup: "Scene mockup",
+  none: "No reference image"
+};
+
+export function taskTypeName(taskType: TaskType, language: OutputLanguage = "zh-CN"): string {
+  return language === "en" ? taskTypeLabelsEn[taskType] : taskTypeLabels[taskType];
 }
 
-export function referenceRoleName(role: ReferenceImageRole): string {
-  return referenceImageRoleLabels[role];
+export function referenceRoleName(role: ReferenceImageRole, language: OutputLanguage = "zh-CN"): string {
+  return language === "en" ? referenceImageRoleLabelsEn[role] : referenceImageRoleLabels[role];
 }

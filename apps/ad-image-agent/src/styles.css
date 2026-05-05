@@ -103,6 +103,33 @@ button:disabled {
   gap: 10px;
 }
 
+.languageToggle {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 3px;
+  border: 1px solid rgba(9, 20, 18, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(36, 42, 38, 0.06);
+}
+
+.languageToggle button {
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: transparent;
+  color: #3d4842;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.languageToggle button.isActive {
+  background: #142018;
+  color: #fff;
+}
+
 .darkButton,
 .primaryButton,
 .secondaryActions button {

@@ -1,5 +1,7 @@
 # Gallery Cases
 
+中文案例页：[cases.zh-CN.md](cases.zh-CN.md)
+
 Each case pairs one preview image with one optimized prompt produced by the Image2 Ads Studio structured brief -> template retrieval -> visual recipe retrieval -> LLM prompt brain flow.
 
 Upstream images and prompts are used only as visual and structural references. Public prompts below are rewritten, debranded, and made reusable for new advertising work.
@@ -13,7 +15,7 @@ Every case also records an in-repo composite source: matched advertising templat
 - Task: `product_ad`
 - Industry: beverage
 - Source: Project owner generated concept preview; Project-owned AI-generated preview; visible third-party marks are not reusable assets.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0175`, `adimg_recipe_0177`
 
 **Brief**
 
@@ -42,7 +44,7 @@ Create a commercially usable 16:9 beverage advertising hero image for a new debr
 - Task: `product_ad`
 - Industry: consumer electronics
 - Source: Project owner generated concept preview; Project-owned AI-generated preview; visible third-party marks are not reusable assets.
-- Library composite source: templates `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0077`, `adimg_template_0076`; recipes `adimg_recipe_0016`, `adimg_recipe_0003`, `adimg_recipe_0009`
+- Library composite source: templates `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0077`, `adimg_template_0076`; recipes `adimg_recipe_0233`, `adimg_recipe_0234`, `adimg_recipe_0016`
 
 **Brief**
 
@@ -79,7 +81,7 @@ Reference-image policy: use the provided concept preview only as off-model inspi
 - Task: `product_ad`
 - Industry: beauty
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 113](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0003`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -108,7 +110,7 @@ Create a square 1:1 luxury beauty product advertisement for a debranded amber pe
 - Task: `ecommerce_main_image`
 - Industry: beauty
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 114](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0027`
+- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0149`
 
 **Brief**
 
@@ -149,7 +151,7 @@ Negative constraints: no people, no hands, no copied branding, no proprietary te
 - Task: `product_ad`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 115](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0182`, `adimg_recipe_0149`
 
 **Brief**
 
@@ -184,7 +186,7 @@ Execution rules: production-ready advertising finish, sharp packaging detail, re
 - Task: `commercial_photography`
 - Industry: luxury goods
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 117](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0016`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0003`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -301,7 +303,7 @@ Reference-image policy: use the provided reference only as off-platform inspirat
 - Task: `ecommerce_main_image`
 - Industry: consumer electronics
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 153](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0027`, `adimg_recipe_0009`, `adimg_recipe_0011`
+- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -340,7 +342,7 @@ Negative constraints: no brand names, no logos, no protected text, no watermarks
 - Task: `ecommerce_main_image`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 154](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0009`, `adimg_recipe_0011`, `adimg_recipe_0016`
+- Library composite source: templates `adimg_template_0069`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -379,7 +381,7 @@ Negative constraints: no copied brand names, no Chinese product title from the s
 - Task: `ecommerce_main_image`
 - Industry: consumer electronics
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 155](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0005`, `adimg_recipe_0031`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -416,7 +418,7 @@ Reference-image policy: use the reference only as inspiration for framing logic,
 - Task: `product_ad`
 - Industry: beauty
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 157](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -451,7 +453,7 @@ Background and finish: use a luminous pale backdrop with a soft watery atmospher
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 158](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0009`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0144`, `adimg_recipe_0149`
 
 **Brief**
 
@@ -484,7 +486,7 @@ Reference-image policy: use the reference only as inspiration for composition, w
 - Task: `ecommerce_main_image`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 163](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0023`, `adimg_recipe_0002`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0023`, `adimg_recipe_0149`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -527,7 +529,7 @@ Negative constraints: no copyrighted logos, no brand names, no creator handles, 
 - Task: `product_ad`
 - Industry: luxury goods
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 144](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -556,7 +558,7 @@ Create a square 1:1 luxury product advertisement for a motorsport-inspired chron
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 145](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0028`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -593,7 +595,7 @@ Reference-image policy: use the reference only as inspiration for composition, m
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 146](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0008`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -634,7 +636,7 @@ Reference-image policy: use the reference only as inspiration for pose energy, l
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 147](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0011`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
 
 **Brief**
 
@@ -671,7 +673,7 @@ Reference-image policy: use the provided reference only as inspiration for compo
 - Task: `product_ad`
 - Industry: beauty
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 148](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0175`
 
 **Brief**
 
@@ -710,7 +712,7 @@ Reference-image policy: use the reference only as inspiration for composition, l
 - Task: `product_ad`
 - Industry: beauty
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 149](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -743,7 +745,7 @@ The composition must feel commercially usable and production-ready: minimal layo
 - Task: `product_ad`
 - Industry: luxury goods
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 150](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0004`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -780,7 +782,7 @@ Reference-image policy: use the reference only for overall composition logic, is
 - Task: `product_ad`
 - Industry: luxury goods
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 131](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -809,7 +811,7 @@ Create a 9:16 premium parody product advertisement for a fictional luxury-or-cha
 - Task: `local_store_promotion`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 166](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0049`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0157`, `adimg_recipe_0159`
 
 **Brief**
 
@@ -850,7 +852,7 @@ Negative constraints: no copied logos, no trademarked names, no anime character 
 - Task: `product_ad`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 169](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0002`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -887,7 +889,7 @@ Reference-image policy: use the unseen reference only as inspiration for composi
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 170](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -926,7 +928,7 @@ Negative constraints: no real brand names, no copied slogans, no social handles,
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 70](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0020`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0235`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -967,7 +969,7 @@ Negative constraints: no brand logos, no monograms, no signature shoe marks, no 
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 71](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0008`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1002,7 +1004,7 @@ Keep the image debranded and reusable for a new campaign. Do not include logos, 
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 75](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0020`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1041,7 +1043,7 @@ Reference-image policy: use the attached reference image only as inspiration for
 - Task: `product_ad`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 78](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0226`, `adimg_recipe_0227`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -1082,7 +1084,7 @@ Reference-image policy: use the provided reference only as off-model inspiration
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 80](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1119,7 +1121,7 @@ Reference-image policy: use the reference only as inspiration for layout rhythm,
 - Task: `product_ad`
 - Industry: beverage
 - Source: [wuyoscar/gpt_image_2_skill docs/product-food/aurora-oolong-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/aurora-oolong-poster.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1156,7 +1158,7 @@ Reference-image policy: use the reference only for overall composition logic, ve
 - Task: `poster_design`
 - Industry: brand identity
 - Source: [wuyoscar/gpt_image_2_skill docs/brand-systems-identity/brand-identity-moss-radio.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/brand-identity-moss-radio.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0007`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -1197,7 +1199,7 @@ Negative constraints: no exact upstream brand names beyond editable customer dem
 - Task: `poster_design`
 - Industry: food and beverage
 - Source: [wuyoscar/gpt_image_2_skill docs/brand-systems-identity/playful-brand-kit-mochi-metro.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/brand-systems-identity/playful-brand-kit-mochi-metro.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0229`, `adimg_recipe_0182`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -1238,7 +1240,7 @@ Negative constraints: no trademarked logos, no recognizable upstream mascot, no 
 - Task: `commercial_photography`
 - Industry: beauty
 - Source: [wuyoscar/gpt_image_2_skill docs/beauty-lifestyle/skincare-morning-routine-tray.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/skincare-morning-routine-tray.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0014`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0003`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -1277,7 +1279,7 @@ Negative constraints: no real brand names, no logos, no social handles, no price
 - Task: `commercial_photography`
 - Industry: beauty
 - Source: [wuyoscar/gpt_image_2_skill docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0116`, `adimg_recipe_0136`, `adimg_recipe_0003`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
 
 **Brief**
 
@@ -1316,7 +1318,7 @@ Avoid: logos, trademarks, protected text, celebrity likenesses, copied bottle br
 - Task: `signage_wayfinding`
 - Industry: tourism
 - Source: [wuyoscar/gpt_image_2_skill docs/events-experience/zoo-visitor-wayfinding-map.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/zoo-visitor-wayfinding-map.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`, `adimg_template_0045`; recipes `adimg_recipe_0061`, `adimg_recipe_0062`, `adimg_recipe_0081`
+- Library composite source: templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`, `adimg_template_0261`; recipes `adimg_recipe_0230`, `adimg_recipe_0209`, `adimg_recipe_0158`
 
 **Brief**
 
@@ -1359,7 +1361,7 @@ Negative constraints: no copied logos, no creator handles, no exact upstream slo
 - Task: `signage_wayfinding`
 - Industry: tourism
 - Source: [wuyoscar/gpt_image_2_skill docs/events-experience/huashan-5a-scenic-wayfinding-map.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/events-experience/huashan-5a-scenic-wayfinding-map.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0185`, `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0061`, `adimg_recipe_0062`, `adimg_recipe_0081`
+- Library composite source: templates `adimg_template_0185`, `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0230`, `adimg_recipe_0209`, `adimg_recipe_0158`
 
 **Brief**
 
@@ -1400,7 +1402,7 @@ Negative constraints: no existing brand logos, no creator handles, no copied slo
 - Task: `event_backdrop`
 - Industry: beverage
 - Source: [wuyoscar/gpt_image_2_skill docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/edit-endpoint-showcase/tea-poster-metro-lightbox.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`, `adimg_template_0036`; recipes `adimg_recipe_0032`, `adimg_recipe_0041`, `adimg_recipe_0054`
+- Library composite source: templates `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`, `adimg_template_0036`; recipes `adimg_recipe_0238`, `adimg_recipe_0214`, `adimg_recipe_0032`
 
 **Brief**
 
@@ -1441,7 +1443,7 @@ Negative constraints: no copied branding, no exact upstream text, no faces as pr
 - Task: `product_ad`
 - Industry: beverage
 - Source: [freestylefly/awesome-gpt-image-2 Case 150](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-150); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0027`, `adimg_recipe_0007`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0301`, `adimg_template_0302`, `adimg_template_0303`, `adimg_template_0304`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
 
 **Brief**
 
@@ -1470,7 +1472,7 @@ Create a square 1:1 commercial beverage advertisement for a summer campaign. Sce
 - Task: `poster_design`
 - Industry: multi-industry advertising
 - Source: [freestylefly/awesome-gpt-image-2 Case 151](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-151); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0020`
+- Library composite source: templates `adimg_template_0231`, `adimg_template_0232`, `adimg_template_0233`, `adimg_template_0234`, `adimg_template_0235`; recipes `adimg_recipe_0182`, `adimg_recipe_0238`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1509,7 +1511,7 @@ Global art direction: commercially usable, highly polished advertising composite
 - Task: `ecommerce_main_image`
 - Industry: food and beverage
 - Source: [freestylefly/awesome-gpt-image-2 Case 153](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-153); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0002`, `adimg_recipe_0055`, `adimg_recipe_0095`
+- Library composite source: templates `adimg_template_0291`, `adimg_template_0292`, `adimg_template_0293`, `adimg_template_0294`, `adimg_template_0295`; recipes `adimg_recipe_0149`, `adimg_recipe_0002`, `adimg_recipe_0055`
 
 **Brief**
 
@@ -1538,7 +1540,7 @@ Design a vertical 9:16 ecommerce poster for a debranded food-and-beverage produc
 - Task: `commercial_photography`
 - Industry: automotive
 - Source: [freestylefly/awesome-gpt-image-2 Case 154](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-1.md#case-154); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0155`, `adimg_template_0159`, `adimg_template_0160`, `adimg_template_0215`, `adimg_template_0216`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0009`
+- Library composite source: templates `adimg_template_0155`, `adimg_template_0159`, `adimg_template_0160`, `adimg_template_0215`, `adimg_template_0216`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -1575,7 +1577,7 @@ Reference-image policy: use the reference only as inspiration for scene logic, s
 - Task: `product_ad`
 - Industry: snacks
 - Source: [freestylefly/awesome-gpt-image-2 Case 310](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-310); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0148`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0027`, `adimg_recipe_0002`, `adimg_recipe_0004`
+- Library composite source: templates `adimg_template_0148`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
 
 **Brief**
 
@@ -1616,7 +1618,7 @@ Negative constraints: no copyrighted logos, no real brand trade dress, no copied
 - Task: `product_ad`
 - Industry: fashion
 - Source: [freestylefly/awesome-gpt-image-2 Case 344](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-344); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0008`, `adimg_recipe_0027`, `adimg_recipe_0011`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -1655,7 +1657,7 @@ Reference-image policy: use the reference only as off-model inspiration for layo
 - Task: `poster_design`
 - Industry: beauty
 - Source: [freestylefly/awesome-gpt-image-2 Case 353](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-353); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0007`, `adimg_recipe_0020`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -1688,7 +1690,7 @@ Reference-image policy: use the provided reference only as inspiration for infor
 - Task: `poster_design`
 - Industry: beverage
 - Source: [freestylefly/awesome-gpt-image-2 Case 362](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-362); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0020`, `adimg_recipe_0027`, `adimg_recipe_0007`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`, `adimg_template_0026`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -1729,7 +1731,7 @@ Reference-image policy: use the reference only as inspiration for composition rh
 - Task: `ecommerce_main_image`
 - Industry: consumer electronics
 - Source: [ZeroLu/awesome-gpt-image assets/opennana/terminator-taobao-page.jpeg](https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/terminator-taobao-page.jpeg); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0055`, `adimg_recipe_0070`, `adimg_recipe_0095`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0149`
 
 **Brief**
 
@@ -1768,7 +1770,7 @@ Image behavior and constraints: produce a finished advertising page mockup, not 
 - Task: `poster_design`
 - Industry: culture and retail
 - Source: [ZeroLu/awesome-gpt-image assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg](https://github.com/ZeroLu/awesome-gpt-image/blob/main/assets/opennana/jingdezhen-blue-white-porcelain-diagram.jpeg); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0014`, `adimg_template_0020`, `adimg_template_0025`, `adimg_template_0013`; recipes `adimg_recipe_0020`, `adimg_recipe_0005`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0014`, `adimg_template_0020`, `adimg_template_0025`, `adimg_template_0013`; recipes `adimg_recipe_0237`, `adimg_recipe_0020`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -1803,7 +1805,7 @@ Reference-image policy: use the reference only as inspiration for composition hi
 - Task: `product_ad`
 - Industry: beverage
 - Source: [TanShilongMario/PromptFill public/images/LemonJuice.png](https://github.com/TanShilongMario/PromptFill/blob/main/public/images/LemonJuice.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1840,7 +1842,7 @@ Reference-image policy: use the attached reference and upstream case only as ins
 - Task: `product_ad`
 - Industry: home and lifestyle
 - Source: [TanShilongMario/PromptFill public/images/lamp.png](https://github.com/TanShilongMario/PromptFill/blob/main/public/images/lamp.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0016`, `adimg_recipe_0006`, `adimg_recipe_0009`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0016`, `adimg_recipe_0182`, `adimg_recipe_0225`
 
 **Brief**
 
@@ -1881,7 +1883,7 @@ Reference-image policy: use the reference only for composition, hierarchy, verti
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 116](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0053`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -1922,7 +1924,7 @@ Reference-image policy: use the provided reference only as off-image inspiration
 - Task: `ecommerce_main_image`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 152](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0055`, `adimg_recipe_0070`, `adimg_recipe_0095`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -1957,7 +1959,7 @@ Commercial execution rules: image must feel production-ready, debranded, reusabl
 - Task: `ecommerce_main_image`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 156](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0055`, `adimg_recipe_0070`, `adimg_recipe_0095`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -1994,7 +1996,7 @@ Reference-image policy: use the provided reference only as off-model inspiration
 - Task: `product_ad`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 159](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0007`, `adimg_recipe_0014`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -2031,7 +2033,7 @@ Reference-image policy: use the provided reference only to infer composition den
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 160](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0023`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0023`, `adimg_recipe_0182`, `adimg_recipe_0149`
 
 **Brief**
 
@@ -2066,7 +2068,7 @@ Do not include real brand names, creator handles, prices, dates, phone numbers, 
 - Task: `commercial_photography`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 161](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0009`, `adimg_recipe_0016`, `adimg_recipe_0078`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0175`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -2105,7 +2107,7 @@ Reference-image policy: use the reference only for abstract inspiration about co
 - Task: `commercial_photography`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 162](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ecommerce.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0009`, `adimg_recipe_0013`, `adimg_recipe_0016`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
 
 **Brief**
 
@@ -2142,7 +2144,7 @@ Avoid: logos, watermarks, extra slogans, people, hands, utensils covering the fo
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 90](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0015`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0182`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -2185,7 +2187,7 @@ Reference-image policy: use the provided reference only as inspiration for grid 
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 107](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0007`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2226,7 +2228,7 @@ Reference-image policy: use the provided reference only as off-model inspiration
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 108](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0053`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2271,7 +2273,7 @@ Reference-image policy: the provided reference is style inspiration only for com
 - Task: `product_ad`
 - Industry: consumer electronics
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 109](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0233`, `adimg_recipe_0234`, `adimg_recipe_0170`
 
 **Brief**
 
@@ -2308,7 +2310,7 @@ Reference-image policy: use the reference only for overall composition logic, ex
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 112](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0007`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0222`, `adimg_recipe_0182`, `adimg_recipe_0195`
 
 **Brief**
 
@@ -2351,7 +2353,7 @@ Avoid: copied logos, copied Japanese text, copied social handles, copied dates, 
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 143](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0004`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2390,7 +2392,7 @@ Negative constraints: no copied brand names, no creator handles, no protected sl
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 167](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0007`, `adimg_recipe_0014`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2423,7 +2425,7 @@ Reference-image policy: use the supplied reference only for general inspiration 
 - Task: `product_ad`
 - Industry: luxury goods
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 168](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/ad-creative.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2460,7 +2462,7 @@ Reference-image policy: use the reference only as inspiration for composition, v
 - Task: `local_store_promotion`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 46](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0049`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
 
 **Brief**
 
@@ -2495,7 +2497,7 @@ Reference-image policy: use the provided reference only as inspiration for cooli
 - Task: `local_store_promotion`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 49](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0049`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0182`, `adimg_recipe_0148`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2532,7 +2534,7 @@ Reference-image policy: use the reference only as structural inspiration for vis
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 51](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0027`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0157`, `adimg_recipe_0159`
 
 **Brief**
 
@@ -2569,7 +2571,7 @@ Reference-image policy: use the provided reference only as off-model inspiration
 - Task: `poster_design`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 52](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0020`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0227`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2598,7 +2600,7 @@ Design a 16:9 fashion campaign poster for a new brand concept, built as a six-bl
 - Task: `commercial_photography`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 59](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0003`, `adimg_recipe_0001`, `adimg_recipe_0009`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0175`, `adimg_recipe_0164`
 
 **Brief**
 
@@ -2639,7 +2641,7 @@ Negative constraints: no real brand names, no copied package graphics, no exact 
 - Task: `product_ad`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 68](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0053`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -2668,7 +2670,7 @@ Design a vertically oriented 9:16 automotive product advertisement poster for a 
 - Task: `poster_design`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 72](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0006`, `adimg_recipe_0012`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0014`, `adimg_template_0015`; recipes `adimg_recipe_0182`, `adimg_recipe_0220`, `adimg_recipe_0154`
 
 **Brief**
 
@@ -2709,7 +2711,7 @@ Negative constraints: no real celebrity likenesses, no athlete identity cues, no
 - Task: `product_ad`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 73](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0053`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -2746,7 +2748,7 @@ Avoid: brand logos, exact upstream wording, copied letterforms, copied pose deta
 - Task: `product_ad`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 74](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0053`
+- Library composite source: templates `adimg_template_0074`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -2783,7 +2785,7 @@ Reference-image policy: use the provided reference only as structural inspiratio
 - Task: `local_store_promotion`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 76](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0019`, `adimg_recipe_0007`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0019`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -2822,7 +2824,7 @@ Reference-image policy: use the unseen reference only as inspiration for structu
 - Task: `signage_wayfinding`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 110](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0045`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0061`, `adimg_recipe_0062`, `adimg_recipe_0063`
+- Library composite source: templates `adimg_template_0044`, `adimg_template_0043`, `adimg_template_0045`, `adimg_template_0046`, `adimg_template_0047`; recipes `adimg_recipe_0158`, `adimg_recipe_0209`, `adimg_recipe_0171`
 
 **Brief**
 
@@ -2859,7 +2861,7 @@ Reference-image policy: use the reference only for broad inspiration on illustra
 - Task: `product_ad`
 - Industry: fashion
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 168](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0015`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0227`, `adimg_recipe_0228`, `adimg_recipe_0226`
 
 **Brief**
 
@@ -2898,7 +2900,7 @@ Output should feel like a high-end retail launch visual for a new sportswear col
 - Task: `product_ad`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 170](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0053`, `adimg_recipe_0093`, `adimg_recipe_0002`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0073`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0053`, `adimg_recipe_0093`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -2937,7 +2939,7 @@ Reference-image policy: use the provided reference only as inspiration for visua
 - Task: `local_store_promotion`
 - Industry: food and beverage
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 173](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0049`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0229`, `adimg_recipe_0182`, `adimg_recipe_0195`
 
 **Brief**
 
@@ -2976,7 +2978,7 @@ Negative constraints: no copied mascot, no brand imitation, no exact signage fro
 - Task: `local_store_promotion`
 - Industry: advertising
 - Source: [EvoLinkAI/awesome-gpt-image-2-prompts Case 175](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/blob/main/cases/poster.md); Apache-2.0, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0019`, `adimg_recipe_0006`, `adimg_recipe_0034`
+- Library composite source: templates `adimg_template_0059`, `adimg_template_0060`, `adimg_template_0061`, `adimg_template_0063`, `adimg_template_0131`; recipes `adimg_recipe_0019`, `adimg_recipe_0182`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -3005,7 +3007,7 @@ Design a square 1:1 advertising poster for a local store promotion titled "Launc
 - Task: `product_ad`
 - Industry: beverage
 - Source: [freestylefly/awesome-gpt-image-2 Case 312](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-312); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0019`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0177`, `adimg_recipe_0178`
 
 **Brief**
 
@@ -3042,7 +3044,7 @@ Negative constraints: no real brand names, no copied logos, no protected packagi
 - Task: `product_ad`
 - Industry: beauty
 - Source: [freestylefly/awesome-gpt-image-2 Case 317](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-317); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0073`, `adimg_template_0077`, `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0073`, `adimg_template_0077`, `adimg_template_0075`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0055`, `adimg_recipe_0095`, `adimg_recipe_0175`
 
 **Brief**
 
@@ -3081,7 +3083,7 @@ Reference-image policy: use the provided reference only as inspiration for compo
 - Task: `commercial_photography`
 - Industry: fashion
 - Source: [freestylefly/awesome-gpt-image-2 Case 318](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-318); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0157`, `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`; recipes `adimg_recipe_0078`, `adimg_recipe_0079`, `adimg_recipe_0003`
+- Library composite source: templates `adimg_template_0157`, `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`; recipes `adimg_recipe_0175`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -3118,7 +3120,7 @@ Reference-image policy: use the reference only as inspiration for composition hi
 - Task: `commercial_photography`
 - Industry: fashion
 - Source: [freestylefly/awesome-gpt-image-2 Case 321](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-321); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0079`, `adimg_recipe_0003`, `adimg_recipe_0001`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0175`, `adimg_recipe_0226`, `adimg_recipe_0228`
 
 **Brief**
 
@@ -3161,7 +3163,7 @@ Reference-image policy: treat the provided image and upstream case as structural
 - Task: `product_ad`
 - Industry: fragrance
 - Source: [freestylefly/awesome-gpt-image-2 Case 327](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-327); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -3241,7 +3243,7 @@ Negative constraints: no celebrity or identifiable person, no copied logo marks,
 - Task: `product_ad`
 - Industry: consumer electronics
 - Source: [freestylefly/awesome-gpt-image-2 Case 333](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-333); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -3278,7 +3280,7 @@ Reference-image policy: use the unseen reference only as inspiration for composi
 - Task: `ecommerce_main_image`
 - Industry: packaging
 - Source: [freestylefly/awesome-gpt-image-2 Case 342](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-342); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0068`, `adimg_template_0208`, `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`; recipes `adimg_recipe_0015`, `adimg_recipe_0017`, `adimg_recipe_0023`
+- Library composite source: templates `adimg_template_0068`, `adimg_template_0208`, `adimg_template_0292`, `adimg_template_0065`, `adimg_template_0066`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -3319,7 +3321,7 @@ Reference-image policy: use the reference only as inspiration for grid compositi
 - Task: `product_ad`
 - Industry: sports fashion
 - Source: [freestylefly/awesome-gpt-image-2 Case 349](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-349); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0151`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0008`, `adimg_recipe_0010`, `adimg_recipe_0028`
+- Library composite source: templates `adimg_template_0151`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0227`, `adimg_recipe_0175`, `adimg_recipe_0226`
 
 **Brief**
 
@@ -3354,7 +3356,7 @@ Reference-image policy: use the reference only for overall structure, panel hier
 - Task: `poster_design`
 - Industry: fitness
 - Source: [freestylefly/awesome-gpt-image-2 Case 351](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-351); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0016`, `adimg_template_0022`, `adimg_template_0023`, `adimg_template_0024`, `adimg_template_0025`; recipes `adimg_recipe_0020`, `adimg_recipe_0027`, `adimg_recipe_0007`
+- Library composite source: templates `adimg_template_0231`, `adimg_template_0237`, `adimg_template_0016`, `adimg_template_0022`, `adimg_template_0023`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0214`
 
 **Brief**
 
@@ -3391,7 +3393,7 @@ Reference-image policy: use the provided reference only as inspiration for compo
 - Task: `product_ad`
 - Industry: beverage
 - Source: [freestylefly/awesome-gpt-image-2 Case 358](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-358); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0002`, `adimg_recipe_0006`, `adimg_recipe_0013`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0177`, `adimg_recipe_0178`, `adimg_recipe_0144`
 
 **Brief**
 
@@ -3432,7 +3434,7 @@ Reference-image policy: use the reference only for general composition logic, vi
 - Task: `product_ad`
 - Industry: consumer electronics
 - Source: [freestylefly/awesome-gpt-image-2 Case 361](https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-361); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0145`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0145`, `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`; recipes `adimg_recipe_0234`, `adimg_recipe_0233`, `adimg_recipe_0182`
 
 **Brief**
 
@@ -3516,7 +3518,7 @@ Negative constraints: no copied logos, no protected brand text, no creator handl
 - Task: `brand_wall`
 - Industry: enterprise services
 - Source: [wuyoscar/gpt_image_2_skill docs/architecture-interior/mid-century-modern-office-studio.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/architecture-interior/mid-century-modern-office-studio.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0055`, `adimg_template_0052`, `adimg_template_0053`, `adimg_template_0051`, `adimg_template_0054`; recipes `adimg_recipe_0041`, `adimg_recipe_0045`, `adimg_recipe_0065`
+- Library composite source: templates `adimg_template_0280`, `adimg_template_0271`, `adimg_template_0272`, `adimg_template_0273`, `adimg_template_0274`; recipes `adimg_recipe_0238`, `adimg_recipe_0214`, `adimg_recipe_0223`
 
 **Brief**
 
@@ -3555,7 +3557,7 @@ Reference-image policy: use the reference only as inspiration for composition hi
 - Task: `ecommerce_main_image`
 - Industry: packaging
 - Source: [wuyoscar/gpt_image_2_skill docs/product-food/product-dieline-box.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/product-dieline-box.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0017`, `adimg_recipe_0055`, `adimg_recipe_0070`
+- Library composite source: templates `adimg_template_0065`, `adimg_template_0066`, `adimg_template_0067`, `adimg_template_0068`, `adimg_template_0069`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0184`
 
 **Brief**
 
@@ -3592,7 +3594,7 @@ Reference-image policy: use the provided reference only as inspiration for overa
 - Task: `product_ad`
 - Industry: snacks
 - Source: [wuyoscar/gpt_image_2_skill docs/product-food/product-chocolate-wafer.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/product-chocolate-wafer.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0006`, `adimg_recipe_0019`, `adimg_recipe_0055`
+- Library composite source: templates `adimg_template_0075`, `adimg_template_0073`, `adimg_template_0074`, `adimg_template_0076`, `adimg_template_0077`; recipes `adimg_recipe_0182`, `adimg_recipe_0149`, `adimg_recipe_0157`
 
 **Brief**
 
@@ -3631,7 +3633,7 @@ Negative constraints: no real brand logos, no embossed letters, no social handle
 - Task: `commercial_photography`
 - Industry: food
 - Source: [wuyoscar/gpt_image_2_skill docs/product-food/food-salad-explosion.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/product-food/food-salad-explosion.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0120`, `adimg_recipe_0140`, `adimg_recipe_0003`
+- Library composite source: templates `adimg_template_0079`, `adimg_template_0080`, `adimg_template_0155`, `adimg_template_0156`, `adimg_template_0157`; recipes `adimg_recipe_0149`, `adimg_recipe_0164`, `adimg_recipe_0175`
 
 **Brief**
 
@@ -3668,7 +3670,7 @@ Reference-image policy: use the unseen reference only as inspiration for vertica
 - Task: `poster_design`
 - Industry: tourism
 - Source: [wuyoscar/gpt_image_2_skill docs/typography-posters/city-tourism-promo-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/typography-posters/city-tourism-promo-poster.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0049`, `adimg_recipe_0089`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0230`, `adimg_recipe_0049`, `adimg_recipe_0089`
 
 **Brief**
 
@@ -3705,7 +3707,7 @@ Negative constraints: no real brand names, no logos, no creator handles, no copi
 - Task: `poster_design`
 - Industry: beverage
 - Source: [wuyoscar/gpt_image_2_skill docs/typography-posters/tea-poster.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/typography-posters/tea-poster.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0019`, `adimg_recipe_0002`, `adimg_recipe_0006`
+- Library composite source: templates `adimg_template_0014`, `adimg_template_0016`, `adimg_template_0020`, `adimg_template_0013`, `adimg_template_0015`; recipes `adimg_recipe_0019`, `adimg_recipe_0182`, `adimg_recipe_0238`
 
 **Brief**
 
@@ -3748,7 +3750,7 @@ Negative constraints: no copied branding, no celebrity likeness, no exact protec
 - Task: `event_backdrop`
 - Industry: B2B SaaS
 - Source: [wuyoscar/gpt_image_2_skill docs/uiux-mockups/desktop-analytics-dashboard-operations.png](https://github.com/wuyoscar/gpt_image_2_skill/blob/main/docs/uiux-mockups/desktop-analytics-dashboard-operations.png); MIT License, per upstream repository LICENSE; rewritten and debranded.
-- Library composite source: templates `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`, `adimg_template_0036`; recipes `adimg_recipe_0032`, `adimg_recipe_0041`, `adimg_recipe_0054`
+- Library composite source: templates `adimg_template_0258`, `adimg_template_0035`, `adimg_template_0038`, `adimg_template_0039`, `adimg_template_0040`; recipes `adimg_recipe_0240`, `adimg_recipe_0238`, `adimg_recipe_0214`
 
 **Brief**
 

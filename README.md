@@ -1,6 +1,10 @@
 # Image2 Ads Studio
 
+[中文文档](README.zh-CN.md) | [English gallery](examples/gallery/cases.md) | [中文案例库](examples/gallery/cases.zh-CN.md)
+
 Advertising prompt agent for Image2: turn business briefs and reference images into debranded, production-ready image prompts.
+
+中文定位：面向 Image2 广告作图的开源 Prompt Agent，把客户白话需求、文案、行业和参考图转成可测试、可追踪、可集成的优化提示词。
 
 This is not another prompt dump. Prompt libraries are useful for browsing examples; Image2 Ads Studio is a working prompt pipeline for advertising production. It parses a customer brief, retrieves advertising templates and visual recipes, rewrites references through an LLM prompt brain, validates deterministic execution details, and returns an optimized prompt that can be manually tested in Image2.
 
@@ -26,9 +30,9 @@ Image2 Ads Studio answers: "Given this business brief, copywriting, industry, as
 
 ## Prompt Gallery
 
-The public gallery contains 100 image-to-prompt cases from project-generated concepts and multiple in-repo source libraries. Each case includes one preview image, one Image2-ready optimized prompt, source attribution, and an in-repo composite source made from matched advertising templates plus visual recipes.
+The public gallery contains 100 image-to-prompt cases from project-generated concepts and multiple in-repo source libraries. Each case includes one preview image, English and Chinese optimized prompts, source attribution, and an in-repo composite source made from matched advertising templates plus visual recipes.
 
-View the full gallery: [examples/gallery/cases.md](examples/gallery/cases.md)
+View the full gallery: [English cases](examples/gallery/cases.md) / [中文案例](examples/gallery/cases.zh-CN.md)
 
 | Preview | Optimized Prompt Excerpt |
 | --- | --- |

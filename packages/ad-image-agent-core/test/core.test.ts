@@ -7,6 +7,7 @@ import {
   compilePrompt,
   findBannedPromptPhrases,
   getImage2ReferenceImages,
+  ManualTestAdapter,
   normalizeUserImages,
   parseIntent,
   promptTemplates,
@@ -113,6 +114,7 @@ describe("ad-image-agent-core", () => {
     expect(brief.taskType).toBe("storefront_signboard");
     expect(brief.inputMode).toBe("text_to_image");
     expect(brief.industry).toBe("奶茶");
+    expect(brief.outputLanguage).toBe("zh-CN");
   });
 
   it("parses uploaded storefront edit requests", () => {
@@ -161,6 +163,41 @@ describe("ad-image-agent-core", () => {
     expect(compiled.finalPrompt).toContain("16:9");
     expect(compiled.finalPrompt).toContain("保留结构");
     expect(compiled.templateIds.length).toBeGreaterThan(0);
+  });
+
+  it("compiles English prompts when outputLanguage is en", () => {
+    const brief = parseIntent({
+      outputLanguage: "en",
+      userRequest: "Create a storefront signboard for a milk tea shop.",
+      industry: "milk tea",
+      copywriting: "TEE ISLAND",
+      aspectRatio: "16:9",
+      styleDirection: "commercially usable, clear, manufacturable",
+      referenceImageRole: "none"
+    });
+    const templates = retrieveTemplates(brief);
+    const designPlan = buildDesignPlan(brief, templates);
+    const compiled = compilePrompt(brief, designPlan, templates);
+    const plainPrompt = buildPlainPrompt(brief);
+    expect(brief.outputLanguage).toBe("en");
+    expect(compiled.finalPrompt).toContain("User Brief");
+    expect(compiled.finalPrompt).toContain("Task type: Storefront signboard");
+    expect(compiled.finalPrompt).toContain("Reference image policy: No reference image");
+    expect(compiled.finalPrompt).not.toContain("【用户需求】");
+    expect(plainPrompt).toContain("Required copy: TEE ISLAND");
+    expect(compiled.deterministicChecks.bannedPhrasesRemoved).toBe(true);
+  });
+
+  it("localizes manual adapter instructions", async () => {
+    const brief = parseIntent({
+      outputLanguage: "en",
+      userRequest: "Create a product ad.",
+      taskType: "product_ad"
+    });
+    const templates = retrieveTemplates(brief);
+    const compiled = compilePrompt(brief, buildDesignPlan(brief, templates), templates);
+    const response = await new ManualTestAdapter().generateTextToImage(compiled);
+    expect(response.instructions).toContain("Copy finalPrompt");
   });
 
   it("supports scene mockup reference policy in compiled prompts", () => {

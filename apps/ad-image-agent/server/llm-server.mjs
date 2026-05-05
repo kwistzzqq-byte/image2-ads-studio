@@ -109,7 +109,7 @@ async function handleLlmPrompt(req, res) {
   const payload = buildResponsesPayload(payloadInput);
 
   let parsed = await requestPromptBrain(payload, apiKey);
-  parsed = normalizeParsedPromptBrain(parsed);
+  parsed = normalizeParsedPromptBrain(parsed, brief.outputLanguage);
   let deterministicValidation = validateDeterministicPrompt(parsed.finalPrompt);
   if (!deterministicValidation.passed) {
     const repairPayload = buildResponsesPayload({
@@ -120,7 +120,7 @@ async function handleLlmPrompt(req, res) {
         missingRequirements: deterministicValidation.missingRequirements
       }
     });
-    parsed = normalizeParsedPromptBrain(await requestPromptBrain(repairPayload, apiKey));
+    parsed = normalizeParsedPromptBrain(await requestPromptBrain(repairPayload, apiKey), brief.outputLanguage);
     deterministicValidation = validateDeterministicPrompt(parsed.finalPrompt);
   }
   if (!deterministicValidation.passed) {
@@ -198,11 +198,11 @@ async function requestPromptBrain(payload, apiKey) {
   return parseResponseJson(data);
 }
 
-function normalizeParsedPromptBrain(parsed) {
-  const finalPrompt = rewriteAmbiguousStyleText(parsed.finalPrompt);
+function normalizeParsedPromptBrain(parsed, outputLanguage = "zh-CN") {
+  const finalPrompt = rewriteAmbiguousStyleText(parsed.finalPrompt, outputLanguage);
   return {
     ...parsed,
-    designPlan: rewriteAmbiguousStyleText(parsed.designPlan),
+    designPlan: rewriteAmbiguousStyleText(parsed.designPlan, outputLanguage),
     finalPrompt,
     deterministicChecks: validateDeterministicPrompt(finalPrompt).checks
   };
@@ -251,6 +251,54 @@ function buildResponsesPayload({
   }));
   const referenceImageMetadata = redactReferenceImageData(llmReferenceImages);
   const image2ReferenceImageMetadata = redactReferenceImageData(image2ReferenceImages);
+  const outputLanguage = brief.outputLanguage === "en" ? "en" : "zh-CN";
+  const languageName = outputLanguage === "en" ? "English" : "Chinese";
+  const developerPrompt =
+    outputLanguage === "en"
+      ? [
+          "You are the prompt brain for an advertising image-production agent.",
+          "You only help generate the final prompt for Image2 or an image-generation web UI; you do not call image generation.",
+          "Serve advertising production verticals: storefront signboards, posters, print materials, display stands, local-store promotion, and uploaded-image edits.",
+          "Preserve the exact copy provided by the user. Do not invent prices, dates, brand promises, phone numbers, or addresses.",
+          "For uploaded-image edits, clearly describe the preservation policy: structure, subject, perspective, doors/windows, product, or local edit area.",
+          "finalPrompt must be written in English.",
+          "finalPrompt must be deterministic and executable. Do not use vague analogy terms, brand-style labels, social-media labels, or cinematic catch-all labels.",
+          "If user input contains vague wording, rewrite it into explicit composition, materials, lighting, color, typography hierarchy, and preserve/edit rules.",
+          formatDeterministicRequirements(outputLanguage),
+          "Output strict JSON only. Do not output Markdown."
+        ].join("\n")
+      : [
+          "你是广告制作行业的作图 prompt agent 大脑。",
+          "你只负责辅助生成用于 Image2/图像生成网页的最终 prompt，不调用图片生成。",
+          "必须服务广告制作垂直场景，优先考虑门头店招、海报、喷绘、展架、本地门店和上传图修改。",
+          "必须保留用户提供的精确文案，不要编造未提供的价格、日期、品牌承诺、电话号码或地址。",
+          "如果是上传图修改，必须写清楚保留策略：结构、主体、透视、门窗、产品或局部区域。",
+          "finalPrompt 必须使用中文。",
+          "finalPrompt 必须是确定性执行描述，不得使用模糊类比、品牌取向、社媒取向或大片取向词。",
+          "如果用户输入包含模糊表达，必须改写成明确的构图、材质、灯光、色彩、文字层级和保留/修改规则。",
+          formatDeterministicRequirements(outputLanguage),
+          "输出必须是严格 JSON，不要输出 Markdown。"
+        ].join("\n");
+  const taskPrompt =
+    outputLanguage === "en"
+      ? [
+          "Read the following reference images, optimize currentDesignPlan, and produce a finalPrompt in English that is ready to paste into the Image2 web UI.",
+          "user_upload images are customer-provided images. Use them to understand onsite structure, product subject, editable area, or style reference; these images are also sent to Image2 by default.",
+          "upstream_reference images are mature upstream case references. Use them only to understand composition, lighting, materials, hierarchy, and finish. Do not copy specific brands, people, prices, text, or distinctive elements; these images are not sent to Image2 by default.",
+          "finalPrompt must specify subject placement, image sections, light direction, main materials, text area, and reference-image handling.",
+          repairInstructions
+            ? "The previous output failed deterministic validation. Remove banned wording, fill missing requirements, and return only corrected strict JSON."
+            : ""
+        ].join("\n")
+      : [
+          "请先阅读随后的参考图片，再优化 currentDesignPlan，并生成一段更适合直接发给 Image2 网页的中文 finalPrompt。",
+          "user_upload 图片是客户上传图，必须用于识别现场结构、产品主体、可编辑区域或风格参考；这些图片默认也会发给 Image2。",
+          "upstream_reference 图片是上游成熟案例参考图，只用于理解构图、灯光、材质、层级和完成度，不要复制其中具体品牌、人物、价格、文字或独特元素；这些图片不默认发给 Image2。",
+          "finalPrompt 必须写清楚主体位置、画面分区、光源方向、主要材质、文字区域和参考图处理方式。",
+          repairInstructions
+            ? "上一次输出没有通过确定性校验，请删除禁用表达并补齐缺失要求，只返回修正后的严格 JSON。"
+            : ""
+        ].join("\n");
 
   return {
     model,
@@ -262,17 +310,7 @@ function buildResponsesPayload({
         content: [
           {
             type: "input_text",
-            text: [
-              "你是广告制作行业的作图 prompt agent 大脑。",
-              "你只负责辅助生成用于 Image2/图像生成网页的最终 prompt，不调用图片生成。",
-              "必须服务广告制作垂直场景，优先考虑门头店招、海报、喷绘、展架、本地门店和上传图修改。",
-              "必须保留用户提供的精确文案，不要编造未提供的价格、日期、品牌承诺、电话号码或地址。",
-              "如果是上传图修改，必须写清楚保留策略：结构、主体、透视、门窗、产品或局部区域。",
-              "finalPrompt 必须是确定性执行描述，不得使用模糊类比、品牌取向、社媒取向或大片取向词。",
-              "如果用户输入包含模糊表达，必须改写成明确的构图、材质、灯光、色彩、文字层级和保留/修改规则。",
-              formatDeterministicRequirements(),
-              "输出必须是严格 JSON，不要输出 Markdown。"
-            ].join("\n")
+            text: developerPrompt
           }
         ]
       },
@@ -284,6 +322,7 @@ function buildResponsesPayload({
             text: JSON.stringify(
               {
                 brief,
+                outputLanguage,
                 llmReferenceImages: referenceImageMetadata,
                 image2ReferenceImages: image2ReferenceImageMetadata,
                 matchedTemplates: templateSummary,
@@ -292,20 +331,12 @@ function buildResponsesPayload({
                 currentRulePrompt: compiled.finalPrompt,
                 currentRuleDeterministicChecks: compiled.deterministicChecks,
                 plainPrompt,
-                deterministicRequirements: formatDeterministicRequirements(),
+                deterministicRequirements: formatDeterministicRequirements(outputLanguage),
                 bannedPhrasesDetectedInInputs: findBannedPromptPhrases(
                   `${brief.userRequest}\n${brief.styleDirection}\n${brief.hardConstraints.join("\n")}`
                 ),
                 repairInstructions,
-                task: [
-                  "请先阅读随后的参考图片，再优化 currentDesignPlan，并生成一段更适合直接发给 Image2 网页的中文 finalPrompt。",
-                  "user_upload 图片是客户上传图，必须用于识别现场结构、产品主体、可编辑区域或风格参考；这些图片默认也会发给 Image2。",
-                  "upstream_reference 图片是上游成熟案例参考图，只用于理解构图、灯光、材质、层级和完成度，不要复制其中具体品牌、人物、价格、文字或独特元素；这些图片不默认发给 Image2。",
-                  "finalPrompt 必须写清楚主体位置、画面分区、光源方向、主要材质、文字区域和参考图处理方式。",
-                  repairInstructions
-                    ? "上一次输出没有通过确定性校验，请删除禁用表达并补齐缺失要求，只返回修正后的严格 JSON。"
-                    : ""
-                ].join("\n")
+                task: taskPrompt
               },
               null,
               2
@@ -375,21 +406,21 @@ function buildResponsesPayload({
             },
             designPlan: {
               type: "string",
-              description: "优化后的设计方案，中文，面向广告制作执行。"
+              description: `Optimized design plan in ${languageName} for advertising production execution.`
             },
             finalPrompt: {
               type: "string",
-              description: "可直接复制到 Image2 网页使用的最终中文 prompt。"
+              description: `Final ${languageName} prompt ready to copy into the Image2 web UI.`
             },
             improvementNotes: {
               type: "array",
               items: { type: "string" },
-              description: "相比规则版 prompt 的主要改进点。"
+              description: `Main improvement notes in ${languageName}.`
             },
             riskWarnings: {
               type: "array",
               items: { type: "string" },
-              description: "需要人工注意的风险，例如文字准确性、上传图保留、禁止编造信息。"
+              description: `Risk warnings in ${languageName}, such as text accuracy, uploaded-image preservation, and non-invention rules.`
             }
           }
         }

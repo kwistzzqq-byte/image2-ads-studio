@@ -1,5 +1,7 @@
 # Image2 Ads Studio
 
+[English README](README.md) | [中文案例库](examples/gallery/cases.zh-CN.md) | [English Gallery](examples/gallery/cases.md)
+
 面向 Image2 广告作图的开源 Prompt Agent：把客户白话需求、文案、行业和参考图，转成去品牌化、可执行、适合商业广告出图测试的优化提示词。
 
 这不是一个“提示词搬运合集”。提示词库适合看案例、找灵感；Image2 Ads Studio 解决的是广告业务里更靠前的问题：客户只说一句需求时，系统如何解析意图、匹配广告模板、提取视觉配方、通过 LLM 重构 prompt，并输出可测试、可记录、可继续集成的作图方案。
@@ -24,21 +26,21 @@ Image2 Ads Studio 回答的是：“给定客户需求、行业、文案、画�
 | 参考案例可能贴近原始素材 | 公开案例 prompt 经过重构、去品牌化、归因标注，并改写为可复用版本 |
 | 难以接入业务系统 | 架构上预留 ERP 字段、模板治理、Adapter 和生产工作流 |
 
-## Prompt Gallery
+## 案例库
 
-公开 gallery 目前包含 100 个“一张图 + 一份 optimized prompt”的案例，来源包括项目自有概念图和多个库内来源。每个案例都包含预览图、Image2 可用提示词、具体来源标注，以及由本仓库业务模板和视觉配方组成的库内复合来源。
+公开案例库目前包含 100 个“一张图 + 一份中文 optimized prompt + 一份英文 optimized prompt”的案例，来源包括项目自有概念图和多个库内来源。每个案例都包含预览图、Image2 可用提示词、具体来源标注，以及由本仓库业务模板和视觉配方组成的库内复合来源。
 
-查看完整案例：[examples/gallery/cases.md](examples/gallery/cases.md)
+查看完整案例：[中文案例库](examples/gallery/cases.zh-CN.md) / [English cases](examples/gallery/cases.md)
 
-| Preview | Optimized Prompt Excerpt |
+| 预览 | 中文 Prompt 摘录 |
 | --- | --- |
-| <img src="docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="Beverage product ad concept" width="260"> | **Beverage Product Ad Concept**<br><br>`Create a commercially usable 16:9 beverage advertising hero image for a new debranded sparkling drink. Composition: place a tall matte-gloss red can slightly right of center...` |
-| <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="Premium appliance product ad concept" width="260"> | **Premium Appliance Product Ad Concept**<br><br>`Create a 16:9 premium consumer-electronics product advertising hero image for a debranded high-end airflow appliance. Use a black-and-champagne-gold cylindrical device...` |
-| <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="Luxury amber perfume ad prompt case" width="260"> | **Luxury Amber Perfume Ad**<br><br>`Create a square 1:1 luxury beauty product advertisement for a debranded amber perfume bottle. Show one classic rectangular glass bottle as the hero object...` |
-| <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="Tropical citrus soda ad prompt case" width="260"> | **Tropical Citrus Soda Ad Poster**<br><br>`Create a 9:16 vertical commercial beverage poster for a tropical citrus soda campaign. Show one large transparent plastic bottle as the hero object...` |
-| <img src="docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg" alt="Brand identity showcase prompt case" width="260"> | **Moss Radio Brand Identity Showcase Board**<br><br>`Create a square 1:1 brand-identity showcase board for a fictional audio, retail, or culture-focused business. Build a dense editorial presentation...` |
-| <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Wayfinding map prompt case" width="260"> | **Zoo Visitor Wayfinding Map**<br><br>`Create a polished 16:9 advertising-style wayfinding map board for a fictional wildlife park campaign, designed as a commercially usable tourism graphic...` |
-| <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="Ecommerce product detail prompt case" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`Create a 9:16 vertical e-commerce product detail poster for a futuristic consumer electronics hero product. Use a dense marketplace layout...` |
+| <img src="docs/assets/gallery/cases/owner-beverage-ad-concept.jpg" alt="饮品产品广告概念" width="260"> | **饮品产品广告概念**<br><br>`请生成一张16:9的产品广告，用于饮品广告制作场景，主题为“饮品产品广告概念”。构图：主体必须清晰占据主视觉位置，画面分为主视觉区、标题/文案区、辅助信息区和留白区...` |
+| <img src="docs/assets/gallery/cases/owner-product-ad-concept.jpg" alt="高端家电产品广告概念" width="260"> | **高端家电产品广告概念**<br><br>`请生成一张16:9的产品广告，用于消费电子广告制作场景，主题为“高端家电产品广告概念”。构图：主体必须清晰占据主视觉位置...` |
+| <img src="docs/assets/gallery/cases/gallery-03-e-commerce-main-image-luxury-amber-perfume-ad.jpg" alt="电商主图 - 琥珀香水高端广告" width="260"> | **电商主图 - 琥珀香水高端广告**<br><br>`请生成一张1:1的产品广告，用于美妆护肤广告制作场景，主题为“电商主图 - 琥珀香水高端广告”。构图：主体必须清晰占据主视觉位置...` |
+| <img src="docs/assets/gallery/cases/gallery-05-e-commerce-main-image-tropical-citrus-soda-ad-poster.jpg" alt="电商主图 - 热带柑橘汽水广告海报" width="260"> | **电商主图 - 热带柑橘汽水广告海报**<br><br>`请生成一张9:16的产品广告，用于食品饮料广告制作场景，主题为“电商主图 - 热带柑橘汽水广告海报”。构图：主体必须清晰占据主视觉位置...` |
+| <img src="docs/assets/gallery/cases/gallery-32-moss-radio-brand-identity-showcase-board.jpg" alt="Moss Radio 品牌识别展示板" width="260"> | **Moss Radio 品牌识别展示板**<br><br>`请生成一张1:1的海报设计，用于品牌识别广告制作场景，主题为“Moss Radio 品牌识别展示板”。构图：主体必须清晰占据主视觉位置...` |
+| <img src="docs/assets/gallery/cases/gallery-36-zoo-visitor-wayfinding-map.jpg" alt="Zoo Visitor 导视地图" width="260"> | **Zoo Visitor 导视地图**<br><br>`请生成一张16:9的海报设计，用于文旅导视广告制作场景，主题为“Zoo Visitor 导视地图”。构图：主体必须清晰占据主视觉位置...` |
+| <img src="docs/assets/gallery/cases/gallery-47-e-commerce-product-detail-page-layout.jpg" alt="E-Commerce Product Detail Page Layout" width="260"> | **E-Commerce Product Detail Page Layout**<br><br>`请生成一张9:16的电商主图，用于消费电子广告制作场景，主题为“E-Commerce Product Detail Page Layout”。构图：主体必须清晰占据主视觉位置...` |
 
 来源与许可证说明见 [gallery attribution](examples/gallery/ATTRIBUTION.md)。Gallery 不是复制来的 prompt 合集：上游 prompt 和图片只作为结构参考，最终公开 prompt 由本项目 Agent 流程重新生成、去品牌化、标准化，并改写为可复用版本。
 

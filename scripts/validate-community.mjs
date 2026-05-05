@@ -39,6 +39,8 @@ function main() {
   assert(gallery.count === galleryTarget, `Expected gallery count ${galleryTarget}, got ${gallery.count}`);
   assert(Array.isArray(gallery.cases), "Gallery cases must be an array");
   assert(gallery.cases.length === galleryTarget, `Expected ${galleryTarget} gallery cases, got ${gallery.cases.length}`);
+  assert(existsSync(join(root, "examples/gallery/cases.md")), "Missing English gallery markdown");
+  assert(existsSync(join(root, "examples/gallery/cases.zh-CN.md")), "Missing Chinese gallery markdown");
   assertUnique(templates.map((item) => item.id), "template ids");
   assertUnique(recipes.map((item) => item.id), "recipe ids");
   assertUnique(gallery.cases.map((item) => item.id), "gallery case ids");
@@ -63,6 +65,12 @@ function main() {
 
   for (const galleryCase of gallery.cases) {
     assert(galleryCase.optimizedPrompt?.length > 0, `Gallery case ${galleryCase.id} missing optimized prompt`);
+    assert(galleryCase.titleZh?.length > 0, `Gallery case ${galleryCase.id} missing Chinese title`);
+    assert(galleryCase.briefZh?.length > 0, `Gallery case ${galleryCase.id} missing Chinese brief`);
+    assert(galleryCase.optimizedPromptZh?.length > 0, `Gallery case ${galleryCase.id} missing Chinese optimized prompt`);
+    assert(Array.isArray(galleryCase.promptHighlightsZh) && galleryCase.promptHighlightsZh.length > 0, `Gallery case ${galleryCase.id} missing Chinese prompt highlights`);
+    assert(galleryCase.sourceUseZh?.length > 0, `Gallery case ${galleryCase.id} missing Chinese source use`);
+    assert(galleryCase.riskNoteZh?.length > 0, `Gallery case ${galleryCase.id} missing Chinese risk note`);
     assert(galleryCase.image && existsSync(join(root, galleryCase.image)), `Gallery case ${galleryCase.id} missing image asset`);
     assert(Array.isArray(galleryCase.librarySource?.templateIds), `Gallery case ${galleryCase.id} missing template composite source`);
     assert(Array.isArray(galleryCase.librarySource?.recipeIds), `Gallery case ${galleryCase.id} missing recipe composite source`);

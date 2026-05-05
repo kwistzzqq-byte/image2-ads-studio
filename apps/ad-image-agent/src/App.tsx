@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   buildDesignPlan,
@@ -8,15 +8,18 @@ import {
   ManualTestAdapter,
   parseIntent,
   referenceImageRoleLabels,
+  referenceImageRoleLabelsEn,
   redactReferenceImageData,
   retrieveVisualRecipes,
   retrieveTemplates,
   taskTypeLabels,
+  taskTypeLabelsEn,
   USER_UPLOAD_IMAGE_LIMIT,
-  type AdImageReferenceImage,
   type AdImageFormInput,
+  type AdImageReferenceImage,
   type InputMode,
   type LlmPromptBrainResult,
+  type OutputLanguage,
   type ReferenceImageRole,
   type TaskType
 } from "ad-image-agent-core";
@@ -38,17 +41,155 @@ interface FormState {
   hardConstraints: string;
 }
 
-const initialForm: FormState = {
-  taskType: "auto",
-  inputMode: "auto",
-  industry: "奶茶",
-  userRequest: "帮我做一个奶茶店门头效果图",
-  copywriting: "茶屿 TEE ISLAND",
-  aspectRatio: "16:9",
-  styleDirection: "商业可用、清晰、可制作",
-  referenceImageRole: "auto",
-  hardConstraints: ""
+const languageStorageKey = "ad-image-agent-language";
+
+const initialForms: Record<OutputLanguage, FormState> = {
+  "zh-CN": {
+    taskType: "auto",
+    inputMode: "auto",
+    industry: "奶茶",
+    userRequest: "帮我做一个奶茶店门头效果图",
+    copywriting: "茶屿 TEE ISLAND",
+    aspectRatio: "16:9",
+    styleDirection: "商业可用、清晰、可制作",
+    referenceImageRole: "auto",
+    hardConstraints: ""
+  },
+  en: {
+    taskType: "auto",
+    inputMode: "auto",
+    industry: "milk tea",
+    userRequest: "Create a realistic storefront signboard concept for a milk tea shop.",
+    copywriting: "TEE ISLAND",
+    aspectRatio: "16:9",
+    styleDirection: "commercially usable, clear, manufacturable",
+    referenceImageRole: "auto",
+    hardConstraints: ""
+  }
 };
+
+const uiText = {
+  "zh-CN": {
+    appTitle: "AI 广告创作工作台",
+    optimize: "生成提示词",
+    optimizing: "优化中...",
+    startGenerate: "开始生成",
+    config: "需求配置",
+    creativeType: "创意类型",
+    auto: "自动判断",
+    industry: "所属行业",
+    inputMode: "输入方式",
+    textToImage: "纯文本生成",
+    imageEdit: "上传图修改",
+    aspectRatio: "画面比例",
+    userRequest: "需求描述",
+    userRequestPlaceholder: "例如：帮我做一个奶茶店门头效果图",
+    copywriting: "文案内容",
+    copywritingPlaceholder: "需要准确保留的标题、品牌名或活动文案",
+    styleDirection: "风格方向",
+    referenceRole: "参考图用途",
+    referenceImage: "参考图",
+    uploadStrong: "上传图片",
+    uploadSmall: "在此处上传参考图",
+    imageListLabel: "用户参考图片清单",
+    imagePolicy: "发送给 LLM · 参与 Image2",
+    uploadLimit: (count: number) => `最多读取 ${count} 张用户图，已自动忽略多余图片。`,
+    hardConstraints: "硬性约束",
+    copyCurrent: "复制当前提示词",
+    copiedCurrent: "已复制提示词",
+    copyPlain: "复制白话 Prompt",
+    copyLlm: "复制 LLM Prompt",
+    copiedLlm: "已复制 LLM Prompt",
+    downloadJson: "下载 JSON",
+    optimizedPrompt: "优化后的提示词",
+    llmPrompt: "LLM 优化 Prompt",
+    rulePrompt: "规则 Prompt",
+    resultPreview: "结果预览",
+    previewTitle: "生成的图像预览将显示在此处",
+    imageEditPreview: "用户图将参与 Image2 编辑链路",
+    textOnlyPreview: "当前版本输出提示词，图片生成保留为手动测试",
+    parsedIntent: "需求解析",
+    templates: "业务模板",
+    recipes: "视觉配方",
+    matched: "个命中",
+    noTemplate: "无命中模板",
+    noRecipe: "无命中配方",
+    deterministicChecks: "确定性检查",
+    passed: "通过",
+    review: "需检查",
+    checks: "项检查",
+    diagnostics: "检索与方案详情",
+    matchedTemplates: "命中模板",
+    matchedRecipes: "命中视觉配方",
+    designPlan: "设计方案",
+    plainPrompt: "白话 Prompt",
+    llmErrorFallback: "LLM prompt optimization failed.",
+    languageToggleLabel: "界面语言",
+    retrievalIndustry: "行业",
+    retrievalUseCase: "场景",
+    retrievalKeyword: "关键词"
+  },
+  en: {
+    appTitle: "AI Advertising Studio",
+    optimize: "Optimize Prompt",
+    optimizing: "Optimizing...",
+    startGenerate: "Manual Test",
+    config: "Brief Configuration",
+    creativeType: "Creative Type",
+    auto: "Auto",
+    industry: "Industry",
+    inputMode: "Input Mode",
+    textToImage: "Text to Image",
+    imageEdit: "Image Edit",
+    aspectRatio: "Aspect Ratio",
+    userRequest: "Brief",
+    userRequestPlaceholder: "Example: Create a storefront signboard concept for a milk tea shop.",
+    copywriting: "Copywriting",
+    copywritingPlaceholder: "Exact headline, brand name, or campaign copy to preserve",
+    styleDirection: "Visual Direction",
+    referenceRole: "Reference Image Role",
+    referenceImage: "Reference Image",
+    uploadStrong: "Upload Images",
+    uploadSmall: "Upload reference images here",
+    imageListLabel: "User reference image list",
+    imagePolicy: "Sent to LLM · Used by Image2",
+    uploadLimit: (count: number) => `Only ${count} user images are read; extra images were ignored.`,
+    hardConstraints: "Hard Constraints",
+    copyCurrent: "Copy Current Prompt",
+    copiedCurrent: "Prompt Copied",
+    copyPlain: "Copy Plain Prompt",
+    copyLlm: "Copy LLM Prompt",
+    copiedLlm: "LLM Prompt Copied",
+    downloadJson: "Download JSON",
+    optimizedPrompt: "Optimized Prompt",
+    llmPrompt: "LLM Optimized Prompt",
+    rulePrompt: "Rule Prompt",
+    resultPreview: "Result Preview",
+    previewTitle: "Generated image preview will appear here",
+    imageEditPreview: "User images will participate in the Image2 edit workflow",
+    textOnlyPreview: "This MVP outputs prompts; image generation remains a manual test",
+    parsedIntent: "Parsed Intent",
+    templates: "Templates",
+    recipes: "Recipes",
+    matched: "matched",
+    noTemplate: "No matched template",
+    noRecipe: "No matched recipe",
+    deterministicChecks: "Deterministic Checks",
+    passed: "Passed",
+    review: "Review",
+    checks: "checks",
+    diagnostics: "Retrieval and Plan Details",
+    matchedTemplates: "Matched Templates",
+    matchedRecipes: "Matched Recipes",
+    designPlan: "Design Plan",
+    plainPrompt: "Plain Prompt",
+    llmErrorFallback: "LLM prompt optimization failed.",
+    languageToggleLabel: "Language",
+    retrievalIndustry: "Industry",
+    retrievalUseCase: "Use case",
+    retrievalKeyword: "Keyword"
+  }
+} as const;
 
 const manualAdapter = new ManualTestAdapter();
 
@@ -75,8 +216,11 @@ const referenceRoleOptions: ReferenceImageRole[] = [
   "scene_mockup"
 ];
 
+const initialLanguage = detectInitialLanguage();
+
 export default function App() {
-  const [form, setForm] = useState<FormState>(initialForm);
+  const [language, setLanguageState] = useState<OutputLanguage>(initialLanguage);
+  const [form, setForm] = useState<FormState>(() => initialForms[initialLanguage]);
   const [userImages, setUserImages] = useState<AdImageReferenceImage[]>([]);
   const [copied, setCopied] = useState(false);
   const [llmCopied, setLlmCopied] = useState(false);
@@ -85,19 +229,28 @@ export default function App() {
   const [llmLoading, setLlmLoading] = useState(false);
   const [llmError, setLlmError] = useState("");
   const [imageInputError, setImageInputError] = useState("");
+  const t = uiText[language];
+  const taskLabels = language === "en" ? taskTypeLabelsEn : taskTypeLabels;
+  const referenceLabels = language === "en" ? referenceImageRoleLabelsEn : referenceImageRoleLabels;
 
-  const result = useMemo(() => {
-    const brief = parseIntent(toFormInput(form));
-    const templates = retrieveTemplates(brief);
-    const recipes = retrieveVisualRecipes(brief);
-    const designPlan = buildDesignPlan(brief, templates, recipes);
-    const compiled = compilePrompt(brief, designPlan, templates, recipes);
-    const plainPrompt = buildPlainPrompt(brief);
-    return { brief, templates, recipes, designPlan, compiled, plainPrompt };
-  }, [form]);
+  const result = useCompiledResult(form, language);
   const activePrompt = llmResult?.finalPrompt ?? result.compiled.finalPrompt;
-  const activePromptSource = llmResult ? "LLM Optimized Prompt" : "Rule Prompt";
+  const activePromptSource = llmResult ? t.llmPrompt : t.rulePrompt;
   const activeChecks = llmResult?.deterministicChecks ?? result.compiled.deterministicChecks;
+
+  function setLanguage(nextLanguage: OutputLanguage) {
+    setLanguageState(nextLanguage);
+    try {
+      window.localStorage.setItem(languageStorageKey, nextLanguage);
+    } catch {
+      // Browser privacy settings may block localStorage; language still changes for this session.
+    }
+    setCopied(false);
+    setLlmCopied(false);
+    setAdapterNote("");
+    setLlmResult(null);
+    setLlmError("");
+  }
 
   function updateField<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((current) => ({ ...current, [key]: value }));
@@ -126,7 +279,7 @@ export default function App() {
   }
 
   function downloadRecord() {
-    const record = createRecord(form, userImages, result, llmResult);
+    const record = createRecord(form, language, userImages, result, llmResult);
     const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
@@ -155,7 +308,7 @@ export default function App() {
       return;
     }
     if ((files?.length ?? 0) > USER_UPLOAD_IMAGE_LIMIT) {
-      setImageInputError(`最多读取 ${USER_UPLOAD_IMAGE_LIMIT} 张用户图，已自动忽略多余图片。`);
+      setImageInputError(t.uploadLimit(USER_UPLOAD_IMAGE_LIMIT));
     }
     const role = result.brief.referenceImageRole === "none" ? "preserve_subject" : result.brief.referenceImageRole;
     const images = await Promise.all(selectedFiles.map((file, index) => createUserUploadImage(file, index, role)));
@@ -176,13 +329,13 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          formInput: toFormInput(form),
+          formInput: toFormInput(form, language),
           userImages
         })
       });
       const payload = await response.json();
       if (!response.ok) {
-        throw new Error(payload.error ?? "LLM prompt optimization failed.");
+        throw new Error(payload.error ?? t.llmErrorFallback);
       }
       setLlmResult(payload.result as LlmPromptBrainResult);
     } catch (error) {
@@ -198,48 +351,56 @@ export default function App() {
         <div className="brandCluster">
           <div className="brandMark">A</div>
           <div className="brandDivider" />
-          <h1>AI 广告创作工作台</h1>
+          <h1>{t.appTitle}</h1>
         </div>
         <div className="topActions">
+          <div className="languageToggle" aria-label={t.languageToggleLabel}>
+            <button type="button" className={language === "zh-CN" ? "isActive" : ""} onClick={() => setLanguage("zh-CN")}>
+              中文
+            </button>
+            <button type="button" className={language === "en" ? "isActive" : ""} onClick={() => setLanguage("en")}>
+              English
+            </button>
+          </div>
           <button className="darkButton" type="button" onClick={runLlmBrain} disabled={llmLoading}>
-            {llmLoading ? "优化中..." : "生成提示词"}
+            {llmLoading ? t.optimizing : t.optimize}
           </button>
           <button className="primaryButton" type="button" onClick={runManualAdapter}>
-            开始生成
+            {t.startGenerate}
           </button>
         </div>
       </header>
 
       <section className="studioCanvas">
         <form className="configPanel">
-          <h2>需求配置</h2>
+          <h2>{t.config}</h2>
 
           <div className="controlGrid">
             <label>
-              <span>创意类型</span>
+              <span>{t.creativeType}</span>
               <select value={form.taskType} onChange={(event) => updateField("taskType", event.target.value as AutoTaskType)}>
-                <option value="auto">自动判断</option>
+                <option value="auto">{t.auto}</option>
                 {taskTypeOptions.map((taskType) => (
                   <option value={taskType} key={taskType}>
-                    {taskTypeLabels[taskType]}
+                    {taskLabels[taskType]}
                   </option>
                 ))}
               </select>
             </label>
             <label>
-              <span>所属行业</span>
+              <span>{t.industry}</span>
               <input value={form.industry} onChange={(event) => updateField("industry", event.target.value)} />
             </label>
             <label>
-              <span>输入方式</span>
+              <span>{t.inputMode}</span>
               <select value={form.inputMode} onChange={(event) => updateField("inputMode", event.target.value as AutoInputMode)}>
-                <option value="auto">自动判断</option>
-                <option value="text_to_image">纯文本生成</option>
-                <option value="image_edit">上传图修改</option>
+                <option value="auto">{t.auto}</option>
+                <option value="text_to_image">{t.textToImage}</option>
+                <option value="image_edit">{t.imageEdit}</option>
               </select>
             </label>
             <label>
-              <span>画面比例</span>
+              <span>{t.aspectRatio}</span>
               <select value={form.aspectRatio} onChange={(event) => updateField("aspectRatio", event.target.value)}>
                 <option value="16:9">16:9 (Landscape)</option>
                 <option value="4:3">4:3</option>
@@ -251,40 +412,40 @@ export default function App() {
           </div>
 
           <label>
-            <span>需求描述</span>
+            <span>{t.userRequest}</span>
             <textarea
               value={form.userRequest}
               onChange={(event) => updateField("userRequest", event.target.value)}
               rows={5}
-              placeholder="Demand Description"
+              placeholder={t.userRequestPlaceholder}
             />
           </label>
 
           <label>
-            <span>文案内容</span>
+            <span>{t.copywriting}</span>
             <textarea
               value={form.copywriting}
               onChange={(event) => updateField("copywriting", event.target.value)}
               rows={5}
-              placeholder="Copywriting here"
+              placeholder={t.copywritingPlaceholder}
             />
           </label>
 
           <div className="controlGrid">
             <label>
-              <span>风格方向</span>
+              <span>{t.styleDirection}</span>
               <input value={form.styleDirection} onChange={(event) => updateField("styleDirection", event.target.value)} />
             </label>
             <label>
-              <span>参考图用途</span>
+              <span>{t.referenceRole}</span>
               <select
                 value={form.referenceImageRole}
                 onChange={(event) => updateField("referenceImageRole", event.target.value as AutoReferenceImageRole)}
               >
-                <option value="auto">自动判断</option>
+                <option value="auto">{t.auto}</option>
                 {referenceRoleOptions.map((role) => (
                   <option value={role} key={role}>
-                    {referenceImageRoleLabels[role]}
+                    {referenceLabels[role]}
                   </option>
                 ))}
               </select>
@@ -292,7 +453,7 @@ export default function App() {
           </div>
 
           <label>
-            <span>参考图</span>
+            <span>{t.referenceImage}</span>
             <span className="uploadBox">
               <input
                 type="file"
@@ -300,18 +461,18 @@ export default function App() {
                 multiple
                 onChange={(event) => void handleImageChange(event.target.files)}
               />
-              <strong>上传图片</strong>
-              <small>在此处上传参考图</small>
+              <strong>{t.uploadStrong}</strong>
+              <small>{t.uploadSmall}</small>
             </span>
           </label>
 
           {userImages.length ? (
-            <div className="imageList" aria-label="用户参考图片清单">
+            <div className="imageList" aria-label={t.imageListLabel}>
               {userImages.map((image) => (
                 <div className="imageItem" key={image.id}>
                   <strong>{image.name}</strong>
-                  <span>{referenceImageRoleLabels[image.role]}</span>
-                  <small>发送给 LLM · 参与 Image2</small>
+                  <span>{referenceLabels[image.role]}</span>
+                  <small>{t.imagePolicy}</small>
                 </div>
               ))}
             </div>
@@ -320,22 +481,22 @@ export default function App() {
           {imageInputError ? <div className="notice">{imageInputError}</div> : null}
 
           <label>
-            <span>硬性约束</span>
+            <span>{t.hardConstraints}</span>
             <textarea value={form.hardConstraints} onChange={(event) => updateField("hardConstraints", event.target.value)} rows={3} />
           </label>
 
           <div className="secondaryActions">
             <button type="button" onClick={copyPrompt}>
-              {copied ? "已复制提示词" : "复制当前提示词"}
+              {copied ? t.copiedCurrent : t.copyCurrent}
             </button>
             <button type="button" onClick={copyPlainPrompt}>
-              复制白话 Prompt
+              {t.copyPlain}
             </button>
             <button type="button" onClick={copyLlmPrompt} disabled={!llmResult}>
-              {llmCopied ? "已复制 LLM Prompt" : "复制 LLM Prompt"}
+              {llmCopied ? t.copiedLlm : t.copyLlm}
             </button>
             <button type="button" onClick={downloadRecord}>
-              下载 JSON
+              {t.downloadJson}
             </button>
           </div>
         </form>
@@ -343,10 +504,10 @@ export default function App() {
         <section className="previewPanel">
           <div className="promptCard">
             <div className="panelTitleBar">
-              <span>优化后的提示词</span>
+              <span>{t.optimizedPrompt}</span>
               <em>{activePromptSource}</em>
             </div>
-            <div className="codeSurface" aria-label="优化后的提示词">
+            <div className="codeSurface" aria-label={t.optimizedPrompt}>
               {numberPromptLines(activePrompt).map((line) => (
                 <div className="codeLine" key={`${line.number}-${line.text}`}>
                   <span>{line.number}</span>
@@ -357,11 +518,11 @@ export default function App() {
           </div>
 
           <div className="resultCard">
-            <h2>结果预览</h2>
+            <h2>{t.resultPreview}</h2>
             <div className="resultPreview">
               <div className="imageIcon">▧</div>
-              <strong>生成的图像预览将显示在此处</strong>
-              {adapterNote ? <p>{adapterNote}</p> : <p>{result.brief.inputMode === "image_edit" ? "用户图将参与 Image2 编辑链路" : "当前版本输出提示词，图片生成保留为手动测试"}</p>}
+              <strong>{t.previewTitle}</strong>
+              {adapterNote ? <p>{adapterNote}</p> : <p>{result.brief.inputMode === "image_edit" ? t.imageEditPreview : t.textOnlyPreview}</p>}
             </div>
           </div>
 
@@ -369,32 +530,32 @@ export default function App() {
 
           <div className="signalGrid">
             <div className="signalCard">
-              <span>Parsed Intent</span>
-              <strong>{taskTypeLabels[result.brief.taskType]}</strong>
-              <small>{result.brief.inputMode === "image_edit" ? "上传图修改" : "纯文本生成"} · {result.brief.aspectRatio}</small>
+              <span>{t.parsedIntent}</span>
+              <strong>{taskLabels[result.brief.taskType]}</strong>
+              <small>{result.brief.inputMode === "image_edit" ? t.imageEdit : t.textToImage} · {result.brief.aspectRatio}</small>
             </div>
             <div className="signalCard">
-              <span>Templates</span>
-              <strong>{result.templates.length} matched</strong>
-              <small>{result.templates[0]?.template.name ?? "无命中模板"}</small>
+              <span>{t.templates}</span>
+              <strong>{result.templates.length} {t.matched}</strong>
+              <small>{result.templates[0]?.template.name ?? t.noTemplate}</small>
             </div>
             <div className="signalCard">
-              <span>Recipes</span>
-              <strong>{result.recipes.length} matched</strong>
-              <small>{result.recipes[0]?.recipe.name ?? "无命中配方"}</small>
+              <span>{t.recipes}</span>
+              <strong>{result.recipes.length} {t.matched}</strong>
+              <small>{result.recipes[0]?.recipe.name ?? t.noRecipe}</small>
             </div>
             <div className="signalCard">
-              <span>Deterministic Checks</span>
-              <strong>{Object.values(activeChecks).every(Boolean) ? "Passed" : "Review"}</strong>
-              <small>{Object.entries(activeChecks).filter(([, passed]) => passed).length}/{Object.keys(activeChecks).length} checks</small>
+              <span>{t.deterministicChecks}</span>
+              <strong>{Object.values(activeChecks).every(Boolean) ? t.passed : t.review}</strong>
+              <small>{Object.entries(activeChecks).filter(([, passed]) => passed).length}/{Object.keys(activeChecks).length} {t.checks}</small>
             </div>
           </div>
 
           <details className="diagnosticPanel">
-            <summary>检索与方案详情</summary>
+            <summary>{t.diagnostics}</summary>
             <div className="diagnosticGrid">
               <div>
-                <h3>Matched Templates</h3>
+                <h3>{t.matchedTemplates}</h3>
                 <div className="templateList">
                   {result.templates.map((item) => (
                     <div className="templateItem" key={item.template.id}>
@@ -402,14 +563,14 @@ export default function App() {
                       <span>{item.template.id}</span>
                       <small>
                         {item.reasons.join("、")} / {item.score}
-                        {formatRetrievalSignals(item.matchedIndustries, item.matchedKeywords, item.matchedUseCases)}
+                        {formatRetrievalSignals(item.matchedIndustries, item.matchedKeywords, item.matchedUseCases, language)}
                       </small>
                     </div>
                   ))}
                 </div>
               </div>
               <div>
-                <h3>Matched Recipes</h3>
+                <h3>{t.matchedRecipes}</h3>
                 <div className="templateList">
                   {result.recipes.map((item) => (
                     <div className="templateItem" key={item.recipe.id}>
@@ -417,18 +578,18 @@ export default function App() {
                       <span>{item.recipe.id}</span>
                       <small>
                         {item.reasons.join("、")} / {item.score}
-                        {formatRetrievalSignals(item.matchedIndustries, item.matchedKeywords, item.matchedUseCases)}
+                        {formatRetrievalSignals(item.matchedIndustries, item.matchedKeywords, item.matchedUseCases, language)}
                       </small>
                     </div>
                   ))}
                 </div>
               </div>
               <div>
-                <h3>Design Plan</h3>
+                <h3>{t.designPlan}</h3>
                 <pre>{result.designPlan}</pre>
               </div>
               <div>
-                <h3>Plain Prompt</h3>
+                <h3>{t.plainPrompt}</h3>
                 <pre>{result.plainPrompt}</pre>
               </div>
             </div>
@@ -439,10 +600,21 @@ export default function App() {
   );
 }
 
-function toFormInput(form: FormState): AdImageFormInput {
+function detectInitialLanguage(): OutputLanguage {
+  try {
+    const stored = window.localStorage.getItem(languageStorageKey);
+    if (stored === "en" || stored === "zh-CN") return stored;
+  } catch {
+    // Fall back to browser language below.
+  }
+  return navigator.language.toLowerCase().startsWith("zh") ? "zh-CN" : "en";
+}
+
+function toFormInput(form: FormState, outputLanguage: OutputLanguage): AdImageFormInput {
   return {
     taskType: form.taskType,
     inputMode: form.inputMode,
+    outputLanguage,
     industry: form.industry,
     userRequest: form.userRequest,
     copywriting: form.copywriting,
@@ -455,6 +627,7 @@ function toFormInput(form: FormState): AdImageFormInput {
 
 function createRecord(
   form: FormState,
+  outputLanguage: OutputLanguage,
   userImages: AdImageReferenceImage[],
   result: ReturnType<typeof useCompiledResultShape>,
   llmResult: LlmPromptBrainResult | null
@@ -462,7 +635,8 @@ function createRecord(
   const redactedUserImages = redactReferenceImageData(userImages);
   return {
     generatedAt: new Date().toISOString(),
-    form,
+    outputLanguage,
+    form: toFormInput(form, outputLanguage),
     userImages: redactedUserImages,
     image2ReferenceImages: redactReferenceImageData(getImage2ReferenceImages(userImages)),
     parsedIntent: result.brief,
@@ -492,11 +666,12 @@ function createRecord(
   };
 }
 
-function formatRetrievalSignals(industries: string[], keywords: string[], useCases: string[]): string {
+function formatRetrievalSignals(industries: string[], keywords: string[], useCases: string[], language: OutputLanguage): string {
+  const t = uiText[language];
   const signals = [
-    industries.length ? `行业:${industries.slice(0, 3).join("/")}` : "",
-    useCases.length ? `场景:${useCases.slice(0, 3).join("/")}` : "",
-    keywords.length ? `关键词:${keywords.slice(0, 4).join("/")}` : ""
+    industries.length ? `${t.retrievalIndustry}:${industries.slice(0, 3).join("/")}` : "",
+    useCases.length ? `${t.retrievalUseCase}:${useCases.slice(0, 3).join("/")}` : "",
+    keywords.length ? `${t.retrievalKeyword}:${keywords.slice(0, 4).join("/")}` : ""
   ].filter(Boolean);
   return signals.length ? ` · ${signals.join(" · ")}` : "";
 }
@@ -568,14 +743,18 @@ function hasTransparentPixels(context: CanvasRenderingContext2D, width: number, 
   return false;
 }
 
-function useCompiledResultShape() {
-  const brief = parseIntent(toFormInput(initialForm));
+function useCompiledResult(form: FormState, outputLanguage: OutputLanguage) {
+  const brief = parseIntent(toFormInput(form, outputLanguage));
   const templates = retrieveTemplates(brief);
   const recipes = retrieveVisualRecipes(brief);
   const designPlan = buildDesignPlan(brief, templates, recipes);
   const compiled = compilePrompt(brief, designPlan, templates, recipes);
   const plainPrompt = buildPlainPrompt(brief);
   return { brief, templates, recipes, designPlan, compiled, plainPrompt };
+}
+
+function useCompiledResultShape() {
+  return useCompiledResult(initialForms["zh-CN"], "zh-CN");
 }
 
 const root = document.getElementById("root");

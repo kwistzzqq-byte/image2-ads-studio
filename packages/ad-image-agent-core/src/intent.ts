@@ -1,4 +1,4 @@
-import type { AdImageBrief, AdImageFormInput, InputMode, ReferenceImageRole, TaskType } from "./types.js";
+import type { AdImageBrief, AdImageFormInput, InputMode, OutputLanguage, ReferenceImageRole, TaskType } from "./types.js";
 
 const defaultStyle = "商业可用、清晰、可制作";
 const defaultIndustry = "广告制作";
@@ -13,6 +13,7 @@ export function parseIntent(formInput: AdImageFormInput): AdImageBrief {
   return {
     taskType,
     inputMode,
+    outputLanguage: normalizeOutputLanguage(formInput.outputLanguage),
     industry: normalizeText(formInput.industry) || inferIndustry(request) || defaultIndustry,
     userRequest: request,
     copywriting,
@@ -21,6 +22,10 @@ export function parseIntent(formInput: AdImageFormInput): AdImageBrief {
     referenceImageRole,
     hardConstraints: normalizeConstraints(formInput.hardConstraints)
   };
+}
+
+function normalizeOutputLanguage(value: AdImageFormInput["outputLanguage"]): OutputLanguage {
+  return value === "en" ? "en" : "zh-CN";
 }
 
 function inferTaskType(value: AdImageFormInput["taskType"], request: string): TaskType {

@@ -20,7 +20,14 @@ export {
 } from "./reference-images.js";
 export { retrieveVisualRecipes } from "./recipe-retriever.js";
 export { retrieveTemplates } from "./retriever.js";
-export { referenceImageRoleLabels, referenceRoleName, taskTypeLabels, taskTypeName } from "./taskMetadata.js";
+export {
+  referenceImageRoleLabels,
+  referenceImageRoleLabelsEn,
+  referenceRoleName,
+  taskTypeLabels,
+  taskTypeLabelsEn,
+  taskTypeName
+} from "./taskMetadata.js";
 export { promptTemplates } from "./templates.js";
 export { visualRecipes } from "./visual-recipes.js";
 export type {
@@ -36,6 +43,7 @@ export type {
   LlmPromptBrainInput,
   LlmPromptBrainResult,
   ManualGenerationResult,
+  OutputLanguage,
   PromptTemplate,
   ReferenceImageRole,
   RedactedReferenceImage,

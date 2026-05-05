@@ -21,9 +21,12 @@ export type ReferenceImageRole =
   | "scene_mockup"
   | "none";
 
+export type OutputLanguage = "zh-CN" | "en";
+
 export interface AdImageBrief {
   taskType: TaskType;
   inputMode: InputMode;
+  outputLanguage: OutputLanguage;
   industry: string;
   userRequest: string;
   copywriting: string;
@@ -70,6 +73,7 @@ export interface AdImageFormInput {
   styleDirection?: string;
   referenceImageRole?: ReferenceImageRole | "auto";
   hardConstraints?: string[] | string;
+  outputLanguage?: OutputLanguage;
 }
 
 export interface PromptVariable {
