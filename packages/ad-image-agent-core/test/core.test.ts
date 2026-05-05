@@ -211,7 +211,7 @@ describe("ad-image-agent-core", () => {
   });
 
   it("loads rewritten upstream visual recipes at the target size", () => {
-    expect(visualRecipes.length).toBe(140);
+    expect(visualRecipes.length).toBe(240);
     expect(new Set(visualRecipes.map((recipe) => recipe.id)).size).toBe(visualRecipes.length);
     expect(visualRecipes.every((recipe) => recipe.source.transformation === "debranded_rewritten_recipe")).toBe(true);
     expect(visualRecipes.every((recipe) => Array.isArray(recipe.referenceImages))).toBe(true);

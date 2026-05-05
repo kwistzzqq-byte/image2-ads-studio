@@ -3,7 +3,7 @@ import { join, resolve } from "node:path";
 
 const root = resolve(process.argv[2] ?? "community-export");
 const templateTarget = 220;
-const recipeTarget = 140;
+const recipeTarget = 240;
 const galleryTarget = 100;
 const taskTypes = [
   "storefront_signboard",
